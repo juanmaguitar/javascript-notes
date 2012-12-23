@@ -92,13 +92,13 @@ Este [nuevo código si que pasa los tests](http://www.cjohansen.no/en/tdd/test_d
 
 - **TDD** (Test Driven Development) es una metodología, forma de programar, un workflow, que basicamente consiste en hacer primero los tests (especificando lo que debe hacer nuestro código) y despues hacer el código que pase estos tests.
 
-- El workflow recomendado de TDD es el siguiente:
+- El workflow recomendado de TDD es el siguiente:  
 
-    1. Escribimos los tests para una nueva funcionalidad (asumiendo nombres de metodos, parametros de entrada, valores devueltos...)
-    1. Ejecutamos los tests y comprobamos que fallan (aun no hemos escrito el codigo a testear)
-    1. Escribimos la solución más simple que cumpla con los tests
-    1. Refactorizamos el código (código más limpio y eficiente y que siga pasando los tests)
-    1. Repetimos estos pasos con otra funcionalidad
+  1. Escribimos los tests para una nueva funcionalidad (asumiendo nombres de metodos, parametros de entrada, valores devueltos...)
+  1. Ejecutamos los tests y comprobamos que fallan (aun no hemos escrito el codigo a testear)
+  1. Escribimos la solución más simple que cumpla con los tests
+  1. Refactorizamos el código (código más limpio y eficiente y que siga pasando los tests)
+  1. Repetimos estos pasos con otra funcionalidad
 
 - Aplicando TDD a la hora de programar nos permite centrarnos en la interfaz (API, methods, inputs & outputs) más que en los detalles de la implementación
 
@@ -368,13 +368,14 @@ Mas info:
 
 ##4.- Sinon
 
+Para testear ciertas partes del código necesitaremos "customizar" temporalmente algunos metodos y objetos.
+Sinon es una libreria que nos permite hacer "fake" de objetos (_spies_, _stubs_ y _mocks_)
+
+Mas info:
 
 - [Sinon JS](http://sinonjs.org/)
 - **[Talk: JavaScript QA utilizing UnitTests](http://westhoffswelt.de/data/portfolio/phpsummit_2011_11_javascript_qa_using_js_test_driver_and_sinon_js.pdf)**
 - **[Johansen Talk about Sinon](http://cjohansen.no/talks/2011/xp-meetup/#1)**
-
-Para testear ciertas partes del código necesitaremos "customizar" temporalmente algunos metodos y objetos.
-Sinon es una libreria que nos permite hacer "fake" de objetos (_spies_, _stubs_ y _mocks_)
 
 ### Test Spies
 
