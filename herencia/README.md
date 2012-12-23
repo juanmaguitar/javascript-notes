@@ -92,7 +92,11 @@ true
 ```
 
 Se recomienda mover a los prototipos todas las propiedades/métodos _reutilizables_, y
-dejar las _no-­‐reutilizables_ como propias de las instancias
+dejar las _no-­reutilizables_ como propias de las instancias
+
+<br/>
+
+##Moviendo metodos re-utilizables al prototypo
 
 ```javascript
 function Shape(){}
@@ -142,6 +146,7 @@ true
 false
 >>> Triangle.prototype.hasOwnProperty("getArea")
 ```
+<br/>
 
 ##Herencia sólo del prototipo
 
@@ -206,6 +211,8 @@ cuando modificamos alguno de los prototipos, los modificamos todos.
 >>> s.name
 "Triangle"
 ```
+
+<br/>
 
 ##Función constructora temporal _F()_
 
@@ -278,6 +285,8 @@ true
 true
 ```
 
+<br/>
+
 ##Encapsulando la herencia en una función
 
 Podemos encapsular este código en una función extend que nos facilite implementar la herencia
@@ -323,6 +332,8 @@ true
 >>> Triangle.prototype.hasOwnProperty("toString")
 false
 ```
+
+<br/>
 
 ##Robando el _constructor_
 
