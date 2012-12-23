@@ -63,7 +63,7 @@ true
 false
 ```
 
-  ![Encadenamiento de prototipos](img/1_toString-EncadenamientoPrototipos.png)
+  ![Encadenamiento de prototipos](https://raw.github.com/juanmaguitar/training-frontend-docs/master/herencia/img/1_toString-EncadenamientoPrototipos.png)
   
   
 ```javascript
@@ -131,7 +131,7 @@ var myTriangle = new Triangle(5,10)
 
 ```
 
-  ![Moving shared methods](img/2_toString-MovingSharedMethodsToPrototype.png)
+  ![Moving shared methods](https://raw.github.com/juanmaguitar/training-frontend-docs/master/herencia/img/2_toString-MovingSharedMethodsToPrototype.png)
 
 ```javascript
 >>> TwoDShape.prototype.hasOwnProperty("toString")
@@ -184,7 +184,7 @@ Triangle.prototype.getArea = function(){return this.side * this.height /
 2;}
 ```
 
-  ![Herencia solo del prototipo](img/3_toString-HerenciaSoloPrototipo.png)
+  ![Herencia solo del prototipo](https://raw.github.com/juanmaguitar/training-frontend-docs/master/herencia/img/3_toString-HerenciaSoloPrototipo.png)
 
 ```javascript
 >>> Triangle.prototype.hasOwnProperty("getArea")
@@ -266,7 +266,7 @@ true
 true
 ```
 
-  ![Funcion Intermedia F()](img/4_toString-FuncionIntermediaF.png)
+  ![Funcion Intermedia F()](https://raw.github.com/juanmaguitar/training-frontend-docs/master/herencia/img/4_toString-FuncionIntermediaF.png)
   
 ```javascript
 >>> myTriangle.__proto__.__proto__.__proto__.constructor === Shape
