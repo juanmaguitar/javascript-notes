@@ -47,6 +47,8 @@ Los objetos disponen de lo que se llama la **cadena de prototipos**
   - Si un objeto `foo` no dispone de la propiedad `bar` al hacer `foo.bar`, Javascript buscará está propiedad en su prototipo (el de la función constructora que lo creó)
   - Si no lo encuentra ahí, lo buscará en el prototipo de su prototipo
   - Y asi hasta llegar al objeto de más alto nivel, el objeto `Object`
+  
+  ![cadena de prototipos](img/prototype.png)
     
 ```javascript
 
