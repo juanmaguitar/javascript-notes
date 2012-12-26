@@ -124,7 +124,7 @@ true
 
 ##En una función constructora
 
-Si la función se utiliza como constructor (con `new`), su `this apuntará al nuevo objeto creado
+Si la función se utiliza como constructor (con `new`), su `this` apuntará al nuevo objeto creado
 
 ```javascript
 function Class(){ this.a = 37; }
@@ -221,7 +221,7 @@ true
 
 ##En una función asociada a un evento
 
-Cuando una función se utiliza como _event handler_, su `this` queda asociado al elemento que provoca el evento
+Cuando una función se utiliza como _event handler_, su `this queda asociado al elemento que provoca el evento
 
 ```javascript
 // When called as a listener, turns the related element blue
