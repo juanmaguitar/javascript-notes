@@ -4,7 +4,7 @@ Todas las funciones tienen una propiedad `prototype` que contiene inicialmente u
 
 Podemos añadir propiedades y métodos a este objeto `prototype`. También podemos reemplazarlo completamente por otro objeto
 
-Al crear objetos usando una función como constructor (con `new`), estos objetos adquieren un enlace secreto (`__proto__` en Firebug) que apunta al prototipo de esta función constructora (_"clase"_) lo que les permite acceder a sus propiedades (y métodos)
+Al crear objetos usando una función como constructor (con `new`), estos objetos adquieren un enlace secreto (`__proto__` en Firebug) que apunta al prototipo de esta función constructora ( _"clase"_ ) lo que les permite acceder a sus propiedades (y métodos)
 como si fueran propias.
 
 Las propiedades propias del objetos tienen prioridad sobre las propiedades del prototipo con el mismo nombre

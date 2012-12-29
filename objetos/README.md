@@ -1,7 +1,7 @@
 #Arrays
 
 Un **[array](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array)** es una lista de valores.
-Para asignar valores a un array encerramos los elementos entre corchetes (_array literal notation_)  
+Para asignar valores a un array encerramos los elementos entre corchetes ( _array literal notation_ )  
 Los elementos de un array _son indexados con números consecutivos a partir de 0_  
 Para acceder a un elemento del array especificamos el _índice entre corchetes_
 
@@ -78,8 +78,8 @@ var hero = {
 ```
 
 Un **objeto** es como un array pero donde los índices los definimos nosotros  
-Para definir un objeto utilizamos las llaves {} (_object literal notation_)  
-Los elementos de un objeto (_propiedades_) los separamos por comas  
+Para definir un objeto utilizamos las llaves {} ( _object literal notation_ )  
+Los elementos de un objeto ( _propiedades_ ) los separamos por comas  
 El par _clave/valor_ (key/value) lo dividimos con 2 puntos
 
 Las claves (keys, nombres de las propiedades) pueden ir entre comillas, pero _no se recomienda_ definirlas asi
@@ -145,7 +145,7 @@ reference to undefined property hero.name
 ```
 
 Cuando estamos dentro de un método, con `this` hacemos referencia al objeto al que
-pertenece (_“this object”_)
+pertenece ( _“this object”_ )
 
 ```javascript
 var hero = {
