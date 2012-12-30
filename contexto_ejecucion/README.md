@@ -46,7 +46,7 @@ VO(globalContext) === global;
 
 El **Objeto Global** es el objeto que se crea antes de entrar en ningún contexto de ejecución. Sus propiedades son accesibles desde cualquier parte del código, y existe durante la ejecución del programa.
 
-```
+```javascript
 /* remember that `this` refers to global object when in global scope */
 var GLOBAL_OBJECT = this;
 var foo = 1;
@@ -57,7 +57,7 @@ typeof GLOBAL_OBJECT.bar; // "function"
 GLOBAL_OBJECT.bar === bar; // true
 ```
 
-```
+```javascript
 >>> var a = 'test'
 >>> a === 'test' // directly, is found in VO(globalContext): "test"
 true
@@ -144,21 +144,21 @@ El procesamiento del código (al llamar a una función) se divide principalmente
 
 _Al entrar en el Contexto de Ejecución_ (pero antes de la ejecución del código), el _Objeto Variable_ se rellena con las siguientes propiedades (y en este orden):
 
-1. Para cada **Parámetro Formal** de la función (si estamos en el contexto de ejecución de una función)
+1.- Para cada **Parámetro Formal** de la función (si estamos en el contexto de ejecución de una función)
 
-    - Se crea una propiedad en el _Objeto Variable_ con el mismo nombre y valor que el parámetro formal
-    - Si no se le pasa el parámetro a la función, se crea una propiedad en el _Objeto Variable_ con el mismo nombre y con valor _undefined_
+  - Se crea una propiedad en el _Objeto Variable_ con el mismo nombre y valor que el parámetro formal
+  - Si no se le pasa el parámetro a la función, se crea una propiedad en el _Objeto Variable_ con el mismo nombre y con valor _undefined_
 
-2. Para cada **Declaración de Función** (FunctionDeclaration, FD)
+2.- Para cada **Declaración de Función** (FunctionDeclaration, FD)
 
-    - Se crea una propiedad en el _Objeto Variable_ con el mismo nombre y con su correspondiente objeto-función como valor
-    - Si el _Objeto Variable_ ya contiene una propiedad con el mismo nombre, se reemplaza su valor y atributos
+  - Se crea una propiedad en el _Objeto Variable_ con el mismo nombre y con su correspondiente objeto-función como valor
+  - Si el _Objeto Variable_ ya contiene una propiedad con el mismo nombre, se reemplaza su valor y atributos
     
-3. Para cada Declaración de Variable (var, VariableDeclaration)
+3.- Para cada Declaración de Variable (var, VariableDeclaration)
 
-    - Se crea una propiedad en el _Objeto Variable_ con el nombre de la variable y con el valor _undefined_
-    - Si el _Objeto Variable_ ya contiene una propiedad con el mismo nombre, esta declaración de variable _NO reemplaza su valor_
-    
+  - Se crea una propiedad en el _Objeto Variable_ con el nombre de la variable y con el valor _undefined_
+  - Si el _Objeto Variable_ ya contiene una propiedad con el mismo nombre, esta declaración de variable _NO reemplaza su valor_
+  
 Ejemplo:
 
 ```javascript
