@@ -4,7 +4,7 @@ En la creación de una función se define su propiedad (interna) **Scope** que e
 
 _En la llamada a una función_ se crea el **Scope Chain** (cadena de ámbitos) del contexto de ejecución que es: su Objeto de Activación + la propiedad _Scope_ de esta función
 
-La resolución de identificadores (**Identifier Resolution**) es el proceso en el cual se determina a qué Objeto Variable dentro de la cadena de ámbitos pertenece una variable determinada
+La resolución de identificadores ( **Identifier Resolution** ) es el proceso en el cual se determina a qué Objeto Variable dentro de la cadena de ámbitos pertenece una variable determinada
 
 ```javascript
 var x = 10;
@@ -87,7 +87,7 @@ globalContext.VO === Global = {
 };
 ```
 
-_En la creación de “foo”, la propiedad _Scope_ de “foo” es…_
+_En la creación de “foo”, la propiedad "Scope" de “foo” es…_
 
 ```
 foo.[[Scope]] = [
