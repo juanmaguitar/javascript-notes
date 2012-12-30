@@ -154,7 +154,7 @@ _Al entrar en el Contexto de Ejecución_ (pero antes de la ejecución del códig
   - Se crea una propiedad en el _Objeto Variable_ con el mismo nombre y con su correspondiente objeto-función como valor
   - Si el _Objeto Variable_ ya contiene una propiedad con el mismo nombre, se reemplaza su valor y atributos
     
-3.- Para cada Declaración de Variable (var, VariableDeclaration)
+3.- Para cada **Declaración de Variable** (var, VariableDeclaration)
 
   - Se crea una propiedad en el _Objeto Variable_ con el nombre de la variable y con el valor _undefined_
   - Si el _Objeto Variable_ ya contiene una propiedad con el mismo nombre, esta declaración de variable _NO reemplaza su valor_
