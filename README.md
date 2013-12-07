@@ -8,8 +8,11 @@ Este repositorio contiene los materiales utilizados en diferentes actividades fo
 
 Este material cubre los siguientes contenidos:
 
-- [Funciones](https://github.com/juanmaguitar/training-frontend-docs/tree/master/funciones)
-- [Objetos](https://github.com/juanmaguitar/training-frontend-docs/tree/master/objetos)
+- [Generalidades](https://github.com/juanmaguitar/training-frontend-docs/tree/master/generalidades)
+- [Variables, Tipos de Datos y Operadores](https://github.com/juanmaguitar/training-frontend-docs/tree/master/variable_tipos_datos_operadores)
+- [Condicionales y Bucles](https://github.com/juanmaguitar/training-frontend-docs/tree/master/condiciones_bucles)
+- [Funciones (Predefinidas, Callback, Closures...)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/funciones)
+- [Arrays y Objetos](https://github.com/juanmaguitar/training-frontend-docs/tree/master/objetos)
 - [El valor de `this`](https://github.com/juanmaguitar/training-frontend-docs/tree/master/this)
 - [Prototype](https://github.com/juanmaguitar/training-frontend-docs/tree/master/prototype)
 - [Herencia](https://github.com/juanmaguitar/training-frontend-docs/tree/master/herencia)
