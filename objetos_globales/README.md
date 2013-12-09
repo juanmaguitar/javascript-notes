@@ -17,12 +17,9 @@
     - La funcion constructora Object():  `var o = new Object();`
 
 - Un objeto contiene las siguientes propiedades y metodos:
-    - La propiedad `o.constructor` con la función constructora
-    [https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/constructor](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/constructor)
-    - El método `o.toString()` que devuelve el objeto en formato texto
-    [https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/toString](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/constructor)
-    - El método `o.valueOf()` que devuelve el valor del objeto (normalmente o)
-    [https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/ValueOf](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/ValueOf)
+    - La propiedad [`o.constructor`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/constructor) con la función constructora
+    - El método [`o.toString()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/toString) que devuelve el objeto en formato texto
+    - El método [`o.valueOf()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/ValueOf) que devuelve el valor del objeto (normalmente o)
 
 Ejemplo:
 ```javascript
