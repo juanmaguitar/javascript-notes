@@ -13,6 +13,7 @@ Este material cubre los siguientes contenidos:
 - [Condicionales y Bucles](https://github.com/juanmaguitar/training-frontend-docs/tree/master/condiciones_bucles)
 - [Funciones (Predefinidas, Callback, Closures...)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/funciones)
 - [Arrays y Objetos (Funciones Constructoras)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/objetos)
+- [Objetos Globales (Object, Array, Function, Array, Number, Boolean, Math y Date)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/objetos_globales)
 - [El valor de `this`](https://github.com/juanmaguitar/training-frontend-docs/tree/master/this)
 - [Prototype](https://github.com/juanmaguitar/training-frontend-docs/tree/master/prototype)
 - [Herencia](https://github.com/juanmaguitar/training-frontend-docs/tree/master/herencia)
