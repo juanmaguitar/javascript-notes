@@ -12,7 +12,7 @@ Este material cubre los siguientes contenidos:
 - [Variables, Tipos de Datos y Operadores](https://github.com/juanmaguitar/training-frontend-docs/tree/master/variable_tipos_datos_operadores)
 - [Condicionales y Bucles](https://github.com/juanmaguitar/training-frontend-docs/tree/master/condiciones_bucles)
 - [Funciones (Predefinidas, Callback, Closures...)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/funciones)
-- [Arrays y Objetos](https://github.com/juanmaguitar/training-frontend-docs/tree/master/objetos)
+- [Arrays y Objetos (Funciones Constructoras)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/objetos)
 - [El valor de `this`](https://github.com/juanmaguitar/training-frontend-docs/tree/master/this)
 - [Prototype](https://github.com/juanmaguitar/training-frontend-docs/tree/master/prototype)
 - [Herencia](https://github.com/juanmaguitar/training-frontend-docs/tree/master/herencia)
