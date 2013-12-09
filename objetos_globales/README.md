@@ -69,8 +69,7 @@ Ejemplo:
 >>> a.constructor
 Array()
 ```
-- Los arrays disponen de la propiedad `length`  
-[https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/length](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/length)
+- Los arrays disponen de la propiedad [`length`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/length)  
 
     - Nos devuelve el tamaño del array (numero de elementos)
     - Podemos  modificarlo y cambiar el tamaño del array
@@ -335,8 +334,8 @@ Ejemplo:
 
 ##[String](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String)
 
-- Podemos crear objetos String con la función constructora `String()`
-  Un objeto _String_ NO es un dato de tipo primitivo string (valueOf())
+- Podemos crear objetos String con la función constructora `String()`  
+  Un objeto _String_ NO es un dato de tipo primitivo string (`valueOf())
 
 Ejemplo:
 ```javascript
@@ -438,7 +437,7 @@ Ejemplo:
     - Nada (tomará por defecto la fecha actual) 
     - Una fecha en formato texto
     - Valores separados que representan: Año, Mes (0-11), Dia (1-31), Hora (0-23), Minutes (0-59), Segundos(0-59) y Milisegundos (0-999)
-    - Un valor timestamp
+    - Un valor _timestamp_
 
 
 Ejemplo (Firebug muestra el resultado del metodo toString sobre un objeto date):
@@ -458,11 +457,11 @@ Wed Jan 09 2008 00:03:15 GMT-0800 (Pacific Standard Time)
     - [`setMonth()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/setMonth) y [`getMonth()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/getMonth) escriben y leen el mes en un objeto date respectivamente (lo mismo hay para year, day, hours, minutes, etc…)
 
 
-- [`parse()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/parse)  dado un string, devuelve su timestamp
+    - [`parse()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/parse)  dado un string, devuelve su timestamp
 
-- [`UTC()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/UTC)  produce un timestamp dados un año, mes, dia, etc..
+    - [`UTC()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/UTC)  produce un timestamp dados un año, mes, dia, etc..
 
-- [`toDateString()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/toDateString)  devuelve el contenido de un objeto date en formato americano
+    - [`toDateString()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/toDateString)  devuelve el contenido de un objeto date en formato americano
 
 Ejemplo:
 ```javascript
