@@ -25,8 +25,6 @@ _[creación de objetos]_
 
 - Una manera de hacer esto es utilizando un **Namespace**, es decir, creando un único objeto global y haciendo que todas las variables y funciones que necesitemos sean propiedades de este objeto
 
-Ejemplo:
-
 ```javascript
 // global namespace
 var MYAPP = MYAPP || {};
@@ -415,11 +413,11 @@ _[creación de objetos]_
 (`MYAPP.utilities.array)
 
 - El patrón Sandbox utiliza una función constructora global, en vez de un objeto “estático” global.
-- Al pasarle una función `fpCallback` a este constructor, se creará un objeto (box) donde esta función `fpCallback tendrá disponible los metodos que necesita.
+- Al pasarle una función `fpCallback` a este constructor, se creará un objeto (box) donde esta función `fpCallback` tendrá disponible los metodos que necesita.
 
 ```javascript
- function Sandbox() {
-       // turning arguments into an array
+function Sandbox() {
+  // turning arguments into an array
   var args = Array.prototype.slice.call(arguments),
        // the last argument is the callback
        callback = args.pop(),
