@@ -486,3 +486,95 @@ document.body.insertBefore(
     Esto no cambia el contenido del tag title
     - [`document.referrer`](https://developer.mozilla.org/en/DOM/document.referrer): Contiene la URL desde donde hemos llegado a la página
     - [`document.domain`](https://developer.mozilla.org/en/document.domain): Contiene el dominio de la pagina
+
+### Selección Avanzada de Elementos
+
+<sup>[http://mootools.net/slickspeed/](http://mootools.net/slickspeed/)</sup>  
+<sup>[http://www.w3.org/TR/CSS21/syndata.html#value-def-identifier](http://www.w3.org/TR/CSS21/syndata.html#value-def-identifier)</sup>  
+<sup>[http://www.quirksmode.org/css/contents.html](http://www.quirksmode.org/css/contents.html)</sup>  
+
+- [`document.images`](https://developer.mozilla.org/en/DOM/document.images) : `document.getElementsByTagName(‘img’)` 
+
+- [`rows`](https://developer.mozilla.org/en/DOM/table.rows) y [`cells`](https://developer.mozilla.org/en/DOM/HTMLTableRowElement) : Dado un elemento table podemos acceder a sus filas y dado un row podemos acceder a sus celdas con estos selectores  
+
+```javascript
+ >>> oTable = document.getElementsByTagName(‘table’)[0];
+ >>> aRows = oTable.rows;ñ
+ >>> oFirstRow = aRows[0];
+ >>> oLastRow = aRows[oRows.length-1];
+ >>> aCells = oFirstRow.cells;
+ >>> oFirstCell = aCells[0];
+ >>> oLastCell = aCells[aCells.length-1];
+```
+
+- [`options`](https://developer.mozilla.org/en/DOM/HTMLSelectElement): Dado un elemento [`select`](https://developer.mozilla.org/en/HTML/Element/select ) podemos acceder al array de sus `options` 
+
+```javascript
+ >>> document.getElementsByTagName('select')[0].options;
+ [option.windows, option.movil, option.aplicaciones-web, option.mac,
+ option.linux, option.palm, option.pocketpc, option.blog]
+```
+
+- [`querySelector`](https://developer.mozilla.org/En/DOM/Element.querySelector) y [`querySelectorAll`](https://developer.mozilla.org/En/DOM/Element.querySelectorAll): Devuelve elementos del DOM a partir de una selección CSS  
+    `querySelector()` devuelve el primer elemento encontrado   
+    `querySelectorAll()` devuelve un array de elementos   
+    Funciones nativas disponibles a partir de IE8 y FF3.5  
+
+    <sup>[http://javascript.nwbox.com/NWMatcher/release/test/css3-compat/](http://javascript.nwbox.com/NWMatcher/release/test/css3-compat/)</sup>
+
+```javascript
+ >>> oMyElem = document.querySelector("#myid");
+ >>> aMyHiddenElems = document.body.querySelectorAll(".hidden");
+```
+
+- `$()` o [`jQuery()`](http://api.jquery.com/jQuery/): con jQuery disponemos de una [potente herramienta de selección de elementos](http://sizzlejs.com/)
+ 
+<sup>[http://www.neeraj.name/2010/02/15/how-jquery-selects-elements-using-sizzle.html](http://www.neeraj.name/2010/02/15/how-jquery-selects-elements-using-sizzle.html)</sup>
+<sup>[http://refcardz.dzone.com/refcardz/jquery-selectors](http://refcardz.dzone.com/refcardz/jquery-selectors)</sup>
+
+Para obtener los elementos utilizamos `$()` o `jQuery()` pasándole nuestra [selección CSS](http://api.jquery.com/category/selectors/) entre comillas
+
+`$()` devuelve un [objeto jQuery](http://api.jquery.com/Types/#jQuery) (que no es un elemento DOM y tiene acceso a métodos propios de jQuery)
+
+Podemos pasar de objeto jQuery a selección DOM: 
+- Para un elemento: `$('#container') -> $('#container')[0]`
+- Para un grupo de elementos: `$('.hidden') -> $('.hidden').toArray()` 
+
+Tambien podemos pasar de selección DOM a objeto jQuery:
+- Para un elemento: document.getElementById('container') 􏰀 $(document.getElementById('container'))
+o Paraungrupodeelementos: document.links 􏰀 $(document.links);
+Ejemplo (desde Firebug en http://www.softonic.com):
+       >>> $('#container');
+       jQuery(div#container)
+       >>> $('#container')[0]
+       <div id="container">
+       >>> $('#footer_contents')
+       jQuery(div#footer_contents.clearfix)
+       >>> $('#footer_contents')[0]
+       <div id="footer_contents" class="clearfix">
+       >>> $('#footer_contents').attr("class");
+"clearfix"
+       >>> $('#footer_contents').className
+undefined
+       >>> $('#footer_contents')[0].className
+"clearfix"
+       >>> $('#footer_contents')[0].attr("class");
+2
+CURSO JAVASCRIPT (Nivel Basico/Intermedio) – SOFTONIC 2011 | JuanMa Garrido – [DIA 5]
+             TypeError: $("#footer_contents")[0].attr is not a function
+             >>> $('div.hidden')
+             jQuery(div#ads_section_textlinks.clearfix, div#top_sales.top_box,
+             div#top_valuated.top_box, div.list_container, div.ac_results)
+             >>> $('div.hidden').toArray()
+             [div#ads_section_textlinks.clearfix, div#top_sales.top_box,
+             div#top_valuated.top_box, div.list_container, div.ac_results]
+             >>> $('div.hidden').toArray()[0]
+             <div id="ads_section_textlinks" class="clearfix
+             hidden" style="display: block;">
+             >>> document.getElementById('ads_section_textlinks');
+             <div id="ads_section_textlinks" class="clearfix
+             hidden" style="display: block;">
+             >>> $(document.getElementById('ads_section_textlinks'));
+             jQuery(div#ads_section_textlinks.clearfix)
+             >>> $(document.querySelectorAll('div.hidden')[0]);
+             jQuery(div#ads_section_textlinks.clearfix)
