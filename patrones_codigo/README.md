@@ -12,7 +12,7 @@ Estos patrones ayudan a organizar el código, a mejorar su performance, a la cre
 - Estas capas deben estar lo más separadas posibles, es decir no debemos tocar directamente desde una capa elementos pertenecientes a otra capa.
 
     Esto, en la capa de comportamiento (Javascript) significa:
-    - Evitar los tags `<script>` dentro del marcado (o usar los menos posibles)
+    - Evitar los tags `<script>` con código Javascript dentro del marcado (o usar los menos posibles). Utilizar este tag sólo para cargar otros ficheros.
     - Evitar attributos inline en las etiquetas como `onclick`, `onmouseover` etc.. (mejor capturar el evento desde un archivo externo utilizando los métodos `addEventListener` o `attachEvent)
     - No alterar directamente propiedades del CSS (en todo caso, añadir o quitar clases)
     - Añadir dinámicamente el marcado que no tenga sentido con el Javascript desactivado
