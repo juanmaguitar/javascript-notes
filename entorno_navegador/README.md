@@ -202,32 +202,31 @@ xhtml1/DTD/xhtml1-transitional.dtd">
 </html>
 ```
 
-- En el DOM Level 1 se diferencia entre: 
-    - El Core DOM es la especificación común que se aplica a todos los documentos
-(XML, HTML,…)
-    - El Core HTML es la especificación que se aplica sólo a documentos HTML
-http://www.w3.org/TR/DOM-Level-1/
-Accediendo a los nodos
-http://www.elated.com/articles/looking-inside-dom-page-elements/
+- En el _[DOM Level 1](http://www.w3.org/TR/DOM-Level-1/)_ se diferencia entre: 
+    - El **Core DOM** es la especificación común que se aplica a todos los documentos (XML, HTML,…)
+    - El **Core HTML** es la especificación que se aplica sólo a documentos HTML
+
+### [Accediendo a los nodos](http://www.elated.com/articles/looking-inside-dom-page-elements/)
+
+```html
 <body>
-<p class="opener">first paragraph</p>
-<p><em>second</em> paragraph</p>
-<p id="closer">final</p>
-<!-- and that's about it -->
+    <p class="opener">first paragraph</p>
+    <p><em>second</em> paragraph</p>
+    <p id="closer">final</p>
+    <!-- and that's about it -->
 </body>
-http://www.phpied.com/files/jsoop/ch7.html
-· El nodo document nos da acceso al documento (es el punto de partida)
-https://developer.mozilla.org/en/DOM/document
-· Todos los nodos tienen las propiedades:
-o nodeType: Hay 12 tipos de nodos representados por números (1=element,
-2=attribute, 3=text, …)
-https://developer.mozilla.org/en/nodeType
-o nodeName: Para tags HTML es el nombre del tag y para nodos texto es #text
-https://developer.mozilla.org/en/nodename
-o nodeValue: Para nodos de texto el valor será el texto
-https://developer.mozilla.org/en/nodevalue
-· El nodo documentElement es el nodo raíz. Para documentos HTML es el tag <html>
-Ejemplo:
+```
+
+- El nodo [`document`](https://developer.mozilla.org/en/DOM/document) nos da acceso al documento (es el punto de partida)
+
+- Todos los nodos tienen las propiedades:
+    - [`nodeType`](https://developer.mozilla.org/en/nodeType): Hay 12 tipos de nodos representados por números (1=element, 2=attribute, 3=text, ...)
+    - [`nodeName`](https://developer.mozilla.org/en/nodename): Para tags HTML es el nombre del tag y para nodos texto es #text
+    - [`nodeValue`](https://developer.mozilla.org/en/nodevalue): Para nodos de texto el valor será el texto
+
+- El nodo `documentElement` es el nodo raíz. Para documentos HTML es el tag `<html>`
+
+```javascript
 >>> document.documentElement
 <html>
 >>> document.documentElement.nodeType
@@ -236,17 +235,15 @@ Ejemplo:
 "HTML"
 >>> document.documentElement.tagName
 "HTML"
-· Cada nodo puede tener nodos-hijo:
-CURSO JAVASCRIPT (Nivel Basico/Intermedio) – SOFTONIC 2011 | JuanMa Garrido – [DIA 4]
-9
-o hasChildNodes() : Este método devolverá true si el nodo tiene nodos-hijo
-https://developer.mozilla.org/en/DOM/element.hasChildNodes
-o childNodes: Devuelve en un array los nodos-hijo de un elemento.
-Al ser un array podemos saber el numero de nodos-hijo con childNodes.length
-https://developer.mozilla.org/En/DOM/Node.childNodes
-o parentNode: Nos da el nodo-padre de un nodo-hijo
-https://developer.mozilla.org/En/DOM/Node.parentNode
-Ejemplo:
+```
+
+- Cada nodo puede tener nodos-hijo:
+    - [`hasChildNodes()`](https://developer.mozilla.org/en/DOM/element.hasChildNodes) : Este método devolverá true si el nodo tiene nodos-hijo
+    - [`childNodes`](https://developer.mozilla.org/En/DOM/Node.childNodes): Devuelve en un array los nodos-hijo de un elemento.  
+    Al ser un array podemos saber el numero de nodos-hijo con `childNodes.length`
+    - [`parentNode`](https://developer.mozilla.org/En/DOM/Node.parentNode): Nos da el nodo-padre de un nodo-hijo
+
+```javascript
 >>> document.documentElement.hasChildNodes()
 True
 >>> document.documentElement.childNodes.length
@@ -260,13 +257,13 @@ True
 >>> var bd = document.documentElement.childNodes[1];
 >>> bd.childNodes.length
 9
-· Podemos chequear la existencia de attributes y acceder a sus atributos
-https://developer.mozilla.org/En/DOM/Node.attributes
-o hasAttributes():Devuelve true si el elemento tiene atributos
-https://developer.mozilla.org/En/DOM/Node.hasAttributes
-o getAttribute(): Devuelve el contenido de un atributo
-https://developer.mozilla.org/en/DOM/element.getAttribute
-Ejemplo:
+```
+
+- Podemos chequear la existencia de attributes y acceder a sus [atributos](https://developer.mozilla.org/En/DOM/Node.attributes):
+    - [`hasAttributes()`](https://developer.mozilla.org/En/DOM/Node.hasAttributes):Devuelve true si el elemento tiene atributos  
+    - [`getAttribute()`](https://developer.mozilla.org/en/DOM/element.getAttribute): Devuelve el contenido de un atributo  
+
+```javascript
 >>> bd.childNodes[1]
 <p class="opener">
 >>> bd.childNodes[1].hasAttributes()
@@ -281,15 +278,14 @@ True
 "opener"
 >>> bd.childNodes[1].getAttribute('class')
 "opener"
-· Podemos acceder al contenido de un tag:
-o textContent: Esta propiedad nos da el texto plano dentro de una etiqueta
-CURSO JAVASCRIPT (Nivel Basico/Intermedio) – SOFTONIC 2011 | JuanMa Garrido – [DIA 4]
-10
-En IE no existe esta propiedad (hay que usar innerText)
-https://developer.mozilla.org/En/DOM/Node.textContent
-o innerHTML: Esta propiedad nos da el contenido (en HTML) de un tag
-https://developer.mozilla.org/en/DOM/element.innerHTML
-Ejemplo:
+```
+
+- Podemos acceder al contenido de un tag:
+    - [`textContent`](https://developer.mozilla.org/En/DOM/Node.textContent): Esta propiedad nos da el texto plano dentro de una etiqueta  
+    En IE no existe esta propiedad (hay que usar innerText)  
+    - [`innerHTML`](https://developer.mozilla.org/en/DOM/element.innerHTML): Esta propiedad nos da el contenido (en HTML) de un tag
+
+```javascript
 >>> bd.childNodes[1].nodeName
 "P"
 >>> bg.childNodes[1].textContent
@@ -306,19 +302,16 @@ Ejemplo:
 "#text"
 >>> bd.childNodes[1].childNodes[0].nodeValue
 "first paragraph"
-· Podemos acceder directamente a algunos elementos sin necesidad de recorrer todo el
-árbol:
-http://www.elated.com/articles/javascript-retrieving-page-elements-via-the-dom/
-o getElementsByTagName(): Nos devuelve un array con todos los elementos
+```
+
+- Podemos [acceder directamente a algunos elementos](http://www.elated.com/articles/javascript-retrieving-page-elements-via-the-dom/) sin necesidad de recorrer todo elárbol:
+    - [`getElementsByTagName()`](https://developer.mozilla.org/en/DOM/element.getElementsByTagName): Nos devuelve un array con todos los elementos
 con el tag que se le pasa por parámetro
-https://developer.mozilla.org/en/DOM/element.getElementsByTagName
-o getElementsByName(): Nos devuelve un array con todos los elementos con el
+    - [`getElementsByName()`](https://developer.mozilla.org/en/DOM/document.getElementsByName): Nos devuelve un array con todos los elementos con el
 name que se le pasa por parámetro
-https://developer.mozilla.org/en/DOM/document.getElementsByName
-o getElementById(): No devuelve el elemento con el id que se le pasa por
-parámetro
-https://developer.mozilla.org/en/DOM/document.getElementByID
-Ejemplo:
+    - [`getElementById()`](getElementById()): No devuelve el elemento con el id que se le pasa por parámetro
+
+```javascript
 >>> document.getElementsByTagName('p').length
 3
 >>> document.getElementsByTagName('p')[0]
@@ -330,22 +323,22 @@ Ejemplo:
 >>> document.getElementsByTagName('p')[2].id
 "closer"
 >>> document.getElementsByTagName('p')[0].className
-CURSO JAVASCRIPT (Nivel Basico/Intermedio) – SOFTONIC 2011 | JuanMa Garrido – [DIA 4]
-11
 "opener"
 >>> document.getElementById('closer')
 <p id="closer">
-· Desde un nodo también podemos acceder a sus hermanos y al primero y último de sus
-hijos
-o nextSibling: Nos devuelve el siguiente hermano
-https://developer.mozilla.org/En/DOM/Node.nextSibling
-o previousSibling:Nos devuelve el anterior hermano
-https://developer.mozilla.org/En/DOM/Node.previousSibling
-o firstChild: Nos devuelve el primer hijo
-https://developer.mozilla.org/En/DOM/Node.firstChild
-o lastChild: Nos devuelve el último hijo
-https://developer.mozilla.org/En/DOM/Node.lastChild
-Ejemplo:
+```
+
+- Desde un nodo también podemos acceder a sus hermanos y al primero y último de sus hijos
+
+![Parent & Childs](https://raw.github.com/juanmaguitar/training-frontend-docs/master/entorno_navegador/img/parent-child.png)
+
+&nbsp;
+    - [`nextSibling`](https://developer.mozilla.org/En/DOM/Node.nextSibling): Nos devuelve el siguiente hermano
+    - [`previousSibling`](https://developer.mozilla.org/En/DOM/Node.previousSibling): Nos devuelve el anterior hermano
+    - [`firstChild`](https://developer.mozilla.org/En/DOM/Node.firstChild): Nos devuelve el primer hijo
+    - [`lastChild`](https://developer.mozilla.org/En/DOM/Node.lastChild): Nos devuelve el último hijo
+
+```javascript
 >>> var para = document.getElementById('closer')
 >>> para.nextSibling
 "\n "
@@ -366,14 +359,15 @@ para.previousSibling.previousSibling.nextSibling.nextSibling
 "\n "
 >>> document.body.lastChild.previousSibling
 Comment length=21 nodeName=#comment
-CURSO JAVASCRIPT (Nivel Basico/Intermedio) – SOFTONIC 2011 | JuanMa Garrido – [DIA 4]
-12
 >>> document.body.lastChild.previousSibling.nodeValue
 " and that's about it "
-Modificando los nodos
-http://www.elated.com/articles/changing-page-elements-with-the-dom/
-· Para cambiar el contenido de una etiqueta cambiamos el contenido de innerHTML
-Ejemplo:
+```
+
+### [Modificando los nodos](http://www.elated.com/articles/changing-page-elements-with-the-dom/)
+
+- Para cambiar el contenido de una etiqueta cambiamos el contenido de innerHTML
+
+```javascript
 >>> var my = document.getElementById('closer');
 >>> my.innerHTML = '<em>my</em> final';
 >>> my.firstChild
@@ -382,10 +376,13 @@ Ejemplo:
 "my"
 >>> my.firstChild.firstChild.nodeValue = 'your';
 "your"
-· Los elementos tienen la propiedad style que podemos utilizar para modificar sus estilos
-https://developer.mozilla.org/en/DOM/element.style
-http://www.w3.org/TR/DOM-Level-2-Style/css.html#CSS-ElementCSSInlineStyle
-Ejemplo:
+```
+
+- Los elementos tienen la propiedad [`style`](https://developer.mozilla.org/en/DOM/element.style) que podemos utilizar para modificar sus estilos
+
+<sup>[http://www.w3.org/TR/DOM-Level-2-Style/css.html#CSS-ElementCSSInlineStyle](http://www.w3.org/TR/DOM-Level-2-Style/css.html#CSS-ElementCSSInlineStyle)</sup>
+
+```javascript
 >>> my.style.border = "1px solid red";
 "1px solid red"
 · Ademas podemos modificar los atributos existan ya o no
@@ -399,16 +396,15 @@ Ejemplo:
 "closer"
 >>> my.id = 'further'
 "further"
-Creando y Eliminando nodos
-· Para crear nuevos elementos podemos utilizar los métodos createElement y
-createTextNode.
-Una vez creados los podemos añadir al DOM con appendChild
-https://developer.mozilla.org/en/DOM/document.createElement
-https://developer.mozilla.org/en/DOM/document.createTextNode
-https://developer.mozilla.org/En/DOM/Node.appendChild
-Ejemplo:
-CURSO JAVASCRIPT (Nivel Basico/Intermedio) – SOFTONIC 2011 | JuanMa Garrido – [DIA 4]
-13
+```
+
+### Creando y Eliminando nodos
+
+- Para crear nuevos elementos podemos utilizar los métodos [`createElement`](https://developer.mozilla.org/en/DOM/document.createElement) y
+[`createTextNode`](https://developer.mozilla.org/en/DOM/document.createTextNode).  
+    Una vez creados los podemos añadir al DOM con [`appendChild`](https://developer.mozilla.org/En/DOM/Node.appendChild)
+
+```javascript
 >>> var myp = document.createElement('p');
 >>> myp.innerHTML = 'yet another';
 "yet another"
@@ -418,28 +414,33 @@ CSSStyleDeclaration length=0
 "2px dotted blue"
 >>> document.body.appendChild(myp)
 <p style="border: 2px dotted blue;">
-· Tambien podemos copiar elementos existentes con cloneNode()
-cloneNode acepta un parámetro booleano (true copiará el nodo con todos sus hijos y
-false solo el nodo)
-https://developer.mozilla.org/En/DOM/Node.cloneNode
-Ejemplo:
+```
+
+- Tambien podemos copiar elementos existentes con [`cloneNode()`](https://developer.mozilla.org/En/DOM/Node.cloneNode)
+    `cloneNode` acepta un parámetro booleano (true copiará el nodo con todos sus hijos y false solo el nodo)
+
+```javascript
 >>> var el = document.getElementsByTagName('p')[1];
 <p><em>second</em> paragraph</p>
 >>> document.body.appendChild(el.cloneNode(false))
 >>> document.body.appendChild(document.createElement('p'));
 >>> document.body.appendChild(el.cloneNode(true))
-· Con insertBefore() podemos especificar el elemento delante del cual queremos
-insertar el nuestro
-Ejemplo:
+```
+
+- Con [`insertBefore()`](https://developer.mozilla.org/en-US/docs/Web/API/Node.insertBefore) podemos especificar el elemento delante del cual queremos insertar el nuestro
+
+```javascript
 document.body.insertBefore(
 document.createTextNode('boo!'),
 document.body.firstChild
 );
-· Para eliminar nodos del DOM podemos utilizar removeChild() o replaceChild()
-removeChild() elimina el elemento y replaceChild() lo sustituye por otro que se le pasa
-como parámetro
-Tanto replaceChild() como removeChild() devuelven el nodo eliminado
-Ejemplo:
+```
+
+- Para eliminar nodos del DOM podemos utilizar [`removeChild()`](https://developer.mozilla.org/en-US/docs/Web/API/Node.removeChild) o [`replaceChild()`](https://developer.mozilla.org/en-US/docs/Web/API/Node.replaceChild)  
+    `removeChild()` elimina el elemento y replaceChild() lo sustituye por otro que se le pasa como parámetro  
+    Tanto `replaceChild()` como `removeChild()` devuelven el nodo eliminado
+
+```javascript
 >>> var myp = document.getElementsByTagName('p')[1];
 >>> var removed = document.body.removeChild(myp);
 >>> removed
@@ -452,8 +453,8 @@ Ejemplo:
 >>> var replaced = document.body.replaceChild(removed, p);
 >>> replaced
 <p id="closer">
-CURSO JAVASCRIPT (Nivel Basico/Intermedio) – SOFTONIC 2011 | JuanMa Garrido – [DIA 4]
-14
+```
+
 Objetos DOM sólo de HTML
 · En el DOM tenemos disponibles una serie de selectores directos y de colecciones
 exclusivos de HTML:
