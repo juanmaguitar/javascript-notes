@@ -25,6 +25,7 @@ Este material cubre los siguientes contenidos:
 - [Contexto de Ejecución (Function Declaration, Function Expression, Hoisting)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/contexto_ejecucion)
 - [Scope](https://github.com/juanmaguitar/training-frontend-docs/tree/master/scope)
 - [Patrones de Código](https://github.com/juanmaguitar/training-frontend-docs/tree/master/patrones_codigo)
+- [Patrones de Diseño](https://github.com/juanmaguitar/training-frontend-docs/tree/master/patrones_diseno)
 - [Unit Testings](https://github.com/juanmaguitar/training-frontend-docs/tree/master/unit_testings)
 
 ## Referencias ##
