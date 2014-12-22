@@ -202,6 +202,8 @@ xhtml1/DTD/xhtml1-transitional.dtd">
 </html>
 ```
 
+![DOM](https://raw.github.com/juanmaguitar/training-frontend-docs/master/entorno_navegador/img/dom.png)
+
 - En el _[DOM Level 1](http://www.w3.org/TR/DOM-Level-1/)_ se diferencia entre: 
     - El **Core DOM** es la especificación común que se aplica a todos los documentos (XML, HTML,…)
     - El **Core HTML** es la especificación que se aplica sólo a documentos HTML
@@ -328,11 +330,9 @@ name que se le pasa por parámetro
 <p id="closer">
 ```
 
-- Desde un nodo también podemos acceder a sus hermanos y al primero y último de sus hijos
-
 ![Parent & Childs](https://raw.github.com/juanmaguitar/training-frontend-docs/master/entorno_navegador/img/parent-child.png)
 
-&nbsp;
+- Desde un nodo también podemos acceder a sus hermanos y al primero y último de sus hijos
     - [`nextSibling`](https://developer.mozilla.org/En/DOM/Node.nextSibling): Nos devuelve el siguiente hermano
     - [`previousSibling`](https://developer.mozilla.org/En/DOM/Node.previousSibling): Nos devuelve el anterior hermano
     - [`firstChild`](https://developer.mozilla.org/En/DOM/Node.firstChild): Nos devuelve el primer hijo
@@ -431,8 +431,8 @@ CSSStyleDeclaration length=0
 
 ```javascript
 document.body.insertBefore(
-document.createTextNode('boo!'),
-document.body.firstChild
+    document.createTextNode('boo!'), 
+    document.body.firstChild
 );
 ```
 
@@ -455,24 +455,18 @@ document.body.firstChild
 <p id="closer">
 ```
 
-Objetos DOM sólo de HTML
-· En el DOM tenemos disponibles una serie de selectores directos y de colecciones
-exclusivos de HTML:
-o document.body  document.getElementsByTagName(‘body’)[0]
-https://developer.mozilla.org/en/DOM/document.body
-o document.images  document.getElementsByTagName(‘img’)
-https://developer.mozilla.org/en/DOM/document.images
-o document.applets  document.getElementsByTagName(‘applet’)
-https://developer.mozilla.org/en/DOM/document.applets
-o document.links: Nos devuelve un array con todos los links con atributo href
-https://developer.mozilla.org/en/DOM/document.links
-o document.anchors: Nos devuelve un array con todos los links con atributo
-name
-https://developer.mozilla.org/en/DOM/document.anchors
-o document.forms  document.getElementsByTagName(‘form’)
-Podemos acceder a los elementos del form (inputs, buttons) con elements
-https://developer.mozilla.org/en/DOM/document.forms
-Ejemplo:
+### Objetos DOM sólo de HTML
+
+- En el DOM tenemos disponibles una serie de selectores directos y de colecciones exclusivos de HTML (no XML):
+    - [`document.body`](https://developer.mozilla.org/en/DOM/document.body): `document.getElementsByTagName(‘body’)[0]`
+    - [`document.images`](https://developer.mozilla.org/en/DOM/document.images): `document.getElementsByTagName(‘img’)`
+    - [`document.applets`](https://developer.mozilla.org/en/DOM/document.applets):  `document.getElementsByTagName(‘applet’)`
+    - [`document.links`](https://developer.mozilla.org/en/DOM/document.links): Nos devuelve un array con todos los links con atributo `href`
+    - [`document.anchors`](https://developer.mozilla.org/en/DOM/document.anchors): Nos devuelve un array con todos los links con atributo name
+    - [`document.forms`](https://developer.mozilla.org/en/DOM/document.forms): `document.getElementsByTagName(‘form’)`  
+    Podemos acceder a los elementos del form (inputs, buttons) con elements
+
+```javascript
 >>> document.forms[0]
 >>> document.getElementsByTagName('forms')[0]
 >>> document.forms[0].elements[0]
@@ -481,20 +475,14 @@ Ejemplo:
 >>> document.forms[0].elements[0].disabled = true;
 >>> document.forms[0].elements['search']; // array notation
 >>> document.forms[0].elements.search; // object property
-· Tambien tenemos disponible el método document.write()
-No se recomienda su uso ;-)
-https://developer.mozilla.org/en/document.write
-· Algunas propiedades del objeto document son:
-o document.cookies: Contiene una cadena de texto con las cookies asociadas al
-documento
-https://developer.mozilla.org/en/document.cookie
-CURSO JAVASCRIPT (Nivel Basico/Intermedio) – SOFTONIC 2011 | JuanMa Garrido – [DIA 4]
-15
-o document.title: Permite cambiar el titulo de la pagina que aparece en el
-navegador
-Esto no cambia el contenido del tag title
-https://developer.mozilla.org/en/DOM/document.title
-o document.referrer: Contiene la URL desde donde hemos llegado a la página
-https://developer.mozilla.org/en/DOM/document.referrer
-o document.domain: Contiene el dominio de la pagina
-https://developer.mozilla.org/en/document.domain
+```
+
+- Tambien tenemos disponible el método [`document.write()`](https://developer.mozilla.org/en/document.write)   
+    No se recomienda su uso ;-)
+
+- Algunas propiedades del objeto document son:
+    - `document.cookies`: Contiene una cadena de texto con las cookies asociadas al documento
+    - [`document.title`](https://developer.mozilla.org/en/DOM/document.title): Permite cambiar el titulo de la pagina que aparece en el navegador  
+    Esto no cambia el contenido del tag title
+    - [`document.referrer`](https://developer.mozilla.org/en/DOM/document.referrer): Contiene la URL desde donde hemos llegado a la página
+    - [`document.domain`](https://developer.mozilla.org/en/document.domain): Contiene el dominio de la pagina
