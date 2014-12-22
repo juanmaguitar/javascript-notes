@@ -210,7 +210,7 @@ Para mejorar la legibilidad las variables/métodos privados se marcan con “_�
 ## Métodos Privilegiados 
 _[creación de objetos]_
 
-[http://www.crockford.com/javascript/private.html](http://www.crockford.com/javascript/private.html)
+<sup>[http://www.crockford.com/javascript/private.html](http://www.crockford.com/javascript/private.html)</sup>
 
 - Metodos Privilegiados (según Douglas Crockford) son métodos públicos que pueden acceder a métodos o propiedades privadas
 Actuan de filtro para hacer accesible alguna funcionalidad privada pero de una manera controlada
@@ -251,9 +251,9 @@ true
 
 _[creación de objetos]_
 
-[http://www.crockford.com/javascript/private.html](http://www.crockford.com/javascript/private.html)  
-[http://blog.alexanderdickson.com/javascript-revealing-module-pattern](http://blog.alexanderdickson.com/javascript-revealing-module-pattern)  
-[http://blog.davidlitmark.com/post/6009004931/an-introduction-to-the-revealing-module-pattern](http://blog.davidlitmark.com/post/6009004931/an-introduction-to-the-revealing-module-pattern)  
+<sup>[http://www.crockford.com/javascript/private.html](http://www.crockford.com/javascript/private.html)  </sup>
+<sup>[http://blog.alexanderdickson.com/javascript-revealing-module-pattern](http://blog.alexanderdickson.com/javascript-revealing-module-pattern)</sup>  
+<sup>[http://blog.davidlitmark.com/post/6009004931/an-introduction-to-the-revealing-module-pattern](http://blog.davidlitmark.com/post/6009004931/an-introduction-to-the-revealing-module-pattern)</sup>  
 
 - Si queremos mantener intacta una función para nuestro “código interno”, pero también queremos dar visibilidad externa a esa función, podemos asignar esa función a una propiedad pública.
 A este patrón tambien se le conoce como **Revealing Module Pattern** 
@@ -307,7 +307,7 @@ MYAPP.dom = (function() {
 Otra manera de crear objetos es ejecutar directamente la función anónima y desde dentro hacer las asignaciones que correspondan.
 Podemos pasarle parámetros a esta función inmediata (normalmente relacionadas con el entorno) y hacer nuestro código más rápido y robusto 
 
-[http://markdalgleish.com/2011/03/self-executing-anonymous-functions/](http://markdalgleish.com/2011/03/self-executing-anonymous-functions/)
+<sup>[http://markdalgleish.com/2011/03/self-executing-anonymous-functions/](http://markdalgleish.com/2011/03/self-executing-anonymous-functions/)</sup>
 
 ```javascript
 var MYAPP = {};
@@ -337,8 +337,8 @@ MYAPP.existClass('___hidden____');
 
 ... si te estas preguntando para qué se define el parámetro _undefined_ prueba esto en Safari:
 
-[http://javascriptweblog.wordpress.com/2010/08/16/understanding-undefined-and-preventing-referenceerrors/](http://javascriptweblog.wordpress.com/2010/08/16/understanding-undefined-and-preventing-referenceerrors/)  
-[http://docs.jquery.com/JQuery_Core_Style_Guidelines#Type_Checks](http://docs.jquery.com/JQuery_Core_Style_Guidelines#Type_Checks)  
+<sup>[http://javascriptweblog.wordpress.com/2010/08/16/understanding-undefined-and-preventing-referenceerrors/](http://javascriptweblog.wordpress.com/2010/08/16/understanding-undefined-and-preventing-referenceerrors/)</sup>  
+<sup>[http://docs.jquery.com/JQuery_Core_Style_Guidelines#Type_Checks](http://docs.jquery.com/JQuery_Core_Style_Guidelines#Type_Checks)</sup>  
 
 ```javascript
 undefined = 5;
@@ -355,8 +355,8 @@ undefined = 5;
 ## Memoization 
 _[performance]_
 
-[http://addyosmani.com/blog/faster-javascript-memoization/](http://addyosmani.com/blog/faster-javascript-memoization/)  
-[http://philogb.github.com/blog/2008/09/05/memoization-in-javascript/](http://philogb.github.com/blog/2008/09/05/memoization-in-javascript/)  
+<sup>[http://addyosmani.com/blog/faster-javascript-memoization/](http://addyosmani.com/blog/faster-javascript-memoization/)</sup>  
+<sup>[http://philogb.github.com/blog/2008/09/05/memoization-in-javascript/](http://philogb.github.com/blog/2008/09/05/memoization-in-javascript/)</sup>  
 
 - Esta técnica se utiliza para cachear resultados de operaciones costosas.
 - Si no se ha realizado aun la operación, se realiza y se guarda en caché (objeto o array) con un identificador único
@@ -377,7 +377,7 @@ var hasClassName = (function(){
 ## Patrón Modulo 
 _[creación de objetos]_
 
-[http://www.yuiblog.com/blog/2007/06/12/module-pattern/](http://www.yuiblog.com/blog/2007/06/12/module-pattern/)
+<sup>[http://www.yuiblog.com/blog/2007/06/12/module-pattern/](http://www.yuiblog.com/blog/2007/06/12/module-pattern/)</sup>
 
 - La idea del patrón modulo es la de encapsular la lógica privada y exponer solamente de terminados métodos “público”.
 Se aplica utilizando funciones autoejecutables que devuelven objetos
@@ -403,9 +403,7 @@ var functionUtils = (function(){
 ## Patrón Sandbox 
 _[creación de objetos]_
 
-[https://github.com/shichuan/javascript-patterns/blob/master/object-creation-patterns/sandbox.html
-](https://github.com/shichuan/javascript-patterns/blob/master/object-creation-patterns/sandbox.html
-)
+<sup>[https://github.com/shichuan/javascript-patterns/blob/master/object-creation-patterns/sandbox.html](https://github.com/shichuan/javascript-patterns/blob/master/object-creation-patterns/sandbox.html)</sup>
 
 - El patrón Sandbox soluciona dos problemas que hay con el patrón Namespce :
   - No se pueden crear 2 versiones de la misma aplicación en la misma página ya que todo cuelga del mismo objeto global (`MYAPP`)
