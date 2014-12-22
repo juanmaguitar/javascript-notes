@@ -1,13 +1,11 @@
 # El entorno del Navegador
 
-<sup>[https://developer.mozilla.org/en/JavaScript_technologies_overview](https://developer.mozilla.org/en/JavaScript_technologies_overview)</sup>  
 <sup>[http://www.saregune.net/ikasi/hezigune/curso.php?curso=javascript&leccion=js_intro_dom](http://www.saregune.net/ikasi/hezigune/curso.php?curso=javascript&leccion=js_intro_dom)</sup>  
 <sup>[http://vkanakaraj.wordpress.com/2009/12/18/javascript-vs-dom-vs-bom-relationship-explained/](http://vkanakaraj.wordpress.com/2009/12/18/javascript-vs-dom-vs-bom-relationship-explained/)</sup>  
 <sup>[http://javascript.about.com/od/byexample/a/Javascript-By-Example_2.htm](http://javascript.about.com/od/byexample/a/Javascript-By-Example_2.htm)</sup>  
 <sup>[http://stackoverflow.com/questions/4416317/what-is-the-dom-and-bom-in-javascript](http://stackoverflow.com/questions/4416317/what-is-the-dom-and-bom-in-javascript)</sup>  
 
-- Javascript puede ser utilizado en diferentes entornos, pero su entorno más habitual es el navegador  
-<sup>[http://vkanakaraj.wordpress.com/2009/10/28/javascript-hosts/](http://vkanakaraj.wordpress.com/2009/10/28/javascript-hosts/)</sup>
+- Javascript puede ser utilizado en [diferentes entornos](http://en.wikipedia.org/wiki/JavaScript#Uses_outside_web_pages), pero [su entorno más habitual es el navegador](https://developer.mozilla.org/en/JavaScript_technologies_overview)  
 
 - El código Javascript de una pagina tiene acceso a unos cuantos objetos. Estos objetos los podemos agrupar en:
     - Objetos que tienen relación con la pagina cargada (el document). Estos objetos conforman el **Document Object Model (DOM)**
@@ -23,18 +21,15 @@
 ## [Deteccion de Funcionalidades](https://developer.mozilla.org/en/Browser_Detection_and_Cross_Browser_Support)
 
 <sup>[http://stackoverflow.com/questions/1173165/how-to-guess-browser-compatibility-based-upon-dom-level](http://stackoverflow.com/questions/1173165/how-to-guess-browser-compatibility-based-upon-dom-level)</sup>  
-<sup>[http://www.howtocreate.co.uk/tutorials/jsexamples/sniffer.html](http://www.howtocreate.co.uk/tutorials/jsexamples/sniffer.html)</sup>  
-<sup>[http://blogs.sitepoint.com/why-browser-sniffing-stinks/](http://blogs.sitepoint.com/why-browser-sniffing-stinks/)</sup>  
-<sup>[http://www.jibbering.com/faq/notes/detect-browser/](http://www.jibbering.com/faq/notes/detect-browser/)</sup>
 
 - Debido a estas diferencia entre navegadores surge la necesidad de averiguar (desde código JS) que caracteristicas soporta nuestro navegador (DOM y BOM)
 
 - Una solución seria la llamada [**Browser Sniffing**](http://en.wikipedia.org/wiki/Browser_sniffing) que consiste en [detectar el navegador que estamos utilizando](http://www.quirksmode.org/js/detect.html)  
 
-    Esta técnica no se recomienda por:
+    Esta técnica [no se recomienda](http://blogs.sitepoint.com/why-browser-sniffing-stinks/) por:
     - Hay demasiados navegadores para controlar
-    - Dificil de mantener (surgen nuevas versiones y nuevos navegadores)
-    - El parseo de cadenas puede ser complicado y no es fiable del todo
+    - [Dificil de mantener](http://www.jibbering.com/faq/notes/detect-browser/) (surgen nuevas versiones y nuevos navegadores)
+    - El [parseo de cadenas puede ser complicado](http://www.howtocreate.co.uk/tutorials/jsexamples/sniffer.html) y no es fiable del todo
 
 ```javascript
 if (navigator.userAgent.indexOf('MSIE') !== -1) {
@@ -58,6 +53,8 @@ if (typeof window.addEventListener === 'function') {
 ## BOM
 
 - El **BOM (Browser Object Model)** lo conforman todos los objetos que están fuera del documento cargado (document) y forman parte del objeto window
+
+![BOM](https://raw.github.com/juanmaguitar/training-frontend-docs/master/entorno_navegador/img/bom.png)
 
 - El objeto `window` ademas de servir de contenedor de las variables globales y de ofrecer los metodos nativos de JS (`window.parseInt`), contiene informacion sobre el entorno del navegador (frame, iframe, popup, ventana o pestaña)
 
@@ -154,8 +151,6 @@ actual
 
     - [`window.alert()`](https://developer.mozilla.org/en/DOM/window.alert), [`window.prompt()`](https://developer.mozilla.org/en/DOM/window.prompt), [`window.confirm()`](https://developer.mozilla.org/en/DOM/window.confirm) nos permiten interactuar con el usuario a traves de mensajes del sistema
 
-
-
     ```javascript
     if (confirm('Are you sure you want to delete this item?')) {
     // delete
@@ -166,56 +161,51 @@ actual
     console.log(answer);
     ```
     
-o window.setTimeout(), window.setInterval() nos permiten ejecutar
-código después de un intervalo de tiempo (y en su caso, repetirlo)
-Ejemplo:
->>> function boo(){alert('Boo!');}
->>> setTimeout(boo, 2000);
->>> var id = setTimeout(boo, 2000);
->>> clearTimeout(id);
->>> function boo() {console.log('boo')};
->>> var id = setInterval(boo, 2000);
-boo
-boo
-boo
->>> clearInterval(id)
-var id = setInterval("alert('boo, boo')", 2000);
-CURSO JAVASCRIPT (Nivel Basico/Intermedio) – SOFTONIC 2011 | JuanMa Garrido – [DIA 4]
-7
-var id = setInterval(
-function(){
-alert('boo, boo')
-}, 2000
-);
-· window.document es un objeto del BOM con info sobre el documento actual
-Todos los métodos y propiedades que estan dentro de window.document pertenecen a
-la categoría de objetos DOM
-https://developer.mozilla.org/en/DOM/window.document
-DOM
-http://www.w3.org/DOM/
-http://www.ibm.com/developerworks/xml/tutorials/x-udom/
-· El DOM (Document Object Model) es una forma de representar un documento HTML (o
-XML) como un árbol de nodos.
-Utilizando los métodos y propiedades del DOM podremos acceder a los elementos de la
-página, modificarlo, eliminarlos o añadir nuevos
+    - [`window.setTimeout()`](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers.setTimeout), [`window.setInterval()`](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers.setInterval) nos permiten ejecutar código después de un intervalo de tiempo (y en su caso, repetirlo)
+
+    ```javascript
+    >>> function boo(){alert('Boo!');}
+    >>> setTimeout(boo, 2000);
+    >>> var id = setTimeout(boo, 2000);
+    >>> clearTimeout(id);
+    >>> function boo() { console.log('boo') };
+    >>> var id = setInterval( boo, 2000 );
+    boo
+    boo
+    boo
+    >>> clearInterval(id)
+    var id = setInterval( "alert('boo, boo')", 2000 );
+    var id = setInterval( function(){ alert('boo, boo')}, 2000 );
+    ```
+
+    - [`window.document`](https://developer.mozilla.org/en/DOM/window.document) es un objeto del BOM con info sobre el documento actual
+    Todos los métodos y propiedades que estan dentro de window.document pertenecen a la categoría de objetos DOM
+
+## DOM
+<sup>[http://www.ibm.com/developerworks/xml/tutorials/x-udom/](http://www.ibm.com/developerworks/xml/tutorials/x-udom/)</sup>  
+
+- El **[DOM (Document Object Model)](http://www.w3.org/DOM/)** es una forma de representar un documento HTML (o XML) como un árbol de nodos.  
+Utilizando los métodos y propiedades del DOM podremos acceder a los elementos de la página, modificarlo, eliminarlos o añadir nuevos
+
+```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/
 xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Página sencilla</title>
-</head>
-<body>
-<p>Esta página es <strong>muy sencilla</strong></p>
-</body>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <title>Página sencilla</title>
+    </head>
+    <body>
+        <p>Esta página es <strong>muy sencilla</strong></p>
+    </body>
 </html>
-CURSO JAVASCRIPT (Nivel Basico/Intermedio) – SOFTONIC 2011 | JuanMa Garrido – [DIA 4]
-8
-· En el DOM Level 1 se diferencia entre:
-o El Core DOM es la especificación común que se aplica a todos los documentos
+```
+
+- En el DOM Level 1 se diferencia entre: 
+    - El Core DOM es la especificación común que se aplica a todos los documentos
 (XML, HTML,…)
-o El Core HTML es la especificación que se aplica sólo a documentos HTML
+    - El Core HTML es la especificación que se aplica sólo a documentos HTML
 http://www.w3.org/TR/DOM-Level-1/
 Accediendo a los nodos
 http://www.elated.com/articles/looking-inside-dom-page-elements/
