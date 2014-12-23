@@ -20,6 +20,7 @@ Este material cubre los siguientes contenidos:
     -  [DOM](https://github.com/juanmaguitar/training-frontend-docs/tree/master/entorno_navegador/DOM)
     -  [BOM](https://github.com/juanmaguitar/training-frontend-docs/tree/master/entorno_navegador/BOM)
 - [JSON](https://github.com/juanmaguitar/training-frontend-docs/tree/master/JSON)
+- [AJAX](https://github.com/juanmaguitar/training-frontend-docs/tree/master/AJAX)
 
 
 ### Advanced
