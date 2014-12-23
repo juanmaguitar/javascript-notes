@@ -16,7 +16,9 @@ Este material cubre los siguientes contenidos:
 - [Funciones (Predefinidas, Callback, Closures...)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/funciones)
 - [Arrays y Objetos (Funciones Constructoras)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/objetos)
 - [Objetos Globales (Object, Array, Function, Array, Number, Boolean, Math y Date)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/objetos_globales)
-- [El entorno del navegador (DOM y BOM)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/entorno_navegador)
+- [El entorno del navegador](https://github.com/juanmaguitar/training-frontend-docs/tree/master/entorno_navegador)
+    -  [DOM](https://github.com/juanmaguitar/training-frontend-docs/tree/master/entorno_navegador/DOM)
+    -  [BOM](https://github.com/juanmaguitar/training-frontend-docs/tree/master/entorno_navegador/BOM)
 - [JSON](https://github.com/juanmaguitar/training-frontend-docs/tree/master/JSON)
 
 
