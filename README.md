@@ -2,7 +2,7 @@
 
 ## Descripción ##
 
-Este repositorio contiene los materiales realizados para diferentes actividades formativas de JAVASCRIPT realizadas desde 2010.
+Este repositorio contiene los materiales realizados para diferentes actividades formativas de JAVASCRIPT que he impartido desde 2010.
 
 ## Contenidos ##
 
