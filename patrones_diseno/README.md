@@ -1,14 +1,14 @@
 # Patrones de Diseño
 
-<sup>[http://vimeo.com/44094122](http://vimeo.com/44094122)</sup>  
-<sup>[https://github.com/shichuan/javascript-patterns/tree/master/design-patterns](https://github.com/shichuan/javascript-patterns/tree/master/design-patterns)</sup>
+<sub>[http://vimeo.com/44094122](http://vimeo.com/44094122)</sub>    
+<sub>[https://github.com/shichuan/javascript-patterns/tree/master/design-patterns](https://github.com/shichuan/javascript-patterns/tree/master/design-patterns)</sub>  
 
 ## Patrón Singleton 
 _[creación de objetos]_
 
-<sup>[http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/#singletonpatternjavascript](http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/#singletonpatternjavascript)  </sup>
-<sup>[http://www.pixelovers.com/patrones-diseno-javascript-patron-singleton-1698384](http://www.pixelovers.com/patrones-diseno-javascript-patron-singleton-1698384)  </sup>
-<sup>[https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/singleton.html](https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/singleton.html)  </sup>
+<sub>[http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/#singletonpatternjavascript](http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/#singletonpatternjavascript)  </sub>  
+<sub>[http://www.pixelovers.com/patrones-diseno-javascript-patron-singleton-1698384](http://www.pixelovers.com/patrones-diseno-javascript-patron-singleton-1698384)  </sub>  
+<sub>[https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/singleton.html](https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/singleton.html)  </sub>  
 
 La idea general de este patrón es la de asegurar que una clase genera una única instancia, es decir, limitar la instanciación de una clase a un único objeto
 
@@ -57,8 +57,8 @@ true
 ## Patrón Factory 
 _[creación de objetos]_
 
-<sup>[http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/#factorypatternjavascript](http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/#factorypatternjavascript)</sup>
-<sup>[https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/factory.html](https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/factory.html)</sup>
+<sub>[http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/#factorypatternjavascript](http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/#factorypatternjavascript)</sub>  
+<sub>[https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/factory.html](https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/factory.html)</sub>  
 
 - El objetivo de este patrón es el de crear objetos
 - En vez de crear objetos directamente con new, utilizaremos un objeto Factory al que le pediremos que tipo de objeto queremos y éste objeto lo instanciará y nos lo devolverá
@@ -159,7 +159,7 @@ console.log( myBigTruck );
 
 ## Patrón Iterator
 
-<sup>[https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/iterator.html](https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/iterator.html)</sup>
+<sub>[https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/iterator.html](https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/iterator.html)</sub>  
 
 - El objetivo de este patrón es el de encapsular la lógica para recorrer los datos de un objeto
 - En el patron Iterator nuestro objeto necesita proporcionar un metodo next() que nos
@@ -197,7 +197,7 @@ while (agg.hasNext()) {
 ## Patrón Mixins 
 _[estructura, sub‐classing, code re‐use]_
 
-<sup>[http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/#mixinpatternjavascript](http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/#mixinpatternjavascript)</sup>
+<sub>[http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/#mixinpatternjavascript](http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/#mixinpatternjavascript)</sub>  
 
 - Los Mixins son una manera de recolectar funcionalidades a traves de las extensiones
 - Los Mixins los podemos considerar objetos cuyos atributos y metodos pueden ser compartidos por otros objetos prototipos.
@@ -245,7 +245,7 @@ myAnimator.stop();
 ## Patrón Decorator 
 _[estructura, sub-classing, code re-use]_
 
-<sup>[http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/#decoratorpatternjavascript](http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/#decoratorpatternjavascript)</sup>
+<sub>[http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/#decoratorpatternjavascript](http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/#decoratorpatternjavascript)</sub>  
 - El patron Decorator se centra en cómo extender las funcionalidades de los objetos
 - Con el patrón Decorator podemos añadir/sobreescribir dinamicamente comportamiento a los métodos existentes de un objeto
 
@@ -380,8 +380,8 @@ module.facade( {run: true, val:10} );
 ```
 
 ## Patrón Observer – Subscriber/Publisher
-<sup>[http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/#observerpatternjavascript](http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/#observerpatternjavascript)</sup>
-<sup>[http://www.jspatterns.com/book/7/observer.html](http://www.jspatterns.com/book/7/observer.html)</sup>
+<sub>[http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/#observerpatternjavascript](http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/#observerpatternjavascript)</sub>  
+<sub>[http://www.jspatterns.com/book/7/observer.html](http://www.jspatterns.com/book/7/observer.html)</sub>  
 
 
 - El principal objetivo de este patrón es el de desacoplar las partes de un código.
@@ -491,8 +491,8 @@ joe.tweet("hated the paper today");
 ```
 
 ## Patrón Mediator
-<sup>[http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/#mediatorpatternjavascript](http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/#mediatorpatternjavascript)  </sup>
-<sup>[https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/mediator.html](https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/mediator.html)  </sup>
+<sub>[http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/#mediatorpatternjavascript](http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/#mediatorpatternjavascript)  </sub>  
+<sub>[https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/mediator.html](https://github.com/shichuan/javascript-patterns/blob/master/design-patterns/mediator.html)  </sub>  
 
 - El patrón _Mediator_ es un patrón de comportamiento que nos permite utilizar una unica interfaz a traves de la cual se pueden comunciar las diferentes partes de un sistema (ej. torre control aeropuerto)
 - En Javascript este patron se suele implementar como un objeto compartido a traves del cual los otros objetos (modulos) de nuestro sistema se pueden comunicar (patron _Observer_ centralizado)

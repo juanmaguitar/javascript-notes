@@ -35,10 +35,10 @@
 
 - Las cadenas JSON deben ser convertidas a objetos Javascript para poder utilizarlas (y viceversa). 
 Para ello podemos utilizar:  
-    - `eval()`: No se recomienda utilizarlo directamente  
-    - `JSON.parse`: Convierte una cadena JSON en un objeto Javascript  
+    - [`eval()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval): No se recomienda utilizarlo directamente  
+    - [`JSON.parse`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse): Convierte una cadena JSON en un objeto Javascript  
          hace eval pero comprueba el formato antes de hacerlo  
-    - `JSON.stringify`: Convierte un objeto Javascript en una cadena JSON
+    - [`JSON.stringify`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify): Convierte un objeto Javascript en una cadena JSON
     - [`jQuery.parseJSON`](http://api.jquery.com/jQuery.parseJSON/): con jQuery también podemos hacer el parseo del JSON
 
     El objeto JSON está disponible de forma nativa en los [navegadores compatibles con ECMAScript 5](http://kangax.github.io/compat-table/es5/)  

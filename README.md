@@ -2,7 +2,7 @@
 
 ## Descripción ##
 
-Este repositorio contiene los materiales utilizados en diferentes actividades formativas sobre JAVASCRIPT realizadas desde 2010.
+Este repositorio contiene los materiales realizados para diferentes actividades formativas de JAVASCRIPT que he impartido desde 2010.
 
 ## Contenidos ##
 
@@ -16,8 +16,12 @@ Este material cubre los siguientes contenidos:
 - [Funciones (Predefinidas, Callback, Closures...)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/funciones)
 - [Arrays y Objetos (Funciones Constructoras)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/objetos)
 - [Objetos Globales (Object, Array, Function, Array, Number, Boolean, Math y Date)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/objetos_globales)
-- [El entorno del navegador (DOM y BOM)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/entorno_navegador)
+- [El entorno del navegador](https://github.com/juanmaguitar/training-frontend-docs/tree/master/entorno_navegador)
+    -  [DOM](https://github.com/juanmaguitar/training-frontend-docs/tree/master/entorno_navegador/DOM)
+    -  [BOM](https://github.com/juanmaguitar/training-frontend-docs/tree/master/entorno_navegador/BOM)
+- [Eventos](https://github.com/juanmaguitar/training-frontend-docs/tree/master/eventos)
 - [JSON](https://github.com/juanmaguitar/training-frontend-docs/tree/master/JSON)
+- [AJAX](https://github.com/juanmaguitar/training-frontend-docs/tree/master/AJAX)
 
 
 ### Advanced
