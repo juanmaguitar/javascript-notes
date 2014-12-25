@@ -1,9 +1,9 @@
 # Expresiones Regulares
 
 <sub>[http://regexpal.com/](http://regexpal.com/)</sub>  
-<sub>[http://www.regular-expressions.info/ https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp](http://www.regular-expressions.info/ https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp)</sub>   
+<sub>[http://www.regular-expressions.info/](http://www.regular-expressions.info/)</sub>   
 <sub>[http://mundogeek.net/archivos/2004/07/29/javascript-expresiones-regulares/](http://mundogeek.net/archivos/2004/07/29/javascript-expresiones-regulares/)</sub>   
-<sub>[http://javascript.espaciolatino.com/lengjs/jsgram/expregulares.htm](http://javascript.espaciolatino.com/lengjs/jsgram/expregulares.htm)</sub> 
+<sub>[http://javascript.espaciolatino.com/lengjs/jsgram/expregulares.htm](http://javascript.espaciolatino.com/lengjs/jsgram/expregulares.htm)</sub>   
 <sub>[http://www.javascriptkit.com/javatutors/redev.shtml](http://www.javascriptkit.com/javatutors/redev.shtml)</sub>  
 
 Las expresiones regulares nos permiten buscar y manipular texto de una forma muy potente.  
@@ -12,7 +12,7 @@ Un expresión regular consiste en:
 - **Modificadores** (opcionales) que nos indican como aplicar el patron
 
 En Javascript tenemos disponibles **objetos de expresiones regulares** que podemos crear:
-- Con la función constructora `RegExp` : `new RegExp("j.*t")` 
+- Con la función constructora [`RegExp`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp) : `new RegExp("j.*t")` 
 - Con la notacion literal: `/j.*t/`;
 
 ## Propiedades de los Objetos RegExp
