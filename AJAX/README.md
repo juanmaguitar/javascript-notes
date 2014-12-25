@@ -25,7 +25,7 @@
 
 ## Haciendo la petición
 
-<sub>[https://developer.mozilla.org/en/XMLHttpRequest](https://developer.mozilla.org/en/XMLHttpRequest)</sub>
+<sub>[https://developer.mozilla.org/en/XMLHttpRequest](https://developer.mozilla.org/en/XMLHttpRequest)</sub>  
 <sub>[http://jibbering.com/2002/4/httprequest.html](http://jibbering.com/2002/4/httprequest.html)</sub>
 
 ```javascript
