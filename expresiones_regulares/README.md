@@ -1,10 +1,10 @@
 # Expresiones Regulares
 
-<sub>[http://regexpal.com/](http://regexpal.com/)</sub>
-<sub>[http://www.regular-expressions.info/ https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp](http://www.regular-expressions.info/ https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp)</sub> 
-<sub>[http://mundogeek.net/archivos/2004/07/29/javascript-expresiones-regulares/](http://mundogeek.net/archivos/2004/07/29/javascript-expresiones-regulares/)</sub> 
+<sub>[http://regexpal.com/](http://regexpal.com/)</sub>  
+<sub>[http://www.regular-expressions.info/ https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp](http://www.regular-expressions.info/ https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp)</sub>   
+<sub>[http://mundogeek.net/archivos/2004/07/29/javascript-expresiones-regulares/](http://mundogeek.net/archivos/2004/07/29/javascript-expresiones-regulares/)</sub>   
 <sub>[http://javascript.espaciolatino.com/lengjs/jsgram/expregulares.htm](http://javascript.espaciolatino.com/lengjs/jsgram/expregulares.htm)</sub> 
-<sub>[http://www.javascriptkit.com/javatutors/redev.shtml](http://www.javascriptkit.com/javatutors/redev.shtml)</sub>
+<sub>[http://www.javascriptkit.com/javatutors/redev.shtml](http://www.javascriptkit.com/javatutors/redev.shtml)</sub>  
 
 Las expresiones regulares nos permiten buscar y manipular texto de una forma muy potente.  
 Un expresión regular consiste en:
@@ -131,7 +131,8 @@ undefined
 >>> args
 ["juanmanuel.garrido@softonic.com", "juanmanuel.garrido",
 "softonic", "com", 0, "juanmanuel.garrido@softonic.com"]
->>> var csv = 'one, two,three ,four'; >>> csv.split(',');
+>>> var csv = 'one, two,three ,four'; 
+>>> csv.split(',');
 ["one", " two", "three ", "four"]
 >>> csv.split(/\s*,\s*/)
 ["one", "two", "three", "four"]

@@ -22,6 +22,7 @@ Este material cubre los siguientes contenidos:
 - [Eventos](https://github.com/juanmaguitar/training-frontend-docs/tree/master/eventos)
 - [JSON](https://github.com/juanmaguitar/training-frontend-docs/tree/master/JSON)
 - [AJAX](https://github.com/juanmaguitar/training-frontend-docs/tree/master/AJAX)
+- [Expresiones Regulares](https://github.com/juanmaguitar/training-frontend-docs/tree/master/expresiones_regulares)
 
 
 ### Advanced
