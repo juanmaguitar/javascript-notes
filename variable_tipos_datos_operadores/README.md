@@ -256,21 +256,82 @@ true
     true
     ```
 
-    #### `===` Igualdad y Comparación de Tipo
+    #### `===` Igualdad y Tipo
 
-        Devuelve `true` cuando los dos operandos son iguales Y cuando son del mismo tipo de datos. Suele ser mejor y más seguro, utilizar esta comparación de igualdad (no hay transformaciones de tipo no controladas)
+    Devuelve `true` cuando los dos operandos son iguales Y cuando son del mismo tipo de datos. Suele ser mejor y más seguro, utilizar esta comparación de igualdad (no hay transformaciones de tipo no controladas)
 
-        ```javascript
-        >>> 1 === '1';
-        false
-        >>> 1 === 1;
-        true
-        ```
+    ```javascript
+    >>> 1 === '1';
+    false
+    >>> 1 === 1;
+    true
+    ```
 
+    #### `!=` No Igualdad
+        
+    Devuelve `true` cuando los dos operandos NO son iguales (despues de una conversion de tipo)
 
+    ```javascript
+    >>> 1 != 1;
+    false
+    >>> 1 != '1';
+    false
+    >>> 1 != 2;
+    true
+    ```
 
+    #### `!==` No Igualdad Sin conversion de tipo
+        
+    Devuelve `true` cuando los dos operandos NO son iguales o cuando son de tipos diferentes
 
-    <img src="img/operadores_comparacion.png" alt="Operadores Lógicos JS" title="Operadores Lógicos JS" />
+    ```javascript
+    >>> 1 !== 1;
+    false
+    >>> 1 !== '1';
+    true
+    ```
+
+    #### `>` Mayor que
+        
+    Devuelve `true` si el operando de la izquierda es mayor que el de la derecha
+
+    ```javascript
+    >>> 1 > 1;
+    false
+    >>> 33 > 22;
+    true
+    ```
+
+    #### `>=` Mayor o Igual que
+        
+    Devuelve `true` si el operando de la izquierda es mayor o igual que el de la derecha
+
+    ```javascript
+    >>> 1 >= 1;
+    true
+    ```
+
+    #### `<` Menor que
+        
+    Devuelve `true` si el operando de la izquierda es menor que el de la derecha
+
+    ```javascript
+    >>> 1 < 1;
+    false
+    >>> 1 < 2;
+    true
+    ```
+
+    #### `<=` Menor o Igual que
+        
+    Devuelve `true` si el operando de la izquierda es menor o igual que el de la derecha
+
+    ```javascript
+    >>> 1 <= 1;
+    true
+    >>> 1 <= 2;
+    true
+    ```
 
 # Conversiones 
 
@@ -300,9 +361,25 @@ NaN
 >>> var b = "true"; typeof b; 
 "string"
 ```
-- La doble negación es una forma sencilla de convertir cualquier valor en su Booleano correspondiente. 
+- La doble negación `!!` es una forma sencilla de convertir cualquier valor en su Booleano correspondiente. 
 
-    Aplicandolo podemos comprobar como cualquier valor covertido a Booleano es TRUE excepto:
+
+    ```javascript
+    >>> !!0
+    false
+    >>> !!1
+    true
+    >>> !!""
+    false
+    >>> !!"hola"
+    true
+    >>> !!undefined
+    false
+    >>> !!null
+    false
+    ```
+
+    Aplicandolo podemos comprobar como cualquier valor covertido a Booleano es `true` excepto:
 
     - `""`
     - `null`
@@ -310,3 +387,5 @@ NaN
     - `0`
     - `NaN`
     - `false`
+
+
