@@ -211,7 +211,7 @@ Devuelve _a_ solamente si NO está seguida de _b_
 null
 >>> "Some Text".match(/Some(?!Tex)/g);
 ["Some"]
-```javascript
+```
 
 ### `\`
 
