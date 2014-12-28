@@ -8,10 +8,9 @@
     * Presentacion → CSS  
     * Comportamiento → Javascript  
 
-    <sub>[http://jeffcroft.com/blog/2007/sep/26/new-layers-web-development/](http://jeffcroft.com/blog/2007/sep/26/new-layers-web-development/)  
-</sub>  
+    <sub>[http://jeffcroft.com/blog/2007/sep/26/new-layers-web-development/](http://jeffcroft.com/blog/2007/sep/26/new-layers-web-development/)</sub>  
 
-- [Javascript](https://developer.mozilla.org/en/JavaScript_Language_Resources) está basado en [ECMAScript](http://es.wikipedia.org/wiki/ECMAScript) que es una especificación de lenguaje de programacion
+- [Javascript](https://developer.mozilla.org/en/JavaScript_Language_Resources) está basado en [ECMAScript](http://es.wikipedia.org/wiki/ECMAScript) que es una especificación de lenguaje de programacion. Sus direfere
 
 - Con [la llegada de AJAX](http://www.uberbin.net/archivos/internet/ajax-un-nuevo-acercamiento-a-aplicaciones-web.php) (que no es más que el uso de un objeto javascript con el que podemos interactuar con el servidor sin tener que forzar una recarga de página) se abrió una nueva era en la historia del lenguaje
 
@@ -54,7 +53,7 @@
 
 - En [1998](http://www.w3.org/TR/1998/REC-DOM-Level-1-19981001/) y a raiz de estas diferencias entre navegadores, la _W3C (World Wide Web Consortium)_ diseñó el standard **[DOM](http://es.wikipedia.org/wiki/Document_Object_Model)** que es un interfaz (API) para acceder y modificar el contenido estructurado del documento.  
 
-- En 1999, se sientan las bases del Javascript moderno con el lanzamiento de la tercera edición del ECMA-262, tambien llamado **EcmaScript 3**
+- En [1999](http://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-262,%203rd%20edition,%20December%201999.pdf), se sientan las bases del Javascript moderno con el lanzamiento de la tercera edición del ECMA-262, tambien llamado **EcmaScript 3**
 
 ![JS History 2](https://raw.github.com/juanmaguitar/training-frontend-docs/master/generalidades/img/js-history-2.png)
 
@@ -62,7 +61,7 @@
 
 -  En [2005](https://jquery.org/history/) sale la primera versión de jQuery. Las diferencias entre navegadores han marcado los desarrollos en Javascript hasta el dia de hoy, y han hecho habitual el uso de [frameworks](http://www.maestrosdelweb.com/editorial/comparacion-frameworks-javascript/) (como jQuery) que nos ayuden a lidiar con estas diferencias.
 
--  En 2009 se completa y libera la quinta edición del ECMA-262, más conocida como **ECMAScript 5**. La edicion 5.1 se libera en 2011
+-  En 2009 se completa y libera la quinta edición del ECMA-262, más conocida como **ECMAScript 5**. La [edicion 5.1](http://www.ecma-international.org/ecma-262/5.1/) se libera en 2011
 
 -  En diciembre de 2014 se aprueba la 6ª edicion del ECMA-262 o **ECMAScript 6**. Se espera el [lanzamiento oficial para Junio de 2015](http://www.2ality.com/2014/06/es6-schedule.html)
 
