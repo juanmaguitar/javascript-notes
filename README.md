@@ -10,7 +10,7 @@ Este material cubre los siguientes contenidos:
 
 ### Basic 
 
-- [Generalidades](https://github.com/juanmaguitar/training-frontend-docs/tree/master/generalidades)
+- [Ideas Claras, Historia del JS, EcmaScript](https://github.com/juanmaguitar/training-frontend-docs/tree/master/generalidades)
 - [Variables, Tipos de Datos y Operadores](https://github.com/juanmaguitar/training-frontend-docs/tree/master/variable_tipos_datos_operadores)
 - [Condicionales y Bucles](https://github.com/juanmaguitar/training-frontend-docs/tree/master/condiciones_bucles)
 - [Funciones (Predefinidas, Callback, Closures...)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/funciones)
@@ -27,7 +27,6 @@ Este material cubre los siguientes contenidos:
 
 ### Advanced
 
-- [EcmaScript](https://github.com/juanmaguitar/training-frontend-docs/tree/master/ecma-script)
 - [El valor de `this`](https://github.com/juanmaguitar/training-frontend-docs/tree/master/this)
 - [Prototype](https://github.com/juanmaguitar/training-frontend-docs/tree/master/prototype)
 - [Herencia](https://github.com/juanmaguitar/training-frontend-docs/tree/master/herencia)
