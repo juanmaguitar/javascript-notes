@@ -35,6 +35,9 @@
 
     <sub>[http://jsperf.com/browse](http://jsperf.com/browse)</sub>
 
+- Un [Framework](http://www.desarrolloweb.com/articulos/listado-distintos-framework-javascript.html) (o libreria) es una coleccion de utilidades comunmente utilizadas que pueden ser utilizadas para desarrollar aplicaciones de manera rápida, fácil, modular y sencilla, ahorrando tiempo y esfuerzo. El framework mas conocido y utilizado es [jQuery](https://jquery.com/).
+
+
 # Breve historia de Javascript
 
 ![JS History 1](https://raw.github.com/juanmaguitar/training-frontend-docs/master/generalidades/img/js-history-1.png)
@@ -49,15 +52,12 @@
 
 - En [1998](http://www.w3.org/TR/1998/REC-DOM-Level-1-19981001/) y a raiz de estas diferentencias entre navegadores, la W3C (World Wide Web Consortium) diseñó el standard [DOM](http://es.wikipedia.org/wiki/Document_Object_Model) que es un interfaz (API) para acceder y modificar el contenido estructurado del documento.  
 
-- Estas diferencias entre navegadores han marcado los desarrollos en Javascript hasta el dia de hoy, y han hecho habitual el uso de [frameworks](http://www.maestrosdelweb.com/editorial/comparacion-frameworks-javascript/) que nos ayuden a lidiar con estas diferencias (jQuery, Prototype, etc…)
-
-- Un [Framework](http://www.desarrolloweb.com/articulos/listado-distintos-framework-javascript.html) (o libreria) es una abstracción de código común que provee funcionalidades genéricas que pueden ser utilizadas para desarrollar aplicaciones de manera rápida, fácil, modular y sencilla, ahorrando tiempo y esfuerzo.  
+-  En [2005](https://jquery.org/history/) sale la primera versión de jQuery. Las diferencias entre navegadores han marcado los desarrollos en Javascript hasta el dia de hoy, y han hecho habitual el uso de [frameworks](http://www.maestrosdelweb.com/editorial/comparacion-frameworks-javascript/) que nos ayuden a lidiar con estas diferencias (jQuery, Prototype, etc…).
 
 
 #ECMAScript
 
 ![JS History 2](https://raw.github.com/juanmaguitar/training-frontend-docs/master/generalidades/img/js-history-2.png)
-
 
 ##EcmaScript 5
 
