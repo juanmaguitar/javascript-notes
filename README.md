@@ -27,6 +27,7 @@ Este material cubre los siguientes contenidos:
 
 ### Advanced
 
+- [EcmaScript](https://github.com/juanmaguitar/training-frontend-docs/tree/master/ecma-script)
 - [El valor de `this`](https://github.com/juanmaguitar/training-frontend-docs/tree/master/this)
 - [Prototype](https://github.com/juanmaguitar/training-frontend-docs/tree/master/prototype)
 - [Herencia](https://github.com/juanmaguitar/training-frontend-docs/tree/master/herencia)
