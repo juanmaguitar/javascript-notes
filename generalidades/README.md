@@ -10,7 +10,9 @@
 
     <sub>[http://jeffcroft.com/blog/2007/sep/26/new-layers-web-development/](http://jeffcroft.com/blog/2007/sep/26/new-layers-web-development/)</sub>  
 
-- [Javascript](https://developer.mozilla.org/en/JavaScript_Language_Resources) está basado en [ECMAScript](http://es.wikipedia.org/wiki/ECMAScript) que es una especificación de lenguaje de programacion. Las [diferentes revisiones del Ecma-262](http://www.ecma-international.org/publications/standards/Ecma-262-arch.htm) y su [implementacion en los navegadores](http://kangax.github.io/compat-table/es5/) van marcando los desarrollos en Javascript
+- [Javascript](https://developer.mozilla.org/en/JavaScript_Language_Resources) está basado en [ECMAScript](http://es.wikipedia.org/wiki/ECMAScript) (o Ecma-262) que es una especificación de lenguaje de programacion (otro lenguaje "famoso" basado en este standard es _ActionScript_).  
+
+- Las [diferentes revisiones del Ecma-262](http://www.ecma-international.org/publications/standards/Ecma-262-arch.htm) y su [implementacion en los navegadores](http://kangax.github.io/compat-table/es5/) han ido marcando los desarrollos en Javascript
 
 - Con [la llegada de AJAX](http://www.uberbin.net/archivos/internet/ajax-un-nuevo-acercamiento-a-aplicaciones-web.php) (que no es más que el uso de un objeto javascript con el que podemos interactuar con el servidor sin tener que forzar una recarga de página) se abrió una nueva era en la historia del lenguaje
 
@@ -47,11 +49,13 @@
 
 - En diciembre de 1995 SUN Microsystems y Netscape deciden darle el nombre **JavaScript** (antes se llamó _Mocha_ y _LiveScript_) por una cuestion de puro marketing (_Java_ era el lenguaje más popular por aquellos dias).
 
+- En 1996 Internet Explorer 3.0 incluye una version propia de lo que seria el standard ECMAScript que llama _[JScript](http://en.wikipedia.org/wiki/JScript)_
+
 - En 1997 se propuso este lenguaje como standard y la _European Computer Manufacturers Association_ ([ECMA](http://www.ecma-international.org/default.htm)) lo adopta como tal. De ahí que tambien se le llame **[ECMAScript](http://www.ecma-international.org/publications/standards/Ecma-262.htm)**  
 
-- En 1996 Internet Explorer 3.0 incluye una version propia del ECMAScript que llama _[JScript](https://es.wikipedia.org/wiki/JScript)_  
+- En Junio de 1997 se publica la [primera edición del ECMA-262](http://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-262,%201st%20edition,%20June%201997.pdf)
 
-- En [1998](http://www.w3.org/TR/1998/REC-DOM-Level-1-19981001/) y a raiz de estas diferencias entre navegadores, la _W3C (World Wide Web Consortium)_ diseñó el standard **[DOM](http://es.wikipedia.org/wiki/Document_Object_Model)** que es un interfaz (API) para acceder y modificar el contenido estructurado del documento.  
+- En [1998](http://www.w3.org/TR/1998/REC-DOM-Level-1-19981001/) y a raiz de las diferencias surgidas entre navegadores, la _W3C (World Wide Web Consortium)_ diseñó el standard **[DOM](http://es.wikipedia.org/wiki/Document_Object_Model)** que es un interfaz (API) para acceder y modificar el contenido estructurado del documento.  
 
 - En [1999](http://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-262,%203rd%20edition,%20December%201999.pdf), se sientan las bases del Javascript moderno con el lanzamiento de la tercera edición del ECMA-262, tambien llamado **EcmaScript 3**
 
