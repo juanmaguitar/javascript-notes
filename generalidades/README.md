@@ -42,27 +42,37 @@
 
 ![JS History 1](https://raw.github.com/juanmaguitar/training-frontend-docs/master/generalidades/img/js-history-1.png)
 
+- Javascript [fue creado en 10 dias en Mayo de 1995](https://www.w3.org/community/webed/wiki/A_Short_History_of_JavaScript) por [Brendan Eich](http://en.wikipedia.org/wiki/Brendan_Eich), bajo el nombre de Mocha
+
 - La primera version del Javascript aparece en el navegador [Netscape](http://en.wikipedia.org/wiki/Netscape) 2.0  
 
-- En 1995 SUN Microsystems y Netscape decidieron darle el nombre JavaScript (antes se llamó Mocha y LiveScript).
+- En diciembre de 1995 SUN Microsystems y Netscape deciden darle el nombre **JavaScript** (antes se llamó _Mocha_ y _LiveScript_) por una cuestion de puro marketing (_Java_ era el lenguaje más popular por aquellos dias).
 
-- En 1997 se propuso este lenguaje como standard y la European Computer Manufacturers Association ([ECMA](http://www.ecma-international.org/default.htm)) lo adopta como tal. De ahí que tambien se le llame [ECMAScript](http://www.ecma-international.org/publications/standards/Ecma-262.htm)  
+- En 1997 se propuso este lenguaje como standard y la _European Computer Manufacturers Association_ ([ECMA](http://www.ecma-international.org/default.htm)) lo adopta como tal. De ahí que tambien se le llame **[ECMAScript](http://www.ecma-international.org/publications/standards/Ecma-262.htm)**  
 
-- Internet Explorer 3.0 incluye una version propia del ECMAScript que llama [JScript](http://msdn.microsoft.com/scripting/)  
+- En 1996 Internet Explorer 3.0 incluye una version propia del ECMAScript que llama _[JScript](https://es.wikipedia.org/wiki/JScript)_  
 
-- En [1998](http://www.w3.org/TR/1998/REC-DOM-Level-1-19981001/) y a raiz de estas diferentencias entre navegadores, la W3C (World Wide Web Consortium) diseñó el standard [DOM](http://es.wikipedia.org/wiki/Document_Object_Model) que es un interfaz (API) para acceder y modificar el contenido estructurado del documento.  
+- En [1998](http://www.w3.org/TR/1998/REC-DOM-Level-1-19981001/) y a raiz de estas diferencias entre navegadores, la _W3C (World Wide Web Consortium)_ diseñó el standard **[DOM](http://es.wikipedia.org/wiki/Document_Object_Model)** que es un interfaz (API) para acceder y modificar el contenido estructurado del documento.  
 
--  En [2005](https://jquery.org/history/) sale la primera versión de jQuery. Las diferencias entre navegadores han marcado los desarrollos en Javascript hasta el dia de hoy, y han hecho habitual el uso de [frameworks](http://www.maestrosdelweb.com/editorial/comparacion-frameworks-javascript/) que nos ayuden a lidiar con estas diferencias (jQuery, Prototype, etc…).
+- En 1999, se sientan las bases del Javascript moderno con el lanzamiento de la tercera edición del ECMA-262, tambien llamado **EcmaScript 3**
+
+![JS History 2](https://raw.github.com/juanmaguitar/training-frontend-docs/master/generalidades/img/js-history-2.png)
+
+- En 2005, se acuña el termino [AJAX](http://www.adaptivepath.com/ideas/ajax-new-approach-web-applications/) y revoluciona el mundo del desarrollo web con la llegada de sitios web asíncronos (Gmail, Google Maps...)
+
+-  En [2005](https://jquery.org/history/) sale la primera versión de jQuery. Las diferencias entre navegadores han marcado los desarrollos en Javascript hasta el dia de hoy, y han hecho habitual el uso de [frameworks](http://www.maestrosdelweb.com/editorial/comparacion-frameworks-javascript/) (como jQuery) que nos ayuden a lidiar con estas diferencias.
+
+-  En 2009 se completa y libera la quinta edición del ECMA-262, más conocida como **ECMAScript 5**. La edicion 5.1 se libera en 2011
+
+-  En diciembre de 2014 se aprueba la 6ª edicion del ECMA-262 o **ECMAScript 6**. Se espera el [lanzamiento oficial para Junio de 2015](http://www.2ality.com/2014/06/es6-schedule.html)
 
 
 #ECMAScript
 
-![JS History 2](https://raw.github.com/juanmaguitar/training-frontend-docs/master/generalidades/img/js-history-2.png)
-
 ##EcmaScript 5
 
 **[ECMAScript5.1](http://www.ecma-international.org/ecma-262/5.1/)** fue lanzado en 2011 y podemos decir que [es el actual standard de Javascript](http://blog.oio.de/2013/04/16/ecmascript-5-the-current-javascript-standard/) (2014).  
-Esta version **amplia** el anterior standard (ES3) [con algunas mejoras](http://www.jayway.com/2011/04/05/what-is-new-in-ecmascript-5/):
+Esta version **amplia** los anteriores standards [con algunas mejoras](http://www.jayway.com/2011/04/05/what-is-new-in-ecmascript-5/):
 
 - [`strict mode`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
 
@@ -171,6 +181,8 @@ _Si queremos, podemos dar soporte de algunas features de ES5 en navegadores anti
 ## EcmaScript 3
 
 [ECMAScript 3](http://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-262,%203rd%20edition,%20December%201999.pdf) fue lanzado en 2001 y todos los navegadores ([antiguos](http://www.webdevout.net/browser-support-ecmascript) y modernos) siguen este standard.
+
+Añade (respecto del standard anterior): `do-while`, expresiones regulares, nuevos metodos de `string` (`concat`, `match`, `replace`, `slice` , `split` con expresiones regulares, etc.), manejo de excepciones y más. 
 
 ## EcmaScript 6
 

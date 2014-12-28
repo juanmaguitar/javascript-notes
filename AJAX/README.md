@@ -1,6 +1,6 @@
 # AJAX
 
-<sub>[http://www.adaptivepath.com/ideas/e000385](http://www.adaptivepath.com/ideas/e000385)</sub>  
+<sub>[http://www.adaptivepath.com/ideas/ajax-new-approach-web-applications/](http://www.adaptivepath.com/ideas/ajax-new-approach-web-applications/)</sub>  
 <sub>[https://developer.mozilla.org/en/ajax](https://developer.mozilla.org/en/ajax)</sub>  
 <sub>[http://www.anieto2k.com/2006/05/16/los-mejores-manuales-de-ajax/](http://www.anieto2k.com/2006/05/16/los-mejores-manuales-de-ajax/)</sub>  
 <sub>[http://www.fiftyfoureleven.com/resources/programming/xmlhttprequest/examples](http://www.fiftyfoureleven.com/resources/programming/xmlhttprequest/examples)</sub>  
