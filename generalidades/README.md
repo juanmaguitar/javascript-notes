@@ -179,7 +179,7 @@ Esta version **amplia** los anteriores standards [con algunas mejoras](http://ww
 
 Si miramos las [estadisticas de uso de navegadores](http://clicky.com/marketshare/global/web-browsers/versions/) junto con la [compatibilidad de estos con ES5](http://kangax.github.io/compat-table/es5/) podemos concluir que: _basandonos en ES5 nuestro codigo funcionará bien en la mayoria de los navegadores utilizados actualmente (2014)_. 
 
-_Si queremos, podemos dar soporte de algunas features de ES5 en navegadores antiguos que no la soporten, utilizando el correspondiente [shim](https://github.com/es-shims/es5-shim) _
+Si queremos, podemos dar soporte de algunas features de ES5 en navegadores antiguos que no la soporten, utilizando el correspondiente [shim](https://github.com/es-shims/es5-shim)
 
 ## EcmaScript 3
 

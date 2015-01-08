@@ -157,3 +157,9 @@ http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=ofertas+coches&callb
 <sub>[http://www.w3.org/TR/cors/](http://www.w3.org/TR/cors/)</sub>
 
 Cross-Origin Resource Sharing (CORS) es una especificación W3Cque permite la comunicacion cross-domain desde el cliente.
+
+http://client.cors-api.appspot.com/client
+http://www.html5rocks.com/en/tutorials/cors/?redirect_from_locale=es
+http://www.eriwen.com/javascript/how-to-cors/
+http://enable-cors.org/
+https://developers.google.com/api-client-library/javascript/features/cors
