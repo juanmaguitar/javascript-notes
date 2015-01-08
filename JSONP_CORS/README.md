@@ -37,7 +37,7 @@
     - Fuentes con [`@font-face`](https://developer.mozilla.org/en-US/docs/CSS/@font-face) 
     - Cualquier otra pagina con [`<frame>`](https://developer.mozilla.org/en-US/docs/HTML/Element/frame) and [`<iframe>`](https://developer.mozilla.org/en-US/docs/HTML/Element/iframe)
 
-Sin embargo existen maneras de "saltarse" esta politica: JSONP y CORS
+Sin embargo existen maneras de "saltarse" esta politica: [JSONP y CORS](http://www.formandome.es/javascript/cors-vs-jsonp-solicitudes-ajax-entre-dominios/)
 
 # JSONP
 
@@ -153,4 +153,7 @@ http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=ofertas+coches&callb
 
 ## CORS
 
+<sub>[http://enable-cors.org/](http://enable-cors.org/)</sub>  
 <sub>[http://www.w3.org/TR/cors/](http://www.w3.org/TR/cors/)</sub>
+
+Cross-Origin Resource Sharing (CORS) es una especificación W3Cque permite la comunicacion cross-domain desde el cliente.
