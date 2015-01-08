@@ -41,14 +41,14 @@ Sin embargo existen maneras de "saltarse" esta politica: JSONP y CORS
 
 # JSONP
 
-<sub>[http://bob.ippoli.to/archives/2005/12/05/remote-json-jsonp/](http://bob.ippoli.to/archives/2005/12/05/remote-json-jsonp/)<sub>  
+<sub>[http://bob.ippoli.to/archives/2005/12/05/remote-json-jsonp/](http://bob.ippoli.to/archives/2005/12/05/remote-json-jsonp/)</sub>  
 <sub>[http://www.json-p.org/](http://www.json-p.org/)</sub>  
 
 [JSONP](http://es.wikipedia.org/wiki/JSONP) (_JSON con Padding_) es una _técnica_ mediante la que podemos obtener **y tratar** JSON desde otros dominios (desde javascript). 
 
-La idea es obtener el JSON pasado como parametro a una funcion que se ejecuta (y define) en el cliente 
+Con esta tecnica/hack obtenemos el JSON pasado como parametro a una funcion que se ejecuta en el cliente 
 
-### El problema
+#### El problema
 
 - Si desde la pagina `MYsite.com` ejecuto 
 
@@ -86,7 +86,7 @@ La idea es obtener el JSON pasado como parametro a una funcion que se ejecuta (y
 
     pero no podriamos acceder al JSON obtenido ya que no queda almacenado en niguna variable
 
-### La solución
+#### La solución
 
 La solucion para poder _tratar_ este JSON es preparar el servidor para que devuelva el JSON envuelto en la llamada a una función  
 
@@ -99,66 +99,50 @@ handleMyJSONResponse ({
 });
 ```
 
-Por convención, el nombre de la función de retorno se especifica mediante un parámetro de la consulta, normalmente, utilizando jsonp o callback como nombre del campo en la solicitud al servidor.
+Por convención, el nombre de la función callback se especifica en un parámetro (_jsonp_, _callback_ o cualquier otro) de la URL que hace la peticion al servidor.
 
  ```javascript
 <script type="text/javascript" src="http://www.ANOTHERsite.com/datos.json?callback=handleMyJSONResponse"></script>
  ```
 
-### Peticiones asincronas con JSONP
+## Peticiones JSONP
 
-- Con [jQuery](http://stackoverflow.com/questions/9746181/calling-google-ajax-search-api-via-jquery-jsonp)
+- Con [jQuery](http://learn.jquery.com/ajax/working-with-jsonp/)
 
-<iframe width="100%" height="300" src="http://jsfiddle.net/juanma/dL0qxux7/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-
-
-```javascript
- * create callbak function for jsonP
- * @params
- * data is response from http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=AAA&callback=myjsonpfunction
- */
-  function myjsonpfunction(data){
-       alert(data.responseData.results) //showing results data
-       $.each(data.responseData.results,function(i,rows){
-          alert(rows.url); //showing  results url
-       });
-  }
-
-//request data using jsonP
-$(function(){
-    $.ajax({
-    url:'http://ajax.googleapis.com/ajax/services/search/webv=1.0&q=AAA&callback=myjsonpfunction',
-    type:"GET",
-    dataType: 'jsonp',
-    jsonp: 'myjsonpfunction',
-    async:'true',
-    success:function (data) {
-        //alert("success");
-      }
+      ```javascript
+     $.getJSON('http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=casas+alquiler&callback=?', function( googleResults) {
+         console.log (  "$.getJSON : %o", googleResults.responseData.results );
     });
-  });
-```
+      ```
+    <sub>[jsFiddle: Ejemplos JSONP jQuery](http://jsfiddle.net/juanma/xncxL63c/)</sub>  
+    <sub>[jsFiddle: Ejemplo JSONP jQuery (Google Search Form)](http://jsfiddle.net/juanma/24o9jm8c/)</sub>  
 
-- Con código nativo
+- Con [código nativo](http://jsfiddle.net/juanma/uf31ps5e/)
 
-```javascript
-function loadScript (id, src, callback) {
- 
-     // Crear elemento
-     var script = document.createElement("script");
- 
-     // Atributos del script
-     script.setAttribute("type", "text/javascript");
-     script.setAttribute("src", src + "?callback=" + callback);
-     script.setAttribute("id", id);
- 
-     // Insertar script en la cabecera
-     document.getElementsByTagName("head")[0].appendChild(script);
- 
-}
-```
+    ```javascript
+    window.do_things = function (data) {
+       console.log ( "do_things : %o", data.responseData.results );
+    }
 
-### API's publicas
+    function loadScript (id, src, callback) {
+
+         // Crear elemento
+         var script = document.createElement("script");
+
+         // Atributos del script
+         script.setAttribute("type", "text/javascript");
+         script.setAttribute("src", src + "&callback=" + callback);
+         script.setAttribute("id", id);
+
+         // Insertar script en la cabecera
+         document.getElementsByTagName("head")[0].appendChild(script);
+
+    }
+
+    loadScript ("my_script_tag", "http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=casas+alquiler", "do_things");
+    ```
+
+#### API's publicas
 
 Muchas [API's publicas](http://www.programmableweb.com/category/all/apis?data_format=21173) vienen ya preparadas para devolver JSON con JSONP, para que pueda ser obtenido y tratado directamente desde el cliente (Javascript).
 
