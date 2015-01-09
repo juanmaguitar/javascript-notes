@@ -27,6 +27,9 @@ Este material cubre los siguientes contenidos:
 
 ### Advanced
 
+- [Same-Origin Policy](https://github.com/juanmaguitar/training-frontend-docs/tree/master/same_origin_policy)
+    -  [JSONP](https://github.com/juanmaguitar/training-frontend-docs/tree/master/same_origin_policy/JSONP)
+    -  [CORS](https://github.com/juanmaguitar/training-frontend-docs/tree/master/same_origin_policy/CORS)
 - [El valor de `this`](https://github.com/juanmaguitar/training-frontend-docs/tree/master/this)
 - [Prototype](https://github.com/juanmaguitar/training-frontend-docs/tree/master/prototype)
 - [Herencia](https://github.com/juanmaguitar/training-frontend-docs/tree/master/herencia)
