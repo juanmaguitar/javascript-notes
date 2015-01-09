@@ -43,6 +43,7 @@ Sin embargo existen maneras de "saltarse" esta politica: [JSONP y CORS](http://w
 
 <sub>[http://bob.ippoli.to/archives/2005/12/05/remote-json-jsonp/](http://bob.ippoli.to/archives/2005/12/05/remote-json-jsonp/)</sub>  
 <sub>[http://www.json-p.org/](http://www.json-p.org/)</sub>  
+<sub>[http://johnnywey.com/2012/05/20/jsonp-how-does-it-work/](http://johnnywey.com/2012/05/20/jsonp-how-does-it-work/)</sub>
 
 [JSONP](http://es.wikipedia.org/wiki/JSONP) (_JSON con Padding_) es una _técnica_ mediante la que podemos obtener **y tratar** JSON desde otros dominios (desde javascript). 
 
@@ -109,6 +110,8 @@ Por convención, el nombre de la función callback se especifica en un parámetr
 
 - Con [jQuery](http://learn.jquery.com/ajax/working-with-jsonp/)
 
+Most JSONP implementations in libraries like JQuery will automatically generate callback functions as well as cleaning up inserted script tags when the callback executes, but the basic idea is actually pretty simple.
+
       ```javascript
      $.getJSON('http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=casas+alquiler&callback=?', function( googleResults) {
          console.log (  "$.getJSON : %o", googleResults.responseData.results );
@@ -151,12 +154,17 @@ http://www.flickr.com/services/feeds/photos_public.gne?format=json
 http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=ofertas+coches&callback=treatMyJSONResponse
 ```
 
+http://johnnywey.com/2012/05/20/jsonp-how-does-it-work/
+
 ## CORS
 
 <sub>[http://enable-cors.org/](http://enable-cors.org/)</sub>  
 <sub>[http://www.w3.org/TR/cors/](http://www.w3.org/TR/cors/)</sub>
 
 Cross-Origin Resource Sharing (CORS) es una especificación W3Cque permite la comunicacion cross-domain desde el cliente.
+
+http://www.eriwen.com/javascript/how-to-cors/
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS
 
 http://client.cors-api.appspot.com/client
 http://www.html5rocks.com/en/tutorials/cors/?redirect_from_locale=es
