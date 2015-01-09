@@ -89,38 +89,36 @@ Con esta tecnica/hack obtenemos el JSON pasado como parametro a una funcion que 
 
 #### La solución
 
-La solucion para poder _tratar_ este JSON es preparar el servidor para que devuelva el JSON envuelto en la llamada a una función  
+- La solucion para poder _tratar_ este JSON es preparar el servidor para que devuelva el JSON envuelto en la llamada a una función  
 
-```javascript
-handleMyJSONResponse ({
-    "api_key": "224Wrf2asfSDfcea23reSDfqW",
-    "status": "good",
-    "name": "wikipedia",
-    "date": "27-09-1995"
-});
-```
+    ```javascript
+    handleMyJSONResponse ({
+        "api_key": "224Wrf2asfSDfcea23reSDfqW",
+        "status": "good",
+        "name": "wikipedia",
+        "date": "27-09-1995"
+    });
+    ```
 
-Por convención, el nombre de la función callback se especifica en un parámetro (_jsonp_, _callback_ o cualquier otro) de la URL que hace la peticion al servidor.
+    Asi, si definimos una funcion global  `handleMyJSONResponse` preparada para recibir un JSON como parametro, ya podriamos recibir y _tratar_ estos datos desde JS.
 
- ```javascript
-<script type="text/javascript" src="http://www.ANOTHERsite.com/datos.json?callback=handleMyJSONResponse"></script>
- ```
+    ```javascript
+    window.handleMyJSONResponse = function (datosJSON) {
+        console.log (datosJSON);
+    };
+    ```
+
+- Por convención, el nombre de la función callback se especifica en un parámetro (_jsonp_, _callback_ o cualquier otro) de la URL que hace la peticion al servidor.
+
+    ```javascript
+    <script type="text/javascript" src="http://www.ANOTHERsite.com/datos.json?callback=handleMyJSONResponse"></script>
+    ```
 
 ## Peticiones JSONP
 
-- Con [jQuery](http://learn.jquery.com/ajax/working-with-jsonp/)
+- Con **código nativo**
 
-Most JSONP implementations in libraries like JQuery will automatically generate callback functions as well as cleaning up inserted script tags when the callback executes, but the basic idea is actually pretty simple.
-
-      ```javascript
-     $.getJSON('http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=casas+alquiler&callback=?', function( googleResults) {
-         console.log (  "$.getJSON : %o", googleResults.responseData.results );
-    });
-      ```
-    <sub>[jsFiddle: Ejemplos JSONP jQuery](http://jsfiddle.net/juanma/xncxL63c/)</sub>  
-    <sub>[jsFiddle: Ejemplo JSONP jQuery (Google Search Form)](http://jsfiddle.net/juanma/24o9jm8c/)</sub>  
-
-- Con [código nativo](http://jsfiddle.net/juanma/uf31ps5e/)
+    <sub>[jsFiddle: Ejemplos JSONP con JS nativo](http://jsfiddle.net/juanma/uf31ps5e/)</sub>  
 
     ```javascript
     window.do_things = function (data) {
@@ -142,8 +140,34 @@ Most JSONP implementations in libraries like JQuery will automatically generate 
 
     }
 
-    loadScript ("my_script_tag", "http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=casas+alquiler", "do_things");
+    loadScript ("my_script_tag_id", "http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=casas+alquiler", "do_things");
     ```
+
+- Con **[jQuery](http://learn.jquery.com/ajax/working-with-jsonp/)**
+
+    JQuery se encarga de darle un nombre ([aleatorio](http://forum.jquery.com/topic/jsonp-and-randomly-generated-callback-function)) a la funcion callback, pasarla en la peticion, ejecutarla en el cliente y se encarga también de eliminar el tag script una vez la funcion callback se ha ejecutado 
+
+      ```javascript
+     $.getJSON(
+        'http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=casas+alquiler&callback=?', 
+        function( googleResults) {
+            console.log ( "$.getJSON : %o", googleResults.responseData.results );
+        }
+    );
+
+    $.ajax({
+        url: "http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=casas+alquiler",
+        dataType: "jsonp",
+        success: function( response ) {
+            console.log ( "$.ajax minimal : %o", response.responseData.results );
+        }
+    });
+    ```
+
+    <sub>[jsFiddle: Ejemplos JSONP jQuery](http://jsfiddle.net/juanma/az6rvze2/)</sub>  
+    <sub>[jsFiddle: Ejemplo JSONP jQuery (Google Search Form)](http://jsfiddle.net/juanma/24o9jm8c/)</sub>  
+
+
 
 #### API's publicas
 
@@ -154,20 +178,32 @@ http://www.flickr.com/services/feeds/photos_public.gne?format=json
 http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=ofertas+coches&callback=treatMyJSONResponse
 ```
 
-http://johnnywey.com/2012/05/20/jsonp-how-does-it-work/
-
 ## CORS
 
 <sub>[http://enable-cors.org/](http://enable-cors.org/)</sub>  
 <sub>[http://www.w3.org/TR/cors/](http://www.w3.org/TR/cors/)</sub>
 
-Cross-Origin Resource Sharing (CORS) es una especificación W3Cque permite la comunicacion cross-domain desde el cliente.
+Cross-Origin Resource Sharing (CORS) es una especificación W3C que permite la comunicacion cross-domain desde el cliente.
 
-http://www.eriwen.com/javascript/how-to-cors/
-https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS
+<sub>[http://jsfiddle.net/juanma/rL7o58rr/](Ejemplo CORS request (HTML))</sub>
 
-http://client.cors-api.appspot.com/client
-http://www.html5rocks.com/en/tutorials/cors/?redirect_from_locale=es
-http://www.eriwen.com/javascript/how-to-cors/
-http://enable-cors.org/
-https://developers.google.com/api-client-library/javascript/features/cors
+Puedes comprobar si tu browser soporta CORS  desde [aqui](https://test-cors.appspot.com/#technical)
+
+Cada vez más [API's publicas](http://enable-cors.org/resources.html#apis) [permiten CORS](http://www.w3.org/wiki/CORS_Enabled#Who_is_doing_it_already.3F) pero son las  
+
+    https://remysharp.com/2011/04/21/getting-cors-working
+    http://pixelsvsbytes.com/blog/2011/12/ajax-cross-domain-requests-with-cors/
+
+    http://www.html5rocks.com/en/tutorials/file/xhr2/#toc-cors
+
+    https://remysharp.com/2011/04/21/getting-cors-working
+    https://remysharp.com/2013/01/14/cors-isnt-just-for-xhr
+
+    http://www.eriwen.com/javascript/how-to-cors/   
+    https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS  
+
+    http://client.cors-api.appspot.com/client  
+    http://www.html5rocks.com/en/tutorials/cors/?redirect_from_locale=es  
+    http://www.eriwen.com/javascript/how-to-cors/  
+    http://enable-cors.org/  
+    https://developers.google.com/api-client-library/javascript/features/cors  
