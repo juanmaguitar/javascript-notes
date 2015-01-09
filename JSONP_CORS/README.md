@@ -143,9 +143,12 @@ Con esta tecnica/hack obtenemos el JSON pasado como parametro a una funcion que 
     loadScript ("my_script_tag_id", "http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=casas+alquiler", "do_things");
     ```
 
-- Con **[jQuery](http://learn.jquery.com/ajax/working-with-jsonp/)**
+- Con **jQuery**
 
-    JQuery se encarga de darle un nombre ([aleatorio](http://forum.jquery.com/topic/jsonp-and-randomly-generated-callback-function)) a la funcion callback, pasarla en la peticion, ejecutarla en el cliente y se encarga también de eliminar el tag script una vez la funcion callback se ha ejecutado 
+    [JQuery](http://learn.jquery.com/ajax/working-with-jsonp/) se encarga (de forma transparente al developer) de darle un [nombre a la funcion callback](https://github.com/jquery/jquery/blob/master/src/ajax/jsonp.js#L15), [pasarla en la peticion](https://github.com/jquery/jquery/blob/master/src/ajax/jsonp.js#L44), [crearla globalmente en el cliente](https://github.com/jquery/jquery/blob/master/src/ajax/jsonp.js#L60) y se encarga también de [eliminar el tag script](https://github.com/jquery/jquery/blob/master/src/ajax/script.js#L18) utilizado internamente
+
+    <sub>[jsFiddle: Ejemplos JSONP jQuery](http://jsfiddle.net/juanma/az6rvze2/)</sub>  
+    <sub>[jsFiddle: Ejemplo JSONP jQuery (Google Search Form)](http://jsfiddle.net/juanma/24o9jm8c/)</sub>  
 
       ```javascript
      $.getJSON(
@@ -163,11 +166,6 @@ Con esta tecnica/hack obtenemos el JSON pasado como parametro a una funcion que 
         }
     });
     ```
-
-    <sub>[jsFiddle: Ejemplos JSONP jQuery](http://jsfiddle.net/juanma/az6rvze2/)</sub>  
-    <sub>[jsFiddle: Ejemplo JSONP jQuery (Google Search Form)](http://jsfiddle.net/juanma/24o9jm8c/)</sub>  
-
-
 
 #### API's publicas
 
