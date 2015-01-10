@@ -37,4 +37,19 @@
     - Fuentes con [`@font-face`](https://developer.mozilla.org/en-US/docs/CSS/@font-face) 
     - Cualquier otra pagina con [`<frame>`](https://developer.mozilla.org/en-US/docs/HTML/Element/frame) and [`<iframe>`](https://developer.mozilla.org/en-US/docs/HTML/Element/iframe)
 
-Sin embargo existen maneras de "saltarse" esta politica: [JSONP y CORS](http://www.formandome.es/javascript/cors-vs-jsonp-solicitudes-ajax-entre-dominios/)
+Sin embargo existen maneras de "saltarse" esta politica: [JSONP](https://github.com/juanmaguitar/training-frontend-docs/tree/master/same_origin_policy/JSONP) y [CORS](https://github.com/juanmaguitar/training-frontend-docs/tree/master/same_origin_policy/CORS)
+
+## JSONP vs CORS
+
+<sub>[http://www.formandome.es/javascript/cors-vs-jsonp-solicitudes-ajax-entre-dominios/](http://www.formandome.es/javascript/cors-vs-jsonp-solicitudes-ajax-entre-dominios/)</sub>
+<sub>[http://blog.koalite.com/2012/03/sopa-de-siglas-ajax-json-jsonp-y-cors/](http://blog.koalite.com/2012/03/sopa-de-siglas-ajax-json-jsonp-y-cors/)</sub>
+<sub>[http://stackoverflow.com/questions/12296910/so-jsonp-or-cors](http://stackoverflow.com/questions/12296910/so-jsonp-or-cors)</sub>
+
+La recomendación general es usar CORS siempre que se pueda, pero hay que tener en cuenta lo siguiente:
+
+- **CORS** soporta _mas metodos HTTP_ (`GET`, `PUT`, `POST`, `DELETE`) que JSONP (sólo `GET`)
+- Puedes utilizar **JSONP** en _cualquier navegador_ (antiguo y moderno). Sin embargo CORS solo funcionará en algunos navegadores (los que soporten [xhr2](http://caniuse.com/#feat=xhr2))
+- Hay _mas API's publicas_ que ofrecen acceso a datos via [**JSONP**](http://www.programmableweb.com/category/all/apis?data_format=21174) que via [CORS](http://enable-cors.org/resources.html#apis)
+- **CORS** (el servidor decide a quien da acceso y cómo) _es mas seguro_ que JSONP (cross-origin via `script` injection)
+- Con **CORS** hay un _mejor manejo de errores_ que con JSONP
+

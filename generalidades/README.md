@@ -85,6 +85,8 @@ Esta version **amplia** los anteriores standards [con algunas mejoras](http://ww
   }
   ```
 
+  <sub>[http://cjihrig.com/blog/javascripts-strict-mode-and-why-you-should-use-it/](http://cjihrig.com/blog/javascripts-strict-mode-and-why-you-should-use-it/)</sub>
+
 - [`Object` new methods](http://ejohn.org/blog/ecmascript-5-objects-and-properties/)
 
   ```javascript
@@ -191,6 +193,7 @@ Añade (respecto del standard anterior): `do-while`, expresiones regulares, nuev
 
 [ECMAScript 6](https://people.mozilla.org/~jorendorff/es6-draft.html) será el proximo standard de Javascript pero [aun no está lo suficientemente implantado](http://kangax.github.io/compat-table/es6/) en los navegadores mas utilizados.
 
+<sub>[https://6to5.org/docs/tour/](https://6to5.org/docs/tour/)</sub>  
 <sub>[https://github.com/ericdouglas/ES6-Learning](https://github.com/ericdouglas/ES6-Learning)</sub>  
 <sub>[http://es6rocks.com/](http://es6rocks.com/)</sub>  
 <sub>[http://code.tutsplus.com/articles/use-ecmascript-6-today--net-31582](http://code.tutsplus.com/articles/use-ecmascript-6-today--net-31582)</sub>  

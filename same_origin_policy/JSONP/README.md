@@ -25,7 +25,7 @@ Con esta tecnica/hack obtenemos el JSON pasado como parametro a una funcion que 
 
         Refused to connect to 'http://www.anothersite.com/datos.json' because it violates the following Content Security Policy directive...
 
-    debido a la _"Same-origin policy"_ del objeto `XMLHttpRequest` 
+    debido a la _["Same-origin policy"](https://github.com/juanmaguitar/training-frontend-docs/tree/master/same_origin_policy)_ del objeto `XMLHttpRequest` 
 
 - Sin embargo si hacemos esto 
 
@@ -43,7 +43,6 @@ Con esta tecnica/hack obtenemos el JSON pasado como parametro a una funcion que 
         "date": "27-09-1995"
     }
     ```
-
     pero no podriamos acceder al JSON obtenido ya que no queda almacenado en niguna variable
 
 #### La solución
@@ -59,7 +58,7 @@ Con esta tecnica/hack obtenemos el JSON pasado como parametro a una funcion que 
     });
     ```
 
-    Asi, si definimos una funcion global  `handleMyJSONResponse` preparada para recibir un JSON como parametro, ya podriamos recibir y _tratar_ estos datos desde JS.
+    Asi, si definimos en el cliente una funcion global `handleMyJSONResponse` preparada para recibir un JSON como parametro, ya podriamos recibir y _tratar_ estos datos desde JS.
 
     ```javascript
     window.handleMyJSONResponse = function (datosJSON) {
@@ -104,7 +103,7 @@ Con esta tecnica/hack obtenemos el JSON pasado como parametro a una funcion que 
 
 - Con **jQuery**
 
-    [JQuery](http://learn.jquery.com/ajax/working-with-jsonp/) se encarga (de forma transparente al developer) de darle un [nombre a la funcion callback](https://github.com/jquery/jquery/blob/master/src/ajax/jsonp.js#L15), [pasarla en la peticion](https://github.com/jquery/jquery/blob/master/src/ajax/jsonp.js#L44), [crearla globalmente en el cliente](https://github.com/jquery/jquery/blob/master/src/ajax/jsonp.js#L60) y se encarga también de [eliminar el tag script](https://github.com/jquery/jquery/blob/master/src/ajax/script.js#L18) utilizado internamente
+    [JQuery](http://learn.jquery.com/ajax/working-with-jsonp/) se encarga (de forma transparente al developer) de darle un [nombre a la funcion callback](https://github.com/jquery/jquery/blob/master/src/ajax/jsonp.js#L15), [pasarla en la peticion](https://github.com/jquery/jquery/blob/master/src/ajax/jsonp.js#L44), [crearla globalmente en el cliente](https://github.com/jquery/jquery/blob/master/src/ajax/jsonp.js#L60) y se encarga también de [añadir y eliminar el tag script](https://github.com/jquery/jquery/blob/master/src/core.js#L262) utilizado internamente
 
     <sub>[jsFiddle: Ejemplos JSONP jQuery](http://jsfiddle.net/juanma/az6rvze2/)</sub>  
     <sub>[jsFiddle: Ejemplo JSONP jQuery (Google Search Form)](http://jsfiddle.net/juanma/24o9jm8c/)</sub>  
@@ -128,9 +127,36 @@ Con esta tecnica/hack obtenemos el JSON pasado como parametro a una funcion que 
 
 #### API's publicas
 
-Muchas [API's publicas](http://www.programmableweb.com/category/all/apis?data_format=21173) vienen ya preparadas para devolver JSON con JSONP, para que pueda ser obtenido y tratado directamente desde el cliente (Javascript).
+La mayoria de las [API's publicas](http://www.programmableweb.com/category/all/apis?data_format=21174) vienen ya preparadas para devolver JSONP:  
 
-```javascript
-http://www.flickr.com/services/feeds/photos_public.gne?format=json
-http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=ofertas+coches&callback=treatMyJSONResponse
-```
+<sub>[https://api-notebook.anypoint.mulesoft.com/](https://api-notebook.anypoint.mulesoft.com/)</sub>  
+
+- [Instagram](http://instagram.com/developer/endpoints/#jsonp)
+
+    ```javascript
+    https://api.instagram.com/v1/tags/coffee/media/recent?access_token=fb2e77d.47a0479900504cb3ab4a1f626d174d2d&callback=callbackFunction
+    ```
+
+- [Github](https://developer.github.com/v3/#json-p-callbacks)
+    
+    ```javascript
+    https://api.github.com/?callback=foo
+    ```
+
+- [Flickr](https://www.flickr.com/services/api/response.json.html)
+
+    ```javascript
+    https://www.flickr.com/services/rest/?method=flickr.test.echo&format=json&api_key=929033444e3a0d9a3859195d56d36552
+    ```
+
+- [LinkedIn](https://developer.linkedin.com/documents/api-requests-json)
+
+    ```javascript
+    https://api.linkedin.com/v1/people/~:(id)?callback=firstNameResponse&error-callback=firstNameError
+    ```
+
+- [SoundCloud](https://developers.soundcloud.com/docs/api/guide#crossdomain)
+    
+    ```javascript
+    https://api.soundcloud.com/tracks.json?client_id=YOUR_CLIENT_ID&callback=processTracks
+    ```

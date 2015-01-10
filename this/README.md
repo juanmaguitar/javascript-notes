@@ -61,7 +61,6 @@ true
 
 More info:
 
-- [Strict Mode and why you should use it](http://cjihrig.com/blog/javascripts-­‐strict-­‐mode-­‐and-­‐why-­‐you-­‐should-­‐use-­‐it/)
 - [ECMAScript 5 support in Mozilla](https://developer.mozilla.org/en/JavaScript/ECMAScript_5_support_in_Mozilla)
 - [ECMA 262](http://www.ecma-­‐international.org/publications/files/ECMA-­‐ST/Ecma-­‐262.pdf)
 
@@ -221,7 +220,7 @@ true
 
 ##En una función asociada a un evento
 
-Cuando una función se utiliza como _event handler_, su `this queda asociado al elemento que provoca el evento
+Cuando una función se utiliza como _event handler_, su `this` queda asociado al elemento que provoca el evento
 
 ```javascript
 // When called as a listener, turns the related element blue
