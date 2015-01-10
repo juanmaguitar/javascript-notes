@@ -1,7 +1,7 @@
 # CORS
 
 <sub>[http://enable-cors.org/](http://enable-cors.org/)</sub>  
-<sub>[http://www.nczonline.net/blog/2010/05/25/cross-domain-ajax-with-cross-origin-resource-sharing/](http://www.nczonline.net/blog/2010/05/25/cross-domain-ajax-with-cross-origin-resource-sharing/)</sub>
+<sub>[http://www.nczonline.net/blog/2010/05/25/cross-domain-ajax-with-cross-origin-resource-sharing/](http://www.nczonline.net/blog/2010/05/25/cross-domain-ajax-with-cross-origin-resource-sharing/)</sub>  
 <sub>[http://www.w3.org/TR/cors/](http://www.w3.org/TR/cors/)</sub>
 
 Cross-Origin Resource Sharing (CORS) permite realizar peticiones a otros dominios siempre y cuando el dominio de destino esté de acuerdo en recibir peticiones del dominio de origen. 
