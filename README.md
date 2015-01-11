@@ -17,7 +17,7 @@ Este material cubre los siguientes contenidos:
 - [Arrays y Objetos (Funciones Constructoras)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/objetos)
 - [Objetos Globales (Object, Array, Function, Array, Number, Boolean, Math y Date)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/objetos_globales)
 - [El entorno del navegador](https://github.com/juanmaguitar/training-frontend-docs/tree/master/entorno_navegador)
-    -  [DOM](https://github.com/juanmaguitar/training-frontend-docs/tree/master/entorno_navegador/DOM)
+    -  [DOM, Seleccion de elementos](https://github.com/juanmaguitar/training-frontend-docs/tree/master/entorno_navegador/DOM)
     -  [BOM](https://github.com/juanmaguitar/training-frontend-docs/tree/master/entorno_navegador/BOM)
 - [Eventos](https://github.com/juanmaguitar/training-frontend-docs/tree/master/eventos)
 - [JSON](https://github.com/juanmaguitar/training-frontend-docs/tree/master/JSON)

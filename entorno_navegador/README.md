@@ -1,9 +1,9 @@
 # El entorno del Navegador
 
-<sup>[http://www.saregune.net/ikasi/hezigune/curso.php?curso=javascript&leccion=js_intro_dom](http://www.saregune.net/ikasi/hezigune/curso.php?curso=javascript&leccion=js_intro_dom)</sup>  
-<sup>[http://vkanakaraj.wordpress.com/2009/12/18/javascript-vs-dom-vs-bom-relationship-explained/](http://vkanakaraj.wordpress.com/2009/12/18/javascript-vs-dom-vs-bom-relationship-explained/)</sup>  
-<sup>[http://javascript.about.com/od/byexample/a/Javascript-By-Example_2.htm](http://javascript.about.com/od/byexample/a/Javascript-By-Example_2.htm)</sup>  
-<sup>[http://stackoverflow.com/questions/4416317/what-is-the-dom-and-bom-in-javascript](http://stackoverflow.com/questions/4416317/what-is-the-dom-and-bom-in-javascript)</sup>  
+<sub>[http://www.saregune.net/ikasi/hezigune/curso.php?curso=javascript&leccion=js_intro_dom](http://www.saregune.net/ikasi/hezigune/curso.php?curso=javascript&leccion=js_intro_dom)</sub>  
+<sub>[http://vkanakaraj.wordpress.com/2009/12/18/javascript-vs-dom-vs-bom-relationship-explained/](http://vkanakaraj.wordpress.com/2009/12/18/javascript-vs-dom-vs-bom-relationship-explained/)</sub>  
+<sub>[http://javascript.about.com/od/byexample/a/Javascript-By-Example_2.htm](http://javascript.about.com/od/byexample/a/Javascript-By-Example_2.htm)</sub>  
+<sub>[http://stackoverflow.com/questions/4416317/what-is-the-dom-and-bom-in-javascript](http://stackoverflow.com/questions/4416317/what-is-the-dom-and-bom-in-javascript)</sub>  
 
 - Javascript puede ser utilizado en [diferentes entornos](http://en.wikipedia.org/wiki/JavaScript#Uses_outside_web_pages), pero [su entorno más habitual es el navegador](https://developer.mozilla.org/en/JavaScript_technologies_overview)  
 
@@ -12,15 +12,15 @@
     - Objetos que tienen que ver con cosas que están fuera de la pagina (la ventana del navegador y la pantalla). Estos objetos conforman el **[Browser Object Model (BOM)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/entorno_navegador/BOM)**
 
 - El DOM es un standard y tiene varias versiones (llamadas levels). La mayoria de los navegadores implementan casi por completo el DOM Level 1.  
-<sup>[http://www.quirksmode.org/compatibility.html](http://www.quirksmode.org/compatibility.html)</sup>
-<sup>[http://www.webdevout.net/browser-support-dom](http://www.webdevout.net/browser-support-dom)</sup>
+<sub>[http://www.quirksmode.org/compatibility.html](http://www.quirksmode.org/compatibility.html)</sub>  
+<sub>[http://www.webdevout.net/browser-subport-dom](http://www.webdevout.net/browser-subport-dom)</sub>
 
 - El BOM no es un standard, asi que algunos objetos están soportados por la mayoría de navegadores y otros solo por algunos.
 
 
 ## [Deteccion de Funcionalidades](https://developer.mozilla.org/en/Browser_Detection_and_Cross_Browser_Support)
 
-<sup>[http://stackoverflow.com/questions/1173165/how-to-guess-browser-compatibility-based-upon-dom-level](http://stackoverflow.com/questions/1173165/how-to-guess-browser-compatibility-based-upon-dom-level)</sup>  
+<sub>[http://stackoverflow.com/questions/1173165/how-to-guess-browser-compatibility-based-upon-dom-level](http://stackoverflow.com/questions/1173165/how-to-guess-browser-compatibility-based-upon-dom-level)</sub>  
 
 - Debido a estas diferencia entre navegadores surge la necesidad de averiguar (desde código JS) que caracteristicas soporta nuestro navegador (DOM y BOM)
 
@@ -39,13 +39,13 @@ if (navigator.userAgent.indexOf('MSIE') !== -1) {
 }
 ```
 
-- La mejor solucion para detectar funcionalidades de nuestro navegador es hacer [**Feature Sniffing**](http://www.quirksmode.org/js/support.html), es decir chequear la existencia del objeto (método, array o propiedad) que queremos utilizar  
+- La mejor solucion para detectar funcionalidades de nuestro navegador es hacer [**Feature Sniffing**](http://www.quirksmode.org/js/subport.html), es decir chequear la existencia del objeto (método, array o propiedad) que queremos utilizar  
 
 ```javascript
 if (typeof window.addEventListener === 'function') {
-    // feature is supported, let's use it
+    // feature is subported, let's use it
 } else {
-    // hmm, this feature is not supported, will have to
+    // hmm, this feature is not subported, will have to
     // think of another way
 }
 ```

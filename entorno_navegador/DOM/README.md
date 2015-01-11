@@ -1,5 +1,5 @@
 # DOM
-<sup>[http://www.ibm.com/developerworks/xml/tutorials/x-udom/](http://www.ibm.com/developerworks/xml/tutorials/x-udom/)</sup>  
+<sub>[http://www.ibm.com/developerworks/xml/tutorials/x-udom/](http://www.ibm.com/developerworks/xml/tutorials/x-udom/)</sub>  
 
 - El **[DOM (Document Object Model)](http://www.w3.org/DOM/)** es una forma de representar un documento HTML (o XML) como un árbol de nodos.  
 Utilizando los métodos y propiedades del DOM podremos acceder a los elementos de la página, modificarlo, eliminarlos o añadir nuevos
@@ -197,7 +197,7 @@ Comment length=21 nodeName=#comment
 
 - Los elementos tienen la propiedad [`style`](https://developer.mozilla.org/en/DOM/element.style) que podemos utilizar para modificar sus estilos
 
-<sup>[http://www.w3.org/TR/DOM-Level-2-Style/css.html#CSS-ElementCSSInlineStyle](http://www.w3.org/TR/DOM-Level-2-Style/css.html#CSS-ElementCSSInlineStyle)</sup>
+<sub>[http://www.w3.org/TR/DOM-Level-2-Style/css.html#CSS-ElementCSSInlineStyle](http://www.w3.org/TR/DOM-Level-2-Style/css.html#CSS-ElementCSSInlineStyle)</sub>
 
 ```javascript
 >>> my.style.border = "1px solid red";
@@ -306,9 +306,9 @@ document.body.insertBefore(
 
 ## Selección Avanzada de Elementos
 
-<sup>[http://mootools.net/slickspeed/](http://mootools.net/slickspeed/)</sup>  
-<sup>[http://www.w3.org/TR/CSS21/syndata.html#value-def-identifier](http://www.w3.org/TR/CSS21/syndata.html#value-def-identifier)</sup>  
-<sup>[http://www.quirksmode.org/css/contents.html](http://www.quirksmode.org/css/contents.html)</sup>  
+<sub>[http://mootools.net/slickspeed/](http://mootools.net/slickspeed/)</sub>  
+<sub>[http://www.w3.org/TR/CSS21/syndata.html#value-def-identifier](http://www.w3.org/TR/CSS21/syndata.html#value-def-identifier)</sub>  
+<sub>[http://www.quirksmode.org/css/contents.html](http://www.quirksmode.org/css/contents.html)</sub>  
 
 - [`document.images`](https://developer.mozilla.org/en/DOM/document.images) : `document.getElementsByTagName(‘img’)` 
 
@@ -337,7 +337,7 @@ document.body.insertBefore(
     `querySelectorAll()` devuelve un array de elementos   
     Funciones nativas disponibles a partir de IE8 y FF3.5  
 
-    <sup>[http://javascript.nwbox.com/NWMatcher/release/test/css3-compat/](http://javascript.nwbox.com/NWMatcher/release/test/css3-compat/)</sup>
+    <sub>[http://javascript.nwbox.com/NWMatcher/release/test/css3-compat/](http://javascript.nwbox.com/NWMatcher/release/test/css3-compat/)</sub>
 
 ```javascript
  >>> oMyElem = document.querySelector("#myid");
@@ -346,8 +346,8 @@ document.body.insertBefore(
 
 - `$()` o [`jQuery()`](http://api.jquery.com/jQuery/): con jQuery disponemos de una [potente herramienta de selección de elementos](http://sizzlejs.com/)
  
-    <sup>[http://www.neeraj.name/2010/02/15/how-jquery-selects-elements-using-sizzle.html](http://www.neeraj.name/2010/02/15/how-jquery-selects-elements-using-sizzle.html)</sup>
-    <sup>[http://refcardz.dzone.com/refcardz/jquery-selectors](http://refcardz.dzone.com/refcardz/jquery-selectors)</sup>
+    <sub>[http://www.neeraj.name/2010/02/15/how-jquery-selects-elements-using-sizzle.html](http://www.neeraj.name/2010/02/15/how-jquery-selects-elements-using-sizzle.html)</sub>  
+    <sub>[http://refcardz.dzone.com/refcardz/jquery-selectors](http://refcardz.dzone.com/refcardz/jquery-selectors)</sub>
 
     Para obtener los elementos utilizamos `$()` o `jQuery()` pasándole nuestra [selección CSS](http://api.jquery.com/category/selectors/) entre comillas
 

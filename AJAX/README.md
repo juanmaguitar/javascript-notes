@@ -16,11 +16,10 @@
 - AJAX son las siglas de **Asynchronous JavaScript + XML**:
     - _Asynchronous_ porque despues de hacer una peticion HTTP no necesita esperar a una respuesta, sino que puede seguir haciendo otras cosas y ser notificado cuando llegue la respuesta
     - _JavaScript_ porque creamos los objetos XHR con Javascript
-    - _XML_ porque inicialmente era el formato standard de intercambio de datos
-    Actualmente una petición HTTP suele devolver JSON (o HTML)
+    - _XML_ porque inicialmente era el formato standard de intercambio de datos. Actualmente una petición HTTP suele devolver JSON (o HTML)
 
-- La mayor limitación de una petición AJAX es que no puede acceder a datos de un dominio diferente al que estamos (_cross-domain_)  
-    Hay una tecnica para solucionar este problema llamada [_JSONP_](http://web.ontuts.com/tutoriales/jsonp-llamadas-ajax-entre-dominios/)
+- La mayor limitación de una petición AJAX es que [no puede acceder a datos de un dominio diferente](https://github.com/juanmaguitar/training-frontend-docs/tree/master/same_origin_policy) al que estamos (_cross-domain_)  
+    Pero hay maneras de solucionar este problema: [_JSONP_](https://github.com/juanmaguitar/training-frontend-docs/tree/master/same_origin_policy/JSONP) y [_CORS_](https://github.com/juanmaguitar/training-frontend-docs/tree/master/same_origin_policy/CORS)
 
 
 ## Haciendo la petición

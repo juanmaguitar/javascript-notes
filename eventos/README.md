@@ -85,9 +85,9 @@ if (document.addEventListener){ // FF
 
 ## Delegación de eventos
 
-<sub>[http://www.anieto2k.com/2009/11/19/gestion-de-eventos-vs-delegacion-de-eventos/](http://www.anieto2k.com/2009/11/19/gestion-de-eventos-vs-delegacion-de-eventos/)</sub>
-<sub>[http://blogs.sitepoint.com/javascript-event-delegation-is-easier-than-you-think/](http://blogs.sitepoint.com/javascript-event-delegation-is-easier-than-you-think/)</sub>
-<sub>[http://lab.distilldesign.com/event-delegation/](http://lab.distilldesign.com/event-delegation/)</sub>
+<sub>[http://www.anieto2k.com/2009/11/19/gestion-de-eventos-vs-delegacion-de-eventos/](http://www.anieto2k.com/2009/11/19/gestion-de-eventos-vs-delegacion-de-eventos/)</sub>  
+<sub>[http://blogs.sitepoint.com/javascript-event-delegation-is-easier-than-you-think/](http://blogs.sitepoint.com/javascript-event-delegation-is-easier-than-you-think/)</sub>  
+<sub>[http://lab.distilldesign.com/event-delegation/](http://lab.distilldesign.com/event-delegation/)</sub>  
 
 - Aprovechando el _bubbling_ y la deteccion del _target_ podemos optimizar (en algunos casos) nuestra gestión de eventos con la **delegación de eventos**
 
@@ -99,8 +99,8 @@ if (document.addEventListener){ // FF
 
 ## Eventos con jQuery
 
-<sub>[http://api.jquery.com/category/events/](http://api.jquery.com/category/events/)</sub>
-<sub>[http://jqfundamentals.com/book/index.html#chapter-5](http://jqfundamentals.com/book/index.html#chapter-5)</sub>
+<sub>[http://api.jquery.com/category/events/](http://api.jquery.com/category/events/)</sub>  
+<sub>[http://jqfundamentals.com/book/index.html#chapter-5](http://jqfundamentals.com/book/index.html#chapter-5)</sub>  
 
 - Con _jQuery_ podemos realizar nuestra gestion de eventos sin tener que preocuparnos de las diferencias entre navegadores:
 
@@ -110,9 +110,15 @@ cross-browsing
             .bind( eventType, [ eventData ], handler(eventObject) )
             .unbind( [ eventType ], [ handler(eventObject) ] )
 
-    El `handler` recibe un objeto [`event`](http://api.jquery.com/category/events/event-object/) propio de jQuery  
-    Los tipos de eventos que podemos capturar son `blur`, `focus`, `focusin`, `focusout`, `load`, `resize`, `scroll`, `unload`, `click`, `dblclick`, `mousedown`, `mouseup`, `mousemove`, `mouseover`, `mouseout`, `mouseenter`, `mouseleave`, `change`, `select`, `submit`, `keydown`, `keypress`, `keyup`, `error`  
-    Tambien podemos crearnos [nuestros propios tipos de eventos](http://api.jquery.com/category/events/event-object/)
+        - El `handler` recibe un objeto [`event`](http://api.jquery.com/category/events/event-object/) propio de jQuery  
+        - Los tipos de eventos que podemos capturar son `blur`, `focus`, `focusin`, `focusout`, `load`, `resize`, `scroll`, `unload`, `click`, `dblclick`, `mousedown`, `mouseup`, `mousemove`, `mouseover`, `mouseout`, `mouseenter`, `mouseleave`, `change`, `select`, `submit`, `keydown`, `keypress`, `keyup`, `error`  
+        - Tambien podemos crearnos [nuestros propios tipos de eventos](http://api.jquery.com/category/events/event-object/)
+
+    - [`$().on()`](http://api.jquery.com/on) y [`$().off()`](http://api.jquery.com/off/): El `$().bind()`/`$().unbind()`
+cross-functional
+
+            .on( events [, selector ] [, data ], handler )
+            .off( events [, selector ] [, handler ] )
 
     - [`$().trigger()`](http://api.jquery.com/trigger):  Nos permite ejecutar todos los handlers asociados a un evento
 
