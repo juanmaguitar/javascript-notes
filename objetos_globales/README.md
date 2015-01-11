@@ -21,7 +21,6 @@
     - El método [`o.toString()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/toString) que devuelve el objeto en formato texto
     - El método [`o.valueOf()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/ValueOf) que devuelve el valor del objeto (normalmente o)
 
-Ejemplo:
 ```javascript
 >>> var o = new Object();
 >>> o.toString()
@@ -41,7 +40,6 @@ true
     - Varios parametros: Seran asignados como elementos al array
     - Un numero: Se considerará el tamaño del array
 
-Ejemplo:
 ```javascript
 >>> var a = new Array(1,2,3,'four');
 >>> a;
@@ -52,9 +50,8 @@ Ejemplo:
 [undefined, undefined, undefined, undefined, undefined]
 ```
 
-- Como los arrays son objetos tenemos disponibles los metodos y propiedades del padre Object()
+- Como los arrays son objetos tenemos disponibles los metodos y propiedades del padre `Object()`
 
-Ejemplo:
 ```javascript
 >>> typeof a;
 "object"
@@ -71,7 +68,6 @@ Array()
     - Nos devuelve el tamaño del array (numero de elementos)
     - Podemos  modificarlo y cambiar el tamaño del array
 
-Ejemplo:
 ```javascript
 >>> a[0] = 1; 
 >>> a.prop = 2; 
@@ -92,35 +88,12 @@ Ejemplo:
   
 Los arrays disponen de unos cuantos metodos interesantes:
 
-###[push()](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/push)
-
-`push()` inserta elementos al final del array  
-`a.push('new')` es lo mismo que `a[a.length] = 'new'`  
-`push()` devuelve el tamaño del array modificado  
-
-###[pop()](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/pop)
-
-`pop()` elimina el ultimo elemento   
-`a.pop()` es lo mismo que `a.length--`;  
-`pop()` devuelve el elemento eliminado  
-
-###[sort()](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/sort)
-
-ordena el array y devuelve el array modificado
-
-###[join()](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/join)
-
-`join()` devuelve una cadena con los valores de los elementos del array 
-
-###[slice()](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/slice)
-
-`slice()` devuelve un trozo del array  sin modficar el original 
-
-###[splice()](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/splice)
-
-`splice()` quita un trozo del array, lo devuelve  y opcionalmente rellena el hueco con nuevos elementos 
-
-Ejemplo:
+- `push()`
+- `pop()`
+- `sort()`
+- `join()`
+- `slice()`
+- `splice()`
 
 ```javascript
 >>> var a = [3, 5, 1, 7, 'test'];
@@ -155,10 +128,122 @@ Ejemplo:
 [1, 100, 101, 102, 7, "test"]
 ```
 
+###[push()](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/push)
+
+`push()` inserta elementos al final del array  
+`a.push('new')` es lo mismo que `a[a.length] = 'new'`  
+`push()` devuelve el tamaño del array modificado  
+
+```javascript
+>>> var sports = ['soccer', 'baseball'];
+>>> sports
+["soccer", "baseball"]
+>>> sports.length
+2
+>>> sports.push('football', 'swimming');
+4
+>>> sports
+["soccer", "baseball", "football", "swimming"]
+```
+
+###[pop()](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/pop)
+
+`pop()` elimina el ultimo elemento   
+`a.pop()` es lo mismo que `a.length--`;  
+`pop()` devuelve el elemento eliminado  
+
+```javascript
+>>> var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
+>>> myFish
+["angel", "clown", "mandarin", "sturgeon"]
+>>> myFish.pop();
+"sturgeon"
+>>> myFish
+["angel", "clown", "mandarin"]
+```
+
+###[sort()](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/sort)
+
+ordena el array y devuelve el array modificado
+
+```javascript
+>>> var fruit = ['apples', 'bananas', 'Cherries'];
+>>> fruit
+["apples", "bananas", "Cherries"]
+>>> fruit.sort();
+["Cherries", "apples", "bananas"]
+
+>>> var scores = [1, 2, 10, 21];
+>>> scores
+[1, 2, 10, 21]
+>>> scores.sort()
+[1, 10, 2, 21]
+```
+
+```javascript
+>>> var numbers = [4, 2, 42, 36, 5, 1, 12, 3];
+>>> numbers
+[4, 2, 42, 36, 5, 1, 12, 3]
+>>> numbers.sort()
+[1, 12, 2, 3, 36, 4, 42, 5]
+>>> numbers.sort( function(a, b) { return a - b; } );
+[1, 2, 3, 4, 5, 12, 36, 42]
+```
+
+###[join()](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/join)
+
+`join()` devuelve una cadena (string) con los valores de los elementos del array 
+
+```javascript
+>>> var a = ['Wind', 'Rain', 'Fire'];
+>>> a.join();
+"Wind,Rain,Fire"
+>>> a.join(" - ");
+"Wind - Rain - Fire"
+>>> typeof ( a.join(" - ") )
+"string"
+```
+
+###[slice()](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/slice)
+
+`slice()` devuelve un trozo del array  sin modficar el original 
+
+```javascript
+>>> var fruits = ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango'];
+>>> var citrus = fruits.slice(1, 3);
+>>> fruits
+["Banana", "Orange", "Lemon", "Apple", "Mango"]
+>>> citrus
+["Orange", "Lemon"]
+```
+
+###[splice()](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/splice)
+
+`splice()` quita un trozo del array, lo devuelve  y opcionalmente rellena el hueco con nuevos elementos 
+
+```javascript
+>>> var myFish = ['angel', 'clown', 'mandarin', 'surgeon'];
+
+>>> myFish
+["angel", "clown", "mandarin", "surgeon"]
+>>> var removed = myFish.splice(2, 1);
+
+>>> myFish
+["angel", "clown", "surgeon"]
+>>> removed
+["mandarin"]
+
+>>> var removed = myFish.splice(2, 0, 'drum');
+>>> myFish
+["angel", "clown", "drum", "surgeon"]
+>>> removed
+[]
+```
+
 ##[Function](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function)
 
 - Las funciones son objetos
-- Podemos crear funciones con la función constructora `Function()` (aunque este metodo no se recomienda ya que internamente hace un eval() )
+- Podemos crear funciones con la función constructora `Function()` (aunque este metodo no se recomienda ya que internamente hace un _eval()_ )
 
 Ejemplo:
 ```javascript
@@ -178,26 +263,24 @@ Ejemplo:
     - La propiedad [`length`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/length) que contiene el numero de parametros que acepta la función 
     - La propiedad [`caller`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/caller) (no standard) que contiene una referencia a la funcion que llamó a esta función 
     - La propiedad [`prototype`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/prototype) que contiene un objeto.  
-    Sólo es util cuando utilizamos esta funcion como constructora.  
-    Todos lo objetos creados con esta función mantienen una referencia a la propiedad prototype y pueden usar sus propiedades como si fueran propias.
+        - Sólo es util cuando utilizamos una funcion como constructora.  
+        - Todos lo objetos creados con una función constructora mantienen una referencia a su propiedad `prototype` y pueden usar sus propiedades como si fueran propias.
 
-Ejemplo:
 ```javascript
->>> function myfunc(a){return a;}
+>>> function myfunc(a){ return a; }
 >>> myfunc.constructor
 Function()
 
->>> function myfunc(a, b, c){return true;}
+>>> function myfunc(a, b, c){ return true; }
 >>> myfunc.length
 3
 
->>> function A(){return A.caller;}
->>> function B(){return A();}
+>>> function A(){ return A.caller; }
+>>> function B(){ return A(); }
 >>> B()
 B()
 ```
 
-Ejemplo:
 ```javascript
 var some_obj = { 
   name: 'Ninja', 

@@ -247,8 +247,6 @@ false
 true
 ```
 
-<br/>
-
 ##Trabajando con Objetos
 
 Otra forma de crear un objeto, es a través de una función que nos devuelva un objeto.
@@ -269,11 +267,11 @@ Object()
 Podemos utilizar funciones constructoras y devolver objetos distintos de `this`
 
 ```javascript
->>> function C() {this.a = 1;}
+>>> function C() { this.a = 1; }
 >>> var c = new C();
 >>> c.a
 1
->>> function C2() {this.a = 1; return {b: 2};}
+>>> function C2() { this.a = 1; return {b: 2}; }
 >>> var c2 = new C2();
 >>> typeof c2.a
 "undefined"
@@ -285,7 +283,7 @@ Cuando _copiamos_ un objeto o _lo pasamos como parámetro_ a una función, realm
 Si hacemos un cambio a esta referencia, modicaremos también el objeto original
 
 ```javascript
->>> var original = {howmany: 1};
+>>> var original = { howmany: 1 };
 >>> var copy = original;
 >>> copy.howmany
 1
@@ -294,7 +292,7 @@ Si hacemos un cambio a esta referencia, modicaremos también el objeto original
 >>> original.howmany
 100
 
->>> var nullify = function(o) {o.howmany = 0;}
+>>> var nullify = function(o) { o.howmany = 0; }
 >>> nullify(copy);
 >>> original.howmany
 0
@@ -303,8 +301,8 @@ Si hacemos un cambio a esta referencia, modicaremos también el objeto original
 Cuando _comparamos_ un objeto sólo obtendremos `true` si comparamos 2 referencias al mismo objeto
 
 ```javascript
->>> var fido = {breed: 'dog'};
->>> var benji = {breed: 'dog'};
+>>> var fido = { breed: 'dog' };
+>>> var benji = { breed: 'dog' };
 >>> benji === fido
 false
 >>> benji == fido
