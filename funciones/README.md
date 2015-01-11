@@ -103,7 +103,7 @@ parseInt("15*3", 10);
 parseInt("15e2", 10);
 parseInt("15px", 10);
 parseInt("12", 13);
-```javascript
+```
 
 ###[parseFloat()](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Funciones_globales/parseFloat)
 
