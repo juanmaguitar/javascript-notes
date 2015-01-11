@@ -301,9 +301,9 @@ var some_obj = {
 
 - Las funciones disponen de los siguientes métodos:
     - El método `toString()` que devuelve el código fuente de la función
-    - Los métodos [`call()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/call) y [`apply()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/apply) que ejecutan metodos de otros objetos especificando el contexto (especificamos un this diferente)
+    - Los métodos [`call()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/call) y [`apply()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/apply) que ejecutan metodos de otros objetos especificando el contexto (especificamos un `this` diferente)
+        - Estos dos métodos hacen lo mismo pero el formato en que reciben los argumentos es diferente
 
-Ejemplo:
 ```javascript
 >>> function myfunc(a, b, c) {return a + b + c;}
 >>> myfunc.toString()
@@ -312,7 +312,6 @@ return a + b + c;
 }" 
 ```
 
-Ejemplo:
 ```javascript
 var some_obj = { 
   name: 'Ninja', 
@@ -334,16 +333,17 @@ some_obj.someMethod.call(my_obj, 'a', 'b', 'c');
 
 - Las funciones disponen del objeto `arguments` que (ademas de `length`) tiene la propiedad `callee` que contiene una referencia a la funcion llamada (a si misma)
 
-Ejemplo:
 ```javascript
 >>> function f(){return arguments.callee;}
 >>> f() 
 f()
+```
 
+```javascript
 ( 
   function(count){ 
-    if (count < 5) { 
-      alert(count); 
+    if (count <= 5) { 
+      console.log(count); 
       arguments.callee(++count); 
     } 
   }
@@ -353,7 +353,7 @@ f()
 ##[Boolean](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean)
 
 - El objeto _Boolean_ es un contenedor para un valor de tipo booleano  
-  Podemos crear objetos Boolean con la función constructora `Boolean()`
+  Podemos crear objetos _Boolean_ con la función constructora `Boolean()`
 
 Ejemplo:
 ```javascript
@@ -366,7 +366,7 @@ Ejemplo:
 false
 ```
 
-- La función _Boolean_ usada como función normal (sin new) nos devuelve el valor pasado como parametro convertido a booleano
+- La función `Boolean` usada como función normal (sin `new`) nos devuelve el valor pasado como parametro convertido a booleano
 
 Ejemplo:
 ```javascript
@@ -382,7 +382,7 @@ true
 
 - La función `Number()` puede ser usada:
     - Cómo una _función normal_ para convertir valores a número
-    - Cómo una _función constructora_ (con new) para crear objetos
+    - Cómo una _función constructora_ (con `new`) para crear objetos
 - Los objetos número disponen de los métodos: [`toFixed()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number/toFixed), [`toPrecision()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number/toPrecision) y [`toExponential()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number/toExponential)
 
 Ejemplo:
@@ -415,7 +415,7 @@ Ejemplo:
 ##[String](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String)
 
 - Podemos crear objetos String con la función constructora `String()`  
-  Un objeto _String_ NO es un dato de tipo primitivo string (`valueOf())
+  Un objeto _String_ NO es un dato de tipo primitivo string (`valueOf()`)
 
 Ejemplo:
 ```javascript
@@ -446,7 +446,7 @@ Ejemplo:
 5
 ```
 
-- Aunque los métodos pertenezcan al objeto String, podemos utilizarlos también directamente en datos de tipo primitivo string (crea el objeto por detrás)
+- Aunque los métodos pertenezcan al objeto String, podemos utilizarlos también directamente en datos de tipo primitivo string (se crea el objeto internamente)
 
 Ejemplo:
 ```javascript
@@ -460,12 +460,17 @@ Ejemplo:
 
 - Los objetos string disponen de los siguientes métodos:
     - [`toUpperCase()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/toUpperCase)  devuelve el string convertido a mayúsculas
+    
     - [`toLowerCase()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/toLowerCase)  devuelve el string convertido a minusculas
+    
     - [`charAt()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/charAt)  devuelve el carácter encontrado en la posición indicada
+    
     - [`indexOf()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/indexOf) busca una cadena de texto en el string y devuelve la posición donde la encuentra
+        - Si no encuentra nada devuelve -1 
+    
     - `lastIndexOf()` empieza la búsqueda desde el final de la cadena  
-    Si no encuentra nada devuelve -1 
-
+        - Si no encuentra nada devuelve -1 
+    
     Por tanto la manera de correcta de chequear si existe una cadena de texto en otra es →  `if ( s.toLowerCase().indexOf('couch') !== -1 ) {...}`
 
     - [`slice()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/slice) devuelve un trozo de la cadena de texto 
@@ -474,8 +479,6 @@ Ejemplo:
 
     - [`concat()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/concat) une strings
 
-
-Ejemplo:
 ```javascript
 >>> var s = new String("Couch potato");
 >>> s.toUpperCase() 
@@ -512,11 +515,11 @@ Ejemplo:
 
 ##[Date](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date)
 
-- `Date()` es una función constructora que crea objetos Date
+- `Date()` es una función constructora que crea objetos Date  
     Podemos crear objetos Date nuevo pasándole:
-    - Nada (tomará por defecto la fecha actual) 
-    - Una fecha en formato texto
-    - Valores separados que representan: Año, Mes (0-11), Dia (1-31), Hora (0-23), Minutes (0-59), Segundos(0-59) y Milisegundos (0-999)
+    - _Nada_ (tomará por defecto la fecha actual) 
+    - _Una fecha_ en formato texto
+    - _Valores separados_ que representan: Año, Mes (0-11), Dia (1-31), Hora (0-23), Minutes (0-59), Segundos(0-59) y Milisegundos (0-999)
     - Un valor _timestamp_
 
 
