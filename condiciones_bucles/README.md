@@ -156,7 +156,7 @@ do {
 ```
 
 - El  bucle `do-while`  es una pequeña variación del bucle `while`  
-    La sentencia do va seguida de un bloque de código y una condición después del bloque.  
+    La sentencia `do` va seguida de un bloque de código y una condición (con `while`) después del bloque.  
     Esto implica que el bloque de código se va a ejecutar siempre, al menos una vez, antes de evaluar la condición.  
 
 
@@ -198,6 +198,7 @@ for(var i = 0; i < 10; i++) {
 ##El bucle `for-in`
 
 <sub>[https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/for...in](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/for...in) </sub>
+
 ```javascript
 var a = ['a', 'b', 'c', 'x', 'y', 'z'];
 var result = '\n';
@@ -207,4 +208,15 @@ for (var i in a) {
 ```
 
 - El bucle `for-in` es utilizado para recorrer los elementos de un array (o de un objeto) 
+
+Aunque basandonos en ES5 tambien podriamos utilizar [`Object.keys`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys) y [`forEach`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) y hacer 
+
+```javascript
+var obj = { first: "John", last: "Doe" };
+
+// Visit non-inherited enumerable keys
+Object.keys(obj).forEach(function(key) {
+    console.log(key);
+});
+```
 

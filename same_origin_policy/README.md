@@ -52,4 +52,5 @@ La recomendación general es usar CORS siempre que se pueda, pero hay que tener 
 - Hay _mas API's publicas_ que ofrecen acceso a datos via [**JSONP**](http://www.programmableweb.com/category/all/apis?data_format=21174) que via [CORS](http://enable-cors.org/resources.html#apis)
 - **CORS** (el servidor decide a quien da acceso y cómo) _es mas seguro_ que JSONP (cross-origin via `script` injection)
 - Con **CORS** hay un _mejor manejo de errores_ que con JSONP
+- Tanto CORS como JSONP requieren que el servidor esté preparado para ellos
 

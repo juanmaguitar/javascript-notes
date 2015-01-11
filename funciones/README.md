@@ -13,17 +13,17 @@ De esta forma podemos reutilizar este código, invocando el nombre de la funció
 Las partes de una función:
 
 - La _sentencia `function`_
-- El _nombre_ de la función (sum)
-- _Parámetros_ (argumentos) que espera la función (a y b)
+- El _nombre_ de la función (_sum_)
+- _Parámetros_ (argumentos) que espera la función (_a_ y _b_)
 Una función puede aceptar cero o más argumentos separados por comas
 - Un bloque de código, también llamado el _cuerpo de la funcion_
 - La sentencia _`return`_  
 Una función siempre devuelve un valor.  
 Si no devuelve explícitamente un valor, implícitamente devuelve el valor
-undefine  
+`undefined`  
 
 Una función _solo puede devolver un valor._  
-Si se necesita devolver mas de un valor, se puede devolver un array con esos valores
+Si se necesita devolver mas de un valor, se puede devolver un array o un objeto con esos valores
 
 Para llamar a una función tan solo tenemos que usar su nombre seguido de algunos parámetros (o ninguno) entre paréntesis
 
@@ -33,13 +33,9 @@ Para llamar a una función tan solo tenemos que usar su nombre seguido de alguno
 3
 ```
 
-More info:   
-- [Functions and function scope](https://developer.mozilla.org/en/JavaScript/Reference/Functions_and_function_scope)  
-- [Objeto Global Function](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Objetos_globales/Function)  
-- [Function (Javascript Garden)](http://bonsaiden.github.com/JavaScript-­‐Garden/#function)  
-
-
-<br/>
+<sub>[https://developer.mozilla.org/en/JavaScript/Reference/Functions_and_function_scope](https://developer.mozilla.org/en/JavaScript/Reference/Functions_and_function_scope)</sub>  
+<sub>[https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Objetos_globales/Function](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Objetos_globales/Function)</sub>  
+<sub>[http://bonsaiden.github.com/JavaScript-­‐Garden/#function](http://bonsaiden.github.com/JavaScript-­‐Garden/#function)</sub>  
 
 ##Parametros
 
@@ -47,7 +43,7 @@ Una función puede no requerir parámetros, pero si los requiere y no se les pas
 
 Si la función recibe mas parámetros de los esperados, simplemente los ignorará
 
-Dentro de cada función tenemos disponible el objeto (pseudo-array) `arguments` que contiene los argumentos pasados a la función
+Dentro de cada función tenemos disponible el objeto (pseudo-array) [`arguments`](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Obsolete_Pages/Gu%C3%ADa_JavaScript_1.5/Usando_el_objeto_arguments) que contiene los argumentos pasados a la función
 
 ```javascript
 function sumOnSteroids() {
@@ -60,12 +56,10 @@ function sumOnSteroids() {
 }
 ```
 
-<br/>
-
-##Funciones pre-­‐definidas
+##Funciones pre-definidas
 
 Hay una serie de funciones que están directamente definidas dentro del motor de Javascript. 
-Estas funciones pre-­‐definidas son:
+Estas funciones pre-definidas son:
 
 - `parseInt()`
 - `parseFloat()`
@@ -93,6 +87,23 @@ NaN
 >>> parseInt('123abc')
 123
 ```
+
+Se recomienda especificar siempre la base 10 para [evitar problemas](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt#Octal_interpretations_with_no_radix)
+
+```javascript
+parseInt(" 0xF", 16);
+parseInt(" F", 16);
+parseInt("17", 8);
+parseInt(021, 8);
+parseInt("015", 10);
+parseInt(15.99, 10);
+parseInt("FXX123", 16);
+parseInt("1111", 2);
+parseInt("15*3", 10);
+parseInt("15e2", 10);
+parseInt("15px", 10);
+parseInt("12", 13);
+```javascript
 
 ###[parseFloat()](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Funciones_globales/parseFloat)
 

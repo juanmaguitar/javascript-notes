@@ -23,36 +23,41 @@ CASE_MATTERS
 ```
 
 ### ¿Cómo chequear la existencia de una variable?
-Forma Mala
-```javascript
->>> var result = '';
->>> if (somevar){result = 'yes';}
-somevar is not defined
->>> result;
-""
-```
+
+- Forma Mala
+
+    ```javascript
+    >>> var result = '';
+    >>> if (somevar){result = 'yes';}
+    somevar is not defined
+    >>> result;
+    ""
+    ```
+
 _Genera un warning y que ‘somevar’ devuelva FALSE no quiere decir que no esté definida_
 
-Forma Correcta
-```javascript
->>> var somevar;
->>> if (typeof somevar !== "undefined"){result = 'yes';}
->>> result;
-""
-```
-```javascript
->>> somevar = 123;
->>> if (typeof somevar !== "undefined"){result = 'yes';}
->>> result;
-"yes"
-```
+- [Forma Correcta](http://bonsaiden.github.io/JavaScript-Garden/#types.typeof)
+    
+    ```javascript
+    >>> var somevar;
+    >>> if (typeof somevar !== "undefined"){result = 'yes';}
+    >>> result;
+    ""
+    ```
+
+    ```javascript
+    >>> somevar = 123;
+    >>> if (typeof somevar !== "undefined"){result = 'yes';}
+    >>> result;
+    "yes"
+    ```
 
 _Si la variable está definida y tiene algún valor, su tipo de datos siempre será distinto de undefined_
 
 # Primitivas y Tipos de Datos
 - Cualquier valor que se utilize en JS es de un cierto tipo. En Javascript existen los siguientes tipos de datos primitivos:
 
-    - **Number**: Puede contener numeros enteros (integer), decimales (float), hexadecimales, octales, exponentes y los números especiales NaN y Infinity
+    - **Number**: Puede contener numeros enteros (integer), decimales (float), hexadecimales, octales, exponentes y los números especiales `NaN` y `Infinity`
     - **String**: Cualquier numero de caracteres entre comillas
     - **Boolean**: puede ser `true` or `false` 
     - **Undefined**: Es un tipo de datos con un solo valor: [`undefined`](http://bonsaiden.github.com/JavaScript-Garden/#core.undefined)
@@ -66,18 +71,26 @@ _Si la variable está definida y tiene algún valor, su tipo de datos siempre se
     - Primitivas (Los 5 tipos)
     - No primitivas (Objetos)
 
-- El operador [`typeof`](http://bonsaiden.github.com/JavaScript-Garden/#types.typeof) nos devuelve el tipo de dato
+- Aunque existe el operador [`typeof`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/typeof) que devuelve el tipo de dato, es mejor utilizar [`Object.prototype.toString`](http://bonsaiden.github.io/JavaScript-Garden/#types.typeof)
 
 ```javascript
->>> var n = 1;
->>> typeof n;
-“number”
->>> var s = "some characters";
->>> typeof s;
-"string"
->>> var b = true; typeof b;
-"boolean"
-``` 
+>>> typeof([1,2,3])
+"object"
+>>> Object.prototype.toString.call([1,2,3])
+"[object Array]"
+>>> typeof(function(){})
+"function"
+>>> Object.prototype.toString.call(function(){})
+"[object Function]"
+>>> typeof(new Date())
+"object"
+>>> Object.prototype.toString.call(new Date())
+"[object Date]"
+>>> typeof(27)
+"number"
+>>> Object.prototype.toString.call(27)
+"[object Number]"
+```
 
 - Existe el valor especial `NaN` (Not a Number) que obtenemos cuando intentamos hacer una operación que asume numeros pero la operación falla.
 

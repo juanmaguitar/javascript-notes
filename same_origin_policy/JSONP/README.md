@@ -82,7 +82,7 @@ Con esta tecnica/hack obtenemos el JSON pasado como parametro a una funcion que 
     window.do_things = function (data) {
        console.log ( "do_things : %o", data.responseData.results );
     }
-
+    
     function loadScript (id, src, callback) {
 
          // Crear elemento
