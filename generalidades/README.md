@@ -86,6 +86,7 @@ Esta version **amplia** los anteriores standards [con algunas mejoras](http://ww
   ```
 
   <sub>[http://cjihrig.com/blog/javascripts-strict-mode-and-why-you-should-use-it/](http://cjihrig.com/blog/javascripts-strict-mode-and-why-you-should-use-it/)</sub>
+  <sub>[http://www.nczonline.net/blog/2012/03/13/its-time-to-start-using-javascript-strict-mode/](http://www.nczonline.net/blog/2012/03/13/its-time-to-start-using-javascript-strict-mode/)</sub>
 
 - [`Object` new methods](http://ejohn.org/blog/ecmascript-5-objects-and-properties/)
 

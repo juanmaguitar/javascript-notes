@@ -62,11 +62,7 @@ Un array puede contener otros arrays.
 6
 ```
 
-More info:  
-
-- [Array (Javascript Garden)](http://bonsaiden.github.com/JavaScript-­‐Garden/#array.general)
-
-<br/>
+<sub>[http://bonsaiden.github.com/JavaScript-­‐Garden/#array.general](http://bonsaiden.github.com/JavaScript-­‐Garden/#array.general)</sub>
 
 #Objetos
 
@@ -78,11 +74,11 @@ var hero = {
 ```
 
 Un **objeto** es como un array pero donde los índices los definimos nosotros  
-Para definir un objeto utilizamos las llaves {} ( _object literal notation_ )  
+Para definir un objeto utilizamos las llaves `{}` ( _object literal notation_ )  
 Los elementos de un objeto ( _propiedades_ ) los separamos por comas  
 El par _clave/valor_ (key/value) lo dividimos con 2 puntos
 
-Las claves (keys, nombres de las propiedades) pueden ir entre comillas, pero _no se recomienda_ definirlas asi
+Las claves (_keys_, nombres de las propiedades) pueden ir entre comillas, pero _no se recomienda_ definirlas asi
 
 ```javascript
 var o = {prop: 1};
@@ -218,7 +214,9 @@ h has no properties
 "Michelangelo"
 ```
 
-Cuando creamos un objeto, se le asigna siempre la propiedad `constructor que contiene una referencia a la función constructora utilizada para crear el objeto
+Hay maneras de [evitar estos "accidentes"](http://www.2ality.com/2013/07/defending-constructors.html) (llamar a un constructor sin `new`) como por ejemplo activar `strict mode`(lanzaria una excepcion en este caso).
+
+Cuando creamos un objeto, se le asigna siempre la propiedad `constructor` que contiene una referencia a la función constructora utilizada para crear el objeto
 
 ```javascript
 >>> h2.constructor
