@@ -1,4 +1,4 @@
-# Training Frontend DOCS #
+# Apuntes de Javascript #
 
 ## Descripción ##
 
