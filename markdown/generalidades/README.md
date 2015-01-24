@@ -41,7 +41,7 @@
 
 # Breve historia de Javascript
 
-![JS History 1](https://raw.github.com/juanmaguitar/training-frontend-docs/master/generalidades/img/js-history-1.png)
+![JS History 1](img/js-history-1.png)
 
 - Javascript [fue creado en 10 dias en Mayo de 1995](https://www.w3.org/community/webed/wiki/A_Short_History_of_JavaScript) por [Brendan Eich](http://en.wikipedia.org/wiki/Brendan_Eich), bajo el nombre de Mocha
 
@@ -59,7 +59,7 @@
 
 - En [1999](http://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-262,%203rd%20edition,%20December%201999.pdf), se sientan las bases del Javascript moderno con el lanzamiento de la tercera edición del ECMA-262, tambien llamado **EcmaScript 3**
 
-![JS History 2](https://raw.github.com/juanmaguitar/training-frontend-docs/master/generalidades/img/js-history-2.png)
+![JS History 2](img/js-history-2.png)
 
 - En 2005, se acuña el termino [AJAX](http://www.adaptivepath.com/ideas/ajax-new-approach-web-applications/) y revoluciona el mundo del desarrollo web con la llegada de sitios web asíncronos (Gmail, Google Maps...)
 
