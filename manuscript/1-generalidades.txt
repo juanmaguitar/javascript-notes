@@ -1,3 +1,11 @@
 # Ideas Claras de Javascript
 
 * JavaScript es un [lenguaje de programación interpretado](http://es.wikipedia.org/wiki/Lenguaje_de_programaci%C3%B3n_interpretado) por lo que no es necesario compilar los programas para ejecutarlos  
+
+* Según una [separacion en 3 capas de la pagina web](http://titleandsummary.com/separation-of-layers-content-presentation-and-behavior/), con el Javascript controlariamos la capa del comportamiento:  
+
+    * Contenido → HTML  
+    * Presentacion → CSS  
+    * Comportamiento → Javascript  
+
+    <sub>[http://jeffcroft.com/blog/2007/sep/26/new-layers-web-development/](http://jeffcroft.com/blog/2007/sep/26/new-layers-web-development/)</sub>  
