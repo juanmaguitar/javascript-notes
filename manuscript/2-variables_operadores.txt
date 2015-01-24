@@ -5,8 +5,9 @@ Las Variables se utilizan para almacenar datos
 Las variables solo tienen visibilidad (ambito) dentro de las funciones donde se declaran
 
 Antes de poder utilizar una variable hay que:  
-* Declarar la variable (con la sentencia `var`)
-* Inicializar la variable (en el momento de la declaración o despues)
+
+* Declarar la variable (con la sentencia `var`)  
+* Inicializar la variable (en el momento de la declaración o despues)  
 
 ```javascript
 var a = 1;
@@ -68,9 +69,10 @@ Cualquier valor que se utilize en JS es de un cierto tipo. En Javascript existen
 
 Cualquier valor que no pertenezca a uno de estos 5 tipo de primitivas es un objeto
 
-Asi que los tipos de datos en javascript pueden ser:
-- Primitivas (Los 5 tipos)
-- No primitivas (Objetos)
+Asi que los tipos de datos en javascript pueden ser:  
+
+- Primitivas (Los 5 tipos)  
+- No primitivas (Objetos)  
 
 Aunque existe el operador [`typeof`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/typeof) que devuelve el tipo de dato, es mejor utilizar [`Object.prototype.toString`](http://bonsaiden.github.io/JavaScript-Garden/#types.typeof)
 

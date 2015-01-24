@@ -1,6 +1,7 @@
 #Condiciones (Bifurcaciones Condicionales)
 
 Una *condición* es una estructura que realiza una tarea u otra dependiendo del resultado de evaluar una condición.  Aquí vamos a ver:  
+
 * La estructura **IF… ELSE**
 * La estructura **SWITCH**
 
@@ -33,6 +34,7 @@ result = 'a is greater than 2';
 ```
 
 Las partes de una condición if 
+
 - La sentencia `if`  
 - Una condición entre paréntesis. 
     Esta condición siempre devolverá un booleano.
@@ -98,6 +100,7 @@ result;
 ```
 
 Las partes de un switch 
+
 - La sentencia `switch`  
 - Una expresión entre paréntesis.   
     Esta expresión normalmente será una variable, pero puede ser cualquier expresión que devuelva un valor
