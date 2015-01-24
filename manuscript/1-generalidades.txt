@@ -1,29 +1,29 @@
 # Ideas Claras de Javascript
 
-* JavaScript es un [lenguaje de programación interpretado](http://es.wikipedia.org/wiki/Lenguaje_de_programaci%C3%B3n_interpretado) por lo que no es necesario compilar los programas para ejecutarlos  
-> 
-* Según una [separacion en 3 capas de la pagina web](http://titleandsummary.com/separation-of-layers-content-presentation-and-behavior/), con el Javascript controlariamos la capa del comportamiento:  
-> 
+JavaScript es un [lenguaje de programación interpretado](http://es.wikipedia.org/wiki/Lenguaje_de_programaci%C3%B3n_interpretado) por lo que no es necesario compilar los programas para ejecutarlos  
+
+Según una [separacion en 3 capas de la pagina web](http://titleandsummary.com/separation-of-layers-content-presentation-and-behavior/), con el Javascript controlariamos la capa del comportamiento:  
+
     * Contenido → HTML  
     * Presentacion → CSS  
     * Comportamiento → Javascript  
 
 > [http://jeffcroft.com/blog/2007/sep/26/new-layers-web-development/](http://jeffcroft.com/blog/2007/sep/26/new-layers-web-development/)
 
-* [Javascript](https://developer.mozilla.org/en/JavaScript_Language_Resources) está basado en [ECMAScript](http://es.wikipedia.org/wiki/ECMAScript) (o Ecma-262) que es una especificación de lenguaje de programacion (otro lenguaje "famoso" basado en este standard es _ActionScript_).  
-> 
-* Las [diferentes revisiones del Ecma-262](http://www.ecma-international.org/publications/standards/Ecma-262-arch.htm) y su [implementacion en los navegadores](http://kangax.github.io/compat-table/es5/) han ido marcando los desarrollos en Javascript
-> 
-* Con [la llegada de AJAX](http://www.uberbin.net/archivos/internet/ajax-un-nuevo-acercamiento-a-aplicaciones-web.php) (que no es más que el uso de un objeto javascript con el que podemos interactuar con el servidor sin tener que forzar una recarga de página) se abrió una nueva era en la historia del lenguaje
-> 
-* El uso tradicional de Javascript ha sido en el browser, pero ya se ha extendido [su uso tambien en el lado del servidor](http://net.tutsplus.com/tutorials/javascript-ajax/learning-serverside-javascript-with-node-js/) ([Node.js](http://nodejs.org/)), en [aplicaciones desktop](https://nodesource.com/blog/node-desktop-applications) y en [aplicaciones mobile](http://phonegap.com/) 
+[Javascript](https://developer.mozilla.org/en/JavaScript_Language_Resources) está basado en [ECMAScript](http://es.wikipedia.org/wiki/ECMAScript) (o Ecma-262) que es una especificación de lenguaje de programacion (otro lenguaje "famoso" basado en este standard es _ActionScript_).  
+
+Las [diferentes revisiones del Ecma-262](http://www.ecma-international.org/publications/standards/Ecma-262-arch.htm) y su [implementacion en los navegadores](http://kangax.github.io/compat-table/es5/) han ido marcando los desarrollos en Javascript
+
+Con [la llegada de AJAX](http://www.uberbin.net/archivos/internet/ajax-un-nuevo-acercamiento-a-aplicaciones-web.php) (que no es más que el uso de un objeto javascript con el que podemos interactuar con el servidor sin tener que forzar una recarga de página) se abrió una nueva era en la historia del lenguaje
+
+El uso tradicional de Javascript ha sido en el browser, pero ya se ha extendido [su uso tambien en el lado del servidor](http://net.tutsplus.com/tutorials/javascript-ajax/learning-serverside-javascript-with-node-js/) ([Node.js](http://nodejs.org/)), en [aplicaciones desktop](https://nodesource.com/blog/node-desktop-applications) y en [aplicaciones mobile](http://phonegap.com/) 
 
 > [http://www.youtube.com/watch?v=F6k8lTrAE2g](http://www.youtube.com/watch?v=F6k8lTrAE2g)  
 > [http://clintberry.com/2013/html5-apps-desktop-2013/](http://clintberry.com/2013/html5-apps-desktop-2013/)  
 > [http://www.hongkiat.com/blog/mobile-frameworks/](http://www.hongkiat.com/blog/mobile-frameworks/)  
  
-* Hay diferencias entre los navegadores debido al uso de [diferentes motores de Javascript](http://www.etnassoft.com/2011/05/31/comparativa-entre-los-distintos-motores-ecmascript/). Algunos de ellos son:
-> 
+Hay diferencias entre los navegadores debido al uso de [diferentes motores de Javascript](http://www.etnassoft.com/2011/05/31/comparativa-entre-los-distintos-motores-ecmascript/). Algunos de ellos son:
+
     * Chrome → V8
     * Firefox 4 → JagerMonkey
     * Opera 10 → Carakan
@@ -32,41 +32,41 @@
 
 T> Aunque la diferencia grande siempre ha estado entre Internet Explorer y el resto (hasta IE9)
 
-* Estos interpretes ([motores](http://en.wikipedia.org/wiki/JavaScript_engine#JavaScript_engines)) de JS que hay en cada navegador, realizan optimizaciones de código cada uno a su manera de ahí el diferente rendimiento entre navegadores
+Estos interpretes ([motores](http://en.wikipedia.org/wiki/JavaScript_engine#JavaScript_engines)) de JS que hay en cada navegador, realizan optimizaciones de código cada uno a su manera de ahí el diferente rendimiento entre navegadores
 
 > [http://jsperf.com/browse](http://jsperf.com/browse)
 
-* Un [Framework](http://www.desarrolloweb.com/articulos/listado-distintos-framework-javascript.html) (o libreria) es una coleccion de utilidades comunmente utilizadas que pueden ser utilizadas para desarrollar aplicaciones ahorrando tiempo y esfuerzo. El framework mas conocido y utilizado es [jQuery](https://jquery.com/).
+Un [Framework](http://www.desarrolloweb.com/articulos/listado-distintos-framework-javascript.html) (o libreria) es una coleccion de utilidades comunmente utilizadas que pueden ser utilizadas para desarrollar aplicaciones ahorrando tiempo y esfuerzo. El framework mas conocido y utilizado es [jQuery](https://jquery.com/).
 
 # Breve historia de Javascript
 
 ![JS History 1](img/js-history-1.png)
 
-- Javascript [fue creado en 10 dias en Mayo de 1995](https://www.w3.org/community/webed/wiki/A_Short_History_of_JavaScript) por [Brendan Eich](http://en.wikipedia.org/wiki/Brendan_Eich), bajo el nombre de Mocha
+Javascript [fue creado en 10 dias en Mayo de 1995](https://www.w3.org/community/webed/wiki/A_Short_History_of_JavaScript) por [Brendan Eich](http://en.wikipedia.org/wiki/Brendan_Eich), bajo el nombre de Mocha
 
-- La primera version del Javascript aparece en el navegador [Netscape](http://en.wikipedia.org/wiki/Netscape) 2.0  
+La primera version del Javascript aparece en el navegador [Netscape](http://en.wikipedia.org/wiki/Netscape) 2.0  
 
-- En diciembre de 1995 SUN Microsystems y Netscape deciden darle el nombre **JavaScript** (antes se llamó _Mocha_ y _LiveScript_) por una cuestion de puro marketing (_Java_ era el lenguaje más popular por aquellos dias).
+En diciembre de 1995 SUN Microsystems y Netscape deciden darle el nombre **JavaScript** (antes se llamó _Mocha_ y _LiveScript_) por una cuestion de puro marketing (_Java_ era el lenguaje más popular por aquellos dias).
 
-- En 1996 Internet Explorer 3.0 incluye una version propia de lo que seria el standard ECMAScript que llama _[JScript](http://en.wikipedia.org/wiki/JScript)_
+En 1996 Internet Explorer 3.0 incluye una version propia de lo que seria el standard ECMAScript que llama _[JScript](http://en.wikipedia.org/wiki/JScript)_
 
-- En 1997 se propuso este lenguaje como standard y la _European Computer Manufacturers Association_ ([ECMA](http://www.ecma-international.org/default.htm)) lo adopta como tal. De ahí que tambien se le llame **[ECMAScript](http://www.ecma-international.org/publications/standards/Ecma-262.htm)**  
+En 1997 se propuso este lenguaje como standard y la _European Computer Manufacturers Association_ ([ECMA](http://www.ecma-international.org/default.htm)) lo adopta como tal. De ahí que tambien se le llame **[ECMAScript](http://www.ecma-international.org/publications/standards/Ecma-262.htm)**  
 
-- En Junio de 1997 se publica la [primera edición del ECMA-262](http://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-262,%201st%20edition,%20June%201997.pdf)
+En Junio de 1997 se publica la [primera edición del ECMA-262](http://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-262,%201st%20edition,%20June%201997.pdf)
 
-- En [1998](http://www.w3.org/TR/1998/REC-DOM-Level-1-19981001/) y a raiz de las diferencias surgidas entre navegadores, la _W3C (World Wide Web Consortium)_ diseñó el standard **[DOM](http://es.wikipedia.org/wiki/Document_Object_Model)** que es un interfaz (API) para acceder y modificar el contenido estructurado del documento.  
+En [1998](http://www.w3.org/TR/1998/REC-DOM-Level-1-19981001/) y a raiz de las diferencias surgidas entre navegadores, la _W3C (World Wide Web Consortium)_ diseñó el standard **[DOM](http://es.wikipedia.org/wiki/Document_Object_Model)** que es un interfaz (API) para acceder y modificar el contenido estructurado del documento.  
 
-- En [1999](http://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-262,%203rd%20edition,%20December%201999.pdf), se sientan las bases del Javascript moderno con el lanzamiento de la tercera edición del ECMA-262, tambien llamado **EcmaScript 3**
+En [1999](http://www.ecma-international.org/publications/files/ECMA-ST-ARCH/ECMA-262,%203rd%20edition,%20December%201999.pdf), se sientan las bases del Javascript moderno con el lanzamiento de la tercera edición del ECMA-262, tambien llamado **EcmaScript 3**
 
 ![JS History 2](img/js-history-2.png)
 
-- En 2005, se acuña el termino [AJAX](http://www.adaptivepath.com/ideas/ajax-new-approach-web-applications/) y revoluciona el mundo del desarrollo web con la llegada de sitios web asíncronos (Gmail, Google Maps...)
+En 2005, se acuña el termino [AJAX](http://www.adaptivepath.com/ideas/ajax-new-approach-web-applications/) y revoluciona el mundo del desarrollo web con la llegada de sitios web asíncronos (Gmail, Google Maps...)
 
--  En [2005](https://jquery.org/history/) sale la primera versión de jQuery. Las diferencias entre navegadores han marcado los desarrollos en Javascript hasta el dia de hoy, y han hecho habitual el uso de [frameworks](http://www.maestrosdelweb.com/editorial/comparacion-frameworks-javascript/) (como jQuery) que nos ayuden a lidiar con estas diferencias.
+En [2005](https://jquery.org/history/) sale la primera versión de jQuery. Las diferencias entre navegadores han marcado los desarrollos en Javascript hasta el dia de hoy, y han hecho habitual el uso de [frameworks](http://www.maestrosdelweb.com/editorial/comparacion-frameworks-javascript/) (como jQuery) que nos ayuden a lidiar con estas diferencias.
 
--  En 2009 se completa y libera la quinta edición del ECMA-262, más conocida como **ECMAScript 5**. La [edicion 5.1](http://www.ecma-international.org/ecma-262/5.1/) se libera en 2011
+En 2009 se completa y libera la quinta edición del ECMA-262, más conocida como **ECMAScript 5**. La [edicion 5.1](http://www.ecma-international.org/ecma-262/5.1/) se libera en 2011
 
--  En diciembre de 2014 se aprueba la 6ª edicion del ECMA-262 o **ECMAScript 6**. Se espera el [lanzamiento oficial para Junio de 2015](http://www.2ality.com/2014/06/es6-schedule.html)
+En diciembre de 2014 se aprueba la 6ª edicion del ECMA-262 o **ECMAScript 6**. Se espera el [lanzamiento oficial para Junio de 2015](http://www.2ality.com/2014/06/es6-schedule.html)
 #ECMAScript
 
 ##EcmaScript 5
@@ -82,8 +82,8 @@ Esta version **amplia** los anteriores standards [con algunas mejoras](http://ww
   }
   ```
 
-  [http://cjihrig.com/blog/javascripts-strict-mode-and-why-you-should-use-it/](http://cjihrig.com/blog/javascripts-strict-mode-and-why-you-should-use-it/)  
-  [http://www.nczonline.net/blog/2012/03/13/its-time-to-start-using-javascript-strict-mode/](http://www.nczonline.net/blog/2012/03/13/its-time-to-start-using-javascript-strict-mode/)  
+> [http://cjihrig.com/blog/javascripts-strict-mode-and-why-you-should-use-it/](http://cjihrig.com/blog/javascripts-strict-mode-and-why-you-should-use-it/)  
+> [http://www.nczonline.net/blog/2012/03/13/its-time-to-start-using-javascript-strict-mode/](http://www.nczonline.net/blog/2012/03/13/its-time-to-start-using-javascript-strict-mode/)  
 
 - [`Object` new methods](http://ejohn.org/blog/ecmascript-5-objects-and-properties/)
 
