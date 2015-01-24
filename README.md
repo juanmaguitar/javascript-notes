@@ -10,34 +10,34 @@ Este material cubre los siguientes contenidos:
 
 ### Basic 
 
-- [Ideas Claras, Historia del JS, EcmaScript](https://github.com/juanmaguitar/training-frontend-docs/tree/master/manuscript/generalidades)
-- [Variables, Tipos de Datos y Operadores](https://github.com/juanmaguitar/training-frontend-docs/tree/master/manuscript/variable_tipos_datos_operadores)
-- [Condicionales y Bucles](https://github.com/juanmaguitar/training-frontend-docs/tree/master/manuscript/condiciones_bucles)
-- [Funciones (Predefinidas, Callback, Closures...)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/manuscript/funciones)
-- [Arrays y Objetos (Funciones Constructoras)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/manuscript/objetos)
-- [Objetos Globales (Object, Array, Function, Array, Number, Boolean, Math y Date)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/manuscript/objetos_globales)
-- [El entorno del navegador](https://github.com/juanmaguitar/training-frontend-docs/tree/master/manuscript/entorno_navegador)
-    -  [DOM, Seleccion de elementos](https://github.com/juanmaguitar/training-frontend-docs/tree/master/manuscript/entorno_navegador/DOM)
-    -  [BOM](https://github.com/juanmaguitar/training-frontend-docs/tree/master/manuscript/entorno_navegador/BOM)
-- [Eventos](https://github.com/juanmaguitar/training-frontend-docs/tree/master/manuscript/eventos)
-- [JSON](https://github.com/juanmaguitar/training-frontend-docs/tree/master/manuscript/JSON)
-- [AJAX](https://github.com/juanmaguitar/training-frontend-docs/tree/master/manuscript/AJAX)
-- [Expresiones Regulares](https://github.com/juanmaguitar/training-frontend-docs/tree/master/manuscript/expresiones_regulares)
+- [Ideas Claras, Historia del JS, EcmaScript](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/generalidades)
+- [Variables, Tipos de Datos y Operadores](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/variable_tipos_datos_operadores)
+- [Condicionales y Bucles](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/condiciones_bucles)
+- [Funciones (Predefinidas, Callback, Closures...)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/funciones)
+- [Arrays y Objetos (Funciones Constructoras)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/objetos)
+- [Objetos Globales (Object, Array, Function, Array, Number, Boolean, Math y Date)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/objetos_globales)
+- [El entorno del navegador](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/entorno_navegador)
+    -  [DOM, Seleccion de elementos](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/entorno_navegador/DOM)
+    -  [BOM](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/entorno_navegador/BOM)
+- [Eventos](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/eventos)
+- [JSON](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/JSON)
+- [AJAX](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/AJAX)
+- [Expresiones Regulares](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/expresiones_regulares)
 
 
 ### Advanced
 
-- [Same-Origin Policy](https://github.com/juanmaguitar/training-frontend-docs/tree/master/manuscript/same_origin_policy)
-    -  [JSONP](https://github.com/juanmaguitar/training-frontend-docs/tree/master/manuscript/same_origin_policy/JSONP)
-    -  [CORS](https://github.com/juanmaguitar/training-frontend-docs/tree/master/manuscript/same_origin_policy/CORS)
-- [El valor de `this`](https://github.com/juanmaguitar/training-frontend-docs/tree/master/manuscript/this)
-- [Prototype](https://github.com/juanmaguitar/training-frontend-docs/tree/master/manuscript/prototype)
-- [Herencia](https://github.com/juanmaguitar/training-frontend-docs/tree/master/manuscript/herencia)
-- [Contexto de Ejecución (Function Declaration, Function Expression, Hoisting)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/manuscript/contexto_ejecucion)
-- [Scope](https://github.com/juanmaguitar/training-frontend-docs/tree/master/manuscript/scope)
-- [Patrones de Código](https://github.com/juanmaguitar/training-frontend-docs/tree/master/manuscript/patrones_codigo)
-- [Patrones de Diseño](https://github.com/juanmaguitar/training-frontend-docs/tree/master/manuscript/patrones_diseno)
-- [Unit Testings](https://github.com/juanmaguitar/training-frontend-docs/tree/master/manuscript/unit_testings)
+- [Same-Origin Policy](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/same_origin_policy)
+    -  [JSONP](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/same_origin_policy/JSONP)
+    -  [CORS](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/same_origin_policy/CORS)
+- [El valor de `this`](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/this)
+- [Prototype](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/prototype)
+- [Herencia](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/herencia)
+- [Contexto de Ejecución (Function Declaration, Function Expression, Hoisting)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/contexto_ejecucion)
+- [Scope](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/scope)
+- [Patrones de Código](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/patrones_codigo)
+- [Patrones de Diseño](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/patrones_diseno)
+- [Unit Testings](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/unit_testings)
 
 ## Referencias ##
 
