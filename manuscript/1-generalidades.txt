@@ -4,9 +4,9 @@ JavaScript es un [lenguaje de programación interpretado](http://es.wikipedia.or
 
 Según una [separacion en 3 capas de la pagina web](http://titleandsummary.com/separation-of-layers-content-presentation-and-behavior/), con el Javascript controlariamos la capa del comportamiento:  
 
-    * Contenido → HTML  
-    * Presentacion → CSS  
-    * Comportamiento → Javascript  
+* Contenido → HTML  
+* Presentacion → CSS  
+* Comportamiento → Javascript  
 
 > [http://jeffcroft.com/blog/2007/sep/26/new-layers-web-development/](http://jeffcroft.com/blog/2007/sep/26/new-layers-web-development/)
 
@@ -24,11 +24,11 @@ El uso tradicional de Javascript ha sido en el browser, pero ya se ha extendido 
  
 Hay diferencias entre los navegadores debido al uso de [diferentes motores de Javascript](http://www.etnassoft.com/2011/05/31/comparativa-entre-los-distintos-motores-ecmascript/). Algunos de ellos son:
 
-    * Chrome → V8
-    * Firefox 4 → JagerMonkey
-    * Opera 10 → Carakan
-    * Safari → Nitro
-    * Internet Explorer 9 → Chakra
+* Chrome → V8
+* Firefox 4 → JagerMonkey
+* Opera 10 → Carakan
+* Safari → Nitro
+* Internet Explorer 9 → Chakra
 
 T> Aunque la diferencia grande siempre ha estado entre Internet Explorer y el resto (hasta IE9)
 
