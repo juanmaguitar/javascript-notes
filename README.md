@@ -10,34 +10,34 @@ Este material cubre los siguientes contenidos:
 
 ### Basic 
 
-- [Ideas Claras, Historia del JS, EcmaScript](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/generalidades)
-- [Variables, Tipos de Datos y Operadores](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/variable_tipos_datos_operadores)
-- [Condicionales y Bucles](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/condiciones_bucles)
-- [Funciones (Predefinidas, Callback, Closures...)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/funciones)
-- [Arrays y Objetos (Funciones Constructoras)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/objetos)
-- [Objetos Globales (Object, Array, Function, Array, Number, Boolean, Math y Date)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/objetos_globales)
-- [El entorno del navegador](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/entorno_navegador)
-    -  [DOM, Seleccion de elementos](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/entorno_navegador/DOM)
-    -  [BOM](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/entorno_navegador/BOM)
-- [Eventos](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/eventos)
-- [JSON](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/JSON)
-- [AJAX](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/AJAX)
-- [Expresiones Regulares](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/expresiones_regulares)
+- [Ideas Claras, Historia del JS, EcmaScript](markdown/generalidades)
+- [Variables, Tipos de Datos y Operadores](markdown/variable_tipos_datos_operadores)
+- [Condicionales y Bucles](markdown/condiciones_bucles)
+- [Funciones (Predefinidas, Callback, Closures...)](markdown/funciones)
+- [Arrays y Objetos (Funciones Constructoras)](markdown/objetos)
+- [Objetos Globales (Object, Array, Function, Array, Number, Boolean, Math y Date)](markdown/objetos_globales)
+- [El entorno del navegador](markdown/entorno_navegador)
+    -  [DOM, Seleccion de elementos](markdown/entorno_navegador/DOM)
+    -  [BOM](markdown/entorno_navegador/BOM)
+- [Eventos](markdown/eventos)
+- [JSON](markdown/JSON)
+- [AJAX](markdown/AJAX)
+- [Expresiones Regulares](markdown/expresiones_regulares)
 
 
 ### Advanced
 
-- [Same-Origin Policy](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/same_origin_policy)
-    -  [JSONP](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/same_origin_policy/JSONP)
-    -  [CORS](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/same_origin_policy/CORS)
-- [El valor de `this`](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/this)
-- [Prototype](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/prototype)
-- [Herencia](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/herencia)
-- [Contexto de Ejecución (Function Declaration, Function Expression, Hoisting)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/contexto_ejecucion)
-- [Scope](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/scope)
-- [Patrones de Código](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/patrones_codigo)
-- [Patrones de Diseño](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/patrones_diseno)
-- [Unit Testings](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/unit_testings)
+- [Same-Origin Policy](markdown/same_origin_policy)
+    -  [JSONP](markdown/same_origin_policy/JSONP)
+    -  [CORS](markdown/same_origin_policy/CORS)
+- [El valor de `this`](markdown/this)
+- [Prototype](markdown/prototype)
+- [Herencia](markdown/herencia)
+- [Contexto de Ejecución (Function Declaration, Function Expression, Hoisting)](markdown/contexto_ejecucion)
+- [Scope](markdown/scope)
+- [Patrones de Código](markdown/patrones_codigo)
+- [Patrones de Diseño](markdown/patrones_diseno)
+- [Unit Testings](markdown/unit_testings)
 
 ## Referencias ##
 

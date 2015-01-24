@@ -4,9 +4,9 @@ Las Variables se utilizan para almacenar datos
 
 Las variables solo tienen visibilidad (ambito) dentro de las funciones donde se declaran
 
-Antes de poder utilizar una variable hay que:
-- Declarar la variable (con la sentencia `var`)
-- Inicializar la variable (en el momento de la declaración o despues)
+Antes de poder utilizar una variable hay que:  
+* Declarar la variable (con la sentencia `var`)
+* Inicializar la variable (en el momento de la declaración o despues)
 
 ```javascript
 var a = 1;
@@ -38,19 +38,19 @@ T> Genera un warning y que ‘somevar’ devuelva FALSE no quiere decir que no e
 
 [Forma Correcta](http://bonsaiden.github.io/JavaScript-Garden/#types.typeof)
     
-    ```javascript
-    >>> var somevar;
-    >>> if (typeof somevar !== "undefined"){result = 'yes';}
-    >>> result;
-    ""
-    ```
+```javascript
+>>> var somevar;
+>>> if (typeof somevar !== "undefined"){result = 'yes';}
+>>> result;
+""
+```
 
-    ```javascript
-    >>> somevar = 123;
-    >>> if (typeof somevar !== "undefined"){result = 'yes';}
-    >>> result;
-    "yes"
-    ```
+```javascript
+>>> somevar = 123;
+>>> if (typeof somevar !== "undefined"){result = 'yes';}
+>>> result;
+"yes"
+```
 
 T> Si la variable está definida y tiene algún valor, su tipo de datos siempre será distinto de undefined
 
@@ -61,9 +61,9 @@ Cualquier valor que se utilize en JS es de un cierto tipo. En Javascript existen
 - **Number**: Puede contener numeros enteros (integer), decimales (float), hexadecimales, octales, exponentes y los números especiales `NaN` y `Infinity`
 - **String**: Cualquier numero de caracteres entre comillas
 - **Boolean**: puede ser `true` or `false` 
-- **Undefined**: Es un tipo de datos con un solo valor: [`undefined`](http://bonsaiden.github.com/JavaScript-Garden/#core.undefined)
+- **Undefined**: Es un tipo de datos con un solo valor: [`undefined`](http://bonsaiden.github.com/JavaScript-Garden/#core.undefined)  
     Lo devuelve JS cuando no existe una variable o no está inicializada.
-- **Null**: Otro tipo de datos con un solo valor: [`null`](http://bonsaiden.github.com/JavaScript-Garden/#core.undefined)
+- **Null**: Otro tipo de datos con un solo valor: [`null`](http://bonsaiden.github.com/JavaScript-Garden/#core.undefined)  
     Lo podemos asignar nosotros para inicializar a vacio.
 
 Cualquier valor que no pertenezca a uno de estos 5 tipo de primitivas es un objeto
