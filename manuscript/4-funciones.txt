@@ -187,6 +187,7 @@ encodeURI()` pero esta función codifica (decodifica) TODOS los caracteres trans
 >>> encodeURIComponent(url);
 "http%3A%2F%2Fwww.packtpub.com%2Fscr%20ipt.php%3Fq%3Dthis%20and%20that"
 ```
+
 ###[eval()](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Funciones_globales/eval)
 
 `eval()` toma una cadena de texto y la ejecuta como código Javascript
