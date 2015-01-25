@@ -251,7 +251,6 @@ ordena el array y devuelve el array modificado
 - Las funciones son objetos
 - Podemos crear funciones con la función constructora `Function()` (aunque este metodo no se recomienda ya que internamente hace un _eval()_ )
 
-Ejemplo:
 ```javascript
 >>> function sum(a, b) {return a + b;};
 >>> sum(1, 2)
@@ -363,7 +362,6 @@ f()
 El objeto _Boolean_ es un contenedor para un valor de tipo booleano  
   Podemos crear objetos _Boolean_ con la función constructora `Boolean()`
 
-Ejemplo:
 ```javascript
 >>> var b = new Boolean();
 >>> typeof b 
@@ -376,7 +374,6 @@ false
 
 La función `Boolean` usada como función normal (sin `new`) nos devuelve el valor pasado como parametro convertido a booleano
 
-Ejemplo:
 ```javascript
 >>> Boolean("test") 
 true
@@ -395,7 +392,6 @@ La función `Number()` puede ser usada:
 
 Los objetos número disponen de los métodos: [`toFixed()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number/toFixed), [`toPrecision()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number/toPrecision) y [`toExponential()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number/toExponential)
 
-Ejemplo:
 ```javascript
 >>> var n = new Number(123.456)
 >>> n.toFixed(1) 
@@ -407,7 +403,6 @@ Ejemplo:
 
 El método [`toString()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number/toString) de un objeto numero nos permite transformar un numero a una base determinada 
 
-Ejemplo:
 ```javascript
 >>> var n = new Number(255);
 >>> n.toString(); 
@@ -427,7 +422,6 @@ Ejemplo:
 Podemos crear objetos String con la función constructora `String()`  
 Un objeto _String_ NO es un dato de tipo primitivo string (`valueOf()`)
 
-Ejemplo:
 ```javascript
 >>> var primitive = 'Hello';
 >>> typeof primitive; 
@@ -447,7 +441,6 @@ Un objeto string es parecido a un array de caracteres:
 - Cada carácter tiene una posición indexada
 - Tiene disponible la propiedad length
 
-Ejemplo:
 ```javascript
 >>> obj[0] 
 "w"
@@ -459,7 +452,6 @@ Ejemplo:
 
 Aunque los métodos pertenezcan al objeto String, podemos utilizarlos también directamente en datos de tipo primitivo string (se crea el objeto internamente)
 
-Ejemplo:
 ```javascript
 >>> "potato".length 
 6
@@ -480,9 +472,8 @@ Los objetos string disponen de los siguientes métodos:
 - [`indexOf()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/indexOf) busca una cadena de texto en el string y devuelve la posición donde la encuentra
     - Si no encuentra nada devuelve -1 
 
-- `lastIndexOf()` empieza la búsqueda desde el final de la cadena  
+- `lastIndexOf()` empieza la búsqueda desde el final de la cadena
     - Si no encuentra nada devuelve -1 
-    
     Por tanto la manera de correcta de chequear si existe una cadena de texto en otra es →  `if ( s.toLowerCase().indexOf('couch') !== -1 ) {...}`
 
 - [`slice()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/slice) devuelve un trozo de la cadena de texto 
@@ -538,6 +529,7 @@ Podemos crear objetos Date nuevo pasándole:
 
 
 Ejemplo (Firebug muestra el resultado del metodo toString sobre un objeto date):
+
 ```javascript
 >>> new Date() 
 Tue Jan 08 2008 01:10:42 GMT-0800 (Pacific Standard Time) 
