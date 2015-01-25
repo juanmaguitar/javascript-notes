@@ -120,6 +120,7 @@ Un bucle es una estructura que nos permite repetir un bloque de código muchas v
 El número de repeticiones dependerá del resultado de evaluar una condición, antes (o después) de cada iteración
 
 En Javascript hay 4 tipos de bucles:
+
 - while loops 
 - do-while loops 
 - for loops 
@@ -175,14 +176,13 @@ for (var i = 0; i < 100; i++) {
 <img src="img/bucle_for.png" alt="Bucle For JS" title="Bucle For JS" />
 
 
-La estrucura del bucle for tiene 3 partes claramente diferenciadas (separadas por ;)
+La estrucura del bucle for tiene 3 partes claramente diferenciadas (separadas por 
+
 - **Inicialización** _(var i=0)_: Código que es ejecutado antes de entrar en el bucle [O]
 - **Evaluación** _(i<100)_: Mientras evalue a true seguimos con el bucle [C]
 - **Incremento** _(i++)_:  Código que es ejecutado después de cada iteración [++]
 
 Se pueden anidar bucles `for`
-
-Ejemplo:
 
 ```javascript
 var res = '\n'; 

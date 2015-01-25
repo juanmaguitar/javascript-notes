@@ -1,6 +1,7 @@
 #Condiciones (Bifurcaciones Condicionales)
 
 - Una *condición* es una estructura que realiza una tarea u otra dependiendo del resultado de evaluar una condición.  Aquí vamos a ver:
+
     - La estructura **IF… ELSE**
     - La estructura **SWITCH**
 
@@ -105,6 +106,7 @@ result;
 ```
 
 -  Las partes de un switch 
+
     - La sentencia `switch`  
     - Una expresión entre paréntesis.   
         Esta expresión normalmente será una variable, pero puede ser cualquier expresión que devuelva un valor
@@ -124,6 +126,7 @@ result;
     El número de repeticiones dependerá del resultado de evaluar una condición, antes (o después) de cada iteración
 
 - En Javascript hay 4 tipos de bucles:
+
     - while loops 
     - do-while loops 
     - for loops 
@@ -177,6 +180,7 @@ for (var i = 0; i < 100; i++) {
 
 
 - La estrucura del bucle for tiene 3 partes claramente diferenciadas (separadas por ;)
+
     - **Inicialización** _(var i=0)_: Código que es ejecutado antes de entrar en el bucle [O]
     - **Evaluación** _(i<100)_: Mientras evalue a true seguimos con el bucle [C]
     - **Incremento** _(i++)_:  Código que es ejecutado después de cada iteración [++]
