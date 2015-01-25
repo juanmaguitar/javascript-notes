@@ -5,3 +5,5 @@
 5-arrays.txt
 6-objetos.txt
 7-entorno_navegador.txt
+8-dom.txt
+9-bom.txt
