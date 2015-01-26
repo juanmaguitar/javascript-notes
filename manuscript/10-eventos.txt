@@ -43,7 +43,7 @@ if (document.addEventListener){ // FF
 }
 ```
 
-#### Modelo Tradicional
+### Modelo Tradicional
 
 Podemos capturar eventos con el [_modelo tradicional_](http://www.quirksmode.org/js/events_tradmod.html)
 
@@ -64,7 +64,7 @@ Este modelo consiste en asignar una función a la propiedad `onclick`, `onchange
 Con este metodo sólo podemos asignar UNA funcion a cada evento  
 Este metodo funciona igual en TODOS los navegadores  
 
-#### Modelo Avanzado
+### Modelo Avanzado
 
 Tambien podemos capturar eventos con el [_modelo avanzado_](http://www.quirksmode.org/js/events_advanced.html)
 
@@ -124,7 +124,7 @@ A> [http://jqfundamentals.com/book/index.html#chapter-5](http://jqfundamentals.c
 
 Con _jQuery_ podemos realizar nuestra gestion de eventos sin tener que preocuparnos de las diferencias entre navegadores:
 
-#### [`$().bind()`](http://api.jquery.com/bind/) y [`$().unbind()`](http://api.jquery.com/unbind/)
+### [`$().bind()`](http://api.jquery.com/bind/) y [`$().unbind()`](http://api.jquery.com/unbind/)
 
 El `addEventListener`/`removeEventListener`
 cross-browsing
@@ -138,7 +138,7 @@ Los tipos de eventos que podemos capturar son `blur`, `focus`, `focusin`, `focus
 
 Tambien podemos crearnos [nuestros propios tipos de eventos](http://api.jquery.com/category/events/event-object/)
 
-#### [`$().on()`](http://api.jquery.com/on) y [`$().off()`](http://api.jquery.com/off/)
+### [`$().on()`](http://api.jquery.com/on) y [`$().off()`](http://api.jquery.com/off/)
 
 El `$().bind()`/`$().unbind()` cross-functional
 
@@ -146,36 +146,36 @@ El `$().bind()`/`$().unbind()` cross-functional
 	.off( events [, selector ] [, handler ] )
 
 
-#### [`$().trigger()`](http://api.jquery.com/trigger)
+### [`$().trigger()`](http://api.jquery.com/trigger)
 
 Nos permite ejecutar todos los handlers asociados a un evento
 
 	.trigger( eventType, extraParameters )
 
-#### [`$().toggle()`](http://api.jquery.com/toggle-event/)
+### [`$().toggle()`](http://api.jquery.com/toggle-event/)
 
 Adjunta varias funciones a un elemento que seran ejecutadas en sucesivos clicks
 
 	.toggle( handler(eventObject), handler(eventObject), [ handler(eventObject) ] )
 
-#### [`event.preventDefault()`](http://api.jquery.com/event.preventDefault/)
+### [`event.preventDefault()`](http://api.jquery.com/event.preventDefault/)
 
 El `e.preventDefault` cross-browsing
 
-#### [`event.stopPropagation()`](http://api.jquery.com/event.stopPropagation/)
+### [`event.stopPropagation()`](http://api.jquery.com/event.stopPropagation/)
 
 El `e.stopPropagation` cross-browsing
 
-#### [`event.stopImmediatePropagation()`](http://api.jquery.com/event.stopImmediatePropagation/)
+### [`event.stopImmediatePropagation()`](http://api.jquery.com/event.stopImmediatePropagation/)
 
 Además de hacer `e.stopPropagation`
 cross-browsing, detiene el resto de handlers asociados al mismo evento
 
 
-#### [`event.target`](http://api.jquery.com/event.target/)
+### [`event.target`](http://api.jquery.com/event.target/)
 
 El `e.target` (elemento que provocó el evento) cross-browsing
 
-#### [`event.type`](http://api.jquery.com/event.type/)
+### [`event.type`](http://api.jquery.com/event.type/)
 
 El tipo de evento lanzado
