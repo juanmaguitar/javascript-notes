@@ -77,7 +77,7 @@ true
 
 ## Métodos de String que aceptan Expresiones Regulares
 
-> [http://www.javascriptkit.com/javatutors/re3.shtml](http://www.javascriptkit.com/javatutors/re3.shtml)  
+A> [http://www.javascriptkit.com/javatutors/re3.shtml](http://www.javascriptkit.com/javatutors/re3.shtml)  
 
 Tenemos disponibles los siguientes métodos del objeto `String` para buscar dentro de un texto mediante expresiones regulares:
 
@@ -146,9 +146,9 @@ undefined
 
 ## Sintaxis de las Expresiones Regulares
 
-> [http://es.wikipedia.org/wiki/Expresi%C3%B3n_regular](http://es.wikipedia.org/wiki/Expresi%C3%B3n_regular)  
-> [http://www.addedbytes.com/cheat-sheets/regular-expressions-cheat-sheet/](http://www.addedbytes.com/cheat-sheets/regular-expressions-cheat-sheet/)  
-> [http://www.visibone.com/regular-expressions/](http://www.visibone.com/regular-expressions/)  
+A> [http://es.wikipedia.org/wiki/Expresi%C3%B3n_regular](http://es.wikipedia.org/wiki/Expresi%C3%B3n_regular)  
+A> [http://www.addedbytes.com/cheat-sheets/regular-expressions-cheat-sheet/](http://www.addedbytes.com/cheat-sheets/regular-expressions-cheat-sheet/)  
+A> [http://www.visibone.com/regular-expressions/](http://www.visibone.com/regular-expressions/)  
 
 ### `[abc]`
 

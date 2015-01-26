@@ -1,14 +1,14 @@
 # AJAX
 
-> [http://www.adaptivepath.com/ideas/ajax-new-approach-web-applications/](http://www.adaptivepath.com/ideas/ajax-new-approach-web-applications/)  
-> [https://developer.mozilla.org/en/ajax](https://developer.mozilla.org/en/ajax)  
-> [http://www.anieto2k.com/2006/05/16/los-mejores-manuales-de-ajax/](http://www.anieto2k.com/2006/05/16/los-mejores-manuales-de-ajax/)  
-> [http://www.fiftyfoureleven.com/resources/programming/xmlhttprequest/examples](http://www.fiftyfoureleven.com/resources/programming/xmlhttprequest/examples)  
+A> [http://www.adaptivepath.com/ideas/ajax-new-approach-web-applications/](http://www.adaptivepath.com/ideas/ajax-new-approach-web-applications/)  
+A> [https://developer.mozilla.org/en/ajax](https://developer.mozilla.org/en/ajax)  
+A> [http://www.anieto2k.com/2006/05/16/los-mejores-manuales-de-ajax/](http://www.anieto2k.com/2006/05/16/los-mejores-manuales-de-ajax/)  
+A> [http://www.fiftyfoureleven.com/resources/programming/xmlhttprequest/examples](http://www.fiftyfoureleven.com/resources/programming/xmlhttprequest/examples)  
 
 Agrupa un conjunto de tecnologias cuyo eje central son las peticiones asincronas al servidor a traves del objeto `XMLHttpRequest()` (XHR)  
 
-> [http://www.w3.org/TR/XMLHttpRequest/](http://www.w3.org/TR/XMLHttpRequest/)    
-> [http://www.xml.com/pub/a/2005/02/09/xml-http-request.html](http://www.xml.com/pub/a/2005/02/09/xml-http-request.html)  
+A> [http://www.w3.org/TR/XMLHttpRequest/](http://www.w3.org/TR/XMLHttpRequest/)    
+A> [http://www.xml.com/pub/a/2005/02/09/xml-http-request.html](http://www.xml.com/pub/a/2005/02/09/xml-http-request.html)  
 
     La aplicación de esta técnica dio lugar a las llamadas aplicaciones AJAX, donde no es necesario refrescar la pagina para obtener nuevo contenido.
 
@@ -26,8 +26,8 @@ Pero hay maneras de solucionar este problema: [_JSONP_](https://github.com/juanm
 
 ## Haciendo la petición
 
-> [https://developer.mozilla.org/en/XMLHttpRequest](https://developer.mozilla.org/en/XMLHttpRequest)  
-> [http://jibbering.com/2002/4/httprequest.html](http://jibbering.com/2002/4/httprequest.html)
+A> [https://developer.mozilla.org/en/XMLHttpRequest](https://developer.mozilla.org/en/XMLHttpRequest)  
+A> [http://jibbering.com/2002/4/httprequest.html](http://jibbering.com/2002/4/httprequest.html)
 
 ```javascript
 var xhr = new XMLHttpRequest();
@@ -38,8 +38,8 @@ xhr.send('');
 
 Las peticiones AJAX las hacemos a traves de objetos XHR.  
 
-> [http://es.wikipedia.org/wiki/XMLHttpRequest](http://es.wikipedia.org/wiki/XMLHttpRequest)  
-> [https://developer.mozilla.org/En/XMLHttpRequest/Using_XMLHttpRequest](https://developer.mozilla.org/En/XMLHttpRequest/Using_XMLHttpRequest)
+A> [http://es.wikipedia.org/wiki/XMLHttpRequest](http://es.wikipedia.org/wiki/XMLHttpRequest)  
+A> [https://developer.mozilla.org/En/XMLHttpRequest/Using_XMLHttpRequest](https://developer.mozilla.org/En/XMLHttpRequest/Using_XMLHttpRequest)
 
 Para crear un objeto XHR utilizamos el objeto `XMLHttpRequest()` que es nativo en IE7+, Safari, Opera y Firefox
 
@@ -63,7 +63,7 @@ Despues hay que llamar al metodo `send()` para hacer la petición
 
 ## Procesando la respuesta
 
-> [http://www.quirksmode.org/blog/archives/2005/12/the_ajax_respon.html](http://www.quirksmode.org/blog/archives/2005/12/the_ajax_respon.html)
+A> [http://www.quirksmode.org/blog/archives/2005/12/the_ajax_respon.html](http://www.quirksmode.org/blog/archives/2005/12/the_ajax_respon.html)
 
 ```javascript
 function myCallback() {
@@ -96,8 +96,8 @@ El valor que nos interesa para esta propiedad es 200 (OK)
 
 ## AJAX con jQuery
 
-> [http://blogs.sitepoint.com/ajax-jquery/](http://blogs.sitepoint.com/ajax-jquery/)
-> [http://jqfundamentals.com/book/#chapter-7](http://jqfundamentals.com/book/#chapter-7)
+A> [http://blogs.sitepoint.com/ajax-jquery/](http://blogs.sitepoint.com/ajax-jquery/)
+A> [http://jqfundamentals.com/book/#chapter-7](http://jqfundamentals.com/book/#chapter-7)
 
 ```javascript
 $.ajax({

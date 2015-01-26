@@ -62,7 +62,7 @@ Un array puede contener otros arrays.
 6
 ```
 
-> [http://bonsaiden.github.com/JavaScript-­‐Garden/#array.general](http://bonsaiden.github.com/JavaScript-­‐Garden/#array.general)
+A> [http://bonsaiden.github.com/JavaScript-­‐Garden/#array.general](http://bonsaiden.github.com/JavaScript-­‐Garden/#array.general)
 
 #Objetos
 

@@ -1,9 +1,9 @@
 # El entorno del Navegador
 
-> [http://www.saregune.net/ikasi/hezigune/curso.php?curso=javascript&leccion=js_intro_dom](http://www.saregune.net/ikasi/hezigune/curso.php?curso=javascript&leccion=js_intro_dom)    
-> [http://vkanakaraj.wordpress.com/2009/12/18/javascript-vs-dom-vs-bom-relationship-explained/](http://vkanakaraj.wordpress.com/2009/12/18/javascript-vs-dom-vs-bom-relationship-explained/)    
-> [http://javascript.about.com/od/byexample/a/Javascript-By-Example_2.htm](http://javascript.about.com/od/byexample/a/Javascript-By-Example_2.htm)    
-> [http://stackoverflow.com/questions/4416317/what-is-the-dom-and-bom-in-javascript](http://stackoverflow.com/questions/4416317/what-is-the-dom-and-bom-in-javascript)    
+A> [http://www.saregune.net/ikasi/hezigune/curso.php?curso=javascript&leccion=js_intro_dom](http://www.saregune.net/ikasi/hezigune/curso.php?curso=javascript&leccion=js_intro_dom)    
+A> [http://vkanakaraj.wordpress.com/2009/12/18/javascript-vs-dom-vs-bom-relationship-explained/](http://vkanakaraj.wordpress.com/2009/12/18/javascript-vs-dom-vs-bom-relationship-explained/)    
+A> [http://javascript.about.com/od/byexample/a/Javascript-By-Example_2.htm](http://javascript.about.com/od/byexample/a/Javascript-By-Example_2.htm)    
+A> [http://stackoverflow.com/questions/4416317/what-is-the-dom-and-bom-in-javascript](http://stackoverflow.com/questions/4416317/what-is-the-dom-and-bom-in-javascript)    
 
 Javascript puede ser utilizado en [diferentes entornos](http://en.wikipedia.org/wiki/JavaScript#Uses_outside_web_pages), pero [su entorno más habitual es el navegador](https://developer.mozilla.org/en/JavaScript_technologies_overview)  
 
@@ -14,15 +14,15 @@ El código Javascript de una pagina tiene acceso a unos cuantos objetos. Estos o
 
 El DOM es un standard y tiene varias versiones (llamadas levels). La mayoria de los navegadores implementan casi por completo el DOM Level 1.  
 
-> [http://www.quirksmode.org/compatibility.html](http://www.quirksmode.org/compatibility.html)    
-> [http://www.webdevout.net/browser-subport-dom](http://www.webdevout.net/browser-subport-dom)  
+A> [http://www.quirksmode.org/compatibility.html](http://www.quirksmode.org/compatibility.html)    
+A> [http://www.webdevout.net/browser-subport-dom](http://www.webdevout.net/browser-subport-dom)  
 
 El BOM no es un standard, asi que algunos objetos están soportados por la mayoría de navegadores y otros solo por algunos.
 
 
 ## [Deteccion de Funcionalidades](https://developer.mozilla.org/en/Browser_Detection_and_Cross_Browser_Support)
 
-> [http://stackoverflow.com/questions/1173165/how-to-guess-browser-compatibility-based-upon-dom-level](http://stackoverflow.com/questions/1173165/how-to-guess-browser-compatibility-based-upon-dom-level)    
+A> [http://stackoverflow.com/questions/1173165/how-to-guess-browser-compatibility-based-upon-dom-level](http://stackoverflow.com/questions/1173165/how-to-guess-browser-compatibility-based-upon-dom-level)    
 
 Debido a estas diferencia entre navegadores surge la necesidad de averiguar (desde código JS) que caracteristicas soporta nuestro navegador (DOM y BOM)
 

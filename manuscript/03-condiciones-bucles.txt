@@ -7,7 +7,7 @@ Una *condición* es una estructura que realiza una tarea u otra dependiendo del 
 
 Un Bloque (de código) es el conjunto de expresiones que quedan encerradas entre llaves. Estos bloques se pueden anidar.
 
-> [https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/block](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/block)
+A> [https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/block](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/block)
 
 ```javascript
 { 
@@ -24,7 +24,7 @@ Un Bloque (de código) es el conjunto de expresiones que quedan encerradas entre
 
 ##El `if - else`
 
-> [https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/if...else](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/if...else)
+A> [https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/if...else](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/if...else)
 
 ```javascript
 var result = '';
@@ -75,12 +75,12 @@ Existe también lo que se llama el operador ternario ? que nos permite abreviar 
 var result = (a === 1) ? "a is one" : "a is not one";
 ```
 
-> [https://developer.mozilla.org/en/JavaScript/Reference/Operators/Special/Conditional_Operator](https://developer.mozilla.org/en/JavaScript/Reference/Operators/Special/Conditional_Operator)  
-> [http://blog.stchur.com/2006/07/14/the-javascript-ternary-operator/](https://developer.mozilla.org/en/JavaScript/Reference/Operators/Special/Conditional_Operator)
+A> [https://developer.mozilla.org/en/JavaScript/Reference/Operators/Special/Conditional_Operator](https://developer.mozilla.org/en/JavaScript/Reference/Operators/Special/Conditional_Operator)  
+A> [http://blog.stchur.com/2006/07/14/the-javascript-ternary-operator/](https://developer.mozilla.org/en/JavaScript/Reference/Operators/Special/Conditional_Operator)
 
 ##El `switch`
 
-> [https://developer.mozilla.org/en/JavaScript/Reference/Statements/switch](https://developer.mozilla.org/en/JavaScript/Reference/Statements/switch)
+A> [https://developer.mozilla.org/en/JavaScript/Reference/Statements/switch](https://developer.mozilla.org/en/JavaScript/Reference/Statements/switch)
 
 ```javascript
 var a = '1';
@@ -127,7 +127,7 @@ En Javascript hay 4 tipos de bucles:
 - for-in loops
 
 ##El bucle `while`
-> [https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/while](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/while)
+A> [https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/while](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/while)
 
 ```javascript
 var i = 0;
@@ -144,7 +144,7 @@ El número de repeticiones dependerá del resultado de evaluar una condición, a
 
 
 ##El bucle `do-while`
-> [https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/do...while](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/do...while)
+A> [https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/do...while](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/do...while)
 
 ```javascript
 var i = 0;
@@ -162,9 +162,9 @@ Esto implica que el bloque de código se va a ejecutar siempre, al menos una vez
 
 ##El bucle `for`
 
-> [https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/for](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/for)    
-> [http://blogs.sun.com/greimer/entry/best_way_to_code_a](http://blogs.sun.com/greimer/entry/best_way_to_code_a)    
-> [http://blogs.sun.com/greimer/resource/loop-test.html](http://blogs.sun.com/greimer/resource/loop-test.html)    
+A> [https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/for](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/for)    
+A> [http://blogs.sun.com/greimer/entry/best_way_to_code_a](http://blogs.sun.com/greimer/entry/best_way_to_code_a)    
+A> [http://blogs.sun.com/greimer/resource/loop-test.html](http://blogs.sun.com/greimer/resource/loop-test.html)    
 
 ```javascript
 var punishment = '';
@@ -196,7 +196,7 @@ for(var i = 0; i < 10; i++) {
 
 ##El bucle `for-in`
 
-> [https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/for...in](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/for...in) 
+A> [https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/for...in](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/for...in) 
 
 ```javascript
 var a = ['a', 'b', 'c', 'x', 'y', 'z'];

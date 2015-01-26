@@ -1,7 +1,7 @@
 # Eventos
 
-> [http://www.quirksmode.org/js/introevents.html](http://www.quirksmode.org/js/introevents.html)  
-> [http://www.sprymedia.co.uk/article/Visual+Event](http://www.sprymedia.co.uk/article/Visual+Event)  
+A> [http://www.quirksmode.org/js/introevents.html](http://www.quirksmode.org/js/introevents.html)  
+A> [http://www.sprymedia.co.uk/article/Visual+Event](http://www.sprymedia.co.uk/article/Visual+Event)  
 
 Cada acción (_click_, _change_, …) que ocurre en el navegador es comunicada (a quien quiera escuchar) en forma de **evento**
 Desde Javascript podemos _escuchar_ estos eventos y engancharle una función (_event handler_) que se ejecutará cuando ocurra este evento
@@ -21,10 +21,10 @@ T> Firefox, Opera y Safari implementan las 3 fases pero IE sólo el Bubbling
 
 ## Capturando eventos
 
-> [http://ejohn.org/projects/flexible-javascript-events/](http://ejohn.org/projects/flexible-javascript-events/)  
-> [http://www.webmonkey.com/2010/02/javascript_events/](http://www.webmonkey.com/2010/02/javascript_events/)  
-> [http://www.elated.com/articles/events-and-event-handlers/](http://www.elated.com/articles/events-and-event-handlers/)  
-> [http://www.anieto2k.com/2006/10/16/gestion-de-eventos-en-javascript/](http://www.anieto2k.com/2006/10/16/gestion-de-eventos-en-javascript/)  
+A> [http://ejohn.org/projects/flexible-javascript-events/](http://ejohn.org/projects/flexible-javascript-events/)  
+A> [http://www.webmonkey.com/2010/02/javascript_events/](http://www.webmonkey.com/2010/02/javascript_events/)  
+A> [http://www.elated.com/articles/events-and-event-handlers/](http://www.elated.com/articles/events-and-event-handlers/)  
+A> [http://www.anieto2k.com/2006/10/16/gestion-de-eventos-en-javascript/](http://www.anieto2k.com/2006/10/16/gestion-de-eventos-en-javascript/)  
 
 ```javascript
 function callback(evt) {
@@ -86,9 +86,9 @@ Cuando [la función asignada al evento devuelve `false`](http://stackoverflow.co
 
 ## Delegación de eventos
 
-> [http://www.anieto2k.com/2009/11/19/gestion-de-eventos-vs-delegacion-de-eventos/](http://www.anieto2k.com/2009/11/19/gestion-de-eventos-vs-delegacion-de-eventos/)  
-> [http://blogs.sitepoint.com/javascript-event-delegation-is-easier-than-you-think/](http://blogs.sitepoint.com/javascript-event-delegation-is-easier-than-you-think/)  
-> [http://lab.distilldesign.com/event-delegation/](http://lab.distilldesign.com/event-delegation/)  
+A> [http://www.anieto2k.com/2009/11/19/gestion-de-eventos-vs-delegacion-de-eventos/](http://www.anieto2k.com/2009/11/19/gestion-de-eventos-vs-delegacion-de-eventos/)  
+A> [http://blogs.sitepoint.com/javascript-event-delegation-is-easier-than-you-think/](http://blogs.sitepoint.com/javascript-event-delegation-is-easier-than-you-think/)  
+A> [http://lab.distilldesign.com/event-delegation/](http://lab.distilldesign.com/event-delegation/)  
 
 Aprovechando el _bubbling_ y la deteccion del _target_ podemos optimizar (en algunos casos) nuestra gestión de eventos con la **delegación de eventos**
 
@@ -100,8 +100,8 @@ Las principales ventajas de este sistema son:
 
 ## Eventos con jQuery
 
-> [http://api.jquery.com/category/events/](http://api.jquery.com/category/events/)  
-> [http://jqfundamentals.com/book/index.html#chapter-5](http://jqfundamentals.com/book/index.html#chapter-5)  
+A> [http://api.jquery.com/category/events/](http://api.jquery.com/category/events/)  
+A> [http://jqfundamentals.com/book/index.html#chapter-5](http://jqfundamentals.com/book/index.html#chapter-5)  
 
 Con _jQuery_ podemos realizar nuestra gestion de eventos sin tener que preocuparnos de las diferencias entre navegadores:
 
