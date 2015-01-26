@@ -7,3 +7,7 @@
 07-entorno_navegador.txt
 08-dom.txt
 09-bom.txt
+10-eventos.txt
+11-JSON.txt
+12-AJAX.txt
+13-expresiones_regulares.txt
