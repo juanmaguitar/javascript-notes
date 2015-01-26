@@ -1,3 +1,10 @@
 # Prologo
 
-Aqui algun texto explicatorio del libro...
+Este libro contiene la primera parte de los materiales que he ido realizando para diferentes trainings JAVASCRIPT impartidos desde 2010.
+
+Esta primera parte abarca desde lo más basico hasta un nivel intermedio, es decir, hasta un nivel que te permitirá trabajar con javascript actual y con fundamento 
+
+Los conceptos cubiertos en este libro te permitiran trabajar y comprender el javascript del 90% de los proyectos
+
+Si 
+

@@ -7,10 +7,10 @@ function sum(a, b) {
 }
 ```
 
-Las **funciones** nos permiten agrupar varias líneas de código bajo un nombre.
+Las [**funciones**](https://developer.mozilla.org/en/JavaScript/Reference/Functions_and_function_scope) nos permiten agrupar varias líneas de código bajo un nombre.
 De esta forma podemos reutilizar este código, invocando el nombre de la función.
 
-Las partes de una función:
+Las partes de una [función](https://bonsaiden.github.io/JavaScript-Garden/#function):
 
 - La _sentencia `function`_
 - El _nombre_ de la función (_sum_)
@@ -25,17 +25,13 @@ Si no devuelve explícitamente un valor, implícitamente devuelve el valor
 Una función _solo puede devolver un valor._  
 Si se necesita devolver mas de un valor, se puede devolver un array o un objeto con esos valores
 
-Para llamar a una función tan solo tenemos que usar su nombre seguido de algunos parámetros (o ninguno) entre paréntesis
+Para llamar a una [función](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Objetos_globales/Function) tan solo tenemos que usar su nombre seguido de algunos parámetros (o ninguno) entre paréntesis
 
 ```javascript
 >>> var result = sum(1, 2);
 >>> result;
 3
 ```
-
-A> [https://developer.mozilla.org/en/JavaScript/Reference/Functions_and_function_scope](https://developer.mozilla.org/en/JavaScript/Reference/Functions_and_function_scope)   
-A> [https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Objetos_globales/Function](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Objetos_globales/Function)   
-A> [http://bonsaiden.github.com/JavaScript-­‐Garden/#function](http://bonsaiden.github.com/JavaScript-­‐Garden/#function)   
 
 ##Parametros
 
@@ -174,6 +170,7 @@ _encodeURI()_ nos devuelve una URL usable (solo codifica algunos caracteres)
 >>> encodeURI(url);
 http://www.packtpub.com/scr%20ipt.php?q=this%20and%20that
 ```
+
 ###[`decodeURI()`](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Funciones_globales/decodeURI)
 
 `decodeURI()` Nos permite ‘decodificar’ un string codificado por `encodeURI()`
@@ -361,7 +358,7 @@ function f(arg) {
 >>> m();
 ```
 
-A> Mas info:
+A> Mas info:  
 A> - [http://mark-­‐story.com/posts/view/picking-­‐up-­‐javascript-­‐closures-­‐and-­‐lexical-­‐scoping](http://mark-­‐story.com/posts/view/picking-­‐up-­‐javascript-­‐closures-­‐and-­‐lexical-­‐scoping)   
 A> - [http://blog.morrisjohns.com/javascript_closures_for_dummies.html](http://blog.morrisjohns.com/javascript_closures_for_dummies.html)   
 A> - [http://stackoverflow.com/questions/111102/how-­‐do-­‐javascript-­‐closures-­‐work](http://stackoverflow.com/questions/111102/how-­‐do-­‐javascript-­‐closures-­‐work)   

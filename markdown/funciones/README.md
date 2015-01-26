@@ -35,7 +35,7 @@ Para llamar a una función tan solo tenemos que usar su nombre seguido de alguno
 
 <sub>[https://developer.mozilla.org/en/JavaScript/Reference/Functions_and_function_scope](https://developer.mozilla.org/en/JavaScript/Reference/Functions_and_function_scope)</sub>  
 <sub>[https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Objetos_globales/Function](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Objetos_globales/Function)</sub>  
-<sub>[http://bonsaiden.github.com/JavaScript-­‐Garden/#function](http://bonsaiden.github.com/JavaScript-­‐Garden/#function)</sub>  
+<sub>[https://bonsaiden.github.io/JavaScript-Garden/#function](https://bonsaiden.github.io/JavaScript-Garden/#function)</sub>  
 
 ##Parametros
 
