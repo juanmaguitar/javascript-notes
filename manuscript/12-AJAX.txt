@@ -106,11 +106,11 @@ El metodo `$.ajax()` devuelve un objeto [`jqXHR`](http://api.jquery.com/jQuery.a
 
 Al metodo `$.ajax()` le pasamos los parametros de nuestra petición AJAX que son, entre otros:
     
-#### url 
+#### _url_ 
 
 La URL donde hacemos la peticion
 
-#### type
+#### _type_
 
 El tipo de petición, `POST` o  `GET` (por defecto)  
 
@@ -118,11 +118,11 @@ Las peticiones `GET` las utilizamos normalmente para recibir datos (ya que se pu
 
 Las peticiones `POST` las utilizamos para mandar datos al servidor  
 
-#### data
+#### _data_
 
 Los datos que enviaremos al servidor
 
-#### dataType
+#### _dataType_
 
 El tipo de datos que esperamos recibir del servidor (json, html, xml, jsonp, …)
 
@@ -131,7 +131,7 @@ El tipo de datos que esperamos recibir del servidor (json, html, xml, jsonp, …
 
 Al `$.ajax()` le podemos pasar tambien unas cuantas funciones callback que se ejecutaran dependiendo del resultado de la petición
 
-#### success
+#### _success_
 
 La función que queremos ejecutar cuando recibamos la respuesta.
 
@@ -139,25 +139,25 @@ Si los datos recibidos estan en formato JSON, la función los recibe directament
 
 A esta función le llega, ademas de los datos recibidos, el status de la petición y el objeto `jqXHR` que maneja la petición.
 
-#### error
+#### _error_
 
 Esta función se ejecutará si falla la petición.  
 
 A esta función le llega el objeto `jqXHR` que maneja la petición y el error.
 
-#### complete
+#### _complete_
 
 Esta función se ejecutará cuando finalize la petición  
 
 A esta función le llega el objeto `jqXHR` que maneja la petición y el error o éxito de la operación.
 
-#### beforeSend
+#### _beforeSend_
 
 Esta función se ejecuta antes de hacer la petición  
 
 A esta función le llega el objeto jqXHR que maneja la petición y los parametros de la petición
 
-#### dataFilter
+#### _dataFilter_
 
 Esta función se ejecuta inmediatamente despues de la recepción exitosa de los datos  
 
