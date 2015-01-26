@@ -3,7 +3,7 @@
 Cada acción (_click_, _change_, …) que ocurre en el navegador es comunicada (a quien quiera escuchar) en forma de **[evento](http://www.quirksmode.org/js/introevents.html)**
 Desde Javascript podemos _escuchar_ estos eventos y [engancharle una función](http://www.sprymedia.co.uk/article/Visual+Event) (_event handler_) que se ejecutará cuando ocurra este evento
 
-![Events](img/events.png)
+![Events](images/events.png)
 
 Cuando hacemos click en un link (`a`), tambien hacemos click en su contenedor (`li`,`ul`), en el `body` y en ultima instancia en el `document`. Esto es lo que se llama la **propagación del evento**
 

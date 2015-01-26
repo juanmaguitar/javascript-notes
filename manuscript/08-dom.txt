@@ -19,7 +19,7 @@ xhtml1/DTD/xhtml1-transitional.dtd">
 </html>
 ```
 
-![DOM](https://raw.github.com/juanmaguitar/training-frontend-docs/master/entorno_navegador/img/dom.png)
+![DOM](https://raw.github.com/juanmaguitar/training-frontend-docs/master/entorno_navegador/images/dom.png)
 
 En el _[DOM Level 1](http://www.w3.org/TR/DOM-Level-1/)_ se diferencia entre: 
 
@@ -153,7 +153,7 @@ name que se le pasa por parámetro
 <p id="closer">
 ```
 
-![Parent & Childs](https://raw.github.com/juanmaguitar/training-frontend-docs/master/entorno_navegador/img/parent-child.png)
+![Parent & Childs](https://raw.github.com/juanmaguitar/training-frontend-docs/master/entorno_navegador/images/parent-child.png)
 
 Desde un nodo también podemos acceder a sus hermanos y al primero y último de sus hijos
 

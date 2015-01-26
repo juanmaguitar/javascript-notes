@@ -125,7 +125,7 @@ while (i < 10) {
   i++;
 }
 ```
-<img src="img/bucle_while.png" alt="Bucle While JS" title="Bucle While JS" />
+<img src="images/bucle_while.png" alt="Bucle While JS" title="Bucle While JS" />
 
 La sentencia `while` va seguida de una condición entre paréntesis y un bloque de código entre corchetes.
 Mientras la condición se evalue a true, el código se ejecutará una y otra vez. 
@@ -161,7 +161,7 @@ for (var i = 0; i < 100; i++) {
 }
 ```
 
-<img src="img/bucle_for.png" alt="Bucle For JS" title="Bucle For JS" />
+<img src="images/bucle_for.png" alt="Bucle For JS" title="Bucle For JS" />
 
 
 La estrucura del bucle for tiene 3 partes claramente diferenciadas (separadas por 

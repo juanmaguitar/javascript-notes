@@ -6,7 +6,7 @@ Agrupa un conjunto de tecnologias cuyo eje central son las [peticiones asincrona
 
 La aplicación de esta técnica dio lugar a las llamadas aplicaciones [AJAX](https://developer.mozilla.org/en/ajax), donde no es necesario refrescar la pagina para obtener nuevo contenido.
 
-![AJAX](https://raw.github.com/juanmaguitar/training-frontend-docs/master/AJAX/img/ajax.png)
+![AJAX](https://raw.github.com/juanmaguitar/training-frontend-docs/master/AJAX/images/ajax.png)
 
 [AJAX](http://www.anieto2k.com/2006/05/16/los-mejores-manuales-de-ajax/) son las siglas de **Asynchronous JavaScript + XML**:
 
