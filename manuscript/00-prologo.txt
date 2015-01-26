@@ -10,6 +10,11 @@ Esta primera parte abarca desde lo más basico hasta un nivel intermedio que inc
 
 Los conceptos cubiertos en este libro te permitiran trabajar y comprender el javascript del 90% de los proyectos
 
+Gracias a [@gemmabeltra](https://twitter.com/gemmabeltra) por la portada del libro 
+A [@amischol](https://twitter.com/amischol) por elevar mi nivel de javascript y el de todos los que hemos trabajado a su lado
+A [@cvillu](https://twitter.com/cvillu) por animarme a escribir el libro y descubrirme LeanPub
+Y a [@softonic](http://www.twitter.com/softonic) por rodearme de tanta gente crack en JS que me hecho aprender tantisimo de Javascript en el tiempo que he trabajado ahi 
+
 Espero que este libro te ayude a entender/implementar el codigo javascript que necesites.
 
 Cualquier feedback será bien recibido :)
