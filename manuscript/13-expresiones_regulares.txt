@@ -1,10 +1,10 @@
 # Expresiones Regulares
 
-> [http://regexpal.com/](http://regexpal.com/)  
-> [http://www.regular-expressions.info/](http://www.regular-expressions.info/)   
-> [http://mundogeek.net/archivos/2004/07/29/javascript-expresiones-regulares/](http://mundogeek.net/archivos/2004/07/29/javascript-expresiones-regulares/)   
-> [http://javascript.espaciolatino.com/lengjs/jsgram/expregulares.htm](http://javascript.espaciolatino.com/lengjs/jsgram/expregulares.htm)   
-> [http://www.javascriptkit.com/javatutors/redev.shtml](http://www.javascriptkit.com/javatutors/redev.shtml)  
+A> [http://regexpal.com/](http://regexpal.com/)  
+A> [http://www.regular-expressions.info/](http://www.regular-expressions.info/)   
+A> [http://mundogeek.net/archivos/2004/07/29/javascript-expresiones-regulares/](http://mundogeek.net/archivos/2004/07/29/javascript-expresiones-regulares/)   
+A> [http://javascript.espaciolatino.com/lengjs/jsgram/expregulares.htm](http://javascript.espaciolatino.com/lengjs/jsgram/expregulares.htm)   
+A> [http://www.javascriptkit.com/javatutors/redev.shtml](http://www.javascriptkit.com/javatutors/redev.shtml)  
 
 Las expresiones regulares nos permiten buscar y manipular texto de una forma muy potente.  
 Un expresión regular consiste en:
@@ -158,6 +158,7 @@ Busca coincidencias en los caracteres del patron
 >>> "some text".match(/[otx]/g)
 ["o", "t", "x", "t"]
 ```
+
 ### `[a-z]`
 
 Busca coincidencias en el rango de caractares  
@@ -171,7 +172,8 @@ Busca coincidencias en el rango de caractares
 >>> "Some Text".match(/[a-zA-Z]/g)
 ["S", "o", "m", "e", "T", "e", "x", "t"]
 ```
-###￼￼`[^abc]`
+
+### `[^abc]`
 
 Devuelve lo que NO coincida con el patron
 
@@ -225,7 +227,7 @@ Carácter de escape utilizado para localizar caracteres especiales utilizados en
 ```
 
 ### `\n`  
-￼￼￼￼￼￼￼
+
 Nueva linea
 
 ### `\r` 
