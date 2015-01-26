@@ -4,8 +4,6 @@ A> [http://www.adaptivepath.com/ideas/ajax-new-approach-web-applications/](http:
 
 Agrupa un conjunto de tecnologias cuyo eje central son las [peticiones asincronas al servidor](http://www.fiftyfoureleven.com/resources/programming/xmlhttprequest/examples) a traves del objeto [`XMLHttpRequest()`]([http://www.w3.org/TR/XMLHttpRequest/) (XHR)  
 
-A> [http://www.xml.com/pub/a/2005/02/09/xml-http-request.html](http://www.xml.com/pub/a/2005/02/09/xml-http-request.html)  
-
 La aplicación de esta técnica dio lugar a las llamadas aplicaciones [AJAX](https://developer.mozilla.org/en/ajax), donde no es necesario refrescar la pagina para obtener nuevo contenido.
 
 ![AJAX](https://raw.github.com/juanmaguitar/training-frontend-docs/master/AJAX/img/ajax.png)
@@ -14,11 +12,11 @@ La aplicación de esta técnica dio lugar a las llamadas aplicaciones [AJAX](htt
 
 - _Asynchronous_ porque despues de hacer una peticion HTTP no necesita esperar a una respuesta, sino que puede seguir haciendo otras cosas y ser notificado cuando llegue la respuesta
 - _JavaScript_ porque creamos los objetos XHR con Javascript
-- _XML_ porque inicialmente era el formato standard de intercambio de datos. Actualmente una petición HTTP suele devolver JSON (o HTML)
+- [_XML_](http://www.xml.com/pub/a/2005/02/09/xml-http-request.html) porque inicialmente era el formato standard de intercambio de datos. Actualmente una petición HTTP suele devolver JSON (o HTML)
 
 La mayor limitación de una petición AJAX es que [no puede acceder a datos de un dominio diferente](https://github.com/juanmaguitar/training-frontend-docs/tree/master/same_origin_policy) al que estamos (_cross-domain_)  
 
-Pero hay maneras de solucionar este problema: [_JSONP_](https://github.com/juanmaguitar/training-frontend-docs/tree/master/same_origin_policy/JSONP) y [_CORS_](https://github.com/juanmaguitar/training-frontend-docs/tree/master/same_origin_policy/CORS)
+Pero hay maneras de solucionar este problema: [_JSONP_](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/same_origin_policy/JSONP) y [_CORS_](https://github.com/juanmaguitar/training-frontend-docs/tree/master/markdown/same_origin_policy/CORS)
 
 
 ## Haciendo la petición
@@ -104,6 +102,8 @@ Con [jQuery](http://jqfundamentals.com/book/#chapter-7) podemos realizar nuestra
 
 El metodo `$.ajax()` devuelve un objeto [`jqXHR`](http://api.jquery.com/jQuery.ajax/#jqXHR) que viene a ser una version mejorada del objeto nativo `XMLHttpRequest`
 
+### Parametros `$.ajax()`
+
 Al metodo `$.ajax()` le pasamos los parametros de nuestra petición AJAX que son, entre otros:
     
 #### url 
@@ -125,6 +125,9 @@ Los datos que enviaremos al servidor
 #### dataType
 
 El tipo de datos que esperamos recibir del servidor (json, html, xml, jsonp, …)
+
+
+### Funciones callback `$.ajax()`
 
 Al `$.ajax()` le podemos pasar tambien unas cuantas funciones callback que se ejecutaran dependiendo del resultado de la petición
 
