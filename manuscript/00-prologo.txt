@@ -2,6 +2,15 @@
 
 Este libro contiene la primera parte de los materiales que he ido realizando para diferentes trainings JAVASCRIPT impartidos desde 2010.
 
-Esta primera parte abarca desde lo más basico hasta un nivel intermedio, es decir, hasta un nivel que te permitirá trabajar con javascript actual y con fundamento 
+Esta primera parte abarca desde lo más basico hasta un nivel intermedio que incluye:
+
+- las bases de javascript como lenguaje de programacion (variables, operadores, condicionales, bucles, tipos datos, etc...)
+- conceptos importantes asociados al lenguaje y como manejarlos (JSON, AJAX, eventos, dom, bom)
+- algunos conceptos un poco mas avanzados pero fundamentales para entener el javascript actual (closures, expresiones regulares, objetos)
 
 Los conceptos cubiertos en este libro te permitiran trabajar y comprender el javascript del 90% de los proyectos
+
+Espero que este libro te ayude a entender/implementar el codigo javascript que necesites.
+
+Cualquier feedback será bien recibido :)
+ 
