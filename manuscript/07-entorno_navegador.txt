@@ -12,19 +12,14 @@ El código Javascript de una pagina tiene acceso a unos cuantos objetos. Estos o
 - Objetos que tienen relación con la pagina cargada (el document). Estos objetos conforman el **[Document Object Model (DOM)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/entorno_navegador/DOM)**
 - Objetos que tienen que ver con cosas que están fuera de la pagina (la ventana del navegador y la pantalla). Estos objetos conforman el **[Browser Object Model (BOM)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/entorno_navegador/BOM)**
 
-El DOM es un standard y tiene varias versiones (llamadas levels). La mayoria de los navegadores implementan casi por completo el DOM Level 1.  
-
-A> [http://www.quirksmode.org/compatibility.html](http://www.quirksmode.org/compatibility.html)    
-A> [http://www.webdevout.net/browser-subport-dom](http://www.webdevout.net/browser-subport-dom)  
+El DOM es un standard y tiene [varias versiones](http://www.quirksmode.org/compatibility.html) (llamadas levels). La mayoria de los [navegadores]([http://www.webdevout.net/browser-subport-dom) implementan casi por completo el DOM Level 1.  
 
 El BOM no es un standard, asi que algunos objetos están soportados por la mayoría de navegadores y otros solo por algunos.
 
 
 ## [Deteccion de Funcionalidades](https://developer.mozilla.org/en/Browser_Detection_and_Cross_Browser_Support)
 
-A> [http://stackoverflow.com/questions/1173165/how-to-guess-browser-compatibility-based-upon-dom-level](http://stackoverflow.com/questions/1173165/how-to-guess-browser-compatibility-based-upon-dom-level)    
-
-Debido a estas diferencia entre navegadores surge la necesidad de averiguar (desde código JS) que caracteristicas soporta nuestro navegador (DOM y BOM)
+Debido a estas diferencia entre navegadores surge la necesidad de averiguar (desde código JS) [que caracteristicas soporta nuestro navegador](http://stackoverflow.com/questions/1173165/how-to-guess-browser-compatibility-based-upon-dom-level) (DOM y BOM)
 
 Una solución seria la llamada [**Browser Sniffing**](http://en.wikipedia.org/wiki/Browser_sniffing) que consiste en [detectar el navegador que estamos utilizando](http://www.quirksmode.org/js/detect.html)  
 

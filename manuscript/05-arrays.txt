@@ -38,7 +38,7 @@ true
 [1, undefined, 3]
 ```
 
-Un array puede contener otros arrays.
+Un [array](http://bonsaiden.github.com/JavaScript-­‐Garden/#array.general) puede contener otros arrays.
 
 ```javascript
 >>> var a = [1, "two", false, null, undefined];
@@ -61,8 +61,6 @@ Un array puede contener otros arrays.
 >>> a[1][2]
 6
 ```
-
-A> [http://bonsaiden.github.com/JavaScript-­‐Garden/#array.general](http://bonsaiden.github.com/JavaScript-­‐Garden/#array.general)
 
 #Objetos
 
@@ -154,14 +152,13 @@ var hero = {
 "Rafaelo"
 ```
 
-<br/>
-
-##Funciones Constructoras
+## Funciones Constructoras
 
 Otra manera de crear objetos es mediante **[funciones constructoras](http://hubpages.com/hub/Creating-­‐JavaScript-­‐Objects-­‐by-­‐Constructor-­‐Function)**
+
 Para crear objetos con estas funciones hay que usar el operador `new`
-La ventaja que tiene utilizar estas funciones constructoras es que _aceptan parámetros
-al crear objetos_
+
+La ventaja que tiene utilizar estas funciones constructoras es que _aceptan parámetros al crear objetos_
 
 ```javascript
 function Hero(name) {
@@ -180,8 +177,8 @@ function Hero(name) {
 "I'm Donatello and I'm a Ninja"
 ```
 
-Todos los entornos cliente tienen un **objeto global** y todas las variables globales son
-propiedades de este objeto global
+Todos los entornos cliente tienen un **objeto global** y todas las variables globales son propiedades de este objeto global
+
 En el navegador este objeto global se llama `window`
 
 Por lo tanto, podemos acceder a una variable global `a`:
@@ -247,7 +244,7 @@ false
 true
 ```
 
-##Trabajando con Objetos
+## Trabajando con Objetos
 
 Otra forma de crear un objeto, es a través de una función que nos devuelva un objeto.
 
@@ -280,6 +277,7 @@ Podemos utilizar funciones constructoras y devolver objetos distintos de `this`
 ```
 
 Cuando _copiamos_ un objeto o _lo pasamos como parámetro_ a una función, realmente estamos pasando una referencia al objeto.
+
 Si hacemos un cambio a esta referencia, modicaremos también el objeto original
 
 ```javascript
