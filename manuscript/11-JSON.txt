@@ -13,27 +13,20 @@ A> [http://www.anieto2k.com/2007/08/03/toma-de-contacto-con-json/](http://www.an
     }
 ```
 
-**JSON (Javascript Object Notation)** es un formato de intercambio de datos basado en la notación literal de Javascript para la representación de objetos, arrays, cadenas, booleanos y números  
+**JSON ([Javascript Object Notation](http://tools.ietf.org/html/rfc4627))** es un formato de intercambio de datos basado en la notación literal de Javascript para la representación de objetos, arrays, cadenas, booleanos y números  
 
-A> [http://tools.ietf.org/html/rfc4627](http://tools.ietf.org/html/rfc4627)
+Ventajas de este formato de datos [frente a XML](http://ajaxian.com/archives/json-vs-xml-the-debate):
 
-Ventajas de este formato de datos frente a XML:
-	- Más ligero (su estructura necesita menos elementos que XML) por lo que es ideal para peticiones AJAX
-	- Más fácil de transformar a objeto Javascript (con eval se haria directo)
+- Más ligero (su estructura necesita [menos elementos](http://www.etnassoft.com/2010/12/21/la-muerte-de-xml-en-la-web/) [que XML](http://www.anieto2k.com/2007/01/05/json-vs-xml-empieza-el-debate/)) por lo que es ideal para peticiones AJAX
+- Más fácil de transformar a objeto Javascript (con eval se haria directo)
 
-A> [http://www.anieto2k.com/2007/01/05/json-vs-xml-empieza-el-debate/](http://www.anieto2k.com/2007/01/05/json-vs-xml-empieza-el-debate/)  
-A> [http://ajaxian.com/archives/json-vs-xml-the-debate](http://ajaxian.com/archives/json-vs-xml-the-debate)  
-A> [http://www.etnassoft.com/2010/12/21/la-muerte-de-xml-en-la-web/](http://www.etnassoft.com/2010/12/21/la-muerte-de-xml-en-la-web/)  
-
-Particularidades del formato JSON frente a la notación literal de Javascript:
+Particularidades del [formato JSON](http://www.jsonlint.com/) frente a la notación literal de Javascript:
 
 - Los pares nombre-valor van siempre con comillas dobles
 - JSON puede representar 6 tipos de valores: objetos, arrays, números, cadenas,
 booleanos y null
 - Las fechas no se reconocen como tipo de dato
 - Los números no pueden ir precedidos de 0 (salvo los decimales)
-
-A> [http://www.jsonlint.com/](http://www.jsonlint.com/)
 
 Las cadenas JSON deben ser convertidas a objetos Javascript para poder utilizarlas (y viceversa). 
 Para ello podemos utilizar:  
@@ -44,10 +37,7 @@ Para ello podemos utilizar:
 - [`JSON.stringify`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify): Convierte un objeto Javascript en una cadena JSON
 - [`jQuery.parseJSON`](http://api.jquery.com/jQuery.parseJSON/): con jQuery también podemos hacer el parseo del JSON
 
-El objeto JSON está disponible de forma nativa en los [navegadores compatibles con ECMAScript 5](http://kangax.github.io/compat-table/es5/)  
-
-A> [http://json.parser.online.fr/](http://json.parser.online.fr/)  
-A> [https://developer.mozilla.org/En/Using_JSON_in_Firefox](https://developer.mozilla.org/En/Using_JSON_in_Firefox)  
+El objeto [JSON](http://json.parser.online.fr/) está disponible de [forma nativa](https://developer.mozilla.org/En/Using_JSON_in_Firefox) en los [navegadores compatibles con ECMAScript 5](http://kangax.github.io/compat-table/es5/)  
 
 ```javascript
 >>> JSON.parse('{"bar":"new property","baz":3}')
