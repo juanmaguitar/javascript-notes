@@ -1,4 +1,4 @@
-# Apuntes de Javascript #
+# Apuntes de Javascript I - Nivel Intermedio
 
 ## Descripción ##
 
@@ -7,8 +7,6 @@ Este repositorio contiene los materiales realizados para diferentes actividades 
 ## Contenidos ##
 
 Este material cubre los siguientes contenidos:
-
-### Basic 
 
 - [Ideas Claras, Historia del JS, EcmaScript](markdown/generalidades)
 - [Variables, Tipos de Datos y Operadores](markdown/variable_tipos_datos_operadores)
@@ -24,20 +22,6 @@ Este material cubre los siguientes contenidos:
 - [AJAX](markdown/AJAX)
 - [Expresiones Regulares](markdown/expresiones_regulares)
 
-
-### Advanced
-
-- [Same-Origin Policy](markdown/same_origin_policy)
-    -  [JSONP](markdown/same_origin_policy/JSONP)
-    -  [CORS](markdown/same_origin_policy/CORS)
-- [El valor de `this`](markdown/this)
-- [Prototype](markdown/prototype)
-- [Herencia](markdown/herencia)
-- [Contexto de Ejecución (Function Declaration, Function Expression, Hoisting)](markdown/contexto_ejecucion)
-- [Scope](markdown/scope)
-- [Patrones de Código](markdown/patrones_codigo)
-- [Patrones de Diseño](markdown/patrones_diseno)
-- [Unit Testings](markdown/unit_testings)
 
 ## Referencias ##
 
