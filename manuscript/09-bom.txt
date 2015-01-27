@@ -2,7 +2,7 @@
 
 El **BOM (Browser Object Model)** lo conforman todos los objetos que están fuera del documento cargado (document) y forman parte del objeto window
 
-![BOM](https://raw.github.com/juanmaguitar/training-frontend-docs/master/entorno_navegador/images/bom.png)
+![BOM](images/bom.png)
 
 El objeto `window` ademas de servir de contenedor de las variables globales y de ofrecer los metodos nativos de JS (`window.parseInt`), contiene informacion sobre el entorno del navegador (frame, iframe, popup, ventana o pestaña)
 
