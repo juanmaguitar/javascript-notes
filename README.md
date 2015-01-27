@@ -2,7 +2,15 @@
 
 ## Descripción ##
 
-Este repositorio contiene los materiales realizados para diferentes actividades formativas de JAVASCRIPT que he impartido desde 2010.
+Este repositorio contiene la primera parte de los materiales que he ido realizando para diferentes trainings JAVASCRIPT impartidos desde 2010.
+
+Esta primera parte abarca desde lo más basico hasta un nivel intermedio que incluye:
+
+- las bases de javascript como lenguaje de programacion (variables, operadores, condicionales, bucles, tipos datos, etc...)
+- conceptos importantes asociados al lenguaje y como manejarlos (JSON, AJAX, eventos, dom, bom)
+- algunos conceptos un poco mas avanzados pero fundamentales para entener el javascript actual (closures, expresiones regulares, objetos)
+
+Los conceptos cubiertos en este libro te permitiran trabajar y comprender el javascript del 90% de los proyectos
 
 ## Contenidos ##
 
@@ -23,6 +31,14 @@ Este material cubre los siguientes contenidos:
 - [Expresiones Regulares](markdown/expresiones_regulares)
 
 
+## Libro ##
+
+Si quieres acceder a este contenido en formato PDF, EPUB o MOBI puedes adquirir el libro por un precio simbolico desde aqui
+
+[https://leanpub.com/apuntes-javascript-intermedio/](https://leanpub.com/apuntes-javascript-intermedio/)
+
+[<img src="manuscript/images/title_page.png">](https://leanpub.com/apuntes-javascript-intermedio/)
+
 ## Referencias ##
 
 Ademas de los enlaces reflejados en los documentos, este material está ampliamente basado en los siguientes libros:
@@ -42,8 +58,4 @@ para alguna formación, me encantaría saberlo (<mailto:JuanMa.Garrido@gmail.com
 Este material está sujeto a la licencia [Reconocimiento 3.0 Unported (CC BY 3.0) de Creative Commons](http://creativecommons.org/licenses/by-sa/3.0/deed.es_ES). Puedes copiar, distribuir, comunicar públicamente y modificar el material siempre que atribuyas a Juan Manuel Garrido la autoría original y hagas referencia a [este repositorio](https://github.com/juanmaguitar/training-frontend-docs). Si modificas o creas a partir de este material, puedes distribuir el trabajo resultante solo bajo la misma licencia u otra compatible. Alguna de estas condiciones puede no aplicarse si obtienes el permiso del titular de los derechos de autor.  Al reutilizar o distribuir la obra, tienes que dejar bien claro los términos de la licencia de esta obra. La mejor manera de hacer esto es con un enlace a la licencia [Reconocimiento 3.0 Unported (CC BY 3.0) de Creative Commons](http://creativecommons.org/licenses/by-sa/3.0/deed.es_ES).
 
 Copyright &copy;2012 Juan Manuel Garrido
-
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/juanmaguitar/training-frontend-docs/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
