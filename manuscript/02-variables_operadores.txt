@@ -25,7 +25,7 @@ CASE_MATTERS
 
 ### ¿Cómo chequear la existencia de una variable?
 
-Forma Mala
+#### Forma Mala
 
 ```javascript
 >>> var result = '';
@@ -35,9 +35,9 @@ somevar is not defined
 ""
 ```
 
-T> Genera un warning y que ‘somevar’ devuelva FALSE no quiere decir que no esté definida
+T> Genera un warning y que ‘somevar’ devuelva `false` no quiere decir que no esté definida
 
-[Forma Correcta](http://bonsaiden.github.io/JavaScript-Garden/#types.typeof)
+#### [Forma Correcta](http://bonsaiden.github.io/JavaScript-Garden/#types.typeof)
     
 ```javascript
 >>> var somevar;
@@ -53,7 +53,7 @@ T> Genera un warning y que ‘somevar’ devuelva FALSE no quiere decir que no e
 "yes"
 ```
 
-T> Si la variable está definida y tiene algún valor, su tipo de datos siempre será distinto de undefined
+T> Si la variable está definida y tiene algún valor, su tipo de datos siempre será distinto de `undefined`
 
 # Primitivas y Tipos de Datos
 

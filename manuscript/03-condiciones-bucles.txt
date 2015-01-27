@@ -20,7 +20,7 @@ Un [Bloque](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Senten
 }
 ```
 
-##El [`if - else`](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/if...else)
+## Condicional [`if - else`](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/if...else)
 
 ```javascript
 var result = '';
@@ -71,7 +71,7 @@ Existe también lo que se llama el [operador ternario](http://blog.stchur.com/20
 var result = (a === 1) ? "a is one" : "a is not one";
 ```
 
-##El [`switch`](https://developer.mozilla.org/en/JavaScript/Reference/Statements/switch)
+## Condicional [`switch`](https://developer.mozilla.org/en/JavaScript/Reference/Statements/switch)
 
 ```javascript
 var a = '1';
@@ -104,7 +104,7 @@ Estos `break` provocan la salida del `switch` (de esta manera nos aseguramos de 
 - Tambien puede (y debe) haber una sentencia  `default` que es seguida de un bloque de código que se ejecuta si ninguno de los `case` es evaluado a `true`
 
 
-#Bucles (Loops)
+# Bucles (Loops)
 
 Un bucle es una estructura que nos permite repetir un bloque de código muchas veces. 
 
@@ -117,7 +117,7 @@ En Javascript hay 4 tipos de bucles:
 - `for` loops 
 - `for-in` loops
 
-##El bucle [`while`](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/while)
+## El bucle [`while`](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/while)
 
 ```javascript
 var i = 0;

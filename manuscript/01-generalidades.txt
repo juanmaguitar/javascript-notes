@@ -59,14 +59,20 @@ En [2005](https://jquery.org/history/) sale la primera versión de jQuery. Las d
 En 2009 se completa y libera la quinta edición del ECMA-262, más conocida como **ECMAScript 5**. La [edicion 5.1](http://www.ecma-international.org/ecma-262/5.1/) se libera en 2011
 
 En diciembre de 2014 se aprueba la 6ª edicion del ECMA-262 o **ECMAScript 6**. Se espera el [lanzamiento oficial para Junio de 2015](http://www.2ality.com/2014/06/es6-schedule.html)
+
 #ECMAScript
 
 ##EcmaScript 5
 
 **[ECMAScript5.1](http://www.ecma-international.org/ecma-262/5.1/)** fue lanzado en 2011 y podemos decir que [es el actual standard de Javascript](http://blog.oio.de/2013/04/16/ecmascript-5-the-current-javascript-standard/) (2014).  
+
+Si miramos las [estadisticas de uso de navegadores](http://clicky.com/marketshare/global/web-browsers/versions/) junto con la [compatibilidad de estos con ES5](http://kangax.github.io/compat-table/es5/) podemos concluir que: _basandonos en ES5 nuestro codigo funcionará bien en la mayoria de los navegadores utilizados actualmente (2014)_. 
+
+Si queremos, podemos dar soporte de algunas features de ES5 en navegadores antiguos que no la soporten, utilizando el correspondiente [shim](https://github.com/es-shims/es5-shim)
+
 Esta version **amplia** los anteriores standards [con algunas mejoras](http://www.jayway.com/2011/04/05/what-is-new-in-ecmascript-5/):
 
-- [`strict mode`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
+### [`strict mode`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
 
 Muy [recomendado](http://cjihrig.com/blog/javascripts-strict-mode-and-why-you-should-use-it/) utilizarlo desde [ya](http://www.nczonline.net/blog/2012/03/13/its-time-to-start-using-javascript-strict-mode/)
 
@@ -76,7 +82,7 @@ Muy [recomendado](http://cjihrig.com/blog/javascripts-strict-mode-and-why-you-sh
   }
   ```
 
-- [`Object` new methods](http://ejohn.org/blog/ecmascript-5-objects-and-properties/)
+### [`Object` new methods](http://ejohn.org/blog/ecmascript-5-objects-and-properties/)
 
   ```javascript
   // Creates an object with parent as prototype and properties from donor
@@ -117,7 +123,9 @@ Muy [recomendado](http://cjihrig.com/blog/javascripts-strict-mode-and-why-you-sh
   Object.isFrozen(object)
   ```
 
-- [`Function.prototype.bind()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)
+### [`Function.prototype.bind()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)
+
+> [http://www.smashingmagazine.com/2014/01/23/understanding-javascript-function-prototype-bind/](http://www.smashingmagazine.com/2014/01/23/understanding-javascript-function-prototype-bind/)
 
   ```javascript
   var tapir = {
@@ -128,7 +136,7 @@ Muy [recomendado](http://cjihrig.com/blog/javascripts-strict-mode-and-why-you-sh
   setTimeout( tapir.method.bind(tapir, "Malayan"), 100 );
   ```
 
-- [`String.prototype.trim()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim)
+### [`String.prototype.trim()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim)
 
   ```javascript
   >>> var orig = '   foo  ';
@@ -136,7 +144,7 @@ Muy [recomendado](http://cjihrig.com/blog/javascripts-strict-mode-and-why-you-sh
   'foo'
   ```
 
-- [`Array` new methods](http://www.jimmycuadra.com/posts/ecmascript-5-array-methods)
+### [`Array` new methods](http://www.jimmycuadra.com/posts/ecmascript-5-array-methods)
 
   ```javascript
   // Do all elements satisfy predicate?
@@ -166,11 +174,9 @@ Muy [recomendado](http://cjihrig.com/blog/javascripts-strict-mode-and-why-you-sh
   Array.prototype.some(predicate)
   ```
 
-- Native [JSON support](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_native_JSON) with [`JSON.parse()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) and [`JSON.stringify()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) 
+### Native [JSON support](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_native_JSON) 
 
-Si miramos las [estadisticas de uso de navegadores](http://clicky.com/marketshare/global/web-browsers/versions/) junto con la [compatibilidad de estos con ES5](http://kangax.github.io/compat-table/es5/) podemos concluir que: _basandonos en ES5 nuestro codigo funcionará bien en la mayoria de los navegadores utilizados actualmente (2014)_. 
-
-Si queremos, podemos dar soporte de algunas features de ES5 en navegadores antiguos que no la soporten, utilizando el correspondiente [shim](https://github.com/es-shims/es5-shim)
+With [`JSON.parse()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) and [`JSON.stringify()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) 
 
 ## EcmaScript 3
 

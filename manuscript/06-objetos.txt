@@ -134,7 +134,7 @@ Los arrays disponen de unos cuantos metodos interesantes:
 [1, 100, 101, 102, 7, "test"]
 ```
 
-###[push()](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/push)
+###[`push()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/push)
 
 `push()` inserta elementos al final del array  
 `a.push('new')` es lo mismo que `a[a.length] = 'new'`  
@@ -152,7 +152,7 @@ Los arrays disponen de unos cuantos metodos interesantes:
 ["soccer", "baseball", "football", "swimming"]
 ```
 
-###[pop()](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/pop)
+###[`pop()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/pop)
 
 `pop()` elimina el ultimo elemento   
 `a.pop()` es lo mismo que `a.length--`;  
@@ -168,7 +168,7 @@ Los arrays disponen de unos cuantos metodos interesantes:
 ["angel", "clown", "mandarin"]
 ```
 
-###[sort()](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/sort)
+###[`sort()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/sort)
 
 ordena el array y devuelve el array modificado
 
@@ -196,7 +196,7 @@ ordena el array y devuelve el array modificado
 [1, 2, 3, 4, 5, 12, 36, 42]
 ```
 
-###[join()](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/join)
+###[`join()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/join)
 
 `join()` devuelve una cadena (string) con los valores de los elementos del array 
 
@@ -210,7 +210,7 @@ ordena el array y devuelve el array modificado
 "string"
 ```
 
-###[slice()](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/slice)
+###[`slice()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/slice)
 
 `slice()` devuelve un trozo del array  sin modficar el original 
 
@@ -223,7 +223,7 @@ ordena el array y devuelve el array modificado
 ["Orange", "Lemon"]
 ```
 
-###[splice()](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/splice)
+###[`splice()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/splice)
 
 `splice()` quita un trozo del array, lo devuelve  y opcionalmente rellena el hueco con nuevos elementos 
 
@@ -248,8 +248,9 @@ ordena el array y devuelve el array modificado
 
 ##[Function](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function)
 
-- Las funciones son objetos
-- Podemos crear funciones con la función constructora `Function()` (aunque este metodo no se recomienda ya que internamente hace un _eval()_ )
+Las funciones son objetos
+
+Podemos crear funciones con la función constructora `Function()` (aunque este metodo no se recomienda ya que internamente hace un _eval()_ )
 
 ```javascript
 >>> function sum(a, b) {return a + b;};
@@ -360,7 +361,8 @@ f()
 ##[Boolean](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean)
 
 El objeto _Boolean_ es un contenedor para un valor de tipo booleano  
-  Podemos crear objetos _Boolean_ con la función constructora `Boolean()`
+
+Podemos crear objetos _Boolean_ con la función constructora `Boolean()`
 
 ```javascript
 >>> var b = new Boolean();
@@ -420,6 +422,7 @@ El método [`toString()`](https://developer.mozilla.org/en/JavaScript/Reference/
 ##[String](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String)
 
 Podemos crear objetos String con la función constructora `String()`  
+
 Un objeto _String_ NO es un dato de tipo primitivo string (`valueOf()`)
 
 ```javascript
@@ -474,7 +477,8 @@ Los objetos string disponen de los siguientes métodos:
 
 - `lastIndexOf()` empieza la búsqueda desde el final de la cadena
     - Si no encuentra nada devuelve -1 
-    Por tanto la manera de correcta de chequear si existe una cadena de texto en otra es →  `if ( s.toLowerCase().indexOf('couch') !== -1 ) {...}`
+    
+Por tanto la manera de correcta de chequear si existe una cadena de texto en otra es →  `if ( s.toLowerCase().indexOf('couch') !== -1 ) {...}`
 
 - [`slice()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/slice) devuelve un trozo de la cadena de texto 
 

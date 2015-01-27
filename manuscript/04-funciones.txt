@@ -162,7 +162,7 @@ false
 
 ###[`encodeURI()`](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Funciones_globales/encodeURI)
 
-`encodeURI()` Nos permite ‘escapar’ (codificar) una URL reemplazando algunos caracteres por su correspondiente secuencia de escape UTF-­‐8.
+`encodeURI()` Nos permite ‘escapar’ (codificar) una URL reemplazando algunos caracteres por su correspondiente secuencia de escape UTF-8.
 _encodeURI()_ nos devuelve una URL usable (solo codifica algunos caracteres)
 
 ```javascript
@@ -175,7 +175,7 @@ http://www.packtpub.com/scr%20ipt.php?q=this%20and%20that
 
 `decodeURI()` Nos permite ‘decodificar’ un string codificado por `encodeURI()`
 
-###[encodeURIComponent()](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Funciones_globales/encodeURIComponent) y [decodeURIComponent()](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Funciones_globales/decodeURIComponent)
+###[`encodeURIComponent()`](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Funciones_globales/encodeURIComponent) y [`decodeURIComponent()`](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Funciones_globales/decodeURIComponent)
 
 `encodeURIComponent()` y `decodeURIComponent()` Lo mismo que
 encodeURI()` pero esta función codifica (decodifica) TODOS los caracteres transformables
@@ -189,7 +189,7 @@ encodeURI()` pero esta función codifica (decodifica) TODOS los caracteres trans
 
 `eval()` toma una cadena de texto y la ejecuta como código Javascript
 
-`eval()` no debe utilizarse básicamente por 2 motivos:  
+`eval()` [no debe utilizarse ](https://bonsaiden.github.io/JavaScript-Garden/#core.eval)básicamente por 2 motivos:  
 
 - Rendimiento: Es mucho más lento evaluar código “en vivo” que tenerlo
 directamente en el script  
@@ -200,8 +200,6 @@ directamente en el script
 >>> ii
 2
 ```
-
-A> [http://bonsaiden.github.com/JavaScript-­‐Garden/#core.eval](http://bonsaiden.github.com/JavaScript-­‐Garden/#core.eval)</sub>
 
 ###`alert()`
 
@@ -257,7 +255,7 @@ Las **funciones anónimas** son aquellas que no tienen nombre y se pueden utiliz
 >>> function(a){ return a; }
 ```
 
-Cuando pasamos una función A como argumento de otra función B y B ejecuta A, decimos que A es una **[función callback](http://stackoverflow.com/questions/483073/getting-­‐a-­‐better-­‐understanding-­‐of-­‐callback-­‐functions-­‐in-­‐javascript)**
+Cuando pasamos una función A como argumento de otra función B y B ejecuta A, decimos que A es una **[función callback](http://stackoverflow.com/questions/483073/getting-a-better-understanding-of-callback-functions-in-javascript)**
 
 ```javascript
 >>> function invoke_and_add(a, b){ return a() + b(); }
@@ -269,15 +267,9 @@ Cuando pasamos una función A como argumento de otra función B y B ejecuta A, d
 8
 ```
 
-<br/>
-
 ##Closures
 
-A> [http://odetocode.com/Blogs/scott/archive/2007/07/10/closure-­‐on-­‐javascript-­‐closures.aspx](http://odetocode.com/Blogs/scott/archive/2007/07/10/closure-­‐on-­‐javascript-­‐closures.aspx)   
-A> [http://www.smashingmagazine.com/2009/08/01/what-­‐you-­‐need-­‐to-­‐know-­‐about-­‐javascript-­‐scope/](http://www.smashingmagazine.com/2009/08/01/what-­‐you-­‐need-­‐to-­‐know-­‐about-­‐javascript-­‐scope/)   
-A> [http://ayende.com/Blog/archive/2007/12/13/Javascript-­‐lexical-­‐scopes-­‐and-­‐what-­‐your-­‐momma-­‐thought-­‐you-­‐about.aspx](http://ayende.com/Blog/archive/2007/12/13/Javascript-­‐lexical-­‐scopes-­‐and-­‐what-­‐your-­‐momma-­‐thought-­‐you-­‐about.aspx)   
-
-Si definimos una función `n()` dentro de `f()` , `n()` tendrá acceso tanto a las variables de su [scope](http://www.digital-­‐web.com/articles/scope_in_javascript/) (ámbito) como las del scope de su padre. Esto es lo que se llama **[scope chain](http://stackoverflow.com/questions/1484143/scope-­‐chain-­‐in-­‐javascript)** (encadenamiento de ámbitos)
+Si definimos una función `n()` dentro de `f()` , `n()` tendrá acceso tanto a las variables de su [scope](http://www.digital-web.com/articles/scope_in_javascript/) ([ámbito](http://www.smashingmagazine.com/2009/08/01/what-you-need-to-know-about-javascript-scope/)) como las del scope de su padre. Esto es lo que se llama **[scope chain](http://stackoverflow.com/questions/1484143/scope-chain-in-javascript)** (encadenamiento de ámbitos)
 
 ```javascript
 var a = 1;
@@ -289,7 +281,7 @@ function f(){
 }
 ```
 
-Las funciones tienen lo que se llama **[lexical scope](http://stackoverflow.com/questions/1047454/what-­‐is-­‐lexical-­‐scope)** (ámbito léxico) lo que significa que crean su entorno (scope, a qué variables tienen acceso) cuando son definidas no cuando son ejecutadas
+Las funciones tienen lo que se llama **[lexical scope](http://stackoverflow.com/questions/1047454/what-is-lexical-scope)** ([ámbito léxico](http://ayende.com/blog/3042/javascript-lexical-scopes-and-what-your-momma-thought-you-about-variables)) lo que significa que crean su entorno (scope, a qué variables tienen acceso) cuando son definidas no cuando son ejecutadas
 
 ```javascript
 >>> function f1(){ var a = 1; return f2(); }
@@ -359,10 +351,8 @@ function f(arg) {
 ```
 
 A> Mas info:  
-A> - [http://mark-­‐story.com/posts/view/picking-­‐up-­‐javascript-­‐closures-­‐and-­‐lexical-­‐scoping](http://mark-­‐story.com/posts/view/picking-­‐up-­‐javascript-­‐closures-­‐and-­‐lexical-­‐scoping)   
-A> - [http://blog.morrisjohns.com/javascript_closures_for_dummies.html](http://blog.morrisjohns.com/javascript_closures_for_dummies.html)   
-A> - [http://stackoverflow.com/questions/111102/how-­‐do-­‐javascript-­‐closures-­‐work](http://stackoverflow.com/questions/111102/how-­‐do-­‐javascript-­‐closures-­‐work)   
-A> - [http://www.kryogenix.org/code/browser/secrets-­‐of-­‐javascript-­‐closures/](http://www.kryogenix.org/code/browser/secrets-­‐of-­‐javascript-­‐closures/)   
+A> - [http://mark-story.com/posts/view/picking-up-javascript-closures-and-lexical-scoping](http://mark-story.com/posts/view/picking-up-javascript-closures-and-lexical-scoping)   
+A> - [http://stackoverflow.com/questions/111102/how-do-javascript-closures-work](http://stackoverflow.com/questions/111102/how-do-javascript-closures-work)   
+A> - [http://www.kryogenix.org/code/browser/secrets-of-javascript-closures/](http://www.kryogenix.org/code/browser/secrets-of-javascript-closures/)   
 A> - [http://www.hunlock.com/blogs/Closing_The_Book_On_Javascript_Closures](http://www.hunlock.com/blogs/Closing_The_Book_On_Javascript_Closures)   
-A> - [http://jibbering.com/faq/notes/closures/](http://jibbering.com/faq/notes/closures/)   
-A> - [http://www.bennadel.com/blog/1482-­‐A-­‐Graphical-­‐Explanation-­‐Of-‐Javascript-­‐Closures-­‐In-­‐A-­‐jQuery-­‐Context.htm](http://www.bennadel.com/blog/1482-­‐A-­‐Graphical-­‐Explanation-­‐Of-‐Javascript-­‐Closures-­‐In-­‐A-­‐jQuery-­‐Context.htm)   
+A> - [http://www.bennadel.com/blog/1482-a-graphical-explanation-of-javascript-closures-in-a-jquery-context.htm](http://www.bennadel.com/blog/1482-a-graphical-explanation-of-javascript-closures-in-a-jquery-context.htm)   
