@@ -97,8 +97,9 @@ Tenemos disponibles los siguientes [métodos del objeto `String`](http://www.jav
       2. El _último parametro_ es la cadena donde se está buscando  
       3. El _antepenultimo parametro_ es la posición de la ocurrencia  
       4. El _resto de parametros_ son las ocurrencias de cada grupo del patron  
+   
+   
 
-     
 ```javascript
 >>> var s = "HelloJavaScriptWorld"
 undefined

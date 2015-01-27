@@ -2,7 +2,7 @@
 
 A> [http://www.adaptivepath.com/ideas/ajax-new-approach-web-applications/](http://www.adaptivepath.com/ideas/ajax-new-approach-web-applications/)  
 
-Agrupa un conjunto de tecnologias cuyo eje central son las [peticiones asincronas al servidor](http://www.fiftyfoureleven.com/resources/programming/xmlhttprequest/examples) a traves del objeto [`XMLHttpRequest()`]([http://www.w3.org/TR/XMLHttpRequest/) (XHR)  
+Agrupa un conjunto de tecnologias cuyo eje central son las [peticiones asincronas al servidor](http://www.fiftyfoureleven.com/resources/programming/xmlhttprequest/examples) a traves del objeto [`XMLHttpRequest()`](http://www.w3.org/TR/XMLHttpRequest/) (XHR)  
 
 La aplicación de esta técnica dio lugar a las llamadas aplicaciones [AJAX](https://developer.mozilla.org/en/ajax), donde no es necesario refrescar la pagina para obtener nuevo contenido.
 

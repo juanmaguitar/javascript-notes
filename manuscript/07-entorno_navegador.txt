@@ -12,7 +12,7 @@ El código Javascript de una pagina tiene acceso a unos cuantos objetos. Estos o
 - Objetos que tienen relación con la pagina cargada (el document). Estos objetos conforman el **[Document Object Model (DOM)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/entorno_navegador/DOM)**
 - Objetos que tienen que ver con cosas que están fuera de la pagina (la ventana del navegador y la pantalla). Estos objetos conforman el **[Browser Object Model (BOM)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/entorno_navegador/BOM)**
 
-El DOM es un standard y tiene [varias versiones](http://www.quirksmode.org/compatibility.html) (llamadas levels). La mayoria de los [navegadores]([http://www.webdevout.net/browser-subport-dom) implementan casi por completo el DOM Level 1.  
+El DOM es un standard y tiene [varias versiones](http://www.quirksmode.org/compatibility.html) (llamadas levels). La mayoria de los [navegadores]([http://www.webdevout.net/browser-support-dom) implementan casi por completo el DOM Level 1.  
 
 El BOM no es un standard, asi que algunos objetos están soportados por la mayoría de navegadores y otros solo por algunos.
 
