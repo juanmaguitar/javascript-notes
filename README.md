@@ -33,9 +33,7 @@ Este material cubre los siguientes contenidos:
 
 ## Libro ##
 
-Si quieres acceder a este contenido en formato PDF, EPUB o MOBI puedes adquirir el libro por un precio simbolico desde aqui
-
-[https://leanpub.com/apuntes-javascript-intermedio/](https://leanpub.com/apuntes-javascript-intermedio/)
+Si quieres acceder a este contenido en formato PDF, EPUB o MOBI puedes adquirir el libro por un precio simbolico desde [aqui](https://leanpub.com/apuntes-javascript-intermedio/)
 
 [<img src="manuscript/images/title_page.png">](https://leanpub.com/apuntes-javascript-intermedio/)
 
