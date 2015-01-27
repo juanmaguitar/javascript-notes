@@ -150,4 +150,5 @@ var id = setInterval( function(){ alert('boo, boo')}, 2000 );
 ## El objeto 'document'
 
 [`window.document`](https://developer.mozilla.org/en/DOM/window.document) es un objeto del BOM con info sobre el documento actual
-Todos los métodos y propiedades que estan dentro de window.document pertenecen a la categoría de objetos DOM
+
+Todos los métodos y propiedades que estan dentro de `window.document` pertenecen a la categoría de objetos DOM
