@@ -2,7 +2,7 @@
 
 ## Descripción ##
 
-Este repositorio contiene la primera parte de los materiales que he ido realizando para diferentes trainings JAVASCRIPT impartidos desde 2010.
+Este repositorio contiene la **primera parte** de los materiales que he ido realizando para diferentes trainings JAVASCRIPT impartidos desde 2010.
 
 Esta primera parte abarca desde lo más basico hasta un nivel intermedio que incluye:
 
