@@ -188,7 +188,6 @@ Añade (respecto del standard anterior): `do-while`, expresiones regulares, nuev
 
 [ECMAScript 6](https://people.mozilla.org/~jorendorff/es6-draft.html) será el proximo standard de Javascript pero [aun no está lo suficientemente implantado](http://kangax.github.io/compat-table/es6/) en los navegadores mas utilizados.
 
-A> More Info:
 A> → [Learn ES6 | A detailed overview of ECMAScript 6 features](https://6to5.org/docs/tour/)    
 A> → [ECMAScript 6 Learning! (Eric Douglas Github)](https://github.com/ericdouglas/ES6-Learning)    
 A> → [ES6 Rocks | A collaborative website about the ECMAScript sixth edition, a.k.a. ES6.](http://es6rocks.com/)    

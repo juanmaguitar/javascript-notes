@@ -152,9 +152,6 @@ Esto implica que el bloque de código se va a ejecutar siempre, al menos una vez
 
 ##El bucle [`for`](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/for)
 
-A> [http://blogs.sun.com/greimer/entry/best_way_to_code_a](http://blogs.sun.com/greimer/entry/best_way_to_code_a)    
-A> [http://blogs.sun.com/greimer/resource/loop-test.html](http://blogs.sun.com/greimer/resource/loop-test.html)    
-
 ```javascript
 var punishment = '';
 for (var i = 0; i < 100; i++) { 
