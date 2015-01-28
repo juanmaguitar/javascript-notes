@@ -188,10 +188,11 @@ Añade (respecto del standard anterior): `do-while`, expresiones regulares, nuev
 
 [ECMAScript 6](https://people.mozilla.org/~jorendorff/es6-draft.html) será el proximo standard de Javascript pero [aun no está lo suficientemente implantado](http://kangax.github.io/compat-table/es6/) en los navegadores mas utilizados.
 
-A> [https://6to5.org/docs/tour/](https://6to5.org/docs/tour/)    
-A> [https://github.com/ericdouglas/ES6-Learning](https://github.com/ericdouglas/ES6-Learning)    
-A> [http://es6rocks.com/](http://es6rocks.com/)    
-A> [http://code.tutsplus.com/articles/use-ecmascript-6-today--net-31582](http://code.tutsplus.com/articles/use-ecmascript-6-today--net-31582)    
+A> More Info:
+A> → [Learn ES6 | A detailed overview of ECMAScript 6 features](https://6to5.org/docs/tour/)    
+A> → [ECMAScript 6 Learning! (Eric Douglas Github)](https://github.com/ericdouglas/ES6-Learning)    
+A> → [ES6 Rocks | A collaborative website about the ECMAScript sixth edition, a.k.a. ES6.](http://es6rocks.com/)    
+A> → [Use ECMAScript 6 Today (tutsplus.com) ](http://code.tutsplus.com/articles/use-ecmascript-6-today--net-31582)    
 
 Aunque podemos dar soporte de estas features de ES6 en navegadores que no las soporten utilizando el correspondiente [shim](https://github.com/paulmillr/es6-shim/)
 
