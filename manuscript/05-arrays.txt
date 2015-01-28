@@ -217,7 +217,7 @@ h has no properties
 "Michelangelo"
 ```
 
-Hay maneras de [evitar estos "accidentes"](http://www.2ality.com/2013/07/defending-constructors.html) (llamar a un constructor sin `new`) como por ejemplo activar `strict mode`(lanzaria una excepcion en este caso).
+Hay maneras de [evitar estos "accidentes"](http://www.2ality.com/2013/07/defending-constructors.html) (llamar a un constructor sin `new`) como por ejemplo activar `strict mode` (lanzaria una excepcion en este caso).
 
 Cuando creamos un objeto, se le asigna siempre la propiedad `constructor` que contiene una referencia a la función constructora utilizada para crear el objeto
 
