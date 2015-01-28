@@ -316,9 +316,8 @@ Esto no cambia el contenido del tag title
 
 ## Selección Avanzada de Elementos
 
-A> [http://mootools.net/slickspeed/](http://mootools.net/slickspeed/)  
-A> [http://www.w3.org/TR/CSS21/syndata.html#value-def-identifier](http://www.w3.org/TR/CSS21/syndata.html#value-def-identifier)  
-A> [http://www.quirksmode.org/css/contents.html](http://www.quirksmode.org/css/contents.html)  
+A> → [CSS2: Syntax and basic data types | w3.org](http://www.w3.org/TR/CSS21/syndata.html#value-def-identifier)  
+A> → [CSS contents and browser compatibility | quirksmode.org](http://www.quirksmode.org/css/contents.html)  
 
 ###[`document.images`](https://developer.mozilla.org/en/DOM/document.images)
 
@@ -366,8 +365,8 @@ Devuelve elementos del DOM a partir de una [selección CSS](http://javascript.nw
 
 Con jQuery disponemos de una [potente herramienta de selección de elementos](http://sizzlejs.com/)
  
-A> [http://www.neeraj.name/2010/02/15/how-jquery-selects-elements-using-sizzle.html](http://www.neeraj.name/2010/02/15/how-jquery-selects-elements-using-sizzle.html)  
-A> [http://refcardz.dzone.com/refcardz/jquery-selectors](http://refcardz.dzone.com/refcardz/jquery-selectors)
+A> → [How jQuery selects elements using Sizzle | blog.bigbinary.com](http://blog.bigbinary.com/2010/02/15/how-jquery-selects-elements-using-sizzle.html)  
+A> → [jQuery Selectors | refcardz.dzone.com](http://refcardz.dzone.com/refcardz/jquery-selectors)
 
 Para obtener los elementos utilizamos `$()` o `jQuery()` pasándole nuestra [selección CSS](http://api.jquery.com/category/selectors/) entre comillas
 

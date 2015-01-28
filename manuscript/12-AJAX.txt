@@ -1,6 +1,6 @@
 # AJAX
 
-A> [http://www.adaptivepath.com/ideas/ajax-new-approach-web-applications/](http://www.adaptivepath.com/ideas/ajax-new-approach-web-applications/)  
+A> → [Ajax: A New Approach to Web Applications | 18/02/2005 Jesse James Garrett (adaptivepath.com)](http://www.adaptivepath.com/ideas/ajax-new-approach-web-applications/)  
 
 Agrupa un conjunto de tecnologias cuyo eje central son las [peticiones asincronas al servidor](http://www.fiftyfoureleven.com/resources/programming/xmlhttprequest/examples) a traves del objeto [`XMLHttpRequest()`](http://www.w3.org/TR/XMLHttpRequest/) (XHR)  
 
@@ -21,8 +21,8 @@ Pero hay maneras de solucionar este problema: _JSONP_ y _CORS_
 
 ## Haciendo la petición
 
-A> [https://developer.mozilla.org/en/XMLHttpRequest](https://developer.mozilla.org/en/XMLHttpRequest)  
-A> [http://jibbering.com/2002/4/httprequest.html](http://jibbering.com/2002/4/httprequest.html)
+A> → [XMLHttpRequest | MDN](https://developer.mozilla.org/en/XMLHttpRequest)  
+A> → [Using the XML HTTP Request object | http://jibbering.com/](http://jibbering.com/2002/4/httprequest.html)
 
 ```javascript
 var xhr = new XMLHttpRequest();
@@ -84,7 +84,6 @@ Cuando `readyState` llega a 4 significa que ya se ha recibido una respuesta
 Una vez hemos recibido la respuesta hay que chequear el estado de la misma en la propiedad `status` del objeto XHR  
 
 El valor que nos interesa para esta propiedad es 200 (OK)
-
 
 ## [AJAX con jQuery](http://blogs.sitepoint.com/ajax-jquery/)
 

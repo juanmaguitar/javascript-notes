@@ -1,10 +1,10 @@
 # Expresiones Regulares
 
-A> [http://regexpal.com/](http://regexpal.com/)  
-A> [http://www.regular-expressions.info/](http://www.regular-expressions.info/)   
-A> [http://mundogeek.net/archivos/2004/07/29/javascript-expresiones-regulares/](http://mundogeek.net/archivos/2004/07/29/javascript-expresiones-regulares/)   
-A> [http://javascript.espaciolatino.com/lengjs/jsgram/expregulares.htm](http://javascript.espaciolatino.com/lengjs/jsgram/expregulares.htm)   
-A> [http://www.javascriptkit.com/javatutors/redev.shtml](http://www.javascriptkit.com/javatutors/redev.shtml)  
+A> [regexpal.com | a JavaScript regular expression tester](http://regexpal.com/)  
+A> [Regular-Expressions.info/](http://www.regular-expressions.info/)   
+A> [Javascript: Expresiones Regulares | mundogeek.net](http://mundogeek.net/archivos/2004/07/29/javascript-expresiones-regulares/)   
+A> [Expresiones Regulares | javascript.espaciolatino.com](http://javascript.espaciolatino.com/lengjs/jsgram/expregulares.htm)   
+A> [Programmer's Guide to Regular Expressions | javascriptkit.com](http://www.javascriptkit.com/javatutors/redev.shtml)  
 
 Las expresiones regulares nos permiten buscar y manipular texto de una forma muy potente.  
 Un expresión regular consiste en:
