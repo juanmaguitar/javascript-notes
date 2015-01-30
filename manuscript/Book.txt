@@ -1,4 +1,5 @@
-00-prologo.txt
+00-1-frase.txt
+00-2-prologo.txt
 01-generalidades.txt
 02-variables_operadores.txt
 03-condiciones-bucles.txt

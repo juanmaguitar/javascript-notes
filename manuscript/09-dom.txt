@@ -376,17 +376,21 @@ Para obtener los elementos utilizamos `$()` o `jQuery()` pasándole nuestra [sel
 Podemos pasar de objeto jQuery a selección DOM: 
 
 - Para un elemento
+
 `$('#container') -> $('#container')[0]`
 
 - Para un grupo de elementos
+
 `$('.hidden') -> $('.hidden').toArray()` 
 
 Tambien podemos pasar de selección DOM a objeto jQuery:
 
 - Para un elemento: 
+
 `document.getElementById('container') -> $(document.getElementById('container'))`
 
 - Para un grupo de elementos: 
+
 `document.links -> $(document.links);`
 
 ```javascript
