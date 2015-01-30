@@ -350,9 +350,8 @@ function f(arg) {
 >>> m();
 ```
 
-A> Mas info:  
-A> - [http://mark-story.com/posts/view/picking-up-javascript-closures-and-lexical-scoping](http://mark-story.com/posts/view/picking-up-javascript-closures-and-lexical-scoping)   
-A> - [http://stackoverflow.com/questions/111102/how-do-javascript-closures-work](http://stackoverflow.com/questions/111102/how-do-javascript-closures-work)   
-A> - [http://www.kryogenix.org/code/browser/secrets-of-javascript-closures/](http://www.kryogenix.org/code/browser/secrets-of-javascript-closures/)   
-A> - [http://www.hunlock.com/blogs/Closing_The_Book_On_Javascript_Closures](http://www.hunlock.com/blogs/Closing_The_Book_On_Javascript_Closures)   
-A> - [http://www.bennadel.com/blog/1482-a-graphical-explanation-of-javascript-closures-in-a-jquery-context.htm](http://www.bennadel.com/blog/1482-a-graphical-explanation-of-javascript-closures-in-a-jquery-context.htm)   
+A> → [Closures and lexical scoping | Mark Story](http://mark-story.com/posts/view/picking-up-javascript-closures-and-lexical-scoping)   
+A> → [How do JavaScript closures work? | StackOverflow](http://stackoverflow.com/questions/111102/how-do-javascript-closures-work)   
+A> → [Secrets of JavaScript: closures | kryogenix.org](http://www.kryogenix.org/code/browser/secrets-of-javascript-closures/)   
+A> → [Closing The Book On Javascript Closures | hunlock.com](http://www.hunlock.com/blogs/Closing_The_Book_On_Javascript_Closures)   
+A> → [A Graphical Explanation Of Javascript Closures In A jQuery Context | Ben Nadel](http://www.bennadel.com/blog/1482-a-graphical-explanation-of-javascript-closures-in-a-jquery-context.htm)   

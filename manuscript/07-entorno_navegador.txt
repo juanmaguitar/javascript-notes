@@ -1,9 +1,9 @@
 # El entorno del Navegador
 
-A> [http://www.saregune.net/ikasi/hezigune/curso.php?curso=javascript&leccion=js_intro_dom](http://www.saregune.net/ikasi/hezigune/curso.php?curso=javascript&leccion=js_intro_dom)    
-A> [http://vkanakaraj.wordpress.com/2009/12/18/javascript-vs-dom-vs-bom-relationship-explained/](http://vkanakaraj.wordpress.com/2009/12/18/javascript-vs-dom-vs-bom-relationship-explained/)    
-A> [http://javascript.about.com/od/byexample/a/Javascript-By-Example_2.htm](http://javascript.about.com/od/byexample/a/Javascript-By-Example_2.htm)    
-A> [http://stackoverflow.com/questions/4416317/what-is-the-dom-and-bom-in-javascript](http://stackoverflow.com/questions/4416317/what-is-the-dom-and-bom-in-javascript)    
+A> → [El gran lío: versiones, DOM y BOM](http://www.saregune.net/ikasi/hezigune/curso.php?curso=javascript&leccion=js_intro_dom)    
+A> → [JavaScript Vs DOM Vs BOM, relationship explained | Rajakvk’s Blog](http://vkanakaraj.wordpress.com/2009/12/18/javascript-vs-dom-vs-bom-relationship-explained/)    
+A> → [Browser Object Model and Document Object Model | JavaScript By Example](http://javascript.about.com/od/byexample/a/Javascript-By-Example_2.htm)    
+A> → [What is the DOM and BOM in JavaScript? | StackOverflow](http://stackoverflow.com/questions/4416317/what-is-the-dom-and-bom-in-javascript)    
 
 Javascript puede ser utilizado en [diferentes entornos](http://en.wikipedia.org/wiki/JavaScript#Uses_outside_web_pages), pero [su entorno más habitual es el navegador](https://developer.mozilla.org/en/JavaScript_technologies_overview)  
 

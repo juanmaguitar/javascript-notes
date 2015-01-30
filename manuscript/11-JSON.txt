@@ -1,9 +1,9 @@
 # JSON
 
-A> [http://json.org/json-es.html](http://json.org/json-es.html)  
-A> [http://www.etnassoft.com/2010/12/30/tutorial-json/](http://www.etnassoft.com/2010/12/30/tutorial-json/)  
-A> [http://javascriptweblog.wordpress.com/2010/11/29/json-and-jsonp/](http://javascriptweblog.wordpress.com/2010/11/29/json-and-jsonp/)  
-A> [http://www.anieto2k.com/2007/08/03/toma-de-contacto-con-json/](http://www.anieto2k.com/2007/08/03/toma-de-contacto-con-json/)  
+A> → [Introducción a JSON | json.org](http://json.org/json-es.html)  
+A> → [Tutorial JSON | etnassoft.com](http://www.etnassoft.com/2010/12/30/tutorial-json/)  
+A> → [JSON and JSONP | Angus Croll blog](http://javascriptweblog.wordpress.com/2010/11/29/json-and-jsonp/)  
+A> → [Toma de contacto con JSON | anieto2k.com](http://www.anieto2k.com/2007/08/03/toma-de-contacto-con-json/)  
 
 ```javascript
     {
