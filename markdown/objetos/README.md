@@ -279,6 +279,10 @@ Podemos utilizar funciones constructoras y devolver objetos distintos de `this`
 2
 ```
 
+`new` siempre devolverá un objeto, por lo que si la función constructora devuelve algo diferente a un objeto, la llamada a esa función con `new` seguirá devolviendo el `this` correspondiente
+
+### Copiando Objetos 
+
 Cuando _copiamos_ un objeto o _lo pasamos como parámetro_ a una función, realmente estamos pasando una referencia al objeto.
 Si hacemos un cambio a esta referencia, modicaremos también el objeto original
 
@@ -297,6 +301,8 @@ Si hacemos un cambio a esta referencia, modicaremos también el objeto original
 >>> original.howmany
 0
 ```
+
+### Comparando Objetos 
 
 Cuando _comparamos_ un objeto sólo obtendremos `true` si comparamos 2 referencias al mismo objeto
 

@@ -1,0 +1,6 @@
+{
+    "execMap": {
+        "js": "traceur-runner"
+    },
+    "ext": "js json html css"
+}
