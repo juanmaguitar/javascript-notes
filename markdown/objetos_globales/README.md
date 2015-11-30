@@ -128,7 +128,7 @@ Los arrays disponen de unos cuantos metodos interesantes:
 [1, 100, 101, 102, 7, "test"]
 ```
 
-[...more about arrays methods](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos_globales/arrays)
+[>>> more about arrays methods](https://github.com/juanmaguitar/apuntes-javascript-intermedio/tree/master/markdown/objetos_globales/arrays)
 
 ##[Function](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function)
 
