@@ -1,101 +1,5 @@
 #[Array](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array)
 
-- Para crear arrays podemos usar:
-    - La notacion literal :  `var a = []`
-    - La funcion constructora Array():  `var o = new Array();`
-
-- Podemos pasarle parametros al constructor `Array()`
-    - Varios parametros: Seran asignados como elementos al array
-    - Un numero: Se considerará el tamaño del array
-
-```javascript
->>> var a = new Array(1,2,3,'four');
->>> a;
-[1, 2, 3, "four"]
-
->>> var a2 = new Array(5);
->>> a2;
-[undefined, undefined, undefined, undefined, undefined]
-```
-
-- Como los arrays son objetos tenemos disponibles los metodos y propiedades del padre `Object()`
-
-```javascript
->>> typeof a;
-"object"
-
->>> a.toString();
-"1,2,3,four"
->>> a.valueOf()
-[1, 2, 3, "four"]
->>> a.constructor
-Array()
-```
-- Los arrays disponen de la propiedad [`length`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/length)  
-
-    - Nos devuelve el tamaño del array (numero de elementos)
-    - Podemos  modificarlo y cambiar el tamaño del array
-
-```javascript
->>> a[0] = 1; 
->>> a.prop = 2; 
-
->>> a.length
-1
->>> a.length = 5
-5
->>> a
-[1, undefined, undefined, undefined, undefined]
-
->>> a.length = 2;
-2
->>> a
-[1, undefined]
-```
-  
-  
-Los arrays disponen de unos cuantos metodos interesantes:
-
-- `push()`
-- `pop()`
-- `sort()`
-- `join()`
-- `slice()`
-- `splice()`
-
-```javascript
->>> var a = [3, 5, 1, 7, 'test'];
-
->>> a.push('new') 
-6
->>> a 
-[3, 5, 1, 7, "test", "new"]
-
->>> a.pop() 
-"new"
->>> a 
-[3, 5, 1, 7, "test"]
-
->>> var b = a.sort();
->>> b
-[1, 3, 5, 7, "test"]
->>> a
-[1, 3, 5, 7, "test"]
-
->>> a.join(' is not ');
-"1 is not 3 is not 5 is not 7 is not test"
-
->>> b = a.slice(1, 3);
-[3, 5]
->>> a
-[1, 3, 5, 7, "test"]
-
->>> b = a.splice(1, 2, 100, 101, 102);
-[3, 5]
->>> a
-[1, 100, 101, 102, 7, "test"]
-```
-
 ## Métodos de Array
 
 ###[concat()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)
@@ -282,7 +186,7 @@ function compare(a, b) {
 
 Las [Higher Order Functions](http://eloquentjavascript.net/05_higher_order.html) son aquellas funciones que aceptan otras funciones como parametros o que devuelven funciones ([o las 2 cosas](http://jtfmumm.com/blog/2013/08/31/nested-higher-order-functions-in-javascript/)). Son aquellas funciones que tratan a otras funciones como valores (de entrada o de salida)
 
-Existe un paradigma 
+Existe un paradigma de programación llamado [programación funcional](https://medium.com/javascript-scene/the-two-pillars-of-javascript-pt-2-functional-programming-a63aa53a41a4#.iv40wrzzg)
 
 Aplicados a javascript, unos principios basicos de esta [programación funcional](http://www.smashingmagazine.com/2014/07/dont-be-scared-of-functional-programming/) serian:
 
@@ -290,9 +194,7 @@ Aplicados a javascript, unos principios basicos de esta [programación funcional
 - Todas tus funciones deben devolver un valor u otra funcion
 - No for-loops
 
-Los arrays disponen [a traves de su prototipo](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods_2) algunas _higher order functions_  MUY utilizadas.
-
-Las nativas para `array` son entre otras:
+Los arrays disponen [a traves de su prototipo](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods_2) de algunas _higher order functions_  MUY utilizadas. Son entre otras:
 
 ###[forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 
