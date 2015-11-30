@@ -1,3 +1,101 @@
+#[Array](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array)
+
+- Para crear arrays podemos usar:
+    - La notacion literal :  `var a = []`
+    - La funcion constructora Array():  `var o = new Array();`
+
+- Podemos pasarle parametros al constructor `Array()`
+    - Varios parametros: Seran asignados como elementos al array
+    - Un numero: Se considerará el tamaño del array
+
+```javascript
+>>> var a = new Array(1,2,3,'four');
+>>> a;
+[1, 2, 3, "four"]
+
+>>> var a2 = new Array(5);
+>>> a2;
+[undefined, undefined, undefined, undefined, undefined]
+```
+
+- Como los arrays son objetos tenemos disponibles los metodos y propiedades del padre `Object()`
+
+```javascript
+>>> typeof a;
+"object"
+
+>>> a.toString();
+"1,2,3,four"
+>>> a.valueOf()
+[1, 2, 3, "four"]
+>>> a.constructor
+Array()
+```
+- Los arrays disponen de la propiedad [`length`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/length)  
+
+    - Nos devuelve el tamaño del array (numero de elementos)
+    - Podemos  modificarlo y cambiar el tamaño del array
+
+```javascript
+>>> a[0] = 1; 
+>>> a.prop = 2; 
+
+>>> a.length
+1
+>>> a.length = 5
+5
+>>> a
+[1, undefined, undefined, undefined, undefined]
+
+>>> a.length = 2;
+2
+>>> a
+[1, undefined]
+```
+  
+  
+Los arrays disponen de unos cuantos metodos interesantes:
+
+- `push()`
+- `pop()`
+- `sort()`
+- `join()`
+- `slice()`
+- `splice()`
+
+```javascript
+>>> var a = [3, 5, 1, 7, 'test'];
+
+>>> a.push('new') 
+6
+>>> a 
+[3, 5, 1, 7, "test", "new"]
+
+>>> a.pop() 
+"new"
+>>> a 
+[3, 5, 1, 7, "test"]
+
+>>> var b = a.sort();
+>>> b
+[1, 3, 5, 7, "test"]
+>>> a
+[1, 3, 5, 7, "test"]
+
+>>> a.join(' is not ');
+"1 is not 3 is not 5 is not 7 is not test"
+
+>>> b = a.slice(1, 3);
+[3, 5]
+>>> a
+[1, 3, 5, 7, "test"]
+
+>>> b = a.splice(1, 2, 100, 101, 102);
+[3, 5]
+>>> a
+[1, 100, 101, 102, 7, "test"]
+```
+
 ## Métodos de Array
 
 ###[concat()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)
@@ -174,6 +272,28 @@ function compare(a, b) {
 []
 ```
 
+## Higher Order Functions
+
+<sub>[Functional Programming in JavaScript | YouTube Videos](https://www.youtube.com/watch?v=BMUiFMZr7vk&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)</sub>  
+<sub>[Higher Order Function | Medium](https://medium.com/functional-javascript/higher-order-functions-78084829fff4#.ka4840l1e)</sub>  
+<sub>[Functional JavaScript](https://www.safaribooksonline.com/library/view/functional-javascript/9781449360757/ch04.html)</sub>  
+<sub>[Functional Programming | Book](http://shop.oreilly.com/product/0636920028857.do)</sub>  
+<sub>[Higher-Order Functions and Function Binding | Explained exercise](http://clarkfeusier.com/2015/01/11/interview-question-function-bind.html)</sub>
+
+Las [Higher Order Functions](http://eloquentjavascript.net/05_higher_order.html) son aquellas funciones que aceptan otras funciones como parametros o que devuelven funciones ([o las 2 cosas](http://jtfmumm.com/blog/2013/08/31/nested-higher-order-functions-in-javascript/)). Son aquellas funciones que tratan a otras funciones como valores (de entrada o de salida)
+
+Existe un paradigma 
+
+Aplicados a javascript, unos principios basicos de esta [programación funcional](http://www.smashingmagazine.com/2014/07/dont-be-scared-of-functional-programming/) serian:
+
+- Todas tus funciones deben aceptar al menos 1 argumento
+- Todas tus funciones deben devolver un valor u otra funcion
+- No for-loops
+
+Los arrays disponen [a traves de su prototipo](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods_2) algunas _higher order functions_  MUY utilizadas.
+
+Las nativas para `array` son entre otras:
+
 ###[forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 
 `forEach()` nos permite ejecutar una función sobre cada elemento del array
@@ -191,3 +311,9 @@ function logArrayElements(element, index, array) {
 // a[3] = 9
 []
 ```
+
+
+### [pluck()](http://underscorejs.org/#pluck), [zip()](http://underscorejs.org/#zip), [reject()](http://underscorejs.org/#reject), [groupBy()](https://lodash.com/docs#groupBy), [sample()](https://lodash.com/docs#sample), [chunk()](https://lodash.com/docs#chunk), [flatten()](https://lodash.com/docs#flatten)...
+
+Utilizando librerias externas (como [underscore](http://underscorejs.org/#collections) o [lodash](https://lodash.com/docs)) tendremos disponibles en nuestro código muchas más _higher order functions_ que nos facilitaran el trabajo
+
