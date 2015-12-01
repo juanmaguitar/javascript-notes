@@ -225,6 +225,8 @@ Los arrays disponen [a traves de su prototipo](https://developer.mozilla.org/en-
 
 `forEach()` nos permite ejecutar una función sobre cada elemento del array
 
+    arr.forEach(callback[, thisArg])
+
 ```javascript
 function logArrayElements(element, index, array) {
   console.log('a[' + index + '] = ' + element);
@@ -239,8 +241,102 @@ function logArrayElements(element, index, array) {
 []
 ```
 
+###[map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+
+`map()` devuelve _un nuevo array_ con los resultados de llamar a una función provista como parametro sobre cada elemento del array
+
+    arr.map(callback[, thisArg])
+
+```javascript
+function double(element /*, index, array*/ ) {
+  //console.log('a[' + index + '] = ' + element);
+  return element * 2;
+}
+
+// Note elision, there is no member at 2 so it isn't visited
+>>> [2, 5, 3, 9].map(double);
+[4, 10, 6, 18]
+```
+
+###[filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+
+`filter()` nos devuelve un nuevo array con aquellos elementos que pasan el test de la función (devueven `true`) pasada como parametro
+
+    arr.filter(callback[, thisArg])
+
+```javascript
+function isMoreThan5(element /*, index, array */) {
+  //console.log('a[' + index + '] = ' + element);
+  return element >= 5;
+}
+
+>>> var groupMoreThan5 = [2, 5, 3, 9].filter(isMoreThan5);
+>>> groupMoreThan5
+[5, 9]
+```
+
+###[every()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
+
+`every()` devuelve true si _TODOS_ los elementos del array pasan el test provisto como parametro (todos devueven `true` al aplicarles esta función)
+
+    arr.every(callback[, thisArg])
+
+```javascript
+function isMoreThan5(element /*, index, array */) {
+  //console.log('a[' + index + '] = ' + element);
+  return element >= 5;
+}
+
+>>> console.log ( [2, 5, 3, 9].every(isMoreThan5) )
+false
+>>> console.log ( [22, 5, 33, 9].every(isMoreThan5) )
+true
+```
+
+###[some()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
+
+`some()` devuelve true si _ALGUN_ elemento del array pasa el test provisto como parametro (uno o más devueven `true` al aplicarles esta función)
+
+    arr.some(callback[, thisArg])
+
+```javascript
+function isMoreThan5(element /*, index, array */) {
+  //console.log('a[' + index + '] = ' + element);
+  return element >= 5;
+}
+
+>>> console.log ( [2, 5, 3, 9].some(isMoreThan5) )
+true
+>>> console.log ( [1, 2, 3, 4].some(isMoreThan5) )
+false
+```
+
+
+###[reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
+
+`reduce()` aplica una función recursivamente sobre un _acumulador_ y sobre cada valor del array (de izquierda a derecha) hasta obtener _un unico valor_
+
+    arr.reduce(callback[, initialValue])
+
+```javascript
+function sumElements(acc, current /*, index, array */) {
+  //console.log(acc + ' | ' + current + ' | ' + index + ' | ' + array);
+  return acc + current;
+};
+
+// Note elision, there is no member at 2 so it isn't visited
+>>> [2, 5, 3, 9].reduce(sumElements);
+19
+```
+
+```javascript
+var flattened = [[0, 1], [2, 3], [4, 5]].reduce(function(a, b) {
+  return a.concat(b);
+}, []);
+// flattened is [0, 1, 2, 3, 4, 5]
+```
 
 ### [pluck()](http://underscorejs.org/#pluck), [zip()](http://underscorejs.org/#zip), [reject()](http://underscorejs.org/#reject), [groupBy()](https://lodash.com/docs#groupBy), [sample()](https://lodash.com/docs#sample), [chunk()](https://lodash.com/docs#chunk), [flatten()](https://lodash.com/docs#flatten)...
 
-Utilizando librerias externas (como [underscore](http://underscorejs.org/#collections) o [lodash](https://lodash.com/docs)) tendremos disponibles en nuestro código muchas más _higher order functions_ que nos facilitaran el trabajo
+Utilizando librerias externas (como [underscore](http://underscorejs.org/#collections), [lodash](https://lodash.com/docs) o [functional.js](http://functionaljs.com/)) tendremos disponibles en nuestro código muchas más _higher order functions_ que nos facilitaran el trabajo
 
