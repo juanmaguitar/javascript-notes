@@ -1,6 +1,6 @@
 #[Array](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array)
 
-## Métodos de Array
+## Métodos basicos de Array
 
 ###[concat()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)
 
@@ -176,23 +176,45 @@ function compare(a, b) {
 []
 ```
 
-## Higher Order Functions
+## Métodos de Array como Higher Order Functions
 
 <sub>[Functional Programming in JavaScript | YouTube Videos](https://www.youtube.com/watch?v=BMUiFMZr7vk&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)</sub>  
 <sub>[Higher Order Function | Medium](https://medium.com/functional-javascript/higher-order-functions-78084829fff4#.ka4840l1e)</sub>  
-<sub>[Functional JavaScript](https://www.safaribooksonline.com/library/view/functional-javascript/9781449360757/ch04.html)</sub>  
 <sub>[Functional Programming | Book](http://shop.oreilly.com/product/0636920028857.do)</sub>  
 <sub>[Higher-Order Functions and Function Binding | Explained exercise](http://clarkfeusier.com/2015/01/11/interview-question-function-bind.html)</sub>
 
 Las [Higher Order Functions](http://eloquentjavascript.net/05_higher_order.html) son aquellas funciones que aceptan otras funciones como parametros o que devuelven funciones ([o las 2 cosas](http://jtfmumm.com/blog/2013/08/31/nested-higher-order-functions-in-javascript/)). Son aquellas funciones que tratan a otras funciones como valores (de entrada o de salida)
 
-Existe un paradigma de programación llamado [programación funcional](https://medium.com/javascript-scene/the-two-pillars-of-javascript-pt-2-functional-programming-a63aa53a41a4#.iv40wrzzg)
+#### [Programación Funcional](https://www.safaribooksonline.com/library/view/functional-javascript/9781449360757/ch04.html)
 
-Aplicados a javascript, unos principios basicos de esta [programación funcional](http://www.smashingmagazine.com/2014/07/dont-be-scared-of-functional-programming/) serian:
+Existe un paradigma de programación llamado [programación funcional](https://medium.com/javascript-scene/the-two-pillars-of-javascript-pt-2-functional-programming-a63aa53a41a4#.iv40wrzzg) que entre otras cosas se basa en:
+
+- El uso/creación de [funciones puras](hhttp://www.nicoespeon.com/en/2015/01/pure-functions-javascript/)
+- La [composición de funciones](http://nodegeek.net/2014/06/24/function-composition/)
+
+Este estilo de programación nos deja un código más corto, más facil de leer y de testear
+
+```javascript
+function double(x) { return x*2; };
+
+[1,2,3,4,5].map(double); // => [2,4,6,8,10]
+```
+
+```javascript
+
+function sum(total, item) { return total + item; };
+
+[15, 30, 20].reduce(reducer, 0); // => 65
+
+```
+
+Aplicados a javascript, unos principios basicos y practicos de esta [programación funcional](http://www.smashingmagazine.com/2014/07/dont-be-scared-of-functional-programming/) podrian ser:
 
 - Todas tus funciones deben aceptar al menos 1 argumento
 - Todas tus funciones deben devolver un valor u otra funcion
 - No for-loops
+
+#### Higher Order Functions
 
 Los arrays disponen [a traves de su prototipo](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods_2) de algunas _higher order functions_  MUY utilizadas. Son entre otras:
 
