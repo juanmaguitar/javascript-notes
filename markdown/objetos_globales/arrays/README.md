@@ -189,8 +189,11 @@ Las [Higher Order Functions](http://eloquentjavascript.net/05_higher_order.html)
 
 Existe un paradigma de programación llamado [programación funcional](https://medium.com/javascript-scene/the-two-pillars-of-javascript-pt-2-functional-programming-a63aa53a41a4#.iv40wrzzg) que entre otras cosas se basa en:
 
-- El uso/creación de [funciones puras](hhttp://www.nicoespeon.com/en/2015/01/pure-functions-javascript/)
+- El uso/creación de [funciones puras](http://www.nicoespeon.com/en/2015/01/pure-functions-javascript/)
 - La [composición de funciones](http://nodegeek.net/2014/06/24/function-composition/)
+
+<sub>[Compose Yourself: Fun with Functions | Talk Slides](http://scott.sauyet.com/Javascript/Talk/Compose/2013-05-22/)</sub>  
+<sub>[Functional Programming | Talk Slides](http://scott.sauyet.com/Javascript/Talk/FunctionalProgramming/)</sub>
 
 Este estilo de programación nos deja un código más corto, más facil de leer y de testear
 
