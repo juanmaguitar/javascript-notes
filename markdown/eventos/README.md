@@ -113,21 +113,15 @@ Le pasamos 2 parametros:
 
 - Con _jQuery_ podemos realizar nuestra gestion de eventos sin tener que preocuparnos de las diferencias entre navegadores:
 
-    - [`$().bind()`](http://api.jquery.com/bind/) y [`$().unbind()`](http://api.jquery.com/unbind/): El `addEventListener`/`removeEventListener`
+    - [`$().on()`](http://api.jquery.com/on) y [`$().off()`](http://api.jquery.com/off/): El `addEventListener`/`removeEventListener`
 cross-browsing
 
-            .bind( eventType, [ eventData ], handler(eventObject) )
-            .unbind( [ eventType ], [ handler(eventObject) ] )
+            .on( events [, selector ] [, data ], handler )
+            .off( events [, selector ] [, handler ] )
 
         - El `handler` recibe un objeto [`event`](http://api.jquery.com/category/events/event-object/) propio de jQuery  
         - Los tipos de eventos que podemos capturar son `blur`, `focus`, `focusin`, `focusout`, `load`, `resize`, `scroll`, `unload`, `click`, `dblclick`, `mousedown`, `mouseup`, `mousemove`, `mouseover`, `mouseout`, `mouseenter`, `mouseleave`, `change`, `select`, `submit`, `keydown`, `keypress`, `keyup`, `error`  
         - Tambien podemos crearnos [nuestros propios tipos de eventos](http://api.jquery.com/category/events/event-object/)
-
-    - [`$().on()`](http://api.jquery.com/on) y [`$().off()`](http://api.jquery.com/off/): El `$().bind()`/`$().unbind()`
-cross-functional
-
-            .on( events [, selector ] [, data ], handler )
-            .off( events [, selector ] [, handler ] )
 
     - [`$().trigger()`](http://api.jquery.com/trigger):  Nos permite ejecutar todos los handlers asociados a un evento
 
