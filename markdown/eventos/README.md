@@ -57,19 +57,28 @@ if (document.addEventListener){ // FF
     Este modelo se aplica distinto según el navegador  
     Para enganchar/desenganchar una funcion a un evento con este modelo se utiliza:  
 
-    - [`addEventListener`](https://developer.mozilla.org/en/DOM/element.addEventListener) y [`removeEventListener`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget.removeEventListener) en Firefox, Opera y Safari ([W3C way](http://www.w3.org/TR/DOM-Level-2-Events/events.html#Events-EventTarget-addEventListener))  
-    Le pasamos 3 parametros:
-        1. _Tipo de Evento_ : `click`, `change`,...
-        2. _Funcion a ejecutar_ (_handler_, _callback_) : Recibe un objeto `e` con info sobre el evento  
-        En `e.target` tenemos el [elemento que lanzó el evento](http://www.w3.org/TR/DOM-Level-2-Events/events.html#Events-Event)
-        3. _¿Utilizo Capturing? _: Poniendolo a `false` utilizariamos sólo _Bubbling_
+###[`addEventListener`](https://developer.mozilla.org/en/DOM/element.addEventListener) y [`removeEventListener`](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget.removeEventListener)
 
+Para Firefox, Opera y Safari ([W3C way](http://www.w3.org/TR/DOM-Level-2-Events/events.html#Events-EventTarget-addEventListener))  
 
-    - [`attachEvent`](http://msdn.microsoft.com/en-us/library/ms536343(v=vs.85).aspx) y [`detachEvent`](http://msdn.microsoft.com/en-us/library/ms536411(v=vs.85).aspx) en IE (Microsoft way)  
-    Le pasamos 2 parametros:
-        1. _Tipo de Evento_: `onclick`, `onchange`,...
-        2. _Funcion a ejecutar_ (_handler_, _callback_): Para acceder a la info del evento hay que mirar el objeto global [`window.event`](http://msdn.microsoft.com/en-us/library/ms535863(v=VS.85).aspx)  
-        En [`event.srcElement`](http://msdn.microsoft.com/en-us/library/ms534638%28VS.85%29.aspx) tenemos el elemento que lanzó el evento
+Le pasamos 3 parametros:
+
+1. _Tipo de Evento_ : `click`, `change`,...
+2. _Funcion a ejecutar_ (_handler_, _callback_) : Recibe un objeto `e` con info sobre el evento  
+    - En `e.target` tenemos el [elemento que lanzó el evento](http://www.w3.org/TR/DOM-Level-2-Events/events.html#Events-Event)
+3. _¿Utilizo Capturing? _: Poniendolo a `false` utilizariamos sólo _Bubbling_
+
+El [soporte de addEventListener](http://caniuse.com/#feat=addeventlistener) está bastante extendido entre los navegadores mas populares por lo que se recomienda su uso directo.
+
+###[`attachEvent`](http://msdn.microsoft.com/en-us/library/ms536343(v=vs.85).aspx) y [`detachEvent`](http://msdn.microsoft.com/en-us/library/ms536411(v=vs.85).aspx) 
+
+IE (Microsoft way). Versiones de IE anteriores a IE 9 (<=8) utilizan de forma nativa este metodo para capturar eventos
+    
+Le pasamos 2 parametros:
+
+1. _Tipo de Evento_: `onclick`, `onchange`,...
+2. _Funcion a ejecutar_ (_handler_, _callback_): Para acceder a la info del evento hay que mirar el objeto global [`window.event`](http://msdn.microsoft.com/en-us/library/ms535863(v=VS.85).aspx)  
+    - En [`event.srcElement`](http://msdn.microsoft.com/en-us/library/ms534638%28VS.85%29.aspx) tenemos el elemento que lanzó el evento
 
 ## Deteniendo el flujo de los eventos
 
