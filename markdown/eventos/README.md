@@ -5,7 +5,7 @@
 - Cada acción (_click_, _change_, …) que ocurre en el navegador es comunicada (a quien quiera escuchar) en forma de **evento**
     Desde Javascript podemos _escuchar_ estos eventos y engancharle una función (_event handler_) que se ejecutará cuando ocurra este evento
 
-![Events](https://raw.github.com/juanmaguitar/training-frontend-docs/master/eventos/img/events.png)
+![Events](https://raw.githubusercontent.com/juanmaguitar/apuntes-javascript-intermedio/master/markdown/eventos/img/events.png)
 
 - Cuando hacemos click en un link (`a`), tambien hacemos click en su contenedor (`li`,`ul`), en el `body` y en ultima instancia en el `document`. Esto es lo que se llama la **propagación del evento**
 
