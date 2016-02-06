@@ -4,11 +4,11 @@
 
 * According to a [3 layers separation of a webpage](http://titleandsummary.com/separation-of-layers-content-presentation-and-behavior/), Javascript is in charge of the behaviour's layer:  
 
-    * Content → HTML  
-    * Presentation → CSS  
-    * Behaviour → Javascript  
+  + Content → HTML  
+  + Presentation → CSS  
+  + Behaviour → Javascript  
 
-    <sub>[http://jeffcroft.com/blog/2007/sep/26/new-layers-web-development/](http://jeffcroft.com/blog/2007/sep/26/new-layers-web-development/)</sub>  
+  <sub>[http://jeffcroft.com/blog/2007/sep/26/new-layers-web-development/](http://jeffcroft.com/blog/2007/sep/26/new-layers-web-development/)</sub>  
 
 * [Javascript](https://developer.mozilla.org/en/JavaScript_Language_Resources) is based on [ECMAScript](http://es.wikipedia.org/wiki/ECMAScript) (o Ecma-262) that is an especification of the programming language (another "famous" language based on this standard is _ActionScript_).  
 
@@ -87,7 +87,7 @@ This version **extends** the previous ones [with some improvements](http://www.j
   }
   ```
 
-  <sub>[http://cjihrig.com/blog/javascripts-strict-mode-and-why-you-should-use-it/](http://cjihrig.com/blog/javascripts-strict-mode-and-why-you-should-use-it/)</sub>
+  <sub>[http://cjihrig.com/blog/javascripts-strict-mode-and-why-you-should-use-it/](http://cjihrig.com/blog/javascripts-strict-mode-and-why-you-should-use-it/)</sub>  
   <sub>[http://www.nczonline.net/blog/2012/03/13/its-time-to-start-using-javascript-strict-mode/](http://www.nczonline.net/blog/2012/03/13/its-time-to-start-using-javascript-strict-mode/)</sub>
 
 - [`Object` new methods](http://ejohn.org/blog/ecmascript-5-objects-and-properties/)
@@ -200,6 +200,8 @@ It adds (from the previous standard): `do-while`, regular expressions, new `stri
 <sub>[https://github.com/ericdouglas/ES6-Learning](https://github.com/ericdouglas/ES6-Learning)</sub>  
 <sub>[http://es6rocks.com/](http://es6rocks.com/)</sub>  
 <sub>[http://code.tutsplus.com/articles/use-ecmascript-6-today--net-31582](http://code.tutsplus.com/articles/use-ecmascript-6-today--net-31582)</sub>  
+
+This last version adds to the language a lot of [sugar syntax and new features](http://caspervonb.com/javascript/an-overview-of-javascript-in-2015-ecmascript-6/)
 
 Although we can give support of some of this features not supported in browsers by using the proper [shim](https://github.com/paulmillr/es6-shim/)
 
