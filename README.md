@@ -1,16 +1,14 @@
-# Apuntes de Javascript I - Nivel Intermedio
+# Javascript Notes
 
-## Descripción ##
+## Description ##
 
-Este repositorio contiene la **primera parte** de los materiales que he ido realizando para diferentes trainings JAVASCRIPT impartidos desde 2010.
+This repository contains part of the materials created for the different javascript trainings i've been doing since 2010
 
-Esta primera parte abarca desde lo más basico hasta un nivel intermedio que incluye:
+This part includes:
 
-- las bases de javascript como lenguaje de programacion (variables, operadores, condicionales, bucles, tipos datos, etc...)
-- conceptos importantes asociados al lenguaje y como manejarlos (JSON, AJAX, eventos, dom, bom)
-- algunos conceptos un poco mas avanzados pero fundamentales para entener el javascript actual (closures, expresiones regulares, objetos)
-
-Los conceptos cubiertos en este libro te permitiran trabajar y comprender el javascript del 90% de los proyectos
+- Javascript Basics as a programming language (variables, operators, conditionals, loops, data types, ...)
+- Important concepts associated to the language and how to manage them (JSON, AJAX, Events, DOM, BOM, ...)
+- Some other concepts that are a bit more advanced but also fundamentals to understand the "power" of the language (closures, regular expressions, objects, inheritance)
 
 ## Contenidos ##
 
@@ -31,30 +29,21 @@ Este material cubre los siguientes contenidos:
 - [AJAX](markdown/AJAX)
 - [Expresiones Regulares](markdown/expresiones_regulares)
 
+## References ##
 
-## Libro ##
-
-Si quieres acceder a este contenido en formato PDF, EPUB o MOBI puedes adquirir el libro por un precio simbolico desde [aqui](https://leanpub.com/apuntes-javascript-intermedio/)
-
-[<img src="manuscript/images/title_page.png">](https://leanpub.com/apuntes-javascript-intermedio/)
-
-## Referencias ##
-
-Ademas de los enlaces reflejados en los documentos, este material está ampliamente basado en los siguientes libros:
+Besides of the links used in the documents, the following books has been an important source of information for the materials:
 
 - [JavaScript: The Good Parts](http://www.amazon.com/dp/0596517742) by [Douglas Crockford](http://www.crockford.com/)
 - [Object-Oriented JavaScript](http://www.amazon.com/dp/1847194141) by [Stoyan Stefanov](https://twitter.com/stoyanstefanov)
 - [JavaScript Patterns](http://www.amazon.com/dp/0596806752) by [Stoyan Stefanov](https://twitter.com/stoyanstefanov)
 
-## Utilizar este material ##
+## Use this material ##
 
-Eres libre de usar este material de acuerdo a los terminos de la [licencia]
-(http://creativecommons.org/licenses/by-sa/3.0/deed.es_ES). Si utilizas este material
-para alguna formación, me encantaría saberlo (<mailto:JuanMa.Garrido@gmail.com>)
+You're free to use this material according to the license's term (http://creativecommons.org/licenses/by-sa/3.0/deed.es_ES). If you uses this material for some training, i'd love to hear about it (<mailto:JuanMa.Garrido@gmail.com>)
 
-## Copyright & Licencia ##
+## Copyright & License ##
 
-Este material está sujeto a la licencia [Reconocimiento 3.0 Unported (CC BY 3.0) de Creative Commons](http://creativecommons.org/licenses/by-sa/3.0/deed.es_ES). Puedes copiar, distribuir, comunicar públicamente y modificar el material siempre que atribuyas a Juan Manuel Garrido la autoría original y hagas referencia a [este repositorio](https://github.com/juanmaguitar/training-frontend-docs). Si modificas o creas a partir de este material, puedes distribuir el trabajo resultante solo bajo la misma licencia u otra compatible. Alguna de estas condiciones puede no aplicarse si obtienes el permiso del titular de los derechos de autor.  Al reutilizar o distribuir la obra, tienes que dejar bien claro los términos de la licencia de esta obra. La mejor manera de hacer esto es con un enlace a la licencia [Reconocimiento 3.0 Unported (CC BY 3.0) de Creative Commons](http://creativecommons.org/licenses/by-sa/3.0/deed.es_ES).
+These Materials are all under the [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/deed.en_EN). Everyone is free to share and edit them as long as they keep staying under this licence and there is an attribution for where they got it from - generally saying and linking to [this repository](https://github.com/juanmaguitar/javascript-notes) is considered sufficient.
 
-Copyright &copy;2012 Juan Manuel Garrido
+Copyright &copy;2016 Juan Manuel Garrido
 
