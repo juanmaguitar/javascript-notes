@@ -10,24 +10,36 @@ This part includes:
 - Important concepts associated to the language and how to manage them (JSON, AJAX, Events, DOM, BOM, ...)
 - Some other concepts that are a bit more advanced but also fundamentals to understand the "power" of the language (closures, regular expressions, objects, inheritance)
 
-## Contenidos ##
+## Contents ##
 
-Este material cubre los siguientes contenidos:
+This material cover the following contents:
 
-- [Ideas Claras, Historia del JS, EcmaScript](markdown/generalidades)
-- [Variables, Tipos de Datos y Operadores](markdown/variable_tipos_datos_operadores)
-- [Condicionales y Bucles](markdown/condiciones_bucles)
-- [Funciones (Predefinidas, Callback, Closures...)](markdown/funciones)
-- [Arrays y Objetos (Funciones Constructoras)](markdown/objetos)
-- [Objetos Globales (Object, Function, Array, Number, Boolean, Math y Date)](markdown/objetos_globales)
-    - [Array Object (& Higher Order Functions)](markdown/arrays)
-- [El entorno del navegador](markdown/entorno_navegador)
-    -  [DOM, Seleccion de elementos](markdown/entorno_navegador/DOM)
-    -  [BOM](markdown/entorno_navegador/BOM)
-- [Eventos](markdown/eventos)
-- [JSON](markdown/JSON)
-- [AJAX](markdown/AJAX)
-- [Expresiones Regulares](markdown/expresiones_regulares)
+**Javascript Basics**
+
+- [Clear Ideas, JS History, ECMAScript](markdown-en/1-clear-ideas)
+- [Variables, Data Types and Operators](markdown-en/2-variables-data-types-operators)
+- [Conditions and Loops](markdown-en/3-conditions-loops)
+- [Functions (Predefined, Callback, Closures...)](markdown-en/4-functions)
+- [Arrays and Objects (Constructors)](markdown-en/5-arrays-objects)
+- [Global Objects (Object, Function, Array, Number, Boolean, Math and Date)](markdown-en/6-global-objects)
+    - Array Object and Higher Order Functions (Functional Programming)
+
+**Javascript Advanced**
+
+- [TDD](markdown-en/7-tdd)
+- [Regular Expressions](markdown-en/8-regular-expressions)
+- [Prototype](markdown-en/9-prototype)
+- [Inheritance](markdown-en/10-inheritance)
+
+
+**Javascript & jQuery**
+
+- [Browser environment](markdown-en/11-browser-environment)
+    -  [DOM, Elements selection](markdown-en/11-browser-environment/DOM)
+    -  [BOM](markdown-en/11-browser-environment/BOM)
+- [Events](markdown/12-events)
+- [JSON](markdown/13-JSON)
+- [AJAX](markdown/14-AJAX)
 
 ## References ##
 

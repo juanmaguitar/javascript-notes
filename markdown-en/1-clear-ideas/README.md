@@ -1,6 +1,6 @@
 # Clear Ideas about Javascript
 
-* JavaScript is a [interpreted programming language](http://es.wikipedia.org/wiki/Lenguaje_de_programaci%C3%B3n_interpretado) so there's no need to compile the programs to execute them 
+* JavaScript is an [interpreted programming language](http://es.wikipedia.org/wiki/Lenguaje_de_programaci%C3%B3n_interpretado) so there's no need to compile the programs to execute them 
 
 * According to a [3 layers separation of a webpage](http://titleandsummary.com/separation-of-layers-content-presentation-and-behavior/), Javascript is in charge of the behaviour's layer:  
 
