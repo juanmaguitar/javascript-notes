@@ -1,4 +1,4 @@
-#Funciones
+# Functions
 
 ```javascript
 function sum(a, b) {
@@ -7,25 +7,25 @@ function sum(a, b) {
 }
 ```
 
-Las **funciones** nos permiten agrupar varias líneas de código bajo un nombre.
-De esta forma podemos reutilizar este código, invocando el nombre de la función.
+**funciones** allow us to group several lines of code under one name.
+In this way, we can reuse this code, by invoking the name of the funtion.
 
-Las partes de una función:
+Function parts are:
 
-- La _sentencia `function`_
-- El _nombre_ de la función (_sum_)
-- _Parámetros_ (argumentos) que espera la función (_a_ y _b_)
-Una función puede aceptar cero o más argumentos separados por comas
-- Un bloque de código, también llamado el _cuerpo de la funcion_
-- La sentencia _`return`_  
-Una función siempre devuelve un valor.  
-Si no devuelve explícitamente un valor, implícitamente devuelve el valor
+- The `function` sentence
+- The function _name_ (_sum_)
+- _Parameters_ (arguments) expected by the function (_a_ and _b_)
+A function can accept zero or more arguments separated by commas
+- A code block, also called _body of the function_
+- _`return`_ sentence  
+A function always returns a value.  
+If it doesn't return explicitly a value, implicitly returns the value 
 `undefined`  
 
-Una función _solo puede devolver un valor._  
-Si se necesita devolver mas de un valor, se puede devolver un array o un objeto con esos valores
+A function can _only return one value._  
+If it need to return more that a value, it can return an array or an object with those values
 
-Para llamar a una función tan solo tenemos que usar su nombre seguido de algunos parámetros (o ninguno) entre paréntesis
+To call a function we only need to write its name followed by some parameters (or nothing) between parenthesis
 
 ```javascript
 >>> var result = sum(1, 2);
@@ -37,13 +37,13 @@ Para llamar a una función tan solo tenemos que usar su nombre seguido de alguno
 <sub>[https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Objetos_globales/Function](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Objetos_globales/Function)</sub>  
 <sub>[https://bonsaiden.github.io/JavaScript-Garden/#function](https://bonsaiden.github.io/JavaScript-Garden/#function)</sub>  
 
-##Parametros
+## Parameters
 
-Una función puede no requerir parámetros, pero si los requiere y no se les pasa a la función, Javascript les asignará el valor `undefined`
+A function can be defined to not require parameters, but if they're required and they're passed in the call of the function, Javascript will assign to them the value `undefined`
 
-Si la función recibe mas parámetros de los esperados, simplemente los ignorará
+If the function receives more parameters than expected, it will simply ignore them
 
-Dentro de cada función tenemos disponible el objeto (pseudo-array) [`arguments`](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Obsolete_Pages/Gu%C3%ADa_JavaScript_1.5/Usando_el_objeto_arguments) que contiene los argumentos pasados a la función
+Inside every function we have available the object (pseudo-array) [`arguments`](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Obsolete_Pages/Gu%C3%ADa_JavaScript_1.5/Usando_el_objeto_arguments) that contains the arguments passed to the function
 
 ```javascript
 function sumOnSteroids() {
@@ -56,10 +56,10 @@ function sumOnSteroids() {
 }
 ```
 
-##Funciones pre-definidas
+## Pre-defined functions
 
-Hay una serie de funciones que están directamente definidas dentro del motor de Javascript. 
-Estas funciones pre-definidas son:
+There are some functions that are already defined inside the Javascript engine.
+These pre-defined functions are (among others):
 
 - `parseInt()`
 - `parseFloat()`
@@ -73,9 +73,9 @@ Estas funciones pre-definidas son:
 
 ###[parseInt()](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Funciones_globales/parseInt)
 
-`parseInt()` toma un valor e intenta transformarlo en número entero.
-Si falla devuelve NaN.  
-`parseInt()` admite un segundo parámetro opcional que indica la base del numero que se le está pasando (decimal, hexadecimal, binario, etc…)
+`parseInt()` takes a value and tries to transform it in an integer 
+If the transformation fails it returns `NaN`.  
+`parseInt()` can take a second optional parameter that sets the numerical base of the number passed as first argument (decimal, hexadecimal, binary, etc…)
 
 ```javascript
 >>> parseInt('123')
@@ -88,7 +88,7 @@ NaN
 123
 ```
 
-Se recomienda especificar siempre la base (10 normalmente) para [evitar problemas](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt#Octal_interpretations_with_no_radix) de interpretaciones
+It's recommended especifying always the base (usually _10_) to [avoid issues](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt#Octal_interpretations_with_no_radix) with the interpretation
 
 ```javascript
 >>> parseInt(" 0xF", 16);
@@ -117,9 +117,9 @@ Se recomienda especificar siempre la base (10 normalmente) para [evitar problema
 15
 ```
 
-###[parseFloat()](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Funciones_globales/parseFloat)
+###[parseFloat()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat)
 
-`parseFloat()` toma un valor e intenta transformarlo en número de coma flotante (con decimales).
+`parseFloat()` takes a value and tries to transform it in a float number (woth decimals).
 
 ```javascript
 >>> parseFloat('123')
@@ -132,9 +132,9 @@ Se recomienda especificar siempre la base (10 normalmente) para [evitar problema
 NaN
 ```
 
-###[isNan()](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Funciones_globales/isNaN)
+###[isNan()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN)
 
-`isNan()` comprueba si el valor que se le pasa es un numero válido (devuelve true en caso de que no lo sea)
+`isNan()` checks if the value passed as a parameter is a valid number (returns `true` in case is not)
 
 ```javascript
 >>> isNaN(NaN)
@@ -147,9 +147,9 @@ false
 true
 ```
 
-###[isFinite()](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Funciones_globales/isFinite)
+###[isFinite()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isFinite)
 
-`isFinite()` comprueba si el valor que se le pasa no es ni Infinity ni NaN
+`isFinite()` checks if the value passed as a parameter is not `Infinity` or `NaN`
 
 ```javascript
 >>> isFinite(Infinity)
@@ -164,38 +164,39 @@ true
 false
 ```
 
-###[encodeURI()](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Funciones_globales/encodeURI)
+###[encodeURI()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI)
 
-`encodeURI()` Nos permite ‘escapar’ (codificar) una URL reemplazando algunos caracteres por su correspondiente secuencia de escape UTF-­‐8.
-_encodeURI()_ nos devuelve una URL usable (solo codifica algunos caracteres)
+`encodeURI()` allow us to 'escape' (codify) a URL replacing some characters by its related escape sequence (UTF-­8 ).
+_encodeURI()_ returns an usable URL (only codifies some characters)
 
 ```javascript
 >>> var url = 'http://www.packtpub.com/scr ipt.php?q=this and that';
 >>> encodeURI(url);
 http://www.packtpub.com/scr%20ipt.php?q=this%20and%20that
 ```
-###[decodeURI()](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Funciones_globales/decodeURI)
 
-`decodeURI()` Nos permite ‘decodificar’ un string codificado por `encodeURI()`
+###[decodeURI()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURI)
 
-###[encodeURIComponent()](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Funciones_globales/encodeURIComponent) y [decodeURIComponent()](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Funciones_globales/decodeURIComponent)
+`decodeURI()` Allow us to 'decodify' a string codified by `encodeURI()`
 
-`encodeURIComponent()` y `decodeURIComponent()` Lo mismo que
-encodeURI()` pero esta función codifica (decodifica) TODOS los caracteres transformables
+###[encodeURIComponent()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) y [decodeURIComponent()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent)
+
+`encodeURIComponent()` (and `decodeURIComponent()`) works the same than
+`encodeURI()` but this function codifies (or decodifies) ALL transformable characters
 
 ```javascript
 >>> encodeURIComponent(url);
 "http%3A%2F%2Fwww.packtpub.com%2Fscr%20ipt.php%3Fq%3Dthis%20and%20that"
 ```
-###[eval()](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Funciones_globales/eval)
 
-`eval()` toma una cadena de texto y la ejecuta como código Javascript
+###[eval()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval)
 
-`eval()` no debe utilizarse básicamente por 2 motivos:  
+`eval()` takes a text and execute it as Javascript code
 
-- Rendimiento: Es mucho más lento evaluar código “en vivo” que tenerlo
-directamente en el script  
-- Seguridad: Teniendo en cuenta que ejecuta todo lo que se le pase puede ser un agujero de seguridad.  
+`eval()` shouldn't be used because of 2 reasons:  
+
+- _Perfomance_: It's much more slower evaluatin "live" code than having it directly in the script
+- _Security_: Taking into account that every thing passed as a parameter can be a security hole.  
 
 ```javascript
 >>> eval('var ii = 2;')
@@ -207,38 +208,37 @@ directamente en el script
 
 ###alert()
 
-`alert()` Nos muestra una ventana con un string  
-`alert()` no es parte del core JS pero está disponible en todos los navegadores  
+`alert()` display a window w/ some stirng
+`alert()` is not part of the JS core but is available in all the browsers
 
-¡OJO! `alert()` para el código hasta que se acepte el mensaje  
-
-
-<br/>
-
-##Ámbito (Scope) de las Funciones
-
-En javascript las variables se definen en el ámbito de una función (y no en el ámbito de un bloque como ocurre en otros lenguajes)  
-
-- Las **variables globales** son aquellas que se definen fuera de cualquier función
-- Las **variables locales** son aquellas que se definen dentro de una función
+¡OJO! `alert()` blocks (stop) the code until the message is accepted
 
 
 <br/>
 
-##Funciones Callback
+## Functions Scope
 
-_Las funciones en Javascript son datos_, lo que significa que podemos asignarlas a variables igual que cualquier otro valor (y manejarlas como variables)
+In Javascript variables are defined in the function scope (and not in the block scope as it happen in other languages)  
+
+- **Global variables** are those defined out of any function
+- **Local variables** are those defined inside of a function 
+
+
+<br/>
+
+## Callback Functions
+
+_Functions in Javascript are data (values)_, which means they can be assigned to variables in the same way we do with other values (and manage them as variables)
 
 ```javascript
 function f(){ return 1; }
 var f = function(){ return 1; }
 ```
 
-Las funciones son datos, pero un tipo especial de datos (`typeof ‘function’`) ya
-que:
+Functions are data, but a special type of data (`typeof ‘function’`) because:
 
-- Contienen código
-- Podemos ejecutarlas
+- They contain code
+- We can execute them
 
 ```javascript
 >>> var sum = function(a, b) { return a + b; }
@@ -253,16 +253,16 @@ true
 3
 ```
 
-Las **funciones anónimas** son aquellas que no tienen nombre y se pueden utilizar para:
+**Anonimous functions** are those that doesn't have a name and can be used to:
 
-- Pasar esa función como argumento de una función
-- Definir una función y ejecutarla inmediatamente
+- Pass that function as an argument of a function
+- Define a function and execute it inmediately
 
 ```javascript
 >>> function(a){ return a; }
 ```
 
-Cuando pasamos una función A como argumento de otra función B y B ejecuta A, decimos que A es una **[función callback](http://stackoverflow.com/questions/483073/getting-­‐a-­‐better-­‐understanding-­‐of-­‐callback-­‐functions-­‐in-­‐javascript)**
+When we pass a function A as an argument of another function B and B executes A, we tell that A is a **[callback function](http://stackoverflow.com/questions/483073/getting-­‐a-­‐better-­‐understanding-­‐of-­‐callback-­‐functions-­‐in-­‐javascript)**
 
 ```javascript
 >>> function invoke_and_add(a, b){ return a() + b(); }
@@ -276,9 +276,9 @@ Cuando pasamos una función A como argumento de otra función B y B ejecuta A, d
 
 <br/>
 
-##Closures
+## Closures
 
-Si definimos una función `n()` dentro de `f()` , `n()` tendrá acceso tanto a las variables de su scope (ámbito) como las del scope de su padre. Esto es lo que se llama **scope chain** (encadenamiento de ámbitos)
+If we define a function `n()` inside of another function `f()` , `n()` will have access to all the variables in its scope and its father's scope. This is what is called **scope chain**
 
 ```javascript
 var a = 1;
@@ -295,7 +295,7 @@ function f(){
 <sub>[http://odetocode.com/Blogs/scott/archive/2007/07/10/closure-­‐on-­‐javascript-­‐closures.aspx](http://odetocode.com/Blogs/scott/archive/2007/07/10/closure-­‐on-­‐javascript-­‐closures.aspx)</sub>  
 <sub>[http://www.smashingmagazine.com/2009/08/01/what-­‐you-­‐need-­‐to-­‐know-­‐about-­‐javascript-­‐scope/](http://www.smashingmagazine.com/2009/08/01/what-­‐you-­‐need-­‐to-­‐know-­‐about-­‐javascript-­‐scope/)</sub>  
 
-Las funciones tienen lo que se llama **lexical scope** (ámbito léxico) lo que significa que crean su entorno (scope, a qué variables tienen acceso) cuando son definidas no cuando son ejecutadas
+Functions have what is called as **lexical scope** which means they create theis scope (which variables can they access) when they are defined, not when they are executed
 
 ```javascript
 >>> function f1(){ var a = 1; return f2(); }
@@ -328,7 +328,7 @@ f();
 <sub>[http://stackoverflow.com/questions/1047454/what-­‐is-­‐lexical-­‐scope](http://stackoverflow.com/questions/1047454/what-­‐is-­‐lexical-­‐scope)</sub>  
 <sub>[http://ayende.com/Blog/archive/2007/12/13/Javascript-­‐lexical-­‐scopes-­‐and-­‐what-­‐your-­‐momma-­‐thought-­‐you-­‐about.aspx](http://ayende.com/Blog/archive/2007/12/13/Javascript-­‐lexical-­‐scopes-­‐and-­‐what-­‐your-­‐momma-­‐thought-­‐you-­‐about.aspx)</sub>  
 
-Un **closure** se crea cuando una funcion mantiene un enlace con el ámbito (scope) de la función padre incluso después de que la función padre haya terminado.
+A **closure** is created when a function maintains a link with the scope of the father, even after the parent function has finished 
 
 ```javascript
 function f(){

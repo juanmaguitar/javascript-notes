@@ -175,14 +175,13 @@ for (var i = 0; i < 100; i++) {
 
 <img src="img/bucle_for.png" alt="Bucle For JS" title="Bucle For JS" />
 
+- The structure of the `for` loop has 3 different parts (separated by `;`)
 
-- La estrucura del bucle for tiene 3 partes claramente diferenciadas (separadas por ;)
+    - **Initialization** _(var i=0)_: Code that is executed before entering into the loop [O]
+    - **Evaluation** _(i<100)_: While is evaluated to `true` we continue with the loop [C]
+    - **Incremento** _(i++)_:  Code that is executed after every iteration [++]
 
-    - **Inicialización** _(var i=0)_: Código que es ejecutado antes de entrar en el bucle [O]
-    - **Evaluación** _(i<100)_: Mientras evalue a true seguimos con el bucle [C]
-    - **Incremento** _(i++)_:  Código que es ejecutado después de cada iteración [++]
-
-- Se pueden anidar bucles `for`
+- `for` loops can be nested
 
 Example:
 
@@ -196,9 +195,9 @@ for(var i = 0; i < 10; i++) {
 }
 ```
 
-##El bucle `for-in`
+## `for-in` loop
 
-<sub>[https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/for...in](https://developer.mozilla.org/es/Referencia_de_JavaScript_1.5/Sentencias/for...in) </sub>
+<sub>[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in) </sub>
 
 ```javascript
 var a = ['a', 'b', 'c', 'x', 'y', 'z'];
@@ -208,9 +207,9 @@ for (var i in a) {
 }
 ```
 
-- El bucle `for-in` es utilizado para recorrer los elementos de un array (o de un objeto) 
+- `for-in` loop is used to do actions over the elements of an array (or an object) 
 
-Aunque basandonos en ES5 tambien podriamos utilizar [`Object.keys`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys) y [`forEach`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) y hacer 
+Although based on ES5 we can also use [`Object.keys`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys) and [`forEach`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) and doing 
 
 ```javascript
 var obj = { first: "John", last: "Doe" };
