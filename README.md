@@ -29,7 +29,7 @@ This material cover the following contents:
 - [TDD](markdown-en/7-tdd)
 - [Regular Expressions](markdown-en/8-regular-expressions)
 - [Prototype](markdown-en/9-prototype)
-- [Inheritance](markdown-en/10-inheritance)
+- [~~Inheritance~~](markdown-en/10-inheritance)
 
 
 **Javascript & jQuery**
