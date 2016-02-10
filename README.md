@@ -16,13 +16,13 @@ This material cover the following contents:
 
 **Javascript Basics**
 
-- [Clear Ideas, JS History, ECMAScript](markdown-en/1-clear-ideas)
-- [Variables, Data Types and Operators](markdown-en/2-variables-data-types-operators)
-- [Conditions and Loops](markdown-en/3-conditions-loops)
-- [Functions (Predefined, Callback, Closures...)](markdown-en/4-functions)
-- [Arrays and Objects (Constructors)](markdown-en/5-arrays-objects)
-- [Global Objects (Object, Function, Array, Number, Boolean, Math and Date)](markdown-en/6-global-objects)
-    - Array Object and Higher Order Functions (Functional Programming)
+- [Clear Ideas, JS History, ECMAScript](markdown-en/01-clear-ideas)
+- [Variables, Data Types and Operators](markdown-en/02-variables-data-types-operators)
+- [Conditions and Loops](markdown-en/03-conditions-loops)
+- [Functions (Predefined, Callback, Closures...)](markdown-en/04-functions)
+- [Arrays and Objects (Constructors)](markdown-en/05-arrays-objects)
+- [Global Objects (Object, Function, Array, Number, Boolean, Math and Date)](markdown-en/06-global-objects)
+    - [Array Object and Higher Order Functions (Functional Programming)](markdown-en/06-global-objects/arrays)
 
 **Javascript Advanced**
 
