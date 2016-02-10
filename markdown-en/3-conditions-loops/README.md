@@ -5,7 +5,7 @@
     - The structure **IF… ELSE**
     - The structure **SWITCH**
 
-- A (code) block is the set of expressions that are inside brackets. These blocks can be nested.
+- A (code) block is the set of expressions that are inside braces. These blocks can be nested.
 
 <sub>[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block)</sub>
 
@@ -108,7 +108,7 @@ result;
     - The `switch` sentence  
     - An expression between parenthesis.   
         This expression will usally be a variable, but it can be any expression that returns a value
-    - Some `case` blocks between brackets
+    - Some `case` blocks between braces
     - Every `case` sentence is followed by an expression.  
         - The result of this expression (`case`) is compared with the expression that is after the `switch` .   
         - If the equal comparison returns `true`, the block code after that `case` is executed
@@ -141,7 +141,7 @@ while (i < 10) {
 ```
 <img src="img/bucle_while.png" alt="Bucle While JS" title="Bucle While JS" />
 
-- `while` sentence is followed by a condition between parenthesis and a code block between brackets.
+- `while` sentence is followed by a condition between parenthesis and a code block between braces.
 _While_ the condition evaluates to `true`, the code will be executed over and over. 
 We need to assure the code inside the while forces the condition to be `false`  at some point, to avoid infinite loops
 
