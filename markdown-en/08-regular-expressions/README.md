@@ -1,4 +1,4 @@
-# Expresiones Regulares
+# Regular Expressions
 
 <sub>[http://regexpal.com/](http://regexpal.com/)</sub>  
 <sub>[http://www.regular-expressions.info/](http://www.regular-expressions.info/)</sub>   
@@ -6,34 +6,32 @@
 <sub>[http://javascript.espaciolatino.com/lengjs/jsgram/expregulares.htm](http://javascript.espaciolatino.com/lengjs/jsgram/expregulares.htm)</sub>   
 <sub>[http://www.javascriptkit.com/javatutors/redev.shtml](http://www.javascriptkit.com/javatutors/redev.shtml)</sub>  
 
-Las expresiones regulares nos permiten buscar y manipular texto de una forma muy potente.  
-Un expresión regular consiste en:
-- Un **patron** (_pattern_) que se usa para localizar textos que se ajusten a él
-- **Modificadores** (opcionales) que nos indican como aplicar el patron
+Regular expressions allow us to search and manipulate text in a very powerful way.  
+A regular expression consist in:
+- A **pattern** used to locate texts that fits it
+- **Modificators** (optionals) that indicate how to apply the pattern
 
-En Javascript tenemos disponibles **objetos de expresiones regulares** que podemos crear:
-- Con la función constructora [`RegExp`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp) : `new RegExp("j.*t")` 
-- Con la notacion literal: `/j.*t/`;
+In Javascript we have available **regular expressions objects** that we can create:
+- With the constructor function [`RegExp`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp) : `new RegExp("j.*t")` 
+- With the literal notation: `/j.*t/`;
 
-## Propiedades de los Objetos RegExp
+## Properties of the RegExp objects
 
-Los objetos de expresiones regulares tienen las siguientes propiedades:
+The regular expressions objects have the following properties:
 
-- [`global`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp/global
-): Con `false` (por defecto) devuelve solo el primer elemento encontrado. Con `true` devuelve todos los elementos encontrados
+- [`global`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp/global): With `false` (by default) it returns only the first element that is found. With `true` return all the found elements
 
-- [`ignoreCase`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp/ignoreCase): Si está a `true` haremos el matching sensible a mayusculas (por defecto a `false`)
+- [`ignoreCase`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp/ignoreCase): With `true` it does the matching sensitive to uppercase (`false` by default)
 
-- [`multiline`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp/multiline
-): Si está a `true` realizará la busqueda entre varias lineas (por defecto a `false`)
+- [`multiline`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp/multiline): With `true` it does the search in several lines (`false` by default)
 
-- [`lastIndex`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp/lastIndex): La posición por la que empezar la busqueda (por defecto a 0) 
+- [`lastIndex`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp/lastIndex): The position in where to begin the search (por defecto a 0) 
 
-- [`source`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp/source): Contiene la expresion regular 
+- [`source`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp/source): Contains the regular expression
 
-Estas propiedades (excepto `lastIndex`) no pueden ser modificadas despues de creado el objeto
+These properties (except `lastIndex`) cannot be modified once the object has been created
 
-Las 3 primeras propiedades representan a los _modificadores_ de la expresion regular:
+The 3 first properties represent the _modificators_ of the regular expression:
 - **g**: global
 - **i**: ignoreCase
 - **m**: multiline
@@ -56,13 +54,13 @@ true
 "j.*t"
 ```
 
-## Métodos de los Objetos RegExp
+## Methods of the RegExp Objects
 
-Los objetos de expresiones regulares tienen los siguientes metodos:
+The RegExp objects have the following methods:
 
-- [`test()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp/test):Devuelve `true` si encuentra algo y `false` en caso contrario
+- [`test()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp/test): Returns `true` if it finds something and `false` if it doesn't
 
-- [`exec()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp/exec): Devuelve un array de cadenas que cumplan el patron 
+- [`exec()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp/exec): Return an array of string that match the pattern
 
 ```javascript
 >>> /j.*t/.test("Javascript")
@@ -75,30 +73,30 @@ true
 ["abbba", "bbb"]
 ```
 
-## Métodos de String que aceptan Expresiones Regulares
+## String methods that accept regular expressions
 
 <sub>[http://www.javascriptkit.com/javatutors/re3.shtml](http://www.javascriptkit.com/javatutors/re3.shtml)</sub>  
 
-Tenemos disponibles los siguientes métodos del objeto `String` para buscar dentro de un texto mediante expresiones regulares:
+We have available the following methods of the object `String` to look for inside of a text by using regular expressions:
 
-- [`match()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/match): Devuelve un array de ocurrencias 
+- [`match()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/match): Return an array of occurrences
 
-- [`search()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/search): Devuelve la posición de la primera ocurrencia 
+- [`search()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/search): Return the position of the first occurrence 
 
-- [`replace()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/replace): Nos permite sustituir la cadena encontrada por otra cadena   
+- [`replace()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/replace): Allow us to replace the found string by another string
 
-- [`split()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/split): Acepta una expresión regular para dividir una cadena de texto en elementos de un array
+- [`split()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/split): Accepts a regular expression to split a string in elements of an array
 
 ### [`replace()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/replace)
 
-- Si omitimos el modificador **g** solo reemplazamos la primera ocurrencia  
-- Podemos incluir en la sustitución la cadena encontrada con **$&**   
-- Cuando la expresión regular contiene grupos podemos acceder a la ocurrencia de cada grupo con **$1, $2**, etc...  
-- Al especificar la sustitución podemos pasar una función donde:  
-      1. El _primer parametro_ es la cadena encontrada  
-      2. El _último parametro_ es la cadena donde se está buscando  
-      3. El _antepenultimo parametro_ es la posición de la ocurrencia  
-      4. El _resto de parametros_ son las ocurrencias de cada grupo del patron  
+- If we omit the modificator **g** we only replace the first occurrence
+- We can include in the substitution the found string by using **$&**   
+- When the regular expression contain groups we can access to the occurrence of every group with **$1, $2**, etc...  
+- When specifying the substitution we can pass a function as a parameter where:
+      1. The _first parameter_ is the found string  
+      2. The _last parameter_ is the string where the search is taking place
+      3. The _penultimate parameter_ is the position of the occurrence  
+      4. The _rest of the parameters_ are the occurrences of each group of the pattern  
 
      
 ```javascript
@@ -144,26 +142,28 @@ undefined
 "rest"
 ```
 
-## Sintaxis de las Expresiones Regulares
+## Regular Expression Syntax
 
-<sub>[http://es.wikipedia.org/wiki/Expresi%C3%B3n_regular](http://es.wikipedia.org/wiki/Expresi%C3%B3n_regular)</sub>  
-<sub>[http://www.addedbytes.com/cheat-sheets/regular-expressions-cheat-sheet/](http://www.addedbytes.com/cheat-sheets/regular-expressions-cheat-sheet/)</sub>  
-<sub>[http://www.visibone.com/regular-expressions/](http://www.visibone.com/regular-expressions/)</sub>  
+<sub>https://en.wikipedia.org/wiki/Regular_expression</sub>  
+<sub>http://www.addedbytes.com/cheat-sheets/regular-expressions-cheat-sheet/</sub>  
+<sub>http://www.visibone.com/regular-expressions/</sub>  
 
 ### `[abc]`
 
-Busca coincidencias en los caracteres del patron
+Looks for coincidences of the characters in the pattern
 
 ```javascript
 >>> "some text".match(/[otx]/g)
 ["o", "t", "x", "t"]
 ```
+
 ### `[a-z]`
 
-Busca coincidencias en el rango de caractares  
-`[a-d]` es lo mismo que `[abcd]`  
-`[a-z]` busca todas los caracteres en minuscula  
-`[a-zA-Z0-9_]` busca todo los caracteres, numeros y el guión bajo  
+Looks for coincidences in that characters range 
+
+`[a-d]` is the same than `[abcd]`  
+`[a-z]` looks for all the lowercase characters
+`[a-zA-Z0-9_]` looks for all the characters, numbers and the underscore
 
 ```javascript
 >>> "Some Text".match(/[a-z]/g)
@@ -171,9 +171,10 @@ Busca coincidencias en el rango de caractares
 >>> "Some Text".match(/[a-zA-Z]/g)
 ["S", "o", "m", "e", "T", "e", "x", "t"]
 ```
+
 ###￼￼`[^abc]`
 
-Devuelve lo que NO coincida con el patron
+Returns everything that does NOT match the pattern
 
 ```javascript
 >>> "Some Text".match(/[^a-z]/g)
@@ -182,7 +183,7 @@ Devuelve lo que NO coincida con el patron
 
 ### `a|b`
 
-Devuelve _a_ o _b_ (la barra indica OR)
+Returns _a_ or _b_ (the bar indicates OR)
 
 ```javascript
 >>> "Some Text".match(/t|T/g);
@@ -193,7 +194,7 @@ Devuelve _a_ o _b_ (la barra indica OR)
 
 ### `a(?=b)`
 
-Devuelve _a_ solamente si está seguida de _b_
+Returns _a_ only is found followed by _b_
 
 ```javascript
 >>> "Some Text".match(/Some(?=Tex)/g);
@@ -204,7 +205,7 @@ null
 
 ### `a(?!b)`
 
-Devuelve _a_ solamente si NO está seguida de _b_
+Returns _a_ only is found NOT followed by _b_
 
 ```javascript
 >>> "Some Text".match(/Some(?! Tex)/g);
@@ -215,7 +216,7 @@ null
 
 ### `\`
 
-Carácter de escape utilizado para localizar caracteres especiales utilizados en el patron como literales
+Escape character that are used to find special characters used in the pattern as literals
 
 ```javascript
 >>> "R2-D2".match(/[2-3]/g)
@@ -226,27 +227,27 @@ Carácter de escape utilizado para localizar caracteres especiales utilizados en
 
 ### `\n`  
 ￼￼￼￼￼￼￼
-Nueva linea
+New line
 
 ### `\r` 
 
-Retorno de carro (Para comenzar una nueva linea se usa `\r\n` en Windows, `\n` en Unix y `\r` en Mac)
+Carriage return (To begin a new line `\r\n` is used in Windows, `\n` in Unix and `\r` in Mac)
 
 ### `\f` 
 
-Salto de pagina
+New page
 
 ### `\t`
 
-Tabulación
+Tabulation
 
 ### `\v` 
 
-Tabulación Vertical
+Vertical Tabulation
 
 ### `\s`
 
-Espacio en blanco o cualquiera de las 5 secuencias de escape de arriba
+Blank espace or any of the previous 5 sequences
 
 ```javascript
 >>> "R2\n D2".match(/\s/g)
@@ -255,7 +256,7 @@ Espacio en blanco o cualquiera de las 5 secuencias de escape de arriba
 
 ### `\S`
 
-Lo contrario de lo de arriba. Devuelve todo excepto espacios en blanco y las 5 secuencias de escape de antes. Lo mismo que `[^\s]`
+The opposite of the previous sequence. Returns everything but blank spaces and the 5 escape sequences. The same than `[^\s]`
 
 ```javascript
 >>> "R2\n D2".match(/\S/g)
@@ -264,7 +265,7 @@ Lo contrario de lo de arriba. Devuelve todo excepto espacios en blanco y las 5 s
 
 ### `\w`
 
-Cualquier letra, numero o guión bajo. Lo mismo que `[A-Za-z0-9_]`
+Any letter, number, or underscore. The same than `[A-Za-z0-9_]`
 
 ```javascript
 >>> "Some text!".match(/\w/g)
@@ -273,7 +274,7 @@ Cualquier letra, numero o guión bajo. Lo mismo que `[A-Za-z0-9_]`
 
 ### `\W`
 
-Lo contrario de `\w`
+The contrary than `\w`
 
 ```javascript
 >>> "Some text!".match(/\W/g)
@@ -282,7 +283,7 @@ Lo contrario de `\w`
 
 ### `\d`
 
-Localiza un numero. Lo mismo que `[0-9]` 
+Locates a number. The same than `[0-9]` 
 
 ```javascript
 >>> "R2-D2 and C-3PO".match(/\d/g)
@@ -291,7 +292,7 @@ Localiza un numero. Lo mismo que `[0-9]`
 
 ### `\D`
 
-Lo contrario de `\d`. Localiza caracteres no-numericos. Lo mismo que `[^0-9]`  o `[^\d]`
+The contrary than `\d`. It locates non-numerical characters. The same than `[^0-9]` or `[^\d]`
 
 ```javascript
 >>> "R2-D2 and C-3PO".match(/\D/g)
@@ -300,7 +301,7 @@ Lo contrario de `\d`. Localiza caracteres no-numericos. Lo mismo que `[^0-9]`  o
 
 ### `\b`
 
-Coincide con un limite de palabra (espacio, puntuación, guión...)
+A word "limit" (space, puntuation, hyphen...)
 
 ```javascript
 >>> "R2D2 and C-3PO".match(/[RD]2/g)
@@ -313,7 +314,7 @@ Coincide con un limite de palabra (espacio, puntuación, guión...)
 
 ### `\B`
 
-Lo contrario de `\b` 
+The contrary than `\b` 
 
 ```javascript
 >>> "R2-D2 and C-3PO".match(/[RD]2\B/g)
@@ -324,8 +325,8 @@ null
 
 ### `^`
 
-Representa el principio de la cadena donde se está buscando.
-Si tenemos el modificador `m` representa el principio de cada linea.
+Represents the beginning of the string where we're looking for.
+If we have the modificator `m` it represents the beginning of every line.
 
 ```javascript
 >>> "regular\nregular\nexpression".match(/r/g);
@@ -338,8 +339,8 @@ Si tenemos el modificador `m` representa el principio de cada linea.
 
 ### `$` 
 
-Representa el final de la cadena donde se está buscando.
-Si tenemos el modificador `m` representa el final de cada linea.
+Represents the final of the string where we're looking for
+If we have the modificator `m` it represents the end of every line.
 
 ```javascript
 >>> "regular\nregular\nexpression".match(/r$/g);
@@ -350,7 +351,7 @@ null
 
 ### `.`
 
-Representa a cualquier carácter excepto la nueva linea y el retorno de carro
+Represents any character but the new line and the carriage return
 
 ```javascript
 >>> "regular".match(/r./g);
@@ -361,8 +362,8 @@ Representa a cualquier carácter excepto la nueva linea y el retorno de carro
 
 ### `*`
 
-Hace matching si el patron precedente ocurre 0 o más veces.  
-`/.*/` devolverá todo incluido nada (cadena vacia)
+It matches if the preceding pattern happen 0 or more times
+`/.*/` will return everything, including "nothing" (empty string)
 
 ```javascript
 >>> "".match(/.*/)
@@ -375,7 +376,7 @@ Hace matching si el patron precedente ocurre 0 o más veces.
 
 ### `?` 
 
-Hace matching si el patron precedente ocurre 0 o 1 vez.
+It matches if the preceding pattern happen 0 or once
 
 ```javascript
 >>> "anything".match(/ny?/g)
@@ -384,7 +385,7 @@ Hace matching si el patron precedente ocurre 0 o 1 vez.
 
 ### `+`
 
-Hace matching si el patron precedente ocurre 1 o más veces (al menos una vez).
+It matches if the preceding pattern happen 1 or more times (at least once)
 
 ```javascript
 >>> "anything".match(/ny+/g)
@@ -397,7 +398,7 @@ Hace matching si el patron precedente ocurre 1 o más veces (al menos una vez).
 
 ### `{n}`
 
-Hace matching si el patron precedente ocurre exactamente n veces.
+It matches if the preceding pattern happen exactly _n_ times
 
 ```javascript
 >>> "regular expression".match(/s/g)
@@ -410,8 +411,8 @@ Hace matching si el patron precedente ocurre exactamente n veces.
 
 ### `{min,max}`
 
-Hace matching si el patron precedente ocurre entre min y max veces.  
-Se puede omitir max (solo tendrá minimo) No se puede omitir min  
+It matches if the preceding pattern happen between _min_ and _max_ times
+_max_ can be omitted (will only have minimum) _min_ cannot be omitted  
 
 ```javascript
 >>> "doooooooooodle".match(/o/g)
@@ -426,8 +427,8 @@ Se puede omitir max (solo tendrá minimo) No se puede omitir min
 
 ### `(pattern)`
 
-Cuando el patrón está en parentesis, se captura y se guarda para poder utilizarlo en sustituciones (captura de patrones).  
-Estas capturas estan disponibles en `$1`, `$2`,... `$9`
+When the pattern is between parentheses, is being captured and stored so it can be used in substitutions (patterns capture).  
+Thse captures are available at `$1`, `$2`,... `$9`
 
 ```javascript
 >>> "regular expression".replace(/(r)/g, '$1$1')
@@ -438,7 +439,7 @@ Estas capturas estan disponibles en `$1`, `$2`,... `$9`
 
 ### `{?:pattern}` 
 
-Patrón no capturable (no disponible en `$1`, `$2`, ...)
+Non capturable pattern (not available at `$1`, `$2`, ...)
 
 ```javascript
 >>> "regular expression".replace(/(?:r)(e)/g, '$1$1')
