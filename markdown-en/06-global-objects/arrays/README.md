@@ -1,6 +1,6 @@
 #[Array](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array)
 
-## Métodos basicos de Array
+## Basic Methods of Array
 
 ###[concat()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)
 
