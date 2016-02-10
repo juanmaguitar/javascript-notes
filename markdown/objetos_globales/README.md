@@ -1,25 +1,25 @@
-# Objetos Globales
+# Global Objects
 
-- Son los objetos que tenemos disponibles en el ámbito global (objetos primitivos)
+- Are the objects we have available in the global scope (primitive objects)
 
-- Los podemos dividir en 3 grupos
-    - _Objetos contenedores de datos_:  Object, Array, Function, Boolean, Number
-    - _Objetos de utilidades_: Math, Date, RegExp
-    - _Objetos de errores_: Error
+- We can divide them in 3 groups
+    - _Objects containers of data_:  Object, Array, Function, Boolean, Number
+    - _Objects of utilities_: Math, Date, RegExp
+    - _Objects of errors_: Error
 
 
 ##[Object](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object)
 
--  **Object** es el padre de todos los objetos Javascript, es decir, cualquier objeto hereda de él
+-  **Object** is the father of all the javascript objects, this is, every object inherites from him
 
-- Para crear un objeto vacio podemos usar:
-    - La notacion literal :  `var o = {}`
-    - La funcion constructora Object():  `var o = new Object();`
+- To create an empty object we can use:
+    - The literal notation :  `var o = {}`
+    - The constructor function _Object()_:  `var o = new Object();`
 
-- Un objeto contiene las siguientes propiedades y metodos:
-    - La propiedad [`o.constructor`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/constructor) con la función constructora
-    - El método [`o.toString()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/toString) que devuelve el objeto en formato texto
-    - El método [`o.valueOf()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/ValueOf) que devuelve el valor del objeto (normalmente o)
+- Any object contains the following properties and methods:
+    - The property [`o.constructor`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/constructor) containing the constructor function
+    - The method [`o.toString()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/toString) that returns the object converted into text
+    - The method [`o.valueOf()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object/ValueOf) that returns the _value_ of the object (usuarlly `o`)
 
 ```javascript
 >>> var o = new Object();
@@ -32,13 +32,13 @@ true
 
 ##[Array](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array)
 
-- Para crear arrays podemos usar:
-    - La notacion literal :  `var a = []`
-    - La funcion constructora Array():  `var o = new Array();`
+- To create arrays we can use:
+    - Literal notation:  `var a = []`
+    - Constructor function Array():  `var o = new Array();`
 
-- Podemos pasarle parametros al constructor `Array()`
-    - Varios parametros: Seran asignados como elementos al array
-    - Un numero: Se considerará el tamaño del array
+- We can pass parameters to the constructor `Array()`
+    - Several parameters: Will be assigned as elements in the array
+    - A number: Will be considered as the size of the array
 
 ```javascript
 >>> var a = new Array(1,2,3,'four');
@@ -50,7 +50,7 @@ true
 [undefined, undefined, undefined, undefined, undefined]
 ```
 
-- Como los arrays son objetos tenemos disponibles los metodos y propiedades del padre `Object()`
+- Because of the arrays are objects, we also have available all the methods and properties of the father `Object()`
 
 ```javascript
 >>> typeof a;
@@ -63,10 +63,11 @@ true
 >>> a.constructor
 Array()
 ```
-- Los arrays disponen de la propiedad [`length`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/length)  
 
-    - Nos devuelve el tamaño del array (numero de elementos)
-    - Podemos  modificarlo y cambiar el tamaño del array
+- Arrays have the property [`length`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/length)  
+
+    - Returns the size of the array (number of elements)
+    - We can modify it and change the size of the array
 
 ```javascript
 >>> a[0] = 1; 
@@ -86,7 +87,7 @@ Array()
 ```
   
   
-Los arrays disponen de unos cuantos metodos interesantes:
+Arrays have a few interesting methods:
 
 - `push()`
 - `pop()`
@@ -132,10 +133,10 @@ Los arrays disponen de unos cuantos metodos interesantes:
 
 ##[Function](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function)
 
-- Las funciones son objetos
-- Podemos crear funciones con la función constructora `Function()` (aunque este metodo no se recomienda ya que internamente hace un _eval()_ )
+- Functions are objects
+- We can create functions with the constructor function `Function()` (althiugh this method is not recomended as it internally uses an _eval()_ )
 
-Ejemplo:
+Example:
 ```javascript
 >>> function sum(a, b) {return a + b;};
 >>> sum(1, 2)
@@ -148,13 +149,13 @@ Ejemplo:
 3
 ```
 
-- Las funciones disponen de las siguientes propiedades:
-    - La propiedad `constructor` que contiene una referencia a la funcion constructora _Function()_ 
-    - La propiedad [`length`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/length) que contiene el numero de parametros que acepta la función 
-    - La propiedad [`caller`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/caller) (no standard) que contiene una referencia a la funcion que llamó a esta función 
-    - La propiedad [`prototype`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/prototype) que contiene un objeto.  
-        - Sólo es util cuando utilizamos una funcion como constructora.  
-        - Todos lo objetos creados con una función constructora mantienen una referencia a su propiedad `prototype` y pueden usar sus propiedades como si fueran propias.
+- Functions have the following properties:
+    - The property `constructor` that contains a reference to the constructor function _Function()_ 
+    - The property [`length`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/length) that contains the number of parameters accepted by the function 
+    - The property [`caller`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/caller) (no standard) that contains a reference to the function that called that function
+    - The property [`prototype`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/prototype) that contains an object:  
+        - It's only useful when we use this function as a constructor
+        - All objects created by a constructor function maintain a reference to its property `prototype` and can use its properties as if they're of their own
 
 ```javascript
 >>> function myfunc(a){ return a; }
@@ -189,10 +190,10 @@ var some_obj = {
 "I am a Ninja"
 ```
 
-- Las funciones disponen de los siguientes métodos:
-    - El método `toString()` que devuelve el código fuente de la función
-    - Los métodos [`call()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/call) y [`apply()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/apply) que ejecutan metodos de otros objetos especificando el contexto (especificamos un `this` diferente)
-        - Estos dos métodos hacen lo mismo pero el formato en que reciben los argumentos es diferente
+- Functions have the following methods:
+    - The method `toString()` that returns the source code of the function
+    - The methods [`call()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/call) and [`apply()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function/apply) that execute methods of other objects especifying the context (especifying a different `this`)
+        - These two methods do the same but accepting the arguments in a different format
 
 ```javascript
 >>> function myfunc(a, b, c) {return a + b + c;}
@@ -221,7 +222,7 @@ some_obj.someMethod.call(my_obj, 'a', 'b', 'c');
 ```
 
 
-- Las funciones disponen del objeto `arguments` que (ademas de `length`) tiene la propiedad `callee` que contiene una referencia a la funcion llamada (a si misma)
+- Functions have available the object `arguments` that (besides `length`) have the property `callee` that contains a reference to the function called (to itself)
 
 ```javascript
 >>> function f(){return arguments.callee;}
@@ -242,10 +243,10 @@ f()
 
 ##[Boolean](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean)
 
-- El objeto _Boolean_ es un contenedor para un valor de tipo booleano  
-  Podemos crear objetos _Boolean_ con la función constructora `Boolean()`
+- The object _Boolean_ is a container for a boolean type value
+  We can create _Boolean_ objects with te constructor function `Boolean()`
 
-Ejemplo:
+Example:
 ```javascript
 >>> var b = new Boolean();
 >>> typeof b 
@@ -256,9 +257,9 @@ Ejemplo:
 false
 ```
 
-- La función `Boolean` usada como función normal (sin `new`) nos devuelve el valor pasado como parametro convertido a booleano
+- The function `Boolean` used as a normal function (without `new`) returns the value passed as a parameter converted to boolean
 
-Ejemplo:
+Example:
 ```javascript
 >>> Boolean("test") 
 true
@@ -270,12 +271,12 @@ true
 
 ##[Number](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number)
 
-- La función `Number()` puede ser usada:
-    - Cómo una _función normal_ para convertir valores a número
-    - Cómo una _función constructora_ (con `new`) para crear objetos
-- Los objetos número disponen de los métodos: [`toFixed()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number/toFixed), [`toPrecision()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number/toPrecision) y [`toExponential()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number/toExponential)
+- The function `Number()` can be used:
+    - As a _normal function_ to convert values to numbers
+    - As a _constructor function_ (with `new`) to create objects
+- The _number_ objects have the following methods available: [`toFixed()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number/toFixed), [`toPrecision()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number/toPrecision) y [`toExponential()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number/toExponential)
 
-Ejemplo:
+Example:
 ```javascript
 >>> var n = new Number(123.456)
 >>> n.toFixed(1) 
@@ -285,9 +286,9 @@ Ejemplo:
 "1.2345e+4"
 ```
 
-- El método [`toString()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number/toString) de un objeto numero nos permite transformar un numero a una base determinada 
+- The method [`toString()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number/toString) of a number object allow us to convert any number to a specific base
 
-Ejemplo:
+Example:
 ```javascript
 >>> var n = new Number(255);
 >>> n.toString(); 
@@ -304,10 +305,10 @@ Ejemplo:
 
 ##[String](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String)
 
-- Podemos crear objetos String con la función constructora `String()`  
-  Un objeto _String_ NO es un dato de tipo primitivo string (`valueOf()`)
+- We can create String objects with the constructor function `String()`  
+  A _String_ object is NOT a String primitive type of data (`valueOf()`)
 
-Ejemplo:
+Example:
 ```javascript
 >>> var primitive = 'Hello';
 >>> typeof primitive; 
@@ -322,11 +323,11 @@ false
 true
 ```
 
-- Un objeto string es parecido a un array de caracteres:
-    - Cada carácter tiene una posición indexada
-    - Tiene disponible la propiedad length
+- A string object is similar to an array of characters:
+    - Every character has an indexed position
+    - It has available the property `length`
 
-Ejemplo:
+Example:
 ```javascript
 >>> obj[0] 
 "w"
@@ -336,9 +337,9 @@ Ejemplo:
 5
 ```
 
-- Aunque los métodos pertenezcan al objeto String, podemos utilizarlos también directamente en datos de tipo primitivo string (se crea el objeto internamente)
+- Although the methods belong to the `String` object, we can use them directly in the primitive type of data _string_ (the object is created internally)
 
-Ejemplo:
+Example:
 ```javascript
 >>> "potato".length 
 6
@@ -348,26 +349,24 @@ Ejemplo:
 "o"
 ```
 
-- Los objetos string disponen de los siguientes métodos:
-    - [`toUpperCase()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/toUpperCase)  devuelve el string convertido a mayúsculas
+- The String objects have available the following methods:
+    - [`toLowerCase()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/toLowerCase)  returns the string converted to lowercase
     
-    - [`toLowerCase()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/toLowerCase)  devuelve el string convertido a minusculas
+    - [`charAt()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/charAt)  returns the character found at the specified position
     
-    - [`charAt()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/charAt)  devuelve el carácter encontrado en la posición indicada
+    - [`indexOf()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/indexOf) looks for a text string inside of another text string and returns the position where it was found
+        - If it doesn't find anything it returns -1 
     
-    - [`indexOf()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/indexOf) busca una cadena de texto en el string y devuelve la posición donde la encuentra
-        - Si no encuentra nada devuelve -1 
+    - `lastIndexOf()` starts the search from the end of the string
+        - If it doesn't find anything it returns -1 
     
-    - `lastIndexOf()` empieza la búsqueda desde el final de la cadena  
-        - Si no encuentra nada devuelve -1 
-    
-    Por tanto la manera de correcta de chequear si existe una cadena de texto en otra es →  `if ( s.toLowerCase().indexOf('couch') !== -1 ) {...}`
+    That's whay the proper way of checking if a string exists inside of another string is →  `if ( s.toLowerCase().indexOf('couch') !== -1 ) {...}`
 
-    - [`slice()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/slice) devuelve un trozo de la cadena de texto 
+    - [`slice()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/slice) returns a piece of the text string
 
-    - [`split()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/split) transforma el string en un array utilizando un string como separador 
+    - [`split()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/split) transform the string in an array by using the specified character/s as a separator
 
-    - [`concat()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/concat) une strings
+    - [`concat()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String/concat) joins strings
 
 ```javascript
 >>> var s = new String("Couch potato");
@@ -391,29 +390,29 @@ Ejemplo:
 
 ##[Math](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math)
 
-- _Math_ es un objeto con propiedades y métodos para usos matemáticos
-    No es constructor de otros objetos
+- _Math_ is an object with properties and _methods_ useful for mathematical work
+    It is NOT a constructor of other objects
 
-- Algunos métodos interesantes de Math son:
-    - [`random()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/random)  genera números aleatorios entre 0 y 1
+- Some interesting `Math` methods are:
+    - [`random()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/random) generates random numbers from 0 to 1
 
-    - [`round()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/round), [`floor()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/floor) y [`ceil()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/ceil) para redondear numeros  
+    - [`round()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/round), [`floor()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/floor) y [`ceil()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/ceil) round numbers  
 
-    - [`min()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/min) y [`max()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/max)  devuelven el minimo y el máximo de una serie de números pasados como parametros
+    - [`min()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/min) y [`max()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/max)  return the minimum and the maximum of a serie of numbers passed as parameters
 
-    - [`pow()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/pow) y [`sqrt()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/sqrt)  devuelve la potencia y la raíz cuadrada respectivamente 
+    - [`pow()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/pow) y [`sqrt()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math/sqrt)  returns the power and the square each one 
 
 ##[Date](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date)
 
-- `Date()` es una función constructora que crea objetos Date  
-    Podemos crear objetos Date nuevo pasándole:
-    - _Nada_ (tomará por defecto la fecha actual) 
-    - _Una fecha_ en formato texto
-    - _Valores separados_ que representan: Año, Mes (0-11), Dia (1-31), Hora (0-23), Minutes (0-59), Segundos(0-59) y Milisegundos (0-999)
-    - Un valor _timestamp_
+- `Date()` is a constructor function that creates _date_ objects
+    We can create new Date objects by passing:
+    - _nothinga_ (will take the current date as default) 
+    - _A date_ in string format
+    - _separated values_ that represent: Year, Month (0-11), Day (1-31), Hour (0-23), Minutes (0-59), Seconds (0-59) y Miliseconds (0-999)
+    - A _timestamp_ value
 
 
-Ejemplo (Firebug muestra el resultado del metodo toString sobre un objeto date):
+Example (Firebug shows the result of the `toString` method over a _date_ object):
 ```javascript
 >>> new Date() 
 Tue Jan 08 2008 01:10:42 GMT-0800 (Pacific Standard Time) 
@@ -425,18 +424,18 @@ Tue Jan 01 2008 17:05:03 GMT-0800 (Pacific Standard Time)
 Wed Jan 09 2008 00:03:15 GMT-0800 (Pacific Standard Time)
 ```
 
-- Algunos métodos para trabajar con objetos Date son:
+- Some methods to work with _date_ objects are:
 
-    - [`setMonth()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/setMonth) y [`getMonth()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/getMonth) escriben y leen el mes en un objeto date respectivamente (lo mismo hay para year, day, hours, minutes, etc…)
+    - [`setMonth()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/setMonth) y [`getMonth()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/getMonth) write and read the month in a date object each one of them (we have available the same kind of methods for _year_, _day_, _hours_, _minutes_, etc…)
 
 
-    - [`parse()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/parse)  dado un string, devuelve su timestamp
+    - [`parse()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/parse) given a string, it returns its _timestamp_
 
-    - [`UTC()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/UTC)  produce un timestamp dados un año, mes, dia, etc..
+    - [`UTC()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/UTC)  produces timestamp given some month, year, day, etc..
 
-    - [`toDateString()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/toDateString)  devuelve el contenido de un objeto date en formato americano
+    - [`toDateString()`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date/toDateString) returns the content of a date object in american format
 
-Ejemplo:
+Example:
 ```javascript
 >>> var d = new Date();
 >>> d.toString(); 

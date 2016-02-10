@@ -4,7 +4,7 @@
 
 ###[concat()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)
 
-`concat()` crea _otro array_ a partir de uno ya existente añadiendole los elementos que se le pasen 
+`concat()` creates _another array_ from another that already exists adding to it the elements passed as parameters
 
 ```javascript
 >>> var items = [1,2]
@@ -22,7 +22,7 @@
 
 ###[join()](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/join)
 
-`join()` devuelve una cadena (string) con los valores de los elementos del array 
+`join()` returns a string with the values of the elements in the array 
 
 ```javascript
 >>> var a = ['Wind', 'Rain', 'Fire'];
@@ -36,7 +36,7 @@
 
 ###[indexOf()](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/indexOf)
 
-`indexOf()` devuelve el primer indice donde se encuentra un elemento en el array o -1 si no lo encuentra
+`indexOf()` returns the first index where an element is found or returns -1 if is not found
 
 ```javascript
 >>> var a = ['Wind', 'Rain', 'Fire'];
@@ -52,9 +52,9 @@
 
 ###[push()](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/push)
 
-`push()` inserta elementos al final del array  
-`a.push('new')` es lo mismo que `a[a.length] = 'new'`  
-`push()` devuelve el tamaño del array modificado  
+`push()` insert elements at the end of the array  
+`a.push('new')` is the same than `a[a.length] = 'new'`  
+`push()` returns the size of the array updated  
 
 ```javascript
 >>> var sports = ['soccer', 'baseball'];
@@ -70,9 +70,9 @@
 
 ###[pop()](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/pop)
 
-`pop()` elimina el ultimo elemento   
-`a.pop()` es lo mismo que `a.length--`;  
-`pop()` devuelve el elemento eliminado  
+`pop()` removes the last element  
+`a.pop()` is the same than `a.length--`;  
+`pop()` returns the removed element  
 
 ```javascript
 >>> var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
@@ -86,12 +86,12 @@
 
 ###[sort()](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/sort)
 
-ordena el array y devuelve el array modificado  
-si no se le pasa función como parametro ordena por orden ASCII  
-si se le pasa función como parametro
-- `compare(a, b)` → -1  → a,b
-- `compare(a, b)` → 1   → b,a (switch)
-- `compare(a, b)` → 0   → a,b (do nothing)
+sort the array and returns the modified array  
+  - if a function is not passed as a parameter it will order the array based in the ASCII codes  
+  - if a function is passed as a paramter
+    * `compare(a, b)` → -1  → a,b
+    * `compare(a, b)` → 1   → b,a (switch)
+    * `compare(a, b)` → 0   → a,b (do nothing)
 
 ```javascript
 >>> var fruit = ['apples', 'bananas', 'Cherries'];
@@ -132,7 +132,7 @@ function compare(a, b) {
 
 ###[slice()](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/slice)
 
-`slice()` devuelve un trozo del array  sin modficar el original 
+`slice()` returns a piece of the array without modifying the original
 
 ```javascript
 >>> var fruits = ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango'];
@@ -155,7 +155,7 @@ function compare(a, b) {
 
 ###[splice()](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/splice)
 
-`splice()` quita un trozo del array, lo devuelve  y opcionalmente rellena el hueco con nuevos elementos 
+`splice()` removes a piece of the array, it returns it and optionally fill in the gap with new elements
 
 ```javascript
 >>> var myFish = ['angel', 'clown', 'mandarin', 'surgeon'];
@@ -176,26 +176,26 @@ function compare(a, b) {
 []
 ```
 
-## Métodos de Array como Higher Order Functions
+## Array methods as Higher Order Functions
 
 <sub>[Functional Programming in JavaScript | YouTube Videos](https://www.youtube.com/watch?v=BMUiFMZr7vk&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)</sub>  
 <sub>[Higher Order Function | Medium](https://medium.com/functional-javascript/higher-order-functions-78084829fff4#.ka4840l1e)</sub>  
 <sub>[Functional Programming | Book](http://shop.oreilly.com/product/0636920028857.do)</sub>  
 <sub>[Higher-Order Functions and Function Binding | Explained exercise](http://clarkfeusier.com/2015/01/11/interview-question-function-bind.html)</sub>
 
-Las [Higher Order Functions](http://eloquentjavascript.net/05_higher_order.html) son aquellas funciones que aceptan otras funciones como parametros o que devuelven funciones ([o las 2 cosas](http://jtfmumm.com/blog/2013/08/31/nested-higher-order-functions-in-javascript/)). Son aquellas funciones que tratan a otras funciones como valores (de entrada o de salida)
+[Higher Order Functions](http://eloquentjavascript.net/05_higher_order.html) are those functions that accept other functions as parameters or those that return functions([or both](http://jtfmumm.com/blog/2013/08/31/nested-higher-order-functions-in-javascript/)). They are the functions that treat other functions as values (enter or exit)
 
-#### [Programación Funcional](https://www.safaribooksonline.com/library/view/functional-javascript/9781449360757/ch04.html)
+#### [Functional Programming](https://www.safaribooksonline.com/library/view/functional-javascript/9781449360757/ch04.html)
 
-Existe un paradigma de programación llamado [programación funcional](https://medium.com/javascript-scene/the-two-pillars-of-javascript-pt-2-functional-programming-a63aa53a41a4#.iv40wrzzg) que entre otras cosas se basa en:
+There's a programming paradigm called [functional programming](https://medium.com/javascript-scene/the-two-pillars-of-javascript-pt-2-functional-programming-a63aa53a41a4#.iv40wrzzg) that is based in (among other things):
 
-- El uso/creación de [funciones puras](http://www.nicoespeon.com/en/2015/01/pure-functions-javascript/)
-- La [composición de funciones](http://nodegeek.net/2014/06/24/function-composition/)
+- The use/creation of [pure functions](http://www.nicoespeon.com/en/2015/01/pure-functions-javascript/)
+- The [function composition](http://nodegeek.net/2014/06/24/function-composition/)
 
 <sub>[Compose Yourself: Fun with Functions | Talk Slides](http://scott.sauyet.com/Javascript/Talk/Compose/2013-05-22/)</sub>  
 <sub>[Functional Programming | Talk Slides](http://scott.sauyet.com/Javascript/Talk/FunctionalProgramming/)</sub>
 
-Este estilo de programación nos deja un código más corto, más facil de leer y de testear
+This programming style let a code that is cleaner, shorter and more easy to read and test
 
 ```javascript
 function double(x) { return x*2; };
@@ -211,19 +211,19 @@ function sum(total, item) { return total + item; };
 
 ```
 
-Aplicados a javascript, unos principios basicos y practicos de esta [programación funcional](http://www.smashingmagazine.com/2014/07/dont-be-scared-of-functional-programming/) podrian ser:
+Applied to javascript, some basic and practical principles of this [functional programming](http://www.smashingmagazine.com/2014/07/dont-be-scared-of-functional-programming/) could be:
 
-- Todas tus funciones deben aceptar al menos 1 argumento
-- Todas tus funciones deben devolver un valor u otra funcion
+- All your functions should accepts at least 1 argument
+- All your functions should return a value or another function
 - No for-loops
 
 #### Higher Order Functions
 
-Los arrays disponen [a traves de su prototipo](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods_2) de algunas _higher order functions_  MUY utilizadas. Son entre otras:
+Arrays have available [from their prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Methods_2) some _higher order functions_  VERY used. They're among others:
 
 ###[forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 
-`forEach()` nos permite ejecutar una función sobre cada elemento del array
+`forEach()` allow us to execute a function over every elmement of the array
 
     arr.forEach(callback[, thisArg])
 
@@ -243,7 +243,7 @@ function logArrayElements(element, index, array) {
 
 ###[map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
-`map()` devuelve _un nuevo array_ con los resultados de llamar a una función provista como parametro sobre cada elemento del array
+`map()` returns _a new array_ with the result of calling a function provided as an argument over every element of the array
 
     arr.map(callback[, thisArg])
 
@@ -260,7 +260,7 @@ function double(element /*, index, array*/ ) {
 
 ###[filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 
-`filter()` nos devuelve un nuevo array con aquellos elementos que pasan el test de la función (devueven `true`) pasada como parametro
+`filter()` returns a new array with those elements that pass the _test_ (return `true` when applying the function on them) in the function passed as a paramenter
 
     arr.filter(callback[, thisArg])
 
@@ -277,7 +277,7 @@ function isMoreThan5(element /*, index, array */) {
 
 ###[every()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
 
-`every()` devuelve true si _TODOS_ los elementos del array pasan el test provisto como parametro (todos devueven `true` al aplicarles esta función)
+`every()` return true if _ALL_ the elements of the array pass the test provided as a parameter (they all return `true` when we apply the function on them)
 
     arr.every(callback[, thisArg])
 
@@ -295,7 +295,7 @@ true
 
 ###[some()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
 
-`some()` devuelve true si _ALGUN_ elemento del array pasa el test provisto como parametro (uno o más devueven `true` al aplicarles esta función)
+`some()` return true if _SOME_ element of the array pass the provided test as a parameter (one or more return `true` when we apply the function on them)
 
     arr.some(callback[, thisArg])
 
@@ -314,7 +314,7 @@ false
 
 ###[reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
 
-`reduce()` aplica una función recursivamente sobre un _acumulador_ y sobre cada valor del array (de izquierda a derecha) hasta obtener _un unico valor_
+`reduce()` applies a function recursively over an _accumulator_ and over every item if the array (from left to right) until getting a _unique value_
 
     arr.reduce(callback[, initialValue])
 
@@ -338,5 +338,5 @@ var flattened = [[0, 1], [2, 3], [4, 5]].reduce(function(a, b) {
 
 ### [pluck()](http://underscorejs.org/#pluck), [zip()](http://underscorejs.org/#zip), [reject()](http://underscorejs.org/#reject), [groupBy()](https://lodash.com/docs#groupBy), [sample()](https://lodash.com/docs#sample), [chunk()](https://lodash.com/docs#chunk), [flatten()](https://lodash.com/docs#flatten)...
 
-Utilizando librerias externas (como [underscore](http://underscorejs.org/#collections), [lodash](https://lodash.com/docs) o [functional.js](http://functionaljs.com/)) tendremos disponibles en nuestro código muchas más _higher order functions_ que nos facilitaran el trabajo
+By using external libraries (como [underscore](http://underscorejs.org/#collections), [lodash](https://lodash.com/docs) o [functional.js](http://functionaljs.com/)) we can have available at our code much more _higher order functions_ that will ease our work
 
