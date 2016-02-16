@@ -28,8 +28,8 @@ This material cover the following contents:
 
 - [TDD](markdown-en/7-tdd)
 - [Regular Expressions](markdown-en/8-regular-expressions)
-- [Prototype](markdown-en/9-prototype)
-- [~~Inheritance~~](markdown-en/10-inheritance)
+- ~~Prototype~~
+- ~~Inheritance~~
 
 
 **Javascript & jQuery**
@@ -37,9 +37,9 @@ This material cover the following contents:
 - [Browser environment](markdown-en/11-browser-environment)
     -  [DOM, Elements selection](markdown-en/11-browser-environment/DOM)
     -  [BOM](markdown-en/11-browser-environment/BOM)
-- [Events](markdown/12-events)
-- [JSON](markdown/13-JSON)
-- [AJAX](markdown/14-AJAX)
+- [Events](markdown-en/12-events)
+- [JSON](markdown-en/13-JSON)
+- [AJAX](markdown-en/14-AJAX)
 
 ## References ##
 

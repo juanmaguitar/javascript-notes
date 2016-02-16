@@ -41,8 +41,6 @@ However, there are ways of "skipping" this policy: [JSONP](https://github.com/ju
 
 ## JSONP vs CORS
 
-<sub>[http://www.formandome.es/javascript/cors-vs-jsonp-solicitudes-ajax-entre-dominios/](http://www.formandome.es/javascript/cors-vs-jsonp-solicitudes-ajax-entre-dominios/)</sub>  
-<sub>[http://blog.koalite.com/2012/03/sopa-de-siglas-ajax-json-jsonp-y-cors/](http://blog.koalite.com/2012/03/sopa-de-siglas-ajax-json-jsonp-y-cors/)</sub>  
 <sub>[http://stackoverflow.com/questions/12296910/so-jsonp-or-cors](http://stackoverflow.com/questions/12296910/so-jsonp-or-cors)</sub>  
 
 The recomendation is always using CORS whenever possible, but the following things should be taken into account:
