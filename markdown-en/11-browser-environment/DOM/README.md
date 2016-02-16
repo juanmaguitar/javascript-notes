@@ -19,7 +19,7 @@ xhtml1/DTD/xhtml1-transitional.dtd">
 </html>
 ```
 
-![DOM](https://raw.github.com/juanmaguitar/training-frontend-docs/master/entorno_navegador/img/dom.png)
+![DOM](https://raw.githubusercontent.com/juanmaguitar/javascript-notes/master/markdown-en/11-browser-environment/img/dom.png)
 
 - In the _[DOM Level 1](http://www.w3.org/TR/DOM-Level-1/)_ there's a difference between: 
     - The **Core DOM** is the common especification that is applied in all the documents (XML, HTML,…)
@@ -145,7 +145,7 @@ True
 <p id="closer">
 ```
 
-![Parent & Childs](https://raw.github.com/juanmaguitar/training-frontend-docs/master/entorno_navegador/img/parent-child.png)
+![Parent & Childs](https://raw.githubusercontent.com/juanmaguitar/javascript-notes/master/markdown-en/11-browser-environment/img/parent-child.png)
 
 - From a node we can access its brothers and the first and last of its children
     - [`nextSibling`](https://developer.mozilla.org/En/DOM/Node.nextSibling): Return the next brother

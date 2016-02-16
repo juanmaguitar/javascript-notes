@@ -2,7 +2,7 @@
 
 - **BOM (Browser Object Model)** is formed by all the objects that are out of the loaded _document_ and are part of the _window_ object
 
-![BOM](https://raw.github.com/juanmaguitar/training-frontend-docs/master/entorno_navegador/img/bom.png)
+![BOM](https://raw.githubusercontent.com/juanmaguitar/javascript-notes/master/markdown-en/11-browser-environment/img/bom.png)
 
 - The `window` object also serve as container of the global variables and to offer native methods of JS (`window.parseInt`). Also contains information about the browser environment (frame, iframe, popup, ventana o pestaña)
 

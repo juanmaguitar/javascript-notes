@@ -8,8 +8,8 @@
 - Javascript can be used in [different environments](http://en.wikipedia.org/wiki/JavaScript#Uses_outside_web_pages), bit [its most usual environment is the browser](https://developer.mozilla.org/en/JavaScript_technologies_overview)  
 
 - The Javascript code in a webpage has access to a few objects. These ojects can be grouped in:
-    - Objects related to the loaded HTML page (the _document_). These objects form the **[Document Object Model (DOM)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/entorno_navegador/DOM)**
-    - Objects that are related with things that happen out of the page (the windows' browser and the screen). These objects form the **[Browser Object Model (BOM)](https://github.com/juanmaguitar/training-frontend-docs/tree/master/entorno_navegador/BOM)**
+    - Objects related to the loaded HTML page (the _document_). These objects form the **[Document Object Model (DOM)](https://github.com/juanmaguitar/javascript-notes/tree/master/markdown-en/11-browser-environment/DOM)**
+    - Objects that are related with things that happen out of the page (the windows' browser and the screen). These objects form the **[Browser Object Model (BOM)](https://github.com/juanmaguitar/javascript-notes/tree/master/markdown-en/11-browser-environment/BOM)**
 
 - DOM is a standard and it has several version (called _levels_). Most of the browsers implement almost in its majority the DOM Level 1.  
 <sub>[http://www.quirksmode.org/compatibility.html](http://www.quirksmode.org/compatibility.html)</sub>  
