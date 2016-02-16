@@ -1,4 +1,4 @@
-# The Browser Envirnoment
+# The Browser Environment
 
 <sub>[http://www.saregune.net/ikasi/hezigune/curso.php?curso=javascript&leccion=js_intro_dom](http://www.saregune.net/ikasi/hezigune/curso.php?curso=javascript&leccion=js_intro_dom)</sub>  
 <sub>[http://vkanakaraj.wordpress.com/2009/12/18/javascript-vs-dom-vs-bom-relationship-explained/](http://vkanakaraj.wordpress.com/2009/12/18/javascript-vs-dom-vs-bom-relationship-explained/)</sub>  
