@@ -6,7 +6,7 @@
 - Every action (_click_, _change_, …) happening in the browser is comunicated (to whom wants to listend) in the form of an **event**
     From Javascript we can _escuchar_ these events and associate a function (_event handler_) that will be executed when the event occurs
 
-![Events](https://raw.githubusercontent.com/juanmaguitar/apuntes-javascript-intermedio/master/markdown/eventos/img/events.png)
+![Events](https://raw.githubusercontent.com/juanmaguitar/javascript-notes/master/markdown-en/12-events/img/events.png)
 
 - When we click in a link (`a`), we also do click in its container (`li`,`ul`), in the `body` and finally in the `document`. This is what is called **event propagation**
 
