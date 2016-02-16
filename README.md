@@ -26,8 +26,8 @@ This material cover the following contents:
 
 **Javascript Advanced**
 
-- [TDD](markdown-en/7-tdd)
-- [Regular Expressions](markdown-en/8-regular-expressions)
+- [TDD](markdown-en/07-tdd)
+- [Regular Expressions](markdown-en/08-regular-expressions)
 - ~~Prototype~~
 - ~~Inheritance~~
 

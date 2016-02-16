@@ -10,7 +10,7 @@
 
     The application of this technology started the so called AJAX apps, where you don't need to refresh the page to get new content.
 
-![AJAX](https://raw.github.com/juanmaguitar/training-frontend-docs/master/AJAX/img/ajax.png)
+![AJAX](https://raw.githubusercontent.com/juanmaguitar/javascript-notes/master/markdown-en/14-AJAX/img/ajax.png)
 
 - AJAX stands for **Asynchronous JavaScript + XML**:
     - _Asynchronous_ because after doing the HTTP request it doesn't need to wait for an answer, but can continue doing things and be notified when the answer comes
@@ -18,7 +18,7 @@
     - _XML_ because initially it was the standard format for data exchange. Actually a HTTP request usually returns JSON (or HTML)
 
 - The greatest limitation of an AJAX request is that [it cannot access data from a different domain](https://github.com/juanmaguitar/training-frontend-docs/tree/master/same_origin_policy) al que estamos (_cross-domain_)  
-    Pero hay maneras de solucionar este problema: [_JSONP_](https://github.com/juanmaguitar/training-frontend-docs/tree/master/same_origin_policy/JSONP) y [_CORS_](https://github.com/juanmaguitar/training-frontend-docs/tree/master/same_origin_policy/CORS)
+    Pero hay maneras de solucionar este problema: [_JSONP_](https://github.com/juanmaguitar/javascript-notes/tree/master/markdown-en/15-same-origin-policy/JSONP) y [_CORS_](https://github.com/juanmaguitar/javascript-notes/tree/master/markdown-en/15-same-origin-policy/CORS)
 
 
 ## Haciendo la petición

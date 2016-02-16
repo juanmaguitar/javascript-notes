@@ -1,4 +1,4 @@
-# Eventss
+# Events
 
 <sub>[http://www.quirksmode.org/js/introevents.html](http://www.quirksmode.org/js/introevents.html)</sub>  
 <sub>[http://www.sprymedia.co.uk/article/Visual+Event](http://www.sprymedia.co.uk/article/Visual+Event)</sub>  
