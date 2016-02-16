@@ -21,75 +21,7 @@
     Pero hay maneras de solucionar este problema: [_JSONP_](https://github.com/juanmaguitar/javascript-notes/tree/master/markdown-en/15-same-origin-policy/JSONP) y [_CORS_](https://github.com/juanmaguitar/javascript-notes/tree/master/markdown-en/15-same-origin-policy/CORS)
 
 
-## Haciendo la petición
-
-<sub>[https://developer.mozilla.org/en/XMLHttpRequest](https://developer.mozilla.org/en/XMLHttpRequest)</sub>  
-<sub>[http://jibbering.com/2002/4/httprequest.html](http://jibbering.com/2002/4/httprequest.html)</sub>
-
-```javascript
-var xhr = new XMLHttpRequest();
-xhr.onreadystatechange = myCallback;
-xhr.open('GET', url, true);
-xhr.send('');
-```
-
-- Las peticiones AJAX las hacemos a traves de objetos XHR.  
-<sub>[http://es.wikipedia.org/wiki/XMLHttpRequest](http://es.wikipedia.org/wiki/XMLHttpRequest)</sub>  
-<sub>[https://developer.mozilla.org/En/XMLHttpRequest/Using_XMLHttpRequest](https://developer.mozilla.org/En/XMLHttpRequest/Using_XMLHttpRequest)</sub>
-
-    Para crear un objeto XHR utilizamos el objeto `XMLHttpRequest()` que es nativo en IE7+, Safari, Opera y Firefox
-
-        var xhr = new XMLHttpRequest();
-
-- Una vez creado el objeto XHR, capturamos el evento `readystatechange` de este objeto y le enganchamos una función.
-
-        xhr.onreadystatechange = myCallback;
-
-- Despues hay que llamar al metodo `open()` pasandole los parametros de la peticion
-
-        xhr.open('GET', 'somefile.txt', true);
-
-    _El 1er parametro es el tipo de peticion (GET, POST,…)._  
-    _El 2º parametro es la URL_  
-    _El 3er parametro indica si la petición es asíncrona (true) o síncrona (false)_  
-
-- Despues hay que llamar al metodo `send()` para hacer la petición
-
-        xhr.send('');
-
-## Procesando la respuesta
-
-<sub>[http://www.quirksmode.org/blog/archives/2005/12/the_ajax_respon.html](http://www.quirksmode.org/blog/archives/2005/12/the_ajax_respon.html)</sub>
-
-```javascript
-function myCallback() {
-    if (xhr.readyState < 4) {
-        return; // not ready yet
-    }
-    if (xhr.status !== 200) {
-        alert('Error!'); // the HTTP status code is not OK
-        return;
-    }
-    // all is fine, do the work
-    alert(xhr.responseText);
-}
-```
-
-- El objeto XHR tiene una propiedad llamada `readyState`  y cada vez que cambia esta propiedad se dispara el evento `readystatechange`
-    Los posibles valores de readyState son:
-    - 0—uninitialized
-    - 1—loading
-    - 2—loaded
-    - 3—interactive
-    - **4—complete**  
-    
-    Cuando `readyState` llega a 4 significa que ya se ha recibido una respuesta
-
-- Una vez hemos recibido la respuesta hay que chequear el estado de la misma en la propiedad `status` del objeto XHR  
-    El valor que nos interesa para esta propiedad es 200 (OK)
-
-
-## AJAX con jQuery
+## AJAX with jQuery
 
 <sub>[http://blogs.sitepoint.com/ajax-jquery/](http://blogs.sitepoint.com/ajax-jquery/)</sub>
 <sub>[http://jqfundamentals.com/book/#chapter-7](http://jqfundamentals.com/book/#chapter-7)</sub>
@@ -104,36 +36,36 @@ $.ajax({
 });
 ```
 
-- Con jQuery podemos realizar nuestra petición por AJAX con el metodo [`$.ajax()`](http://api.jquery.com/jQuery.ajax/)
+- With jQuery we can perform our AJAX request with the method [`$.ajax()`](http://api.jquery.com/jQuery.ajax/)
 
-- El metodo `$.ajax()` devuelve un objeto [`jqXHR`](http://api.jquery.com/jQuery.ajax/#jqXHR) que viene a ser una version mejorada del objeto nativo `XMLHttpRequest`
+- The `$.ajax()` method returns a [`jqXHR`](http://api.jquery.com/jQuery.ajax/#jqXHR) object that is an enhanced version of the native object `XMLHttpRequest`
 
-- Al metodo `$.ajax()` le pasamos los parametros de nuestra petición AJAX que son, entre otros:
+- The method `$.ajax()` expects the parameters of our AJAX request that are, among others:
     
-    - **url** : La URL donde hacemos la peticion
+    - **url** : The URL where we do the request
 
-    - **type**: El tipo de petición, `POST` o  `GET` (por defecto)  
-        Las peticiones `GET` las utilizamos normalmente para recibir datos (ya que se pueden cachear)  
-        Las peticiones `POST` las utilizamos para mandar datos al servidor  
+    - **type**: The type of request, `POST` or  `GET` (by default)  
+        `GET` request are normally used to receive data (because they can be cached)  
+        `POST` request are normally used to send data to the server
     
-    - **data** : Los datos que enviaremos al servidor
+    - **data** : The data sent to the server
     
-    - **dataType**: El tipo de datos que esperamos recibir del servidor (json, html, xml, jsonp, …)
+    - **dataType**: The type of data we expect to receive from the server (json, html, xml, jsonp, …)
 
-- Al `$.ajax()` le podemos pasar tambien unas cuantas funciones callback que se ejecutaran dependiendo del resultado de la petición
+- We can also pass to `$.ajax()` a few callback functions that will be executed depending on the result of the request
     
-    - **success**: La función que queremos ejecutar cuando recibamos la respuesta.  
-        Si los datos recibidos estan en formato JSON, la función los recibe directamente transformados en objeto Javascript  
-        A esta función le llega, ademas de los datos recibidos, el status de la petición y el objeto `jqXHR` que maneja la petición.
+    - **success**: The function we want to execute when we receiving the answer.  
+        If the received data are in JSON format, the function receive them directly converted to Javascript objecto
+        Besides the received data, this function also receives the status of the request and the `jqXHR` object that handles the request
 
-    - **error**: Esta función se ejecutará si falla la petición.  
-        A esta función le llega el objeto `jqXHR` que maneja la petición y el error.
+    - **error**: This function will be executed if the request fails.  
+        Besides the received data, this function also receives the `jqXHR` object that handles the request and the error
 
-    - **complete**: Esta función se ejecutará cuando finalize la petición  
-        A esta función le llega el objeto `jqXHR` que maneja la petición y el error o éxito de la operación.
+    - **complete**: This function will be executed when the request finishes.
+        This function also receives the `jqXHR` object that handles the request and the error or success of the operation
     
-    - **beforeSend**: Esta función se ejecuta antes de hacer la petición  
-        A esta función le llega el objeto jqXHR que maneja la petición y los parametros de la petición
+    - **beforeSend**: This function will be executed before doing the request
+        This function also receives the `jqXHR` object that handles the request and the parameters of the request
     
-    - **dataFilter**: Esta función se ejecuta inmediatamente despues de la recepción exitosa de los datos  
-        A esta función le llega la información recibida y el valor del dataType, y lo que devuelve le llega a success
+    - **dataFilter**: This function is executed inmediately after the succesfully reception of the data
+        This function receives the received data and the value of `dataType` and whatever it returns, it goes to the `success` callback
