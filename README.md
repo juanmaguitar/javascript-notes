@@ -22,11 +22,12 @@ This material cover the following contents:
 - [Functions (Predefined, Callback, Closures...)](markdown-en/04-functions)
 - [Arrays and Objects (Constructors)](markdown-en/05-arrays-objects)
 - [Global Objects (Object, Function, Array, Number, Boolean, Math and Date)](markdown-en/06-global-objects)
-    - [Array Object and Higher Order Functions (Functional Programming)](markdown-en/06-global-objects/arrays)
+    
 
 **Javascript Advanced**
 
-- [TDD](markdown-en/07-tdd)
+- [Array Object and Higher Order Functions (Functional Programming)](markdown-en/06-global-objects/arrays)
+- [TDD](markdown-en/07-TDD)
 - [Regular Expressions](markdown-en/08-regular-expressions)
 - ~~Prototype~~
 - ~~Inheritance~~
