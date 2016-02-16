@@ -129,7 +129,7 @@ var id = setInterval( "alert('boo, boo')", 2000 );
 var id = setInterval( function(){ alert('boo, boo')}, 2000 );
 ```
 
-## The 'document' object
+## The `document` object
 
 [`window.document`](https://developer.mozilla.org/en/DOM/window.document) is a BOM object with info about the current document
 All the methods and properties inside _window.document_ beong to the _DOM objects_ category
