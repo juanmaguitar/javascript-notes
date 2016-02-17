@@ -23,8 +23,8 @@
 
 ## AJAX with jQuery
 
-<sub>[http://blogs.sitepoint.com/ajax-jquery/](http://blogs.sitepoint.com/ajax-jquery/)</sub>
-<sub>[http://jqfundamentals.com/book/#chapter-7](http://jqfundamentals.com/book/#chapter-7)</sub>
+<sub>[http://blogs.sitepoint.com/ajax-jquery/](http://blogs.sitepoint.com/ajax-jquery/)</sub>  
+<sub>[http://jqfundamentals.com/chapter/ajax-deferreds](http://jqfundamentals.com/chapter/ajax-deferreds)</sub>
 
 ```javascript
 $.ajax({
