@@ -40,7 +40,7 @@ To do this we can use:
     - [`JSON.stringify`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify): Converts a Javascript object into a JSON string
     - [`jQuery.parseJSON`](http://api.jquery.com/jQuery.parseJSON/): with jQuery we can also do the JSON parse
 
-    JSON objects está disponible de forma nativa en los [navegadores compatibles con ECMAScript 5](http://kangax.github.io/compat-table/es5/)  
+    JSON object (and its methods `JSON.parse` and `JSON.stringify`) are available natively in all [browsers compatible with ECMAScript 5](http://kangax.github.io/compat-table/es5/)  
 
     <sup>[http://json.parser.online.fr/](http://json.parser.online.fr/)</sup>  
     <sup>[https://developer.mozilla.org/En/Using_JSON_in_Firefox](https://developer.mozilla.org/En/Using_JSON_in_Firefox)</sup>  
