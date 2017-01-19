@@ -48,7 +48,7 @@ The objects have a thing called **the prototype chain**
   - And so on, until reaching the object at the highest level, the `Object` object
   
 
-  ![prototype chain](https://raw.githubusercontent.com/juanmaguitar/javascript-notes/master/markdown-en/prototype/img/prototype.png)
+  ![prototype chain](https://raw.githubusercontent.com/juanmaguitar/javascript-notes/master/markdown-en/09-prototype/img/prototype.png)
   
 ```javascript
 
