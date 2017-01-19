@@ -1,13 +1,12 @@
 #Prototype
 
-Todas las funciones tienen una propiedad `prototype` que contiene inicialmente un objeto  
+All functions have a property `prototype` that initially contains an object
 
-Podemos añadir propiedades y métodos a este objeto `prototype`. También podemos reemplazarlo completamente por otro objeto
+We can add properties and methods to this `prototype` object. We can also replace completely this object by another
 
-Al crear objetos usando una función como constructor (con `new`), estos objetos adquieren un enlace secreto (`__proto__` en Firebug) que apunta al prototipo de esta función constructora ( _"clase"_ ) lo que les permite acceder a sus propiedades (y métodos)
-como si fueran propias.
+When we create objects using a _constructor_ function (with `new`), these objects get a hidden link (`__proto__` in Firebug) that points to the _prototype_ of the constructor function ( _"clase"_ ) that allow them to access these properties and methods (_prototype_'s ones) as if they are theirs (_objects_)
 
-Las propiedades propias del objetos tienen prioridad sobre las propiedades del prototipo con el mismo nombre
+The properties/methods Las propiedades propias del objetos tienen prioridad sobre las propiedades del prototipo con el mismo nombre
 
 ```javascript
 
@@ -40,15 +39,16 @@ Las propiedades propias del objetos tienen prioridad sobre las propiedades del p
 
 ```
 
-###Cadena de Prototipos
+### Prototype chain
 
-Los objetos disponen de lo que se llama la **cadena de prototipos**
+The objects have a thing called **the prototype chain**
 
-  - Si un objeto `foo` no dispone de la propiedad `bar` al hacer `foo.bar`, Javascript buscará está propiedad en su prototipo (el de la función constructora que lo creó)
-  - Si no lo encuentra ahí, lo buscará en el prototipo de su prototipo
-  - Y asi hasta llegar al objeto de más alto nivel, el objeto `Object`
+  - If an object `foo` doesn't have a property `bar` when we do `foo.bar`, Javascript will look for that property in its `prototype` (the property `prototype` of the constructor function that created it)
+  - If is not found there, it will be searched in the prototype of that prototype (the property `prototype` of the constructor function that created that `prototype` object)
+  - And so on, until reaching the object at the highest level, the `Object` object
   
-  ![cadena de prototipos](https://raw.githubusercontent.com/juanmaguitar/javascript-notes/master/markdown-en/prototype/img/prototype.png)
+
+  ![prototype chain](https://raw.githubusercontent.com/juanmaguitar/javascript-notes/master/markdown-en/prototype/img/prototype.png)
   
 ```javascript
 
@@ -116,14 +116,14 @@ Los objetos disponen de lo que se llama la **cadena de prototipos**
   true
 ```
   
-###El metodo _hasOwnProperty()_
+### The _hasOwnProperty()_ method
 
-Cuando recorremos un objeto con un for-in pasamos por:
+When we loop through the properties of an object with `for-in` we loop through :
 
-  - Las propiedades propias del objeto
-  - Todas las propiedades accesibles a través de la cadena de prototipos
+  - The object own's properties
+  - All the properties accesible through the prototype chain
     
-Con el método `hasOwnProperty()` podemos diferenciar las propiedades propias del objeto de las del prototipo
+With the `hasOwnProperty()` method we can determine if the current property in the iteration is really a property of the object we're checking on.
 
 ```javascript
   function Gadget(name, color) {
@@ -153,7 +153,7 @@ Con el método `hasOwnProperty()` podemos diferenciar las propiedades propias de
   false
 ```
 
-_… por tanto, para recorrer solamente las propiedades propias del objeto podemos hacer:_
+_… so, to loop through the object own's properties we can do :_
 
 ```javascript
   >>> for (var prop in newtoy) {
@@ -165,9 +165,10 @@ _… por tanto, para recorrer solamente las propiedades propias del objeto podem
   color = black
   someMethod = function () { return 1; }
 ```
-###El metodo _isPrototypeOf()_
 
-Cada objeto dispone del método `isPrototypeOf()` que nos dice si un objeto en cuestión se está utilizando como prototipo de otro objeto
+### The _isPrototypeOf()_ method
+
+Every object has the method `isPrototypeOf()` that tell us if an object is being used as _prototype_ of another
 
 ```javascript
   var monkey = {
@@ -187,9 +188,9 @@ Cada objeto dispone del método `isPrototypeOf()` que nos dice si un objeto en c
   true
 ```
 
-###La propiedad [_constructor_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor)
+### The [_constructor_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor) property
 
-El `constructor` del objeto `prototype` de una función constructora (clase), apunta a la función constructora
+The `constructor` of the `prototype` object of some constructor function (_"class"_), points to the constructor function
 
 ```javascript
   >>> function Dog(){this.tail = true;}
@@ -207,8 +208,12 @@ El `constructor` del objeto `prototype` de una función constructora (clase), ap
   true
 ```
 
+http://lab.la-grange.ca/javascript-prototypes-as-abstract-objects
+https://howtonode.org/prototypical-inheritance
+http://jpsierens.com/what-are-javascript-prototypes/
+https://www.webreflection.co.uk/blog/2015/11/07/the-history-of-simulated-classes-in-javascript
 
-###Sustituyendo completamente el _prototype_
+### Sustituyendo completamente el _prototype_
 
 La cadena de prototipos es dinámica excepto cuando sustituimos completamente el objeto `prototype`
 
