@@ -48,7 +48,7 @@ Los objetos disponen de lo que se llama la **cadena de prototipos**
   - Si no lo encuentra ahí, lo buscará en el prototipo de su prototipo
   - Y asi hasta llegar al objeto de más alto nivel, el objeto `Object`
   
-  ![cadena de prototipos](https://raw.githubusercontent.com/juanmaguitar/apuntes-javascript-avanzado/master/markdown/prototype/img/prototype.png)
+  ![cadena de prototipos](https://raw.githubusercontent.com/juanmaguitar/javascript-notes/master/markdown-en/prototype/img/prototype.png)
   
 ```javascript
 

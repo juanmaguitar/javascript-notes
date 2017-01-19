@@ -18,23 +18,23 @@
 <sub>[http://www.anieto2k.com/2006/10/16/gestion-de-eventos-en-javascript/](http://www.anieto2k.com/2006/10/16/gestion-de-eventos-en-javascript/)</sub>  
 
 ```javascript
-function callback(evt) {
-    // prep work
-    evt = evt || window.event;
-    var target = (typeof evt.target !== 'undefined') ? evt.target :
-    evt.srcElement;
-
-    // actual callback work
-    console.log(target.nodeName);
-}
-// start listening for click events
-if (document.addEventListener){ // FF
-    document.addEventListener('click', callback, false);
-} else if (document.attachEvent){ // IE
-    document.attachEvent('onclick', callback);
-} else {
-    document.onclick = callback;
-}
+    function callback(evt) {
+        // prep work
+        evt = evt || window.event;
+        var target = (typeof evt.target !== 'undefined') ? evt.target :
+        evt.srcElement;
+        // actual callback work
+        console.log(target.nodeName);
+    }
+    
+    // start listening for click events
+    if (document.addEventListener){ // FF
+        document.addEventListener('click', callback, false);
+    } else if (document.attachEvent){ // IE
+        document.attachEvent('onclick', callback);
+    } else {
+        document.onclick = callback;
+    }
 ```
 
 - We can capture events with the [_traditional model_](http://www.quirksmode.org/js/events_tradmod.html)
