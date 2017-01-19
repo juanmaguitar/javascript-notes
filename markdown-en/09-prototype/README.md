@@ -208,7 +208,7 @@ The `constructor` of the `prototype` object of some constructor function (_"clas
   true
 ```
 
-<sub>[http://lab.la-grange.ca/javascript-prototypes-as-abstract-objects](http://lab.la-grange.ca/javascript-prototypes-as-abstract-objects)</sub>  
+<sub>[http://lab.la-grange.ca/en/javascript-prototypes-as-abstract-objects](http://lab.la-grange.ca/en/javascript-prototypes-as-abstract-objects)</sub>  
 <sub>[https://howtonode.org/prototypical-inheritance](https://howtonode.org/prototypical-inheritance)</sub>  
 <sub>[http://jpsierens.com/what-are-javascript-prototypes/](http://jpsierens.com/what-are-javascript-prototypes/)</sub>  
 <sub>[https://www.webreflection.co.uk/blog/2015/11/07/the-history-of-simulated-classes-in-javascript](https://www.webreflection.co.uk/blog/2015/11/07/the-history-of-simulated-classes-in-javascript)</sub>  
