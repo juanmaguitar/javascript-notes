@@ -6,7 +6,7 @@ We can add properties and methods to this `prototype` object. We can also replac
 
 When we create objects using a _constructor_ function (with `new`), these objects get a hidden link (`__proto__` in Firebug) that points to the _prototype_ of the constructor function ( _"clase"_ ) that allow them to access these properties and methods (_prototype_'s ones) as if they are theirs (_objects_)
 
-The properties/methods Las propiedades propias del objetos tienen prioridad sobre las propiedades del prototipo con el mismo nombre
+The properties/methods owned by the object have more priority over the properties/methods with the same name in the prototype
 
 ```javascript
 
