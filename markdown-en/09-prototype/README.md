@@ -208,10 +208,11 @@ The `constructor` of the `prototype` object of some constructor function (_"clas
   true
 ```
 
-http://lab.la-grange.ca/javascript-prototypes-as-abstract-objects
-https://howtonode.org/prototypical-inheritance
-http://jpsierens.com/what-are-javascript-prototypes/
-https://www.webreflection.co.uk/blog/2015/11/07/the-history-of-simulated-classes-in-javascript
+<sub>[http://lab.la-grange.ca/javascript-prototypes-as-abstract-objects](http://lab.la-grange.ca/javascript-prototypes-as-abstract-objects)</sub>
+<sub>[https://howtonode.org/prototypical-inheritance](http://lab.la-grange.ca/javascript-prototypes-as-abstract-objects)</sub>
+<sub>[http://jpsierens.com/what-are-javascript-prototypes/](http://lab.la-grange.ca/javascript-prototypes-as-abstract-objects)</sub>
+<sub>[https://www.webreflection.co.uk/blog/2015/11/07/](http://lab.la-grange.ca/javascript-prototypes-as-abstract-objects)</sub>
+<sub>[the-history-of-simulated-classes-in-javascript](http://lab.la-grange.ca/javascript-prototypes-as-abstract-objects)</sub>
 
 ### Sustituyendo completamente el _prototype_
 
