@@ -93,10 +93,10 @@ We have available the following methods of the object `String` to look for insid
 - We can include in the substitution the found string by using **$&**   
 - When the regular expression contain groups we can access to the occurrence of every group with **$1, $2**, etc...  
 - When specifying the substitution we can pass a function as a parameter where:
-      1. The _first parameter_ is the found string  
-      2. The _last parameter_ is the string where the search is taking place
-      3. The _penultimate parameter_ is the position of the occurrence  
-      4. The _rest of the parameters_ are the occurrences of each group of the pattern  
+    1. The _first parameter_ is the found string
+    2. The _last parameter_ is the string where the search is taking place
+    3. The _penultimate parameter_ is the position of the occurrence
+    4. The _rest of the parameters_ are the occurrences of each group of the pattern  
 
      
 ```javascript

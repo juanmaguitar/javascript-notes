@@ -7,7 +7,7 @@ function sum(a, b) {
 }
 ```
 
-**funciones** allow us to group several lines of code under one name.
+**functions** allow us to group several lines of code under one name.
 In this way, we can reuse this code, by invoking the name of the funtion.
 
 Function parts are:
